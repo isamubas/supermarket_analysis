@@ -33,6 +33,62 @@ The analysis is still presented in full, because the descriptive numbers are cor
 
 ---
 
+## In plain language
+
+No jargon. What the numbers say, and whether you can trust each one.
+
+> **One idea first.** Flip a coin 10 times and you might get 6 heads. That doesn't mean the coin is bent — it's just how chance works. Almost every "difference" below is exactly that: a small gap that showed up by luck. Each is marked **⚠️ just chance** or **✅ real**.
+
+### What sold well, what sold badly
+
+| | Best | Worst | Gap |
+|---|---|---|---|
+| **Branch** | Alexandria — 105,304 | Ismailia — 101,141 | 4,163 (4.1%) ⚠️ just chance |
+| **Product range** | Food and beverages — 53,471 | Health and beauty — 46,851 | 6,620 (14.1%) ⚠️ just chance |
+
+All three shops took almost exactly the same money. All six product ranges did too — every one landed between 15% and 17% of sales. **Nothing here is a star performer and nothing is a problem area.**
+
+### When customers came, and when they spent
+
+| | When | Sales | Money taken |
+|---|---|---|---|
+| **Busiest hour** | 7–8 pm | 113 | 37,809 — 12.3% of everything |
+| **Quietest hour** | 8–9 pm | 75 | 21,876 — 7.1% |
+| **Busiest day** | Saturday | 164 | 53,448 — 17.4% |
+| **Quietest day** | Monday | 125 | 36,094 — 11.7% |
+
+Across the day: afternoon (1–4 pm) took **37.8%**, evening (5–8 pm) **35.0%**, morning (10 am–12 pm) **27.2%**. Mornings are the quietest stretch.
+
+⚠️ The day-of-week pattern is chance. The hourly pattern is *borderline* — the closest thing to a genuine signal anywhere in this file, but it still doesn't quite pass the test. **Don't set staffing rotas from it.**
+
+### Happiest and unhappiest customers
+
+- **Highest rated:** Food and beverages 7.11/10 · Alexandria branch 7.07/10
+- **Lowest rated:** Home and lifestyle 6.84/10 · Ismailia branch 6.82/10
+
+The whole gap is a quarter of one point ⚠️ just chance. Everything averages about 7 out of 10. Ratings also have **no connection** to how much people spent — happy customers spent no more than unhappy ones.
+
+### Where is the business losing money?
+
+**This file cannot tell you — and that is the single most important thing in this report.**
+
+There is not one loss anywhere in it. All 1,000 rows are completed sales with positive income. Missing entirely:
+
+- Returns and refunds
+- Discounts and markdowns
+- Spoiled, expired, or stolen stock
+- **What the shop paid for the goods** — so there is no way to know what anything actually cost
+- Rent, wages, electricity
+- Stock that never sold
+
+"We took 307,587 and lost nothing" is not good news. It means the file records only the good half of the story. It shows what customers were **charged**; it shows nothing about what the shop **paid**. Profit is the difference between those two — and the second number simply isn't here.
+
+### The bottom line, in one sentence
+
+Everything sold roughly equally, at roughly equal margin, to roughly equal numbers of men and women, at roughly every hour of every day — which is not how any real shop behaves, and is why this should be treated as practice data rather than a business record.
+
+---
+
 ## Data quality: excellent
 
 The file is technically clean. Nothing needed repairing:
