@@ -1,0 +1,282 @@
+<title>Meeting card — supermarket analytics glossary</title>
+
+<style>
+  :root{
+    --paper:#FFFFFF; --raised:#F4F3EE; --ink:#10201A; --ink-2:#38493F;
+    --muted:#65756D; --rule:#D8DED6; --rule-soft:#E9EDE6;
+    --accent:#00704C; --ochre:#8A5B10; --critical:#9E2B25;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:system-ui,"Segoe UI Variable Text","Segoe UI",Roboto,sans-serif;
+    --mono:ui-monospace,"Cascadia Mono",Consolas,"DejaVu Sans Mono",monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#0E1613; --raised:#182320; --ink:#E6EDE8; --ink-2:#C0CCC5;
+      --muted:#8DA098; --rule:#26332D; --rule-soft:#1C2723;
+      --accent:#31A375; --ochre:#C79331; --critical:#D9736A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1613; --raised:#182320; --ink:#E6EDE8; --ink-2:#C0CCC5;
+    --muted:#8DA098; --rule:#26332D; --rule-soft:#1C2723;
+    --accent:#31A375; --ochre:#C79331; --critical:#D9736A;
+  }
+  :root[data-theme="light"]{
+    --paper:#FFFFFF; --raised:#F4F3EE; --ink:#10201A; --ink-2:#38493F;
+    --muted:#65756D; --rule:#D8DED6; --rule-soft:#E9EDE6;
+    --accent:#00704C; --ochre:#8A5B10; --critical:#9E2B25;
+  }
+
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:var(--sans); font-size:12.4px; line-height:1.42;
+    -webkit-font-smoothing:antialiased;
+  }
+  .card{max-width:1000px; margin:0 auto; padding:26px 30px 34px;}
+  .num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+  /* ---- masthead ---- */
+  .top{display:flex; justify-content:space-between; align-items:flex-end; gap:20px; flex-wrap:wrap;}
+  h1{font-family:var(--serif); font-size:1.62rem; line-height:1.1; margin:0; font-weight:600; letter-spacing:-.01em;}
+  .kicker{font-size:.62rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:5px;}
+  .top-right{font-size:.72rem; color:var(--muted); text-align:right; line-height:1.45;}
+  .bar{height:2.5px; background:var(--ink); margin:9px 0 0;}
+
+  .thesis{
+    margin-top:11px; padding:8px 12px; background:var(--raised);
+    border-left:2.5px solid var(--accent); font-size:.85rem; color:var(--ink-2);
+  }
+  .thesis b{color:var(--ink);}
+
+  /* ---- section heads ---- */
+  h2{
+    font-family:var(--sans); font-size:.63rem; font-weight:750; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--accent); margin:0 0 7px;
+    padding-bottom:4px; border-bottom:1px solid var(--rule);
+  }
+
+  /* ---- glossary columns ---- */
+  .glossary{column-count:3; column-gap:24px; margin-top:15px;}
+  @media (max-width:840px){ .glossary{column-count:2;} }
+  @media (max-width:560px){ .glossary{column-count:1;} }
+  .grp{break-inside:avoid-column; margin-bottom:13px;}
+  .grp h2{margin-bottom:6px;}
+  dl{margin:0;}
+  dt{font-weight:700; color:var(--ink); font-size:.79rem; margin-top:6px;}
+  dt:first-of-type{margin-top:0;}
+  dd{margin:1px 0 0; color:var(--ink-2); font-size:.755rem; line-height:1.38;}
+  dd em{color:var(--muted); font-style:italic;}
+  .entry{break-inside:avoid-column;}
+
+  /* ---- bottom grid ---- */
+  .lower{display:grid; grid-template-columns:1.15fr 1fr; gap:22px; margin-top:16px;}
+  @media (max-width:840px){ .lower{grid-template-columns:1fr;} }
+
+  table{border-collapse:collapse; width:100%; font-size:.755rem;}
+  td{padding:3.5px 0; vertical-align:top; border-bottom:1px solid var(--rule-soft);}
+  tr:last-child td{border-bottom:none;}
+  td.f-name{color:var(--ink); font-weight:650; white-space:nowrap; padding-right:12px; width:1%;}
+  td.f-eq{font-family:var(--mono); color:var(--ink-2); font-size:.72rem;}
+  td.k-lab{color:var(--ink-2); padding-right:10px;}
+  td.k-val{font-family:var(--mono); font-variant-numeric:tabular-nums; text-align:right; white-space:nowrap; font-weight:650;}
+
+  /* ---- traps ---- */
+  .traps{margin-top:16px;}
+  .traps ul{list-style:none; margin:7px 0 0; padding:0;
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:5px 20px;}
+  .traps li{position:relative; padding-left:16px; font-size:.755rem; color:var(--ink-2); break-inside:avoid;}
+  .traps li::before{content:""; position:absolute; left:0; top:.46em; width:6px; height:6px;
+    background:var(--critical); border-radius:1px;}
+  .traps li b{color:var(--ink); font-weight:650;}
+
+  footer{margin-top:15px; padding-top:8px; border-top:1px solid var(--rule);
+    font-size:.68rem; color:var(--muted); display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+
+  /* ---- print: one A4 sheet ---- */
+  @page{ size:A4 portrait; margin:10mm; }
+  @media print{
+    :root{
+      --paper:#FFFFFF; --raised:#F2F1EC; --ink:#000000; --ink-2:#2A2A2A;
+      --muted:#555555; --rule:#BBBBBB; --rule-soft:#DDDDDD;
+      --accent:#00563A; --ochre:#7A5010; --critical:#8A1F1A;
+    }
+    body{font-size:8pt; line-height:1.25;}
+    .card{max-width:none; padding:0;}
+    h1{font-size:14pt;}
+    .bar{margin-top:6pt;}
+    .glossary{column-count:3; column-gap:6mm; margin-top:7pt;}
+    .grp{margin-bottom:6pt;}
+    h2{font-size:6.4pt; margin-bottom:3.5pt; padding-bottom:2.5pt;}
+    dt{font-size:7.8pt; margin-top:2.6pt;}
+    dd{font-size:7.35pt; line-height:1.23;}
+    .thesis{padding:3.5pt 7pt; margin-top:6pt; font-size:7.9pt;}
+    table{font-size:7.4pt;} td{padding:1.3pt 0;}
+    .traps{margin-top:4mm;} .traps ul{gap:2pt 6mm; margin-top:3.5pt;}
+    .traps li{font-size:7.35pt; padding-left:13px;}
+    .lower{gap:6mm; margin-top:3.5mm;}
+    footer{font-size:6.6pt; margin-top:2.5mm; padding-top:4pt;}
+    a{text-decoration:none; color:#000;}
+  }
+</style>
+
+<div class="card">
+
+  <div class="top">
+    <div>
+      <div class="kicker">Meeting card &middot; Retail analytics</div>
+      <h1>Words, formulas and numbers</h1>
+    </div>
+    <div class="top-right">
+      Mutundwe Family Supermarket &mdash; <em>demonstration data</em><br>
+      <span class="num">FY2025/26 &middot; 3 branches &middot; 354 SKUs &middot; 1.3m lines</span>
+    </div>
+  </div>
+  <div class="bar"></div>
+
+  <div class="thesis">
+    <b>The one idea:</b> every big number in this analysis is the same tiny sum &mdash; <em>sold for minus cost</em> &mdash;
+    repeated a million times, then grouped differently. By product, by category, by branch, by hour.
+    There is no clever maths anywhere.
+  </div>
+
+  <div class="glossary">
+
+    <div class="grp">
+      <h2>The shape of the data</h2>
+      <dl>
+        <div class="entry"><dt>Line (line item)</dt>
+        <dd>One product on one receipt. Buy three things, you create three lines.</dd></div>
+        <div class="entry"><dt>Ticket / basket</dt>
+        <dd>The whole receipt. One customer, one visit, one payment. Ours average 4.7 lines.</dd></div>
+        <div class="entry"><dt>SKU</dt>
+        <dd>One product in one specific size. Sugar 1kg and sugar 2kg are two different SKUs &mdash; bought, priced and counted separately.</dd></div>
+      </dl>
+    </div>
+
+    <div class="grp">
+      <h2>Money</h2>
+      <dl>
+        <div class="entry"><dt>Revenue / turnover</dt>
+        <dd>What the customer paid. Money in.</dd></div>
+        <div class="entry"><dt>Cost of goods sold</dt>
+        <dd>What you paid the supplier for those same items. Goods only &mdash; not rent, wages or power.</dd></div>
+        <div class="entry"><dt>Gross margin</dt>
+        <dd>Sale price minus what the goods cost you. The money the shop has <em>before</em> paying its bills.</dd></div>
+        <div class="entry"><dt>Gross margin %</dt>
+        <dd>Margin as a share of the sale price. Says how hard each shilling of sales is working.</dd></div>
+        <div class="entry"><dt>Average basket</dt>
+        <dd>Revenue divided by number of receipts. What a typical visit is worth.</dd></div>
+      </dl>
+    </div>
+
+    <div class="grp">
+      <h2>Loss</h2>
+      <dl>
+        <div class="entry"><dt>Shrinkage</dt>
+        <dd>Stock you bought but never sold. Always split it into the next two &mdash; as one number, neither gets fixed.</dd></div>
+        <div class="entry"><dt>Waste / spoilage</dt>
+        <dd>It rotted, expired or broke. An <em>ordering and cold-chain</em> problem.</dd></div>
+        <div class="entry"><dt>Unexplained variance</dt>
+        <dd>Books say 50, shelf has 43, nothing recorded. A <em>control</em> problem &mdash; theft, sloppy counting, or goods never booked in.</dd></div>
+        <div class="entry"><dt>Stockout</dt>
+        <dd>Shelf empty when a customer wanted the item.</dd></div>
+        <div class="entry"><dt>Lost sales</dt>
+        <dd>Money you would have taken if it had not been empty. Invisible in the till &mdash; needs the daily stock file.</dd></div>
+      </dl>
+    </div>
+
+    <div class="grp">
+      <h2>Stock &amp; supply</h2>
+      <dl>
+        <div class="entry"><dt>Case pack</dt>
+        <dd>Suppliers sell cases, not units. A line selling two a month still arrives twelve at a time. This is what creates dead stock.</dd></div>
+        <div class="entry"><dt>Days cover</dt>
+        <dd>How many days the stock on the shelf would last at the current selling rate.</dd></div>
+        <div class="entry"><dt>Inventory days</dt>
+        <dd>Same idea for the whole shop. Ours: 10.6 days.</dd></div>
+        <div class="entry"><dt>Fill rate</dt>
+        <dd>Of what you ordered, how much actually arrived. Our worst supplier: 76%.</dd></div>
+        <div class="entry"><dt>Cash conversion cycle</dt>
+        <dd>Whether you pay the supplier before or after the customer pays you. Negative means the supplier is financing your stock &mdash; a strength.</dd></div>
+      </dl>
+    </div>
+
+    <div class="grp">
+      <h2>Technique</h2>
+      <dl>
+        <div class="entry"><dt>KVI (known value item)</dt>
+        <dd>The few lines customers price from memory &mdash; sugar, oil, bread, soap, posho. They judge the whole shop on these.</dd></div>
+        <div class="entry"><dt>Lift</dt>
+        <dd>How much more often two items share a basket than chance predicts. 1.0 = pure chance. 3.8 = a real habit.</dd></div>
+        <div class="entry"><dt>Incremental margin</dt>
+        <dd>Whether a promotion left you with more <em>money</em> &mdash; not more units. Volume almost always rises; that proves nothing.</dd></div>
+        <div class="entry"><dt>Supplier funding</dt>
+        <dd>The share of a promotion's discount the supplier rebates back. Decides whether the promo makes money. Rarely in the POS.</dd></div>
+      </dl>
+    </div>
+
+    <div class="grp">
+      <h2>Compliance</h2>
+      <dl>
+        <div class="entry"><dt>Void</dt>
+        <dd>A cancelled sale at the till. Normal in small numbers &mdash; the <em>rate</em> is what matters.</dd></div>
+        <div class="entry"><dt>EFRIS</dt>
+        <dd>URA's e-invoicing system. Unfiscalised tickets are a tax exposure, and a useful fraud signal.</dd></div>
+        <div class="entry"><dt>VAT-exempt vs standard</dt>
+        <dd>Unprocessed foods sit outside VAT; packaged goods do not. Category margin means little until they are separated.</dd></div>
+      </dl>
+    </div>
+
+  </div>
+
+  <div class="lower">
+    <div>
+      <h2>If they ask you to show the working</h2>
+      <table>
+        <tr><td class="f-name">Gross margin</td><td class="f-eq">sold for &minus; cost</td></tr>
+        <tr><td class="f-name">Gross margin %</td><td class="f-eq">margin &divide; revenue &times; 100</td></tr>
+        <tr><td class="f-name">Average basket</td><td class="f-eq">revenue &divide; number of tickets</td></tr>
+        <tr><td class="f-name">Days cover</td><td class="f-eq">units on shelf &divide; units sold per day</td></tr>
+        <tr><td class="f-name">Fill rate</td><td class="f-eq">units received &divide; units ordered &times; 100</td></tr>
+        <tr><td class="f-name">Lift</td><td class="f-eq">actual times together &divide; (popularity A &times; popularity B)</td></tr>
+        <tr><td class="f-name">Incremental margin</td><td class="f-eq">(margin/day during &minus; margin/day either side) &times; days</td></tr>
+        <tr><td class="f-name">Lost sales</td><td class="f-eq">normal daily units &times; days out of stock &times; price</td></tr>
+        <tr><td class="f-name">Cashier load</td><td class="f-eq">baskets in the hour &divide; cashiers rostered</td></tr>
+      </table>
+    </div>
+
+    <div>
+      <h2>Numbers to have ready</h2>
+      <table>
+        <tr><td class="k-lab">Turnover</td><td class="k-val">UGX 9.46bn</td></tr>
+        <tr><td class="k-lab">Gross margin</td><td class="k-val">18.9% &middot; 19.6% ex-airtime</td></tr>
+        <tr><td class="k-lab">Baskets &middot; per branch/day</td><td class="k-val">288,007 &middot; 263</td></tr>
+        <tr><td class="k-lab">Average basket</td><td class="k-val">UGX 32,890</td></tr>
+        <tr><td class="k-lab">Lost to empty shelves</td><td class="k-val">UGX 455m &middot; 4.8%</td></tr>
+        <tr><td class="k-lab">Shrinkage (waste + unexplained)</td><td class="k-val">3.1% = 2.3 + 0.8</td></tr>
+        <tr><td class="k-lab">Payday window: days &rarr; turnover</td><td class="k-val">31% &rarr; 38%</td></tr>
+        <tr><td class="k-lab">Kabalagala unexplained loss</td><td class="k-val">1.99% vs 0.27 / 0.36</td></tr>
+        <tr><td class="k-lab">Suspect till: voids &middot; EFRIS</td><td class="k-val">7.4% vs 1.1% &middot; 74% vs 97%</td></tr>
+        <tr><td class="k-lab">Evening vs morning cashier load</td><td class="k-val">7.0 vs 1.9</td></tr>
+        <tr><td class="k-lab">The prize</td><td class="k-val">UGX 149.9m &middot; 8.4% of margin</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="traps">
+    <h2>Before you trust any total &mdash; the five things that will make you wrong</h2>
+    <ul>
+      <li><b>Strip the voided tickets first.</b> The line file has no void flag; you must join to the header. Worth UGX 122.7m of turnover that never happened.</li>
+      <li><b>Returns are negative lines.</b> Sum quantity without checking the sign and both units and margin are wrong.</li>
+      <li><b>Airtime and Yaka are commission, not turnover.</b> 4.3% of "sales", 0.8% of margin. Leave them in and every margin figure is distorted.</li>
+      <li><b>Use the cost in force on the day of sale</b>, not today's cost &mdash; otherwise a price squeeze is invisible.</li>
+      <li><b>Stockouts leave no trace in the till.</b> A sale that never happened has no row. You need the stock file.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <span><b>Demonstration data.</b> Mutundwe Family Supermarket is fictional; figures illustrate method only and describe no real business.</span>
+    <span>Payment-processing rates are assumptions pending real merchant agreements.</span>
+  </footer>
+
+</div>

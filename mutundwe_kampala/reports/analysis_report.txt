@@ -1,0 +1,460 @@
+﻿
+==============================================================================
+0. DATA QUALITY -- what the raw export does not tell you
+==============================================================================
+Raw tickets in export        : 293,811
+  voided (must be removed)   : 3,718  worth UGX 122,746,250
+Raw line items               : 1,306,279
+  return lines (negative qty): 2,086
+Tickets not fiscalised (EFRIS): 10,376  (3.6%)  worth UGX 335,946,950
+
+NOTE: transaction_lines.csv carries NO void flag. Summing it directly
+      overstates turnover by UGX 122,746,250 before you start.
+
+==============================================================================
+1. HEADLINE -- FY2025/26 (1 Jul 2025 - 30 Jun 2026)
+==============================================================================
+Net sales (all)              : UGX 9,455,841,950
+  of which retail goods      : UGX 9,046,859,600  (95.7%)
+  of which airtime/Yaka      : UGX 408,982,350  (4.3%)
+Gross margin (all)           : UGX 1,785,853,921  (18.9%)
+Gross margin (retail only)   : UGX 1,771,409,663  (19.6%)
+Airtime margin               : UGX 14,444,258  (3.5%)
+
+Baskets                      : 288,007
+Average basket               : UGX 32,890   (4.7 units)
+Baskets/day/branch           : 263
+
+>> Airtime is 4.5% of 'sales' at a 3.5% margin. Reported on the same
+   line as groceries it drags the blended margin down and hides how the
+   grocery business is really performing.
+
+Monthly:
+  month  sales_M  margin_M  margin_pct  baskets  avg_basket
+2025-07    727.3     138.0        19.0    22967     31712.0
+2025-08    797.2     153.0        19.2    24850     32129.0
+2025-09    765.5     146.7        19.2    23688     32375.0
+2025-10    759.9     143.6        18.9    23536     32348.0
+2025-11    745.5     138.0        18.5    22777     32791.0
+2025-12   1224.0     224.8        18.4    36950     33193.0
+2026-01    722.7     131.3        18.2    21384     33856.0
+2026-02    729.4     137.2        18.8    21669     33717.0
+2026-03    711.2     135.2        19.0    21757     32742.0
+2026-04    717.9     137.1        19.1    21892     32847.0
+2026-05    803.2     157.2        19.6    23726     33920.0
+2026-06    751.9     143.9        19.1    22811     33034.0
+
+==============================================================================
+2. REVENUE LIES -- category revenue share vs margin share
+==============================================================================
+              category  sales_M  sales_share  margin_M  margin_share  margin_pct  gap
+    Cooking Oil & Fats    880.0          9.3      82.0           4.6         9.4 -4.7
+       Butchery & Fish    811.0          8.6     161.0           9.0        19.9  0.5
+    Household Cleaning    795.0          8.4     166.0           9.3        20.9  0.9
+      Staples & Grains    768.0          8.1     118.0           6.6        15.4 -1.5
+   Beverages - Alcohol    705.0          7.5     123.0           6.9        17.5 -0.6
+         Personal Care    655.0          6.9     173.0           9.7        26.3  2.7
+         Fresh Produce    600.0          6.3     171.0           9.6        28.4  3.2
+          Dairy & Eggs    558.0          5.9      91.0           5.1        16.3 -0.8
+             Baby Care    509.0          5.4      94.0           5.3        18.4 -0.1
+    Sugar & Sweeteners    470.0          5.0      30.0           1.7         6.5 -3.3
+Airtime & Mobile Money    409.0          4.3      14.0           0.8         3.5 -3.5
+                Bakery    405.0          4.3      75.0           4.2        18.6 -0.1
+      Beverages - Soft    344.0          3.6      67.0           3.7        19.4  0.1
+        Home & Kitchen    328.0          3.5      97.0           5.4        29.5  1.9
+     Canned & Packaged    278.0          2.9      73.0           4.1        26.4  1.2
+          Frozen Foods    272.0          2.9      65.0           3.7        24.1  0.8
+   Stationery & School    218.0          2.3      67.0           3.7        30.7  1.4
+          Tea & Coffee    214.0          2.3      47.0           2.6        21.8  0.4
+Snacks & Confectionery    167.0          1.8      46.0           2.6        27.7  0.8
+       Bags & Sundries     70.0          0.7      25.0           1.4        35.5  0.7
+
+>> Biggest destroyers of margin share (revenue >> margin):
+     Cooking Oil & Fats         9.3% of sales ->   4.6% of margin  (GM 9.4%)
+     Airtime & Mobile Money     4.3% of sales ->   0.8% of margin  (GM 3.5%)
+     Sugar & Sweeteners         5.0% of sales ->   1.7% of margin  (GM 6.5%)
+     Staples & Grains           8.1% of sales ->   6.6% of margin  (GM 15.4%)
+>> Quietly carrying the business:
+     Fresh Produce              6.3% of sales ->   9.6% of margin  (GM 28.4%)
+     Personal Care              6.9% of sales ->   9.7% of margin  (GM 26.3%)
+     Home & Kitchen             3.5% of sales ->   5.4% of margin  (GM 29.5%)
+     Stationery & School        2.3% of sales ->   3.7% of margin  (GM 30.7%)
+
+==============================================================================
+3. BRANCH SCORECARD
+==============================================================================
+      branch_name  sales_M  margin_pct  baskets  avg_basket  waste_M  unexpl_M  unexpl_pct  lost_M
+    Ntinda Branch   3968.0        19.3   117440     33843.0     70.4      14.2        0.36   172.0
+    Nakawa Branch   3024.0        18.9    92304     32821.0     68.6       8.1        0.27   155.0
+Kabalagala Branch   2464.0        18.2    78263     31543.0     80.8      49.1        1.99   127.0
+
+==============================================================================
+4. THE INVISIBLE NUMBER -- sales lost to empty shelves
+==============================================================================
+Lost revenue (demand that walked out) : UGX 455,006,550
+Lost gross margin                     : UGX 107,890,023
+  = 4.8% of turnover, and 6.0% of the margin actually earned
+
+SKU-days out of stock                 : 1.64%
+  month-end window (25th - 3rd)       : 2.43%
+  rest of the month                   : 1.28%
+  -> 1.9x worse exactly when customers have money
+
+Worst 15 lines for lost sales:
+               product_name            category  is_kvi  lost_units  lost_M
+Exercise Books Bundle of 10 Stationery & School   False         829    17.7
+Chicken Whole Broiler 1.5kg     Butchery & Fish   False         705    16.1
+  Chicken Whole Local 1.5kg     Butchery & Fish   False         455    13.4
+          Beef Boneless 1kg     Butchery & Fish    True         720    13.2
+          Tilapia Fresh 1kg     Butchery & Fish   False         806    12.7
+      Nile Perch Fillet 1kg     Butchery & Fish   False         493    11.5
+              Goat Meat 1kg     Butchery & Fish   False         511    11.2
+     Chicken Drumsticks 1kg     Butchery & Fish   False         599    10.7
+         Beef With Bone 1kg     Butchery & Fish   False         616     9.7
+       Matooke Bunch Medium       Fresh Produce   False         493     9.3
+        Matooke Bunch Large       Fresh Produce   False         319     8.8
+           Ream of Paper A4 Stationery & School   False         346     7.8
+     School Backpack Medium Stationery & School   False         181     7.7
+ Picfare Exercise Book 96pg Stationery & School   False        2923     7.4
+               Blender 1.5L      Home & Kitchen   False          50     7.4
+
+>> 6.9% of lost sales sit on 'known value items' -- the
+   lines a shopper prices in their head. Running dry on sugar, oil or
+   bread does not just lose that sale, it teaches the customer to shop elsewhere.
+
+==============================================================================
+5. SHRINKAGE -- waste you can see, and loss you cannot
+==============================================================================
+Spoilage / expiry / damage : UGX 219,713,958  (2.3% of sales)
+Unexplained stock variance : UGX 71,418,929  (0.8% of sales)
+Total shrinkage            : UGX 291,132,887  (3.1% of sales)
+
+Unexplained loss by category and branch (UGX, at cost):
+branch_code                    KAB        NAK        NTI  KAB_vs_others
+category                                                               
+Beverages - Alcohol     18282948.0  1731156.0  2283054.0            9.0
+Personal Care            9880339.0  1849925.0  3457734.0            4.0
+Baby Care                5669807.0   878881.0  2943348.0            3.0
+Tea & Coffee             3852871.0   261495.0   456890.0           11.0
+Staples & Grains         2004846.0   408370.0   496555.0            4.0
+Airtime & Mobile Money   1772543.0   295084.0   325718.0            6.0
+Snacks & Confectionery   1559556.0   228210.0   384071.0            5.0
+Household Cleaning       1443651.0   541978.0   949626.0            2.0
+
+>> Kabalagala loses UGX 49,059,125 to unexplained variance against
+   UGX 8,145,098 at Nakawa and UGX 14,214,706 at Ntinda --
+   and it is the SMALLEST branch. This is not breakage. It is a control problem.
+
+Where the spoilage actually is:
+       category  waste_M
+Butchery & Fish     97.8
+   Dairy & Eggs     38.8
+         Bakery     34.5
+  Fresh Produce     26.4
+   Frozen Foods     22.2
+
+Cold-chain waste on days with a power cut : UGX 951,768/day
+                        on clean days      : UGX 261,153/day
+  -> every outage day costs about UGX 690,615 in melted stock
+
+==============================================================================
+6. THE SUGAR TRAP -- buying price moved, shelf price did not
+==============================================================================
+  month  units  sales_M  margin_M  margin_pct
+2025-07   5942     37.4      3.19         8.5
+2025-08   6569     40.4      3.53         8.7
+2025-09   6649     41.5      3.34         8.1
+2025-10   6110     38.0      3.32         8.7
+2025-11   5881     37.6      0.48         1.3
+2025-12   8294     53.8     -1.98        -3.7
+2026-01   5964     41.5     -1.63        -3.9
+2026-02   4441     35.0      2.83         8.1
+2026-03   4224     32.3      4.05        12.6
+2026-04   4628     34.9      4.44        12.7
+2026-05   5945     41.8      4.92        11.8
+2026-06   5163     35.7      4.03        11.3
+
+>> Sugar margin fell from 8.5% to -3.9% in 2026-01.
+   Mill prices rose in November; the shelf price only caught up in February.
+   That three-month lag cost roughly UGX 14,782,853 in margin.
+   Sugar is a footfall line, so you may CHOOSE to absorb it -- but that
+   has to be a decision, not something you find out about in June.
+
+==============================================================================
+7. COST OF GETTING PAID -- payment mix
+==============================================================================
+        payment_method  value_M  share  baskets  avg_basket  rate  cost_M
+                  Cash   5078.0   53.6   160891     31559.0  0.35    17.8
+              MTN MoMo   2204.0   23.3    66515     33131.0  1.00    22.0
+          Airtel Money   1329.0   14.0    40833     32540.0  1.00    13.3
+Card (Visa/Mastercard)    745.0    7.9    16320     45651.0  3.00    22.4
+  Staff/Account Credit    118.0    1.2     3448     34115.0  0.00     0.0
+
+Mobile money share  H1 (Jul-Dec): 34.5%   H2 (Jan-Jun): 40.4%
+Total assumed cost of accepting payment: UGX 75,446,695 (0.8% of sales)
+  = 4.2% of your gross margin.
+
+>> RATES ABOVE ARE ASSUMPTIONS. Step one of the real engagement is pulling
+   your actual MTN/Airtel merchant statements and card MDR schedule.
+
+==============================================================================
+8. WHEN THE MONEY COMES IN -- payday, hours, and the queue
+==============================================================================
+Days in the payday window (25th-3rd) : 31% of the year
+Sales taken in that window           : 38.0% of turnover
+  -> those days run 1.23x the average day
+
+Average day by weekday (UGX m):
+day    m
+Mon 22.0
+Tue 21.1
+Wed 22.8
+Thu 23.9
+Fri 30.9
+Sat 37.8
+Sun 22.9
+
+Rainy day vs dry day: UGX 23,711,897 vs UGX 27,091,642 (-12.5%)
+
+Average hour, all branches:
+ hour  baskets  rostered  per_cashier
+    7      7.0       3.7          1.9
+    8     12.1       3.7          3.3
+    9     13.1       3.7          3.6
+   10     14.5       3.7          4.0
+   11     17.3       3.7          4.9
+   12     21.7       4.3          5.4
+   13     22.3       4.3          5.5
+   14     19.2       4.3          4.8
+   15     17.7       4.3          4.4
+   16     19.4       4.3          4.7
+   17     25.7       4.0          6.5
+   18     27.9       4.0          7.0
+   19     24.8       4.0          6.2
+   20     15.5       4.0          3.9
+   21      6.5       4.1          1.6
+
+>> Busiest tills: 18:00, 17:00, 19:00 at ~7 baskets/cashier/hour
+>> Quietest    : 21:00, 7:00, 8:00 at ~2
+   The roster is essentially flat. It does not follow the evening peak,
+   the Saturday peak, or the payday peak.
+
+Baskets per rostered cashier-hour, payday window : 5.1
+                                  rest of month  : 4.3
+
+==============================================================================
+9. THE JANUARY ELECTION AND OTHER LOCAL SHOCKS
+==============================================================================
+Baseline day: UGX 26,166,711
+  election lull            UGX 11,324,300  (-57%)
+  pre-election stock-up    UGX 27,277,862  (+4%)
+
+School-term shopping window: UGX 28,974,131/day vs UGX 25,539,420 (+13%)
+
+Stationery is 2.3% of the year's sales but
+  49.4% of it lands in just 3 months:
+  2026-05 (42m), 2026-01 (37m), 2025-09 (28m)
+
+==============================================================================
+10. WHAT SELLS WITH WHAT -- basket affinity
+==============================================================================
+Strongest pairs (lift > 1 means they are bought together more than chance):
+                  item_a                      item_b  support_pct  lift  baskets
+      Club Pilsner 500ml Uganda Waragi Classic 375ml         0.68  8.49   1706.0
+Nile Special Lager 500ml Uganda Waragi Classic 375ml         0.75  8.44   1870.0
+        Bell Lager 500ml Uganda Waragi Classic 375ml         0.68  8.30   1712.0
+Nile Special Lager 500ml          Club Pilsner 500ml         1.11  8.20   2785.0
+Nile Special Lager 500ml            Bell Lager 500ml         1.12  8.00   2790.0
+        Bell Lager 500ml          Club Pilsner 500ml         1.01  7.97   2522.0
+  Aponye Maize Flour 2kg       Pembe Maize Flour 2kg         0.52  4.82   1313.0
+  Super Rice Pishori 1kg           Beans Nambale 1kg         0.56  4.67   1401.0
+  Aponye Maize Flour 2kg      Super Rice Pishori 1kg         0.87  4.60   2189.0
+  Aponye Maize Flour 2kg       Kaiso Rice Broken 1kg         0.78  4.58   1954.0
+  Super Rice Pishori 1kg       Kaiso Rice Broken 1kg         0.67  4.56   1669.0
+   Kaiso Rice Broken 1kg           Beans Nambale 1kg         0.49  4.54   1220.0
+  Super Rice Pishori 1kg       Pembe Maize Flour 2kg         0.42  4.53   1060.0
+  Aponye Maize Flour 2kg           Beans Nambale 1kg         0.63  4.52   1579.0
+  Aponye Maize Flour 2kg  Fresh Fri Vegetable Oil 1L         0.41  3.88   1035.0
+
+Strongest CROSS-CATEGORY pairs -- the actual merchandising opportunity,
+because these items sit in different aisles:
+                item_a              cat_a                     item_b               cat_b  lift  baskets
+Aponye Maize Flour 2kg   Staples & Grains Fresh Fri Vegetable Oil 1L  Cooking Oil & Fats  3.88   1035.0
+Aponye Maize Flour 2kg   Staples & Grains     Mukwano Cooking Oil 1L  Cooking Oil & Fats  3.79   1080.0
+Aponye Maize Flour 2kg   Staples & Grains           Kakira Sugar 2kg  Sugar & Sweeteners  3.43   1399.0
+Super Rice Pishori 1kg   Staples & Grains           Kakira Sugar 2kg  Sugar & Sweeteners  3.37   1181.0
+     Kinyara Sugar 1kg Sugar & Sweeteners          Beans Nambale 1kg    Staples & Grains  3.36   1027.0
+Aponye Maize Flour 2kg   Staples & Grains           Lugazi Sugar 1kg  Sugar & Sweeteners  3.35   1091.0
+Aponye Maize Flour 2kg   Staples & Grains          Kinyara Sugar 1kg  Sugar & Sweeteners  3.33   1611.0
+     Kinyara Sugar 1kg Sugar & Sweeteners      Kaiso Rice Broken 1kg    Staples & Grains  3.31   1232.0
+Aponye Maize Flour 2kg   Staples & Grains   Salt Refined Aquasal 1kg  Sugar & Sweeteners  3.28   1207.0
+Super Rice Pishori 1kg   Staples & Grains   Salt Refined Aquasal 1kg  Sugar & Sweeteners  3.23   1022.0
+     Kinyara Sugar 1kg Sugar & Sweeteners     Super Rice Pishori 1kg    Staples & Grains  3.21   1336.0
+Fanta Orange PET 500ml   Beverages - Soft   Nile Special Lager 500ml Beverages - Alcohol  3.18   1365.0
+
+>> Within-category lift (beer with beer, rice with posho) tells you the
+   basket archetype is real. Cross-category lift tells you where to put a
+   secondary display, and which pairs to never let go out of stock together.
+
+Basket archetypes:
+ shopping_mission  baskets     avg  total_M  share
+      Weekly shop    35254 91494.0   3226.0   34.1
+           Top-up   123464 10608.0   1310.0   13.8
+     Fresh & meat    30868 38012.0   1173.0   12.4
+    Party / event    15361 70310.0   1080.0   11.4
+Household restock    26909 36572.0    984.0   10.4
+    Breakfast run    36799 22336.0    822.0    8.7
+         Baby run    10575 43223.0    457.0    4.8
+      School prep     8777 47952.0    421.0    4.4
+
+==============================================================================
+11. DEAD STOCK -- capital sleeping on the shelf
+==============================================================================
+165 SKUs (47% of the range) make 80% of sales.
+The bottom 89 SKUs (25% of the range) make 5.1% of sales
+  but hold UGX 18,974,456 of stock at cost.
+
+Slowest-moving stock by capital tied up:
+              product_name            category  sales_M  days_cover  stock_value
+         Hennessy VS 700ml Beverages - Alcohol      5.7        68.0     816162.0
+             Baby Car Seat           Baby Care      4.2       103.0     784789.0
+Non-stick Cookware Set 5pc      Home & Kitchen      1.2       277.0     626720.0
+        Pressure Cooker 5L      Home & Kitchen      1.8       164.0     521752.0
+   Dinner Set 24pc Ceramic      Home & Kitchen      1.1       199.0     391845.0
+               Baby Walker           Baby Care      2.5        87.0     385062.0
+       Electric Toothbrush       Personal Care      1.7        81.0     258163.0
+ Vacuum Flask 2.5L Premium      Home & Kitchen      1.3        75.0     168640.0
+            Photo Frame A4      Home & Kitchen      1.2        78.0     161164.0
+    Balsamic Vinegar 250ml   Canned & Packaged      1.3        63.0     154172.0
+           Olives Jar 300g   Canned & Packaged      0.9        88.0     142594.0
+        Prawns Frozen 500g        Frozen Foods      1.1        65.0     141862.0
+ Whiteboard A3 with Marker Stationery & School      0.4       199.0     133427.0
+         Charcoal Iron Box      Home & Kitchen      0.4       191.0     119498.0
+          Mustard Jar 250g   Canned & Packaged      0.9        71.0     111857.0
+
+==============================================================================
+12. WORKING CAPITAL -- who is financing whom
+==============================================================================
+Average stock on hand at cost : UGX 221,737,479
+Cost of goods sold            : UGX 7,669,988,029
+Inventory days                : 11 days
+Weighted supplier credit      : 16 days
+Cash conversion cycle         : -6 days
+
+>> You sell the stock before you pay for it. That is a genuine strength --
+   suppliers are financing your working capital. Protect it: the fastest
+   way to lose it is letting slow lines creep up.
+
+==============================================================================
+13. SUPPLIERS -- who is causing your empty shelves
+==============================================================================
+Suppliers ranked by the sales their short-shipping cost you:
+               supplier_name  orders  fill_rate  lead  credit_days  value_M  lost_M
+     City Abattoir Suppliers    1095       81.2   1.4            0    558.0    82.7
+    Nakasero Produce Vendors    1095       85.7   1.6            0    771.0    69.1
+      Picfare Industries Ltd     341       93.3   5.0           30    139.0    61.4
+      Nice House of Plastics     566       90.6   6.0           14    155.0    52.6
+Ggaba Fish Landing Suppliers    1093       76.0   2.5            0    143.0    32.2
+          House of Dawda (U)    1021       90.2   6.0           21    405.0    23.2
+        Uganda Breweries Ltd     460       94.2   2.0           21    387.0    18.1
+ Quality Cuts Cold Chain Ltd    1047       89.0   4.1           14    261.0    16.2
+Ntake Bakery & Confectionery    1095       91.4   1.1            7    328.0    11.2
+     Procter & Gamble (E.A.)     458       88.9   8.1           30    325.0    11.2
+            Bidco Uganda Ltd     460       93.7   4.0           30    432.0     7.4
+  Mukwano Industries (U) Ltd     490       95.2   3.0           30    623.0     7.4
+
+>> Fill rate is the number to put in front of a supplier at review time.
+   'You delivered 82% of what I ordered and it cost me UGX Xm' is a
+   different conversation from 'your service has been poor'.
+
+==============================================================================
+14. TILL-LEVEL CONTROL -- an exception worth a conversation
+==============================================================================
+Chain median void rate: 1.09%   median EFRIS rate: 97.0%
+
+branch_code  staff_id  tickets  void_pct   x  efris_pct
+        KAB CB-KAB-04     8110      7.41 6.8       74.4
+        NTI CB-NTI-04     7185      1.56 1.4       97.3
+        KAB CB-KAB-02     8088      1.27 1.2       97.1
+        NAK CB-NAK-04     7311      1.22 1.1       97.0
+        NTI CB-NTI-11     7088      1.21 1.1       96.7
+        KAB CB-KAB-03     8113      1.20 1.1       96.9
+
+>> CB-KAB-04 at KAB: 7.4% voids (7x the chain median),
+   and only 74% of tickets fiscalised against a 97% median.
+   Split by time of day: 6.4% voids before 18:00, 10.1% after 18:00.
+   Same branch carries UGX 49,059,125 of unexplained stock loss.
+
+   Three independent signals pointing at one till on one shift. We are NOT
+   alleging anything -- this is what an exception report is for. It tells
+   you exactly where to put a supervisor and a camera for two weeks.
+
+==============================================================================
+15. PROMOTIONS -- did they actually pay?
+==============================================================================
+                    promo  discount  funded  days  unit_lift  incr_margin  basket_lift
+     New Year Soap Bundle      12.0     0.0    19      -30.0    -712089.0         -5.7
+  New Year Detergent Deal      14.0    20.0    19      -19.0    -575263.0         -0.9
+       Festive Rice Promo       8.0     0.0    20       22.0    -470903.0         -7.8
+        Sugar Price Fight       5.0     0.0    31       -2.0    -340063.0          1.8
+Back to School Sugar Deal       7.0     0.0    12       13.0    -215374.0        -10.7
+    Ramadan Staples Offer       8.0    55.0    30        8.0    -155513.0          0.8
+     Easter Chicken Promo      10.0    40.0    10       19.0    -102363.0          3.4
+   Kabalagala Bread Offer       8.0    50.0    31       12.0     -61858.0          9.4
+  Independence Beer Offer       9.0   100.0     8      -28.0     -55119.0         -6.7
+   Ntinda Fresh Milk Deal      10.0   100.0    28       36.0      62512.0         -3.3
+        Festive Oil Promo       6.0    85.0    20       49.0     256541.0         -9.6
+       Term 1 Books Offer      15.0    70.0    16      269.0     527176.0         -1.1
+
+Promos that added margin : UGX 846,229
+Promos that destroyed it : UGX -2,688,545
+Net                      : UGX -1,842,316
+
+Self-funded promos (5): UGX -2,313,692
+Supplier-funded (6) : UGX 573,739
+
+>> This is the whole story. 'unit_lift' says the promo moved volume;
+   'incr_margin' says whether moving it was worth the discount. Nearly
+   every promotion the supplier paid for made money. Nearly every one you
+   funded yourself lost money -- you discounted stock you would have sold
+   anyway. The rule that falls out: no promotion without a written
+   supplier funding agreement behind it.
+
+==============================================================================
+16. CUSTOMERS -- who is actually worth keeping
+==============================================================================
+Loyalty capture: 38% of baskets are identified
+Identified customers: 13,012
+Top 10% of them (1,301 people) = 40.3% of identified spend
+Top 20%                            = 58.5%
+
+Customers with 5+ visits who have not returned in 90 days: 700
+  their combined historic spend: UGX 197,649,850
+  (4.4% of identified spend has gone quiet)
+
+>> This is the cheapest growth available to you. Winning back a customer
+   who already knows the store costs a fraction of finding a new one --
+   and you have their phone number.
+
+==============================================================================
+17. THE PRIZE -- what these findings are worth
+==============================================================================
+      UGX 53,945,012   Recover half the sales lost to stockouts on top lines
+                       -> Fix reorder points for the payday window
+      UGX 26,515,456   Bring Kabalagala's unexplained loss down to the chain average
+                       -> Supervision, till exception reports, stock counts
+      UGX 54,928,490   Cut fresh/bakery spoilage by a quarter
+                       -> Order to demand, mark down earlier, fix the chillers
+      UGX 11,826,282   Stop the next commodity price lag (sugar was the last one)
+                       -> Weekly cost-vs-price review on the top 30 lines
+       UGX 9,487,228   Kill or shrink the slowest 5% of the range
+                       -> Frees working capital, not P&L
+       UGX 2,688,545   Reverse the loss-making promotions
+                       -> Same volume, better terms, or no promo
+
+     UGX 149,903,784   TOTAL annual margin opportunity (excl. capital release)
+                       = 8.4% of current gross margin
+       UGX 9,487,228   one-off working capital release
+
+
+Wrote C:\Users\dell\claude code\uganda-supermarket-analytics\scripts\..\outputs\findings.json

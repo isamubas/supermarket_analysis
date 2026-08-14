@@ -1,0 +1,845 @@
+<title>What we would find in your numbers — supermarket analytics briefing</title>
+
+<style>
+  :root{
+    --paper:#FCFBF8; --raised:#F5F4EE; --ink:#10201A; --ink-2:#33453D;
+    --muted:#5E6E67; --rule:#DEE3DC; --rule-soft:#E9EDE6;
+    --accent:#00704C; --accent-wash:#E3EFE9;
+    --ochre:#B07514; --ochre-wash:#F5EBD9;
+    --critical:#9E2B25; --critical-wash:#F7E5E3;
+    --shadow:0 1px 2px rgba(16,32,26,.05), 0 8px 24px -16px rgba(16,32,26,.28);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#0E1613; --raised:#151F1B; --ink:#E6EDE8; --ink-2:#BDCAC3;
+      --muted:#8DA098; --rule:#22302A; --rule-soft:#1B2621;
+      --accent:#31A375; --accent-wash:#122A21;
+      --ochre:#BC8420; --ochre-wash:#2A2113;
+      --critical:#D9736A; --critical-wash:#2C1917;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1613; --raised:#151F1B; --ink:#E6EDE8; --ink-2:#BDCAC3;
+    --muted:#8DA098; --rule:#22302A; --rule-soft:#1B2621;
+    --accent:#31A375; --accent-wash:#122A21;
+    --ochre:#BC8420; --ochre-wash:#2A2113;
+    --critical:#D9736A; --critical-wash:#2C1917;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+  :root[data-theme="light"]{
+    --paper:#FCFBF8; --raised:#F5F4EE; --ink:#10201A; --ink-2:#33453D;
+    --muted:#5E6E67; --rule:#DEE3DC; --rule-soft:#E9EDE6;
+    --accent:#00704C; --accent-wash:#E3EFE9;
+    --ochre:#B07514; --ochre-wash:#F5EBD9;
+    --critical:#9E2B25; --critical-wash:#F7E5E3;
+    --shadow:0 1px 2px rgba(16,32,26,.05), 0 8px 24px -16px rgba(16,32,26,.28);
+  }
+
+  :root{
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:system-ui,"Segoe UI Variable Text","Segoe UI",Roboto,sans-serif;
+    --mono:ui-monospace,"Cascadia Mono",Consolas,"DejaVu Sans Mono",monospace;
+  }
+
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:system-ui,"Segoe UI Variable Text","Segoe UI",Roboto,sans-serif;
+    font-size:16.5px; line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 28px 96px;}
+  .measure{max-width:68ch;}
+
+  h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif; text-wrap:balance; font-weight:600;}
+  h1{font-size:clamp(2rem,4.4vw,3.1rem); line-height:1.1; letter-spacing:-.015em; margin:0;}
+  h2{font-size:clamp(1.35rem,2.4vw,1.75rem); line-height:1.22; margin:0;}
+  h3{font-size:1.06rem; line-height:1.35; margin:0;}
+  p{margin:0;}
+  a{color:var(--accent);}
+
+  .eyebrow{
+    font-family:var(--sans); font-size:.72rem; font-weight:650;
+    letter-spacing:.13em; text-transform:uppercase; color:var(--muted);
+  }
+  .num{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; font-variant-numeric:tabular-nums;}
+
+  /* ---------- masthead ---------- */
+  header.masthead{padding:64px 0 0;}
+  .rule-heavy{height:3px; background:var(--ink); margin:26px 0 0;}
+  .rule-hair{height:1px; background:var(--rule); margin:0;}
+  .masthead-meta{
+    display:flex; flex-wrap:wrap; gap:8px 28px; padding:12px 0 0; color:var(--muted);
+    font-size:.8rem;
+  }
+  .lede{font-size:1.12rem; color:var(--ink-2); margin-top:24px;}
+
+  .notice{
+    margin-top:32px; padding:16px 20px; border-radius:3px;
+    background:var(--ochre-wash); border-left:3px solid var(--ochre);
+    font-size:.92rem; color:var(--ink-2);
+  }
+  .notice strong{color:var(--ink);}
+
+  /* ---------- sections ---------- */
+  section{margin-top:72px;}
+  .sec-head{display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; margin-bottom:8px;}
+  .sec-head .eyebrow{flex:0 0 auto;}
+  .sec-intro{margin-top:14px; color:var(--ink-2);}
+
+  /* ---------- kpi strip ---------- */
+  .kpis{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:1px; background:var(--rule); border:1px solid var(--rule);
+    margin-top:28px;
+  }
+  .kpi{background:var(--paper); padding:18px 18px 20px;}
+  .kpi .k-label{font-size:.7rem; letter-spacing:.11em; text-transform:uppercase; color:var(--muted); font-weight:650;}
+  .kpi .k-val{
+    font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; font-variant-numeric:tabular-nums;
+    font-size:1.5rem; line-height:1.2; margin-top:8px; letter-spacing:-.02em;
+  }
+  .kpi .k-note{font-size:.78rem; color:var(--muted); margin-top:5px;}
+
+  /* ---------- findings ---------- */
+  .finding{
+    margin-top:34px; padding-top:28px; border-top:1px solid var(--rule);
+    display:grid; grid-template-columns:56px 1fr; gap:0 22px;
+  }
+  .finding:first-of-type{border-top:2px solid var(--ink);}
+  .f-rank{
+    font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+    font-size:1.6rem; color:var(--muted); letter-spacing:-.03em; padding-top:2px;
+  }
+  .f-body{min-width:0;}
+  .f-top{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:10px;}
+  .chip{
+    font-size:.68rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+    padding:4px 9px; border-radius:2px; white-space:nowrap;
+  }
+  .chip.money{background:var(--accent-wash); color:var(--accent);}
+  .chip.risk{background:var(--critical-wash); color:var(--critical);}
+  .chip.watch{background:var(--ochre-wash); color:var(--ochre);}
+  .f-value{
+    font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; font-variant-numeric:tabular-nums;
+    font-size:.82rem; color:var(--muted);
+  }
+  .f-body > p{margin-top:12px; color:var(--ink-2); max-width:66ch;}
+  .f-body > p.first{margin-top:10px; color:var(--ink); font-size:1.03rem;}
+  .action{
+    margin-top:16px; padding:13px 16px; background:var(--raised);
+    border-left:2px solid var(--accent); border-radius:2px;
+    font-size:.93rem; color:var(--ink-2);
+  }
+  .action b{color:var(--ink); font-weight:650;}
+
+  /* ---------- figures ---------- */
+  figure{margin:22px 0 0;}
+  .fig-shell{
+    border:1px solid var(--rule); border-radius:3px; background:var(--raised);
+    padding:18px 18px 10px; overflow-x:auto;
+  }
+  figcaption{font-size:.8rem; color:var(--muted); margin-top:9px; max-width:70ch;}
+  svg{display:block; width:100%; height:auto; min-width:520px;}
+  .legend{display:flex; gap:18px; flex-wrap:wrap; margin-bottom:12px; font-size:.8rem; color:var(--ink-2);}
+  .legend span{display:inline-flex; align-items:center; gap:7px;}
+  .swatch{width:11px; height:11px; border-radius:2px; flex:0 0 auto;}
+
+  .ax{font-size:11.5px; fill:var(--muted); font-family:var(--sans);}
+  .ax-num{font-size:11.5px; fill:var(--muted); font-family:ui-monospace,Consolas,monospace;}
+  .lbl{font-size:12.5px; fill:var(--ink-2); font-family:var(--sans);}
+  .val{font-size:12px; fill:var(--ink); font-family:ui-monospace,Consolas,monospace; font-weight:600;}
+  .grid-line{stroke:var(--rule); stroke-width:1;}
+  .zero-line{stroke:var(--muted); stroke-width:1.5;}
+  .bar{transition:opacity .12s;}
+  @media (prefers-reduced-motion:reduce){ .bar{transition:none;} }
+  g.mark:hover .bar{opacity:.72;}
+
+  /* ---------- tables ---------- */
+  .t-shell{overflow-x:auto; border:1px solid var(--rule); border-radius:3px; margin-top:22px;}
+  table{border-collapse:collapse; width:100%; min-width:520px; font-size:.88rem;}
+  th,td{padding:9px 14px; text-align:left; border-bottom:1px solid var(--rule-soft);}
+  thead th{
+    background:var(--raised); font-size:.7rem; letter-spacing:.09em; text-transform:uppercase;
+    color:var(--muted); font-weight:650; white-space:nowrap; border-bottom:1px solid var(--rule);
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  td.n,th.n{text-align:right; font-family:ui-monospace,Consolas,monospace; font-variant-numeric:tabular-nums; white-space:nowrap;}
+  td.neg{color:var(--critical);}
+  td.pos{color:var(--accent);}
+  tr.flag td{background:var(--critical-wash);}
+
+  /* ---------- checklist ---------- */
+  .cl{display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:26px 34px; margin-top:28px;}
+  .cl-group h3{padding-bottom:9px; border-bottom:1px solid var(--rule); margin-bottom:12px;}
+  .cl-group ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;}
+  .cl-group li{position:relative; padding-left:22px; font-size:.92rem; color:var(--ink-2);}
+  .cl-group li::before{
+    content:""; position:absolute; left:0; top:.55em;
+    width:8px; height:8px; border:1.5px solid var(--accent); border-radius:1px;
+  }
+  .cl-group li b{color:var(--ink); font-weight:650;}
+
+  ol.qs{margin:24px 0 0; padding-left:0; list-style:none; counter-reset:q; display:flex; flex-direction:column; gap:14px;}
+  ol.qs li{counter-increment:q; position:relative; padding-left:40px; color:var(--ink-2); max-width:70ch;}
+  ol.qs li::before{
+    content:counter(q,decimal-leading-zero);
+    position:absolute; left:0; top:.05em;
+    font-family:ui-monospace,Consolas,monospace; font-size:.82rem; color:var(--accent); font-weight:700;
+  }
+  ol.qs li b{color:var(--ink); font-weight:650;}
+
+  footer{margin-top:80px; padding-top:22px; border-top:2px solid var(--ink); color:var(--muted); font-size:.84rem;}
+
+  @media (max-width:620px){
+    .wrap{padding:0 18px 72px;}
+    .finding{grid-template-columns:1fr; gap:0;}
+    .f-rank{font-size:1.1rem; padding-bottom:6px;}
+  }
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <div class="eyebrow">Pre-engagement briefing &middot; Retail analytics</div>
+  <div class="rule-heavy"></div>
+  <h1 style="margin-top:26px;">What we would find<br>in your numbers</h1>
+  <div class="masthead-meta">
+    <span>A worked example on a simulated Kampala supermarket chain</span>
+    <span class="num">FY2025/26 &middot; 3 branches &middot; 354 SKUs</span>
+  </div>
+  <div class="rule-hair" style="margin-top:18px;"></div>
+
+  <p class="lede measure">
+    Before we ask you for a single file, here is the analysis we would run — done end to end
+    on a dataset we built to behave like a Ugandan supermarket really behaves. Payday on the
+    28th, three school terms, Ramadan and the festive season, the January election, two rainy
+    seasons, load shedding, EFRIS, mobile money, and suppliers who deliver 80% of what you ordered.
+  </p>
+
+  <div class="notice measure">
+    <strong>This is not your data, and it is not anyone's data.</strong> Every figure on this page comes
+    from a simulated chain we generated ourselves, so that we could show you our method without
+    touching a real business's books. The numbers are invented. The <em>questions</em>, the analysis,
+    and the failure modes are the real ones, and they are what we would bring to your shop floor.
+  </div>
+</header>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">The simulated business</span>
+  </div>
+  <div class="kpis">
+    <div class="kpi">
+      <div class="k-label">Turnover</div>
+      <div class="k-val">9.46bn</div>
+      <div class="k-note">UGX, 12 months</div>
+    </div>
+    <div class="kpi">
+      <div class="k-label">Gross margin</div>
+      <div class="k-val">18.9%</div>
+      <div class="k-note">19.6% excluding airtime</div>
+    </div>
+    <div class="kpi">
+      <div class="k-label">Baskets</div>
+      <div class="k-val">288,007</div>
+      <div class="k-note">263 per branch per day</div>
+    </div>
+    <div class="kpi">
+      <div class="k-label">Average basket</div>
+      <div class="k-val">32,890</div>
+      <div class="k-note">UGX, 4.7 units</div>
+    </div>
+    <div class="kpi">
+      <div class="k-label">Identified on loyalty</div>
+      <div class="k-val">38%</div>
+      <div class="k-note">of baskets</div>
+    </div>
+  </div>
+  <p class="sec-intro measure">
+    Three branches — Ntinda, Nakawa and Kabalagala — trading through Uganda's financial year.
+    1.3&nbsp;million line items, daily stock positions per SKU per branch, supplier deliveries,
+    shrinkage records and the loyalty file. That is roughly the shape of what sits inside your
+    POS and stock system today.
+  </p>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Findings, ranked by what they are worth</span>
+  </div>
+  <h2 class="measure" style="margin-top:10px;">Six things the year's data says out loud</h2>
+  <p class="sec-intro measure">
+    Ranked by annual margin at stake, largest first. Every figure below was computed from the
+    transaction and stock files — none of it is assumed.
+  </p>
+
+  <!-- 01 -->
+  <article class="finding">
+    <div class="f-rank">01</div>
+    <div class="f-body">
+      <div class="f-top">
+        <span class="chip money">Money on the table</span>
+        <span class="f-value">UGX 54.9m/yr</span>
+      </div>
+      <h3>Spoilage is concentrated in one department, and the power cuts make it worse</h3>
+      <p class="first">
+        Waste runs at UGX&nbsp;219.7m a year — 2.3% of turnover. Butchery and fish alone account for
+        UGX&nbsp;97.8m of it, nearly half, before dairy, bakery and produce.
+      </p>
+      <p>
+        The cold chain shows up clearly in the daily numbers. On days with a grid outage, chilled and
+        frozen waste averages UGX&nbsp;1.08m against UGX&nbsp;385,000 on clean days — every outage day
+        costs about <span class="num">UGX&nbsp;690,000</span> in stock that did not survive. Kabalagala,
+        the smallest branch, wastes the most in absolute terms, which points at the chillers rather
+        than at the ordering.
+      </p>
+      <div class="action">
+        <b>What we would do:</b> order fresh to a demand forecast rather than to last week's number,
+        introduce a timed markdown rather than a bin, and put a cost against the generator decision —
+        right now the outages are being paid for in meat instead of fuel.
+      </div>
+    </div>
+  </article>
+
+  <!-- 02 -->
+  <article class="finding">
+    <div class="f-rank">02</div>
+    <div class="f-body">
+      <div class="f-top">
+        <span class="chip money">Money on the table</span>
+        <span class="f-value">UGX 53.9m/yr</span>
+      </div>
+      <h3>You run out of stock exactly when your customers have money</h3>
+      <p class="first">
+        UGX&nbsp;455m of demand walked out of the door unserved — 4.8% of turnover, and 6.0% of the
+        gross margin you actually earned. It is invisible in the till roll, because a sale that never
+        happened leaves no record. It only appears when you join sales to daily stock.
+      </p>
+      <p>
+        Lines are out of stock 1.6% of SKU-days on average. In the payday window — the 25th to the
+        3rd — that rises to 2.4%, against 1.3% through the rest of the month. Nearly twice as bad in
+        the eight days that carry <span class="num">38%</span> of your turnover. The cause is
+        mechanical: reorder points are set off an annual average that knows nothing about the 28th.
+      </p>
+      <div class="action">
+        <b>What we would do:</b> re-cut reorder points for the top 60 lines with a month-end uplift,
+        and hold a standing pre-payday order with the three suppliers who cause most of the gaps.
+      </div>
+    </div>
+  </article>
+
+  <!-- 03 -->
+  <article class="finding">
+    <div class="f-rank">03</div>
+    <div class="f-body">
+      <div class="f-top">
+        <span class="chip risk">Control risk</span>
+        <span class="f-value">UGX 26.5m/yr</span>
+      </div>
+      <h3>One branch, one till, one shift — three signals that all point the same way</h3>
+      <p class="first">
+        Unexplained stock variance — loss that is neither sold nor recorded as waste — runs at
+        1.99% of sales at Kabalagala against 0.36% at Ntinda and 0.27% at Nakawa. Kabalagala is the
+        smallest branch and loses <span class="num">UGX&nbsp;49.1m</span>, more than the other two
+        combined and tripled.
+      </p>
+
+      <figure>
+        <div class="fig-shell">
+          <svg viewBox="0 0 660 186" role="img" aria-label="Unexplained stock loss as a percentage of branch sales: Kabalagala 1.99%, Ntinda 0.36%, Nakawa 0.27%">
+            <line class="grid-line" x1="150" y1="18" x2="150" y2="168"></line>
+            <g class="mark">
+              <title>Kabalagala — 1.99% of sales, UGX 49.1m</title>
+              <text class="lbl" x="138" y="46" text-anchor="end">Kabalagala</text>
+              <rect class="bar" x="150" y="30" width="418" height="24" rx="3" fill="var(--critical)"></rect>
+              <text class="val" x="578" y="47">1.99%</text>
+            </g>
+            <g class="mark">
+              <title>Ntinda — 0.36% of sales, UGX 14.2m</title>
+              <text class="lbl" x="138" y="96" text-anchor="end">Ntinda</text>
+              <rect class="bar" x="150" y="80" width="75" height="24" rx="3" fill="var(--accent)"></rect>
+              <text class="val" x="235" y="97">0.36%</text>
+            </g>
+            <g class="mark">
+              <title>Nakawa — 0.27% of sales, UGX 8.1m</title>
+              <text class="lbl" x="138" y="146" text-anchor="end">Nakawa</text>
+              <rect class="bar" x="150" y="130" width="56" height="24" rx="3" fill="var(--accent)"></rect>
+              <text class="val" x="216" y="147">0.27%</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption>Unexplained stock variance as a share of each branch's own sales, so branch size is taken out of the comparison.</figcaption>
+      </figure>
+
+      <p>
+        The loss is not spread evenly. It sits on small, high-value, easily-pocketed lines: spirits and
+        beer, personal care, baby formula, tea and coffee. Alcohol alone is ten times the level of the
+        other two branches.
+      </p>
+      <p>
+        Independently of the stock records, the till data flags the same branch. One operator voids
+        7.4% of their tickets against a chain median of 1.1%, and their voids climb to 10.1% after
+        18:00 once the supervisor has left. The same till fiscalises only 74% of its tickets on EFRIS
+        against a 97% median.
+      </p>
+
+      <div class="t-shell">
+        <table>
+          <thead>
+            <tr><th>Branch</th><th>Operator</th><th class="n">Tickets</th><th class="n">Void rate</th><th class="n">vs median</th><th class="n">EFRIS</th></tr>
+          </thead>
+          <tbody>
+            <tr class="flag"><td>Kabalagala</td><td class="num">CB-KAB-04</td><td class="n">8,110</td><td class="n">7.41%</td><td class="n">6.8&times;</td><td class="n">74.4%</td></tr>
+            <tr><td>Ntinda</td><td class="num">CB-NTI-04</td><td class="n">7,185</td><td class="n">1.56%</td><td class="n">1.4&times;</td><td class="n">97.3%</td></tr>
+            <tr><td>Kabalagala</td><td class="num">CB-KAB-02</td><td class="n">8,088</td><td class="n">1.27%</td><td class="n">1.2&times;</td><td class="n">97.1%</td></tr>
+            <tr><td>Nakawa</td><td class="num">CB-NAK-04</td><td class="n">7,311</td><td class="n">1.22%</td><td class="n">1.1&times;</td><td class="n">97.0%</td></tr>
+            <tr><td>Ntinda</td><td class="num">CB-NTI-11</td><td class="n">7,088</td><td class="n">1.21%</td><td class="n">1.2&times;</td><td class="n">96.7%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="action">
+        <b>What we would do:</b> nothing accusatory. Three independent signals converging on one till
+        on one shift is what an exception report is for — it tells you precisely where to put a
+        supervisor, a stock count and a camera for two weeks. If the pattern disappears, you have your
+        answer. If it does not, you have ruled something out cheaply.
+      </div>
+    </div>
+  </article>
+
+  <!-- 04 -->
+  <article class="finding">
+    <div class="f-rank">04</div>
+    <div class="f-body">
+      <div class="f-top">
+        <span class="chip watch">Pricing discipline</span>
+        <span class="f-value">UGX 11.8m/yr</span>
+      </div>
+      <h3>Sugar was sold below cost for three months and nobody noticed</h3>
+      <p class="first">
+        Mill prices moved in November. The shelf price did not catch up until February. For twelve
+        weeks over the busiest trading period of the year, sugar carried a negative gross margin —
+        the store paid customers to take it away.
+      </p>
+
+      <figure>
+        <div class="fig-shell">
+          <svg viewBox="0 0 660 268" role="img" aria-label="Sugar gross margin by month: about 8.5% July to October, falling to 1.3% in November, minus 3.7% in December and minus 3.9% in January, recovering to 12.6% by March and 11.3% in June">
+            <line class="grid-line" x1="40" y1="30" x2="640" y2="30"></line>
+            <text class="ax-num" x="34" y="34" text-anchor="end">14%</text>
+            <line class="zero-line" x1="40" y1="192" x2="640" y2="192"></line>
+            <text class="ax-num" x="34" y="196" text-anchor="end">0%</text>
+            <line class="grid-line" x1="40" y1="250" x2="640" y2="250" stroke-dasharray="2 3"></line>
+            <text class="ax-num" x="34" y="254" text-anchor="end">-5%</text>
+
+            <g class="mark"><title>Jul 2025 — 8.5%</title><rect class="bar" x="56" y="93" width="34" height="99" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>Aug 2025 — 8.7%</title><rect class="bar" x="104" y="91" width="34" height="101" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>Sep 2025 — 8.1%</title><rect class="bar" x="152" y="99" width="34" height="93" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>Oct 2025 — 8.7%</title><rect class="bar" x="200" y="91" width="34" height="101" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>Nov 2025 — 1.3%</title><rect class="bar" x="248" y="177" width="34" height="15" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>Dec 2025 — minus 3.7%</title><rect class="bar" x="296" y="192" width="34" height="43" rx="3" fill="var(--critical)"></rect><text class="val" x="313" y="252" text-anchor="middle" fill="var(--critical)">-3.7</text></g>
+            <g class="mark"><title>Jan 2026 — minus 3.9%</title><rect class="bar" x="344" y="192" width="34" height="45" rx="3" fill="var(--critical)"></rect><text class="val" x="361" y="252" text-anchor="middle" fill="var(--critical)">-3.9</text></g>
+            <g class="mark"><title>Feb 2026 — 8.1%</title><rect class="bar" x="392" y="99" width="34" height="93" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>Mar 2026 — 12.6%</title><rect class="bar" x="440" y="47" width="34" height="145" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>Apr 2026 — 12.7%</title><rect class="bar" x="488" y="45" width="34" height="147" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>May 2026 — 11.8%</title><rect class="bar" x="536" y="56" width="34" height="136" rx="3" fill="var(--accent)"></rect></g>
+            <g class="mark"><title>Jun 2026 — 11.3%</title><rect class="bar" x="584" y="61" width="34" height="131" rx="3" fill="var(--accent)"></rect></g>
+
+            <text class="ax" x="73"  y="266" text-anchor="middle">Jul</text>
+            <text class="ax" x="121" y="266" text-anchor="middle">Aug</text>
+            <text class="ax" x="169" y="266" text-anchor="middle">Sep</text>
+            <text class="ax" x="217" y="266" text-anchor="middle">Oct</text>
+            <text class="ax" x="265" y="266" text-anchor="middle">Nov</text>
+            <text class="ax" x="313" y="266" text-anchor="middle">Dec</text>
+            <text class="ax" x="361" y="266" text-anchor="middle">Jan</text>
+            <text class="ax" x="409" y="266" text-anchor="middle">Feb</text>
+            <text class="ax" x="457" y="266" text-anchor="middle">Mar</text>
+            <text class="ax" x="505" y="266" text-anchor="middle">Apr</text>
+            <text class="ax" x="553" y="266" text-anchor="middle">May</text>
+            <text class="ax" x="601" y="266" text-anchor="middle">Jun</text>
+          </svg>
+        </div>
+        <figcaption>Sugar gross margin by month, measured against the cost in force in the month of sale. Negative months are labelled directly.</figcaption>
+      </figure>
+
+      <p>
+        Sugar is a known-value item — one of the handful of lines a Kampala shopper prices in their
+        head before deciding where to shop. You may well <em>choose</em> to hold the price and absorb
+        the squeeze to protect footfall. That is a legitimate strategy. But it has to be a decision
+        made in November, not a discovery made in June.
+      </p>
+      <div class="action">
+        <b>What we would do:</b> a weekly cost-versus-price review on the top 30 lines, with an alert
+        the moment landed cost crosses shelf price. Ten minutes a week.
+      </div>
+    </div>
+  </article>
+
+  <!-- 05 -->
+  <article class="finding">
+    <div class="f-rank">05</div>
+    <div class="f-body">
+      <div class="f-top">
+        <span class="chip money">Money on the table</span>
+        <span class="f-value">UGX 2.7m/yr, and a rule worth more</span>
+      </div>
+      <h3>The promotions that made money were the ones your supplier paid for</h3>
+      <p class="first">
+        Twelve promotions ran during the year. Split them by who funded the discount and the pattern
+        is not subtle: the five you funded yourself lost <span class="num">UGX&nbsp;2.31m</span> between
+        them. The six with real supplier funding behind them made <span class="num">UGX&nbsp;0.57m</span>.
+      </p>
+
+      <div class="t-shell">
+        <table>
+          <thead>
+            <tr><th>Promotion</th><th class="n">Discount</th><th class="n">Supplier funded</th><th class="n">Volume lift</th><th class="n">Incremental margin</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Term 1 Books Offer</td><td class="n">15%</td><td class="n">70%</td><td class="n">+269%</td><td class="n pos">+527,176</td></tr>
+            <tr><td>Festive Oil Promo</td><td class="n">6%</td><td class="n">85%</td><td class="n">+49%</td><td class="n pos">+256,541</td></tr>
+            <tr><td>Ntinda Fresh Milk Deal</td><td class="n">10%</td><td class="n">100%</td><td class="n">+36%</td><td class="n pos">+62,512</td></tr>
+            <tr><td>Back to School Sugar Deal</td><td class="n">7%</td><td class="n">0%</td><td class="n">+13%</td><td class="n neg">&minus;215,374</td></tr>
+            <tr><td>Sugar Price Fight</td><td class="n">5%</td><td class="n">0%</td><td class="n">&minus;2%</td><td class="n neg">&minus;340,063</td></tr>
+            <tr><td>Festive Rice Promo</td><td class="n">8%</td><td class="n">0%</td><td class="n">+22%</td><td class="n neg">&minus;470,903</td></tr>
+            <tr><td>New Year Detergent Deal</td><td class="n">14%</td><td class="n">20%</td><td class="n">&minus;19%</td><td class="n neg">&minus;575,263</td></tr>
+            <tr class="flag"><td>New Year Soap Bundle</td><td class="n">12%</td><td class="n">0%</td><td class="n">&minus;30%</td><td class="n neg">&minus;712,089</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Note the Festive Rice Promo: volume rose 22% and it still lost money. Moving more units and
+        making more money are different questions, and a discount on stock you were going to sell
+        anyway is simply a gift. Note too the soap and detergent deals, where volume actually
+        <em>fell</em> during the promotion — January is a school-fees month, and no discount was
+        going to change that.
+      </p>
+      <div class="action">
+        <b>What we would do:</b> one rule — no promotion goes on the shelf without a written funding
+        agreement behind it, and every promotion gets an incremental-margin read two weeks after it ends.
+      </div>
+    </div>
+  </article>
+
+  <!-- 06 -->
+  <article class="finding">
+    <div class="f-rank">06</div>
+    <div class="f-body">
+      <div class="f-top">
+        <span class="chip watch">Capital, not P&amp;L</span>
+        <span class="f-value">UGX 9.5m released</span>
+      </div>
+      <h3>A quarter of the range earns 5% of the sales</h3>
+      <p class="first">
+        165 SKUs — under half the range — produce 80% of sales. At the other end, 89 SKUs make 5.1%
+        of sales while holding <span class="num">UGX&nbsp;19.0m</span> of stock at cost.
+      </p>
+      <p>
+        The cause is case packs, not bad buying. A line selling two units a month still arrives in a
+        case of six and still needs a facing, so the shelf holds months of cover. Non-stick cookware
+        sits on 277 days of stock. A baby car seat, 103 days. Hennessy, 68 days at
+        UGX&nbsp;816,000 of tied-up cash.
+      </p>
+      <div class="action">
+        <b>What we would do:</b> a range review that asks of each tail line — does it earn its
+        facing, does it pull a basket that would otherwise not come in, or is it just capital asleep?
+        Some slow lines genuinely earn their place. Most of these do not.
+      </div>
+    </div>
+  </article>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">The pattern behind the findings</span></div>
+  <h2 class="measure" style="margin-top:10px;">Revenue is not the same thing as profit, and the gap is where the decisions are</h2>
+  <p class="sec-intro measure">
+    Ranked by share of sales, the categories at the top of the store are not the ones paying for it.
+    Cooking oil is the single biggest line on the sales report and delivers less than half its share
+    of the margin. Fresh produce is less than two-thirds the size and delivers half as much again.
+  </p>
+
+  <figure>
+    <div class="fig-shell">
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--accent)"></span>Share of sales</span>
+        <span><span class="swatch" style="background:var(--ochre)"></span>Share of gross margin</span>
+      </div>
+      <svg viewBox="0 0 660 452" role="img" aria-label="Paired bars comparing each category's share of sales with its share of gross margin. Cooking oil, sugar and airtime deliver far less margin share than sales share; fresh produce, personal care and home and kitchen deliver more.">
+        <line class="grid-line" x1="196" y1="16" x2="196" y2="436"></line>
+
+        <g class="mark"><title>Cooking Oil &amp; Fats — 9.3% of sales, 4.6% of margin, 9.4% GM</title>
+          <text class="lbl" x="188" y="36" text-anchor="end">Cooking Oil &amp; Fats</text>
+          <rect class="bar" x="196" y="22" width="382" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="36" width="189" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Butchery &amp; Fish — 8.6% of sales, 9.0% of margin</title>
+          <text class="lbl" x="188" y="72" text-anchor="end">Butchery &amp; Fish</text>
+          <rect class="bar" x="196" y="58" width="351" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="72" width="370" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Household Cleaning — 8.4% of sales, 9.3% of margin</title>
+          <text class="lbl" x="188" y="108" text-anchor="end">Household Cleaning</text>
+          <rect class="bar" x="196" y="94" width="345" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="108" width="381" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Staples &amp; Grains — 8.1% of sales, 6.6% of margin</title>
+          <text class="lbl" x="188" y="144" text-anchor="end">Staples &amp; Grains</text>
+          <rect class="bar" x="196" y="130" width="333" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="144" width="271" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Beverages – Alcohol — 7.5% of sales, 6.9% of margin</title>
+          <text class="lbl" x="188" y="180" text-anchor="end">Beverages &ndash; Alcohol</text>
+          <rect class="bar" x="196" y="166" width="306" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="180" width="283" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Personal Care — 6.9% of sales, 9.7% of margin, 26.3% GM</title>
+          <text class="lbl" x="188" y="216" text-anchor="end">Personal Care</text>
+          <rect class="bar" x="196" y="202" width="284" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="216" width="396" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Fresh Produce — 6.3% of sales, 9.6% of margin, 28.4% GM</title>
+          <text class="lbl" x="188" y="252" text-anchor="end">Fresh Produce</text>
+          <rect class="bar" x="196" y="238" width="260" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="252" width="392" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Dairy &amp; Eggs — 5.9% of sales, 5.1% of margin</title>
+          <text class="lbl" x="188" y="288" text-anchor="end">Dairy &amp; Eggs</text>
+          <rect class="bar" x="196" y="274" width="242" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="288" width="209" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Baby Care — 5.4% of sales, 5.3% of margin</title>
+          <text class="lbl" x="188" y="324" text-anchor="end">Baby Care</text>
+          <rect class="bar" x="196" y="310" width="221" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="324" width="216" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Sugar &amp; Sweeteners — 5.0% of sales, 1.7% of margin, 6.5% GM</title>
+          <text class="lbl" x="188" y="360" text-anchor="end">Sugar &amp; Sweeteners</text>
+          <rect class="bar" x="196" y="346" width="204" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="360" width="70" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+        <g class="mark"><title>Airtime &amp; Mobile Money — 4.3% of sales, 0.8% of margin, 3.5% GM</title>
+          <text class="lbl" x="188" y="396" text-anchor="end">Airtime &amp; Yaka</text>
+          <rect class="bar" x="196" y="382" width="178" height="12" rx="3" fill="var(--accent)"></rect>
+          <rect class="bar" x="196" y="396" width="33" height="12" rx="3" fill="var(--ochre)"></rect>
+        </g>
+
+        <text class="ax-num" x="196" y="430">0%</text>
+        <text class="ax-num" x="401" y="430" text-anchor="middle">5%</text>
+        <text class="ax-num" x="606" y="430" text-anchor="middle">10%</text>
+      </svg>
+    </div>
+    <figcaption>Top 11 categories by share of sales. Where the ochre bar is shorter than the green one, the category is consuming shelf space and working capital out of proportion to what it contributes.</figcaption>
+  </figure>
+
+  <p class="measure" style="margin-top:24px; color:var(--ink-2);">
+    Airtime deserves a separate word. It is 4.3% of what the sales report calls turnover and 0.8% of
+    the margin, because a UGX&nbsp;10,000 top-up earns roughly UGX&nbsp;350. Booking it on the same line
+    as groceries drags the blended margin from 19.6% down to 18.9% and quietly distorts every
+    like-for-like comparison you make. It belongs in its own report as commission income.
+  </p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">Operations</span></div>
+  <h2 class="measure" style="margin-top:10px;">The roster is flat and the day is not</h2>
+  <p class="sec-intro measure">
+    Trading peaks hard between 17:00 and 19:00 as Kampala comes home, and again all day Saturday.
+    The cashier roster barely moves. Measured properly — baskets per rostered cashier-hour — the
+    evening peak runs at nearly four times the pressure of the morning.
+  </p>
+
+  <figure>
+    <div class="fig-shell">
+      <svg viewBox="0 0 660 246" role="img" aria-label="Baskets per rostered cashier by hour of day, rising from 1.9 at 7am to a peak of 7.0 at 6pm before falling to 1.6 at 9pm. The daily average is 4.5.">
+        <line class="grid-line" x1="40" y1="200" x2="640" y2="200"></line>
+        <line class="grid-line" x1="40" y1="98" x2="640" y2="98" stroke-dasharray="4 4"></line>
+        <text class="ax-num" x="34" y="102" text-anchor="end">4.5</text>
+        <text class="ax" x="46" y="90">daily average</text>
+
+        <g class="mark"><title>07:00 — 1.9 baskets per cashier</title><rect class="bar" x="52"  y="157" width="28" height="43"  rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>08:00 — 3.3</title><rect class="bar" x="91"  y="126" width="28" height="74"  rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>09:00 — 3.6</title><rect class="bar" x="130" y="119" width="28" height="81"  rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>10:00 — 4.0</title><rect class="bar" x="169" y="109" width="28" height="91"  rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>11:00 — 4.9</title><rect class="bar" x="208" y="89"  width="28" height="111" rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>12:00 — 5.4</title><rect class="bar" x="247" y="78"  width="28" height="122" rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>13:00 — 5.5</title><rect class="bar" x="286" y="75"  width="28" height="125" rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>14:00 — 4.8</title><rect class="bar" x="325" y="92"  width="28" height="108" rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>15:00 — 4.4</title><rect class="bar" x="364" y="101" width="28" height="99"  rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>16:00 — 4.7</title><rect class="bar" x="403" y="93"  width="28" height="107" rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>17:00 — 6.5 baskets per cashier</title><rect class="bar" x="442" y="53"  width="28" height="147" rx="3" fill="var(--accent)"></rect><text class="val" x="456" y="45" text-anchor="middle">6.5</text></g>
+        <g class="mark"><title>18:00 — 7.0, the busiest hour of the day</title><rect class="bar" x="481" y="41"  width="28" height="159" rx="3" fill="var(--accent)"></rect><text class="val" x="495" y="33" text-anchor="middle">7.0</text></g>
+        <g class="mark"><title>19:00 — 6.2</title><rect class="bar" x="520" y="60"  width="28" height="140" rx="3" fill="var(--accent)"></rect><text class="val" x="534" y="52" text-anchor="middle">6.2</text></g>
+        <g class="mark"><title>20:00 — 3.9</title><rect class="bar" x="559" y="112" width="28" height="88"  rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+        <g class="mark"><title>21:00 — 1.6</title><rect class="bar" x="598" y="163" width="28" height="37"  rx="3" fill="var(--accent)" opacity=".42"></rect></g>
+
+        <text class="ax" x="66"  y="220" text-anchor="middle">7</text>
+        <text class="ax" x="105" y="220" text-anchor="middle">8</text>
+        <text class="ax" x="144" y="220" text-anchor="middle">9</text>
+        <text class="ax" x="183" y="220" text-anchor="middle">10</text>
+        <text class="ax" x="222" y="220" text-anchor="middle">11</text>
+        <text class="ax" x="261" y="220" text-anchor="middle">12</text>
+        <text class="ax" x="300" y="220" text-anchor="middle">13</text>
+        <text class="ax" x="339" y="220" text-anchor="middle">14</text>
+        <text class="ax" x="378" y="220" text-anchor="middle">15</text>
+        <text class="ax" x="417" y="220" text-anchor="middle">16</text>
+        <text class="ax" x="456" y="220" text-anchor="middle">17</text>
+        <text class="ax" x="495" y="220" text-anchor="middle">18</text>
+        <text class="ax" x="534" y="220" text-anchor="middle">19</text>
+        <text class="ax" x="573" y="220" text-anchor="middle">20</text>
+        <text class="ax" x="612" y="220" text-anchor="middle">21</text>
+        <text class="ax" x="340" y="240" text-anchor="middle">Hour of day</text>
+      </svg>
+    </div>
+    <figcaption>Baskets per rostered cashier-hour, all branches. Plotted as one derived measure rather than two — comparing raw basket counts against headcount on two scales would flatter the roster.</figcaption>
+  </figure>
+
+  <p class="measure" style="margin-top:24px; color:var(--ink-2);">
+    The same flatness shows up across the month: 5.1 baskets per cashier-hour in the payday window
+    against 4.3 through the rest of the month. Saturday takes UGX&nbsp;37.8m against Tuesday's
+    UGX&nbsp;21.1m — nearly double the trade on roughly the same cover. Queues at the peak are not a
+    staffing shortage; they are a scheduling one.
+  </p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">The prize</span></div>
+  <h2 class="measure" style="margin-top:10px;">UGX 149.9m a year, on a 19% margin business</h2>
+  <p class="sec-intro measure">
+    Adding the recoverable portion of each finding — conservatively, not the whole loss — gives
+    <span class="num">UGX&nbsp;149.9m</span> of annual margin, 8.4% of what the chain currently earns.
+    On top of that sits a one-off working capital release from the range review.
+  </p>
+
+  <figure>
+    <div class="fig-shell">
+      <svg viewBox="0 0 660 306" role="img" aria-label="Annual margin opportunity by finding: fresh and bakery spoilage 54.9 million, stockouts 53.9 million, Kabalagala stock loss 26.5 million, commodity price lag 11.8 million, loss-making promotions 2.7 million, plus 9.5 million of working capital from dead stock.">
+        <line class="grid-line" x1="245" y1="14" x2="245" y2="290"></line>
+
+        <g class="mark"><title>Cut fresh and bakery spoilage by a quarter — UGX 54.9m</title>
+          <text class="lbl" x="237" y="40" text-anchor="end">Fresh &amp; bakery spoilage</text>
+          <rect class="bar" x="245" y="26" width="369" height="22" rx="3" fill="var(--accent)"></rect>
+          <text class="val" x="622" y="41">54.9</text>
+        </g>
+        <g class="mark"><title>Recover half the sales lost to stockouts — UGX 53.9m</title>
+          <text class="lbl" x="237" y="84" text-anchor="end">Stockouts on top lines</text>
+          <rect class="bar" x="245" y="70" width="363" height="22" rx="3" fill="var(--accent)"></rect>
+          <text class="val" x="616" y="85">53.9</text>
+        </g>
+        <g class="mark"><title>Bring Kabalagala's unexplained loss to the chain average — UGX 26.5m</title>
+          <text class="lbl" x="237" y="128" text-anchor="end">Kabalagala stock loss</text>
+          <rect class="bar" x="245" y="114" width="178" height="22" rx="3" fill="var(--accent)"></rect>
+          <text class="val" x="431" y="129">26.5</text>
+        </g>
+        <g class="mark"><title>Stop the next commodity price lag — UGX 11.8m</title>
+          <text class="lbl" x="237" y="172" text-anchor="end">Commodity price lag</text>
+          <rect class="bar" x="245" y="158" width="79" height="22" rx="3" fill="var(--accent)"></rect>
+          <text class="val" x="332" y="173">11.8</text>
+        </g>
+        <g class="mark"><title>Reverse the loss-making promotions — UGX 2.7m</title>
+          <text class="lbl" x="237" y="216" text-anchor="end">Loss-making promos</text>
+          <rect class="bar" x="245" y="202" width="18" height="22" rx="3" fill="var(--accent)"></rect>
+          <text class="val" x="271" y="217">2.7</text>
+        </g>
+        <g class="mark"><title>Range review releases UGX 9.5m of working capital — not margin</title>
+          <text class="lbl" x="237" y="260" text-anchor="end">Dead stock (capital)</text>
+          <rect class="bar" x="245" y="246" width="64" height="22" rx="3" fill="none" stroke="var(--ochre)" stroke-width="1.5" stroke-dasharray="4 3"></rect>
+          <text class="val" x="317" y="261" fill="var(--ochre)">9.5</text>
+        </g>
+
+        <text class="ax" x="245" y="286">UGX millions per year</text>
+        <text class="ax" x="640" y="286" text-anchor="end">Dashed = one-off capital release, not margin</text>
+      </svg>
+    </div>
+    <figcaption>Recoverable portion of each finding. Deliberately conservative — half of lost stockout margin, a quarter of spoilage, Kabalagala brought only to the chain average rather than to zero.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">Method</span></div>
+  <h2 class="measure" style="margin-top:10px;">What most analyses of a Ugandan supermarket miss</h2>
+  <p class="sec-intro measure">
+    This is the part we would want to talk through with you, because it is where a generic retail
+    analysis goes wrong. None of these are exotic. All of them change the answer.
+  </p>
+
+  <div class="cl">
+    <div class="cl-group">
+      <h3>Traps inside the data itself</h3>
+      <ul>
+        <li><b>Voided tickets stay in the export.</b> In our year, 3,718 voids worth UGX&nbsp;122.7m. The line-item table carries no void flag at all — sum it raw and you have overstated turnover before you start.</li>
+        <li><b>Returns are negative lines.</b> Sum quantity without checking the sign and both units and margin are wrong.</li>
+        <li><b>Airtime and Yaka are not turnover.</b> They are commission at 3.5%. Left in the sales line they distort every margin percentage in the business.</li>
+        <li><b>Margin must use the cost in force on the day of sale</b>, not today's cost. Otherwise the sugar squeeze is invisible.</li>
+        <li><b>Stockouts leave no trace in the POS.</b> A sale that did not happen has no row. You have to join to daily stock to see it.</li>
+        <li><b>Shrinkage is two different problems.</b> Spoilage is an ordering and cold-chain issue; unexplained variance is a control issue. Reported as one number, neither gets fixed.</li>
+      </ul>
+    </div>
+
+    <div class="cl-group">
+      <h3>The Ugandan calendar</h3>
+      <ul>
+        <li><b>The month runs on payday, not on the 1st.</b> The 25th to the 3rd is 31% of the days and 38% of the turnover. Any weekly average hides it.</li>
+        <li><b>Three school terms, not one back-to-school.</b> Half the year's stationery sells in three months. Miss the window and the stock sits until the next term.</li>
+        <li><b>Ramadan and both Eids</b> shift the basket — staples and soft drinks up, alcohol down — and they move each year.</li>
+        <li><b>Festive December</b> was 13% of the year's sales in one month, at the year's <em>lowest</em> margin.</li>
+        <li><b>The January 2026 election.</b> Households stocked up 4% above baseline the week before, then trade fell 57% during the week of the vote.</li>
+        <li><b>Two rainy seasons.</b> Rainy days trade 12.5% below dry days — a real effect that will otherwise be blamed on staff.</li>
+        <li><b>Load shedding.</b> Outage days cost UGX&nbsp;690,000 in cold-chain stock.</li>
+      </ul>
+    </div>
+
+    <div class="cl-group">
+      <h3>Tax, tender and compliance</h3>
+      <ul>
+        <li><b>EFRIS fiscalisation rates by till and by shift.</b> A 3.6% gap here is a URA exposure, and it is also one of the sharpest fraud signals you have.</li>
+        <li><b>VAT-exempt versus standard-rated mix.</b> Unprocessed foods sit outside VAT; packaged goods do not. Category margin is meaningless until that is separated — and the treatment of specific lines is worth confirming with your accountant rather than assuming.</li>
+        <li><b>Mobile money is 37% of tender and rising</b> — 34.5% in the first half, 40.4% in the second. Whoever absorbs those charges is absorbing a growing cost.</li>
+        <li><b>Card MDR against basket size.</b> Card baskets average UGX&nbsp;45,651 against UGX&nbsp;31,559 on cash, which changes whether the fee is worth paying.</li>
+        <li><b>Cash handling has a cost too</b> — banking, transit, float, and the risk. It is not free just because there is no invoice.</li>
+      </ul>
+    </div>
+
+    <div class="cl-group">
+      <h3>Trade and supply</h3>
+      <ul>
+        <li><b>Supplier fill rate, measured.</b> Our worst supplier delivered 76% of what was ordered. "Your service has been poor" is a weaker conversation than "you delivered 81% and it cost me UGX&nbsp;82.7m."</li>
+        <li><b>Case-pack size drives dead stock</b> more than buying decisions do. You cannot order seven of something that comes in twelves.</li>
+        <li><b>Supplier credit against inventory days.</b> Here, 10.6 days of stock against 16.5 days of credit — the suppliers are financing the working capital, which is a real strength worth protecting.</li>
+        <li><b>Known-value items.</b> Sugar, oil, bread, soap, posho. Customers price these in their heads and judge the whole store on them. Running dry teaches them to shop elsewhere.</li>
+        <li><b>Promotion funding.</b> Who paid for the discount is the single field that decides whether the promotion made money, and it is almost never in the POS.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="eyebrow">Next step</span></div>
+  <h2 class="measure" style="margin-top:10px;">What we would ask you for, and what we would ask you</h2>
+
+  <p class="sec-intro measure">
+    The analysis above needs six exports, most of which your system already produces:
+    transaction headers and line items, the product and cost file, daily stock by branch,
+    supplier deliveries, the waste and stock-count log, and the loyalty file. Twelve months
+    minimum, so the seasonality is visible.
+  </p>
+
+  <ol class="qs">
+    <li><b>Where do you think the money is leaking?</b> Owners are usually right about the direction and wrong about the size. We would rather test your instinct than start from nothing.</li>
+    <li><b>Which lines do you refuse to be out of stock on?</b> Every store has a handful that define its reputation. We want your list before we produce ours.</li>
+    <li><b>Who sets the shelf price, and how often do they look at cost?</b> The sugar finding is a process question, not a pricing one.</li>
+    <li><b>How is waste actually recorded today</b> — is it counted, weighed, or estimated at close? This determines how much of what we called "unexplained" is really just uncounted.</li>
+    <li><b>Do you have written promotion funding agreements with your suppliers,</b> and does anyone check the rebate arrived?</li>
+    <li><b>What happens on the 28th?</b> Do you change the roster, the order, or the float — or does the store take payday as it comes?</li>
+    <li><b>Who can void a transaction,</b> and does anyone review the voids at the end of the week?</li>
+    <li><b>What would you do with UGX 150m?</b> The findings are worth nothing until they are attached to a decision you actually want to make.</li>
+  </ol>
+</section>
+
+<footer>
+  <p><strong>Demonstration dataset.</strong> Mutundwe Family Supermarket is a fictional chain. All figures on this page were generated by us for the purpose of showing method, and describe no real business, person or supplier. Supplier and brand names are used to make the product range recognisable to a Ugandan reader; nothing here reflects the actual performance of any named company.</p>
+  <p style="margin-top:10px;">Assumed payment-processing rates used in the tender analysis (0.35% cash handling, 1.0% mobile money, 3.0% card) are placeholders pending sight of real merchant agreements, and are labelled as such wherever they appear.</p>
+</footer>
+
+</div>

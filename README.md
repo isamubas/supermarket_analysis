@@ -222,6 +222,23 @@ Each would be acting on a random number generator, with false confidence supplie
 
 With unit cost and SKUs, the same scripts would produce genuine margin and basket analysis.
 
+### A dataset that carries all six — [`mutundwe_kampala/`](mutundwe_kampala/)
+
+Rather than leave that as a wish list, the [`mutundwe_kampala/`](mutundwe_kampala/) folder holds a
+simulated Kampala supermarket chain built to carry every field in the table above: unit cost at the
+date of sale, 354 SKUs across 1.3m line items, loyalty IDs, discounts and returns, daily stock per
+SKU per branch, and a full financial year.
+
+**That dataset is also invented** — the point is not that it is real, but that it is *shaped* like a
+real POS export, including the defects (voided tickets left in the file, returns as negative lines,
+stockouts that are invisible without the stock join).
+
+With those six fields present, it is **everything needed for a full sales, margin, stock and
+shrinkage analysis** — every question this dataset has to decline is answerable there from the data
+alone. That is a scoped claim, not a claim of completeness: everything below gross margin is still
+absent, so it supports a sales-and-stock analysis but not a profitability one. The gaps that remain
+are listed in its own README.
+
 ---
 
 ## Data dictionary
@@ -273,6 +290,7 @@ supermarket_analysis/
 ├── data/supermarket.xls
 ├── src/
 ├── figures/
+├── mutundwe_kampala/     ← simulated Kampala POS dataset + analysis
 └── README.md
 ```
 

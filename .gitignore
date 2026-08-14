@@ -8,3 +8,6 @@ env/
 Thumbs.db
 .vscode/
 .idea/
+
+# Mutundwe dataset is 167 MB and fully reproducible from a fixed seed
+mutundwe_kampala/data/

@@ -1,0 +1,334 @@
+<title>Mutundwe Family Supermarket — FY2025/26 dashboard</title>
+
+<style>
+  :root{
+    --paper:#FCFBF8; --card:#FFFFFF; --ink:#10201A; --ink-2:#3A4B42;
+    --muted:#62726A; --rule:#E1E6DF; --rule-soft:#EDF0EA;
+    --accent:#00704C; --accent-wash:#E4F0EA;
+    --ochre:#B07514; --ochre-wash:#F7EEDD;
+    --critical:#9E2B25; --critical-wash:#F9E7E5;
+    --shadow:0 1px 2px rgba(16,32,26,.04), 0 6px 20px -14px rgba(16,32,26,.22);
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:system-ui,"Segoe UI Variable Text","Segoe UI",Roboto,sans-serif;
+    --mono:ui-monospace,"Cascadia Mono",Consolas,"DejaVu Sans Mono",monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#0C1310; --card:#141E1A; --ink:#E7EEE9; --ink-2:#BECAC3;
+      --muted:#8A9C94; --rule:#243128; --rule-soft:#1B2621;
+      --accent:#31A375; --accent-wash:#10281F;
+      --ochre:#BC8420; --ochre-wash:#291F11;
+      --critical:#D9736A; --critical-wash:#2B1715;
+      --shadow:0 1px 2px rgba(0,0,0,.5), 0 6px 20px -14px rgba(0,0,0,.9);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0C1310; --card:#141E1A; --ink:#E7EEE9; --ink-2:#BECAC3;
+    --muted:#8A9C94; --rule:#243128; --rule-soft:#1B2621;
+    --accent:#31A375; --accent-wash:#10281F;
+    --ochre:#BC8420; --ochre-wash:#291F11;
+    --critical:#D9736A; --critical-wash:#2B1715;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 6px 20px -14px rgba(0,0,0,.9);
+  }
+  :root[data-theme="light"]{
+    --paper:#FCFBF8; --card:#FFFFFF; --ink:#10201A; --ink-2:#3A4B42;
+    --muted:#62726A; --rule:#E1E6DF; --rule-soft:#EDF0EA;
+    --accent:#00704C; --accent-wash:#E4F0EA;
+    --ochre:#B07514; --ochre-wash:#F7EEDD;
+    --critical:#9E2B25; --critical-wash:#F9E7E5;
+    --shadow:0 1px 2px rgba(16,32,26,.04), 0 6px 20px -14px rgba(16,32,26,.22);
+  }
+
+  body{background:var(--paper); color:var(--ink); font-family:var(--sans);
+       font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1120px; margin:0 auto; padding:28px 24px 72px;}
+  .num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+  /* header */
+  header{display:flex; justify-content:space-between; align-items:flex-end;
+         gap:18px; flex-wrap:wrap; padding-bottom:14px; border-bottom:2px solid var(--ink);}
+  h1{font-family:var(--serif); font-size:1.5rem; margin:0; font-weight:600; letter-spacing:-.01em;}
+  .period{font-size:.78rem; color:var(--muted); margin-top:3px;}
+  .demo{font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+        color:var(--ochre); background:var(--ochre-wash); padding:5px 10px; border-radius:2px;}
+
+  h2{font-family:var(--sans); font-size:.66rem; font-weight:750; letter-spacing:.13em;
+     text-transform:uppercase; color:var(--muted); margin:0 0 10px;}
+  section{margin-top:30px;}
+
+  /* KPI */
+  .kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-top:20px;}
+  .kpi{background:var(--card); border:1px solid var(--rule); border-radius:4px;
+       padding:14px 16px 16px; box-shadow:var(--shadow);}
+  .kpi .lab{font-size:.68rem; letter-spacing:.09em; text-transform:uppercase;
+            color:var(--muted); font-weight:650;}
+  .kpi .val{font-family:var(--mono); font-size:1.55rem; line-height:1.15; margin-top:7px;
+            letter-spacing:-.02em; font-variant-numeric:tabular-nums;}
+  .kpi .sub{font-size:.75rem; color:var(--muted); margin-top:4px;}
+  .kpi.flag .val{color:var(--critical);}
+
+  /* cards */
+  .card{background:var(--card); border:1px solid var(--rule); border-radius:4px;
+        padding:16px 18px 12px; box-shadow:var(--shadow); overflow-x:auto;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:800px){ .grid2{grid-template-columns:1fr;} }
+
+  svg{display:block; width:100%; height:auto; min-width:460px;}
+  .ax{font-size:11px; fill:var(--muted); font-family:var(--sans);}
+  .axn{font-size:11px; fill:var(--muted); font-family:var(--mono);}
+  .val{font-size:11.5px; fill:var(--ink); font-family:var(--mono); font-weight:650;}
+  .lbl{font-size:12px; fill:var(--ink-2); font-family:var(--sans);}
+  .grid-line{stroke:var(--rule); stroke-width:1;}
+  g.mark:hover rect, g.mark:hover circle{opacity:.72;}
+
+  /* alerts */
+  .alerts{display:grid; grid-template-columns:repeat(auto-fit,minmax(218px,1fr)); gap:12px;}
+  .alert{background:var(--card); border:1px solid var(--rule); border-left:3px solid var(--muted);
+         border-radius:4px; padding:13px 15px; box-shadow:var(--shadow);}
+  .alert.hi{border-left-color:var(--critical);}
+  .alert.md{border-left-color:var(--ochre);}
+  .alert .sev{font-size:.63rem; font-weight:750; letter-spacing:.1em; text-transform:uppercase;}
+  .alert.hi .sev{color:var(--critical);}
+  .alert.md .sev{color:var(--ochre);}
+  .alert .big{font-family:var(--mono); font-size:1.15rem; font-weight:650; margin-top:6px;
+              font-variant-numeric:tabular-nums;}
+  .alert .txt{font-size:.8rem; color:var(--ink-2); margin-top:4px; line-height:1.4;}
+
+  /* lists */
+  .split{display:grid; grid-template-columns:1fr 1fr; gap:0;}
+  @media (max-width:640px){ .split{grid-template-columns:1fr;} }
+  .col{padding:0 16px;}
+  .col:first-child{border-right:1px solid var(--rule);}
+  @media (max-width:640px){ .col:first-child{border-right:none; border-bottom:1px solid var(--rule); padding-bottom:12px; margin-bottom:12px;} }
+  .col h3{font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; margin:0 0 9px;
+          font-family:var(--sans); font-weight:700;}
+  .col.good h3{color:var(--accent);} .col.bad h3{color:var(--critical);}
+  .row{display:flex; justify-content:space-between; gap:12px; padding:5px 0;
+       border-bottom:1px solid var(--rule-soft); font-size:.84rem;}
+  .row:last-child{border-bottom:none;}
+  .row .n{font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap; font-weight:650;}
+  .row .n.g{color:var(--accent);} .row .n.b{color:var(--critical);}
+
+  footer{margin-top:34px; padding-top:12px; border-top:1px solid var(--rule);
+         font-size:.72rem; color:var(--muted);}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div>
+    <h1>Mutundwe Family Supermarket</h1>
+    <div class="period num">FY2025/26 &middot; 1 Jul 2025 – 30 Jun 2026 &middot; 3 branches</div>
+  </div>
+  <span class="demo">Demonstration data</span>
+</header>
+
+<div class="kpis">
+  <div class="kpi">
+    <div class="lab">Turnover</div>
+    <div class="val">9.46bn</div>
+    <div class="sub">UGX &middot; 788m/month</div>
+  </div>
+  <div class="kpi">
+    <div class="lab">Gross margin</div>
+    <div class="val">18.9%</div>
+    <div class="sub">19.6% excluding airtime</div>
+  </div>
+  <div class="kpi">
+    <div class="lab">Baskets</div>
+    <div class="val">288k</div>
+    <div class="sub">263 per branch per day</div>
+  </div>
+  <div class="kpi">
+    <div class="lab">Average basket</div>
+    <div class="val">32,890</div>
+    <div class="sub">UGX &middot; 4.7 items</div>
+  </div>
+  <div class="kpi flag">
+    <div class="lab">Recoverable</div>
+    <div class="val">149.9m</div>
+    <div class="sub">UGX/yr &middot; 8.4% of margin</div>
+  </div>
+</div>
+
+<section>
+  <h2>Needs attention</h2>
+  <div class="alerts">
+    <div class="alert hi">
+      <div class="sev">Lost sales</div>
+      <div class="big">UGX 455m</div>
+      <div class="txt">Demand that walked out on empty shelves — 4.8% of turnover. Twice as bad in the payday window.</div>
+    </div>
+    <div class="alert hi">
+      <div class="sev">Kabalagala shrink</div>
+      <div class="big">1.99%</div>
+      <div class="txt">Unexplained stock loss vs 0.27% at Nakawa. Smallest branch, largest loss — concentrated in spirits and personal care.</div>
+    </div>
+    <div class="alert hi">
+      <div class="sev">Till exception</div>
+      <div class="big">CB-KAB-04</div>
+      <div class="txt">7.4% of tickets voided against a 1.1% median, rising to 10.1% after 18:00. Only 74% fiscalised on EFRIS.</div>
+    </div>
+    <div class="alert md">
+      <div class="sev">Shrinkage</div>
+      <div class="big">3.1%</div>
+      <div class="txt">UGX 291m of sales. Butchery and fish alone account for UGX 98m of the spoilage.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Sales by month — UGX millions</h2>
+  <div class="card">
+    <svg viewBox="0 0 700 246" role="img" aria-label="Monthly sales in UGX millions, ranging from 711 million in March to a December peak of 1,224 million.">
+      <line class="grid-line" x1="54" y1="200" x2="680" y2="200"></line>
+      <line class="grid-line" x1="54" y1="146" x2="680" y2="146" stroke-dasharray="2 4"></line>
+      <line class="grid-line" x1="54" y1="92"  x2="680" y2="92"  stroke-dasharray="2 4"></line>
+      <line class="grid-line" x1="54" y1="38"  x2="680" y2="38"  stroke-dasharray="2 4"></line>
+      <text class="axn" x="48" y="204" text-anchor="end">0</text>
+      <text class="axn" x="48" y="150" text-anchor="end">400</text>
+      <text class="axn" x="48" y="96"  text-anchor="end">800</text>
+      <text class="axn" x="48" y="42"  text-anchor="end">1200</text>
+
+      <g class="mark"><title>Jul 2025 — UGX 727m, 22,967 baskets</title><rect x="56"  y="102" width="40" height="98"  rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Aug 2025 — UGX 797m</title><rect x="108" y="92"  width="40" height="108" rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Sep 2025 — UGX 766m</title><rect x="160" y="96"  width="40" height="104" rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Oct 2025 — UGX 760m</title><rect x="212" y="97"  width="40" height="103" rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Nov 2025 — UGX 745m</title><rect x="264" y="99"  width="40" height="101" rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Dec 2025 — UGX 1,224m, 36,950 baskets. 13% of the year in one month.</title>
+        <rect x="316" y="34" width="40" height="166" rx="3" fill="var(--accent)"></rect>
+        <text class="val" x="336" y="27" text-anchor="middle">1,224</text></g>
+      <g class="mark"><title>Jan 2026 — UGX 723m. School fees plus the election lull.</title><rect x="368" y="102" width="40" height="98"  rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Feb 2026 — UGX 729m</title><rect x="420" y="101" width="40" height="99"  rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Mar 2026 — UGX 711m, the year's low</title><rect x="472" y="104" width="40" height="96"  rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Apr 2026 — UGX 718m</title><rect x="524" y="103" width="40" height="97"  rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>May 2026 — UGX 803m, best margin month at 19.6%</title><rect x="576" y="91"  width="40" height="109" rx="3" fill="var(--accent)"></rect></g>
+      <g class="mark"><title>Jun 2026 — UGX 752m</title><rect x="628" y="98"  width="40" height="102" rx="3" fill="var(--accent)"></rect></g>
+
+      <text class="ax" x="76"  y="218" text-anchor="middle">Jul</text>
+      <text class="ax" x="128" y="218" text-anchor="middle">Aug</text>
+      <text class="ax" x="180" y="218" text-anchor="middle">Sep</text>
+      <text class="ax" x="232" y="218" text-anchor="middle">Oct</text>
+      <text class="ax" x="284" y="218" text-anchor="middle">Nov</text>
+      <text class="ax" x="336" y="218" text-anchor="middle">Dec</text>
+      <text class="ax" x="388" y="218" text-anchor="middle">Jan</text>
+      <text class="ax" x="440" y="218" text-anchor="middle">Feb</text>
+      <text class="ax" x="492" y="218" text-anchor="middle">Mar</text>
+      <text class="ax" x="544" y="218" text-anchor="middle">Apr</text>
+      <text class="ax" x="596" y="218" text-anchor="middle">May</text>
+      <text class="ax" x="648" y="218" text-anchor="middle">Jun</text>
+      <text class="ax" x="367" y="240" text-anchor="middle">December alone is 13% of the year — at the year's lowest margin</text>
+    </svg>
+  </div>
+</section>
+
+<section>
+  <h2>Gross margin % by month</h2>
+  <div class="card">
+    <svg viewBox="0 0 700 116" role="img" aria-label="Gross margin percentage by month, dipping from 19.2% in August to a low of 18.2% in January before recovering to 19.6% in May.">
+      <line class="grid-line" x1="54" y1="80" x2="680" y2="80"></line>
+      <text class="axn" x="48" y="84" text-anchor="end">18.0</text>
+      <line class="grid-line" x1="54" y1="20" x2="680" y2="20" stroke-dasharray="2 4"></line>
+      <text class="axn" x="48" y="24" text-anchor="end">19.8</text>
+
+      <polyline fill="none" stroke="var(--ochre)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+        points="76,48 128,40 180,41 232,50 284,63 336,68 388,74 440,53 492,46 544,43 596,27 648,42"></polyline>
+
+      <g class="mark"><title>Jul — 19.0%</title><circle cx="76"  cy="48" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>Aug — 19.2%</title><circle cx="128" cy="40" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>Sep — 19.2%</title><circle cx="180" cy="41" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>Oct — 18.9%</title><circle cx="232" cy="50" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>Nov — 18.5%. Sugar cost starts rising.</title><circle cx="284" cy="63" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>Dec — 18.4%. Biggest sales month, weakest margin.</title><circle cx="336" cy="68" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>Jan — 18.2%, the year's low. Sugar sold below cost.</title>
+        <circle cx="388" cy="74" r="5.5" fill="var(--critical)"></circle>
+        <text class="val" x="388" y="95" text-anchor="middle" fill="var(--critical)">18.2</text></g>
+      <g class="mark"><title>Feb — 18.8%. Shelf price finally catches up.</title><circle cx="440" cy="53" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>Mar — 19.0%</title><circle cx="492" cy="46" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>Apr — 19.1%</title><circle cx="544" cy="43" r="4" fill="var(--ochre)"></circle></g>
+      <g class="mark"><title>May — 19.6%, the year's best</title>
+        <circle cx="596" cy="27" r="5.5" fill="var(--accent)"></circle>
+        <text class="val" x="596" y="18" text-anchor="middle" fill="var(--accent)">19.6</text></g>
+      <g class="mark"><title>Jun — 19.1%</title><circle cx="648" cy="42" r="4" fill="var(--ochre)"></circle></g>
+
+      <text class="ax" x="367" y="110" text-anchor="middle">Margin falls as sales rise — the festive season is the least profitable trade of the year</text>
+    </svg>
+  </div>
+</section>
+
+<section>
+  <h2>Branches</h2>
+  <div class="card">
+    <svg viewBox="0 0 700 176" role="img" aria-label="Branch sales: Ntinda 3,968 million at 19.3% margin, Nakawa 3,024 million at 18.9%, Kabalagala 2,464 million at 18.2%.">
+      <g class="mark"><title>Ntinda — UGX 3,968m, 19.3% margin, 117,440 baskets, unexplained loss 0.36%</title>
+        <text class="lbl" x="106" y="34" text-anchor="end">Ntinda</text>
+        <rect x="114" y="18" width="466" height="24" rx="3" fill="var(--accent)"></rect>
+        <text class="val" x="590" y="35">3,968m &middot; 19.3%</text></g>
+      <g class="mark"><title>Nakawa — UGX 3,024m, 18.9% margin, 92,304 baskets, unexplained loss 0.27% (best)</title>
+        <text class="lbl" x="106" y="84" text-anchor="end">Nakawa</text>
+        <rect x="114" y="68" width="355" height="24" rx="3" fill="var(--accent)"></rect>
+        <text class="val" x="479" y="85">3,024m &middot; 18.9%</text></g>
+      <g class="mark"><title>Kabalagala — UGX 2,464m, 18.2% margin, 78,263 baskets, unexplained loss 1.99% (flagged)</title>
+        <text class="lbl" x="106" y="134" text-anchor="end">Kabalagala</text>
+        <rect x="114" y="118" width="290" height="24" rx="3" fill="var(--critical)"></rect>
+        <text class="val" x="414" y="135" fill="var(--critical)">2,464m &middot; 18.2%</text></g>
+      <text class="ax" x="114" y="166">Kabalagala is flagged for stock loss, not for sales — it is the smallest branch and loses the most</text>
+    </svg>
+  </div>
+</section>
+
+<section>
+  <h2>Where the margin comes from</h2>
+  <div class="card">
+    <div class="split">
+      <div class="col good">
+        <h3>Carrying the business</h3>
+        <div class="row"><span>Fresh Produce</span><span class="n g">28.4%</span></div>
+        <div class="row"><span>Personal Care</span><span class="n g">26.3%</span></div>
+        <div class="row"><span>Home &amp; Kitchen</span><span class="n g">29.5%</span></div>
+        <div class="row"><span>Stationery &amp; School</span><span class="n g">30.7%</span></div>
+        <div class="row"><span>Household Cleaning</span><span class="n g">20.9%</span></div>
+      </div>
+      <div class="col bad">
+        <h3>Consuming space, returning little</h3>
+        <div class="row"><span>Cooking Oil &amp; Fats</span><span class="n b">9.4%</span></div>
+        <div class="row"><span>Sugar &amp; Sweeteners</span><span class="n b">6.5%</span></div>
+        <div class="row"><span>Airtime &amp; Yaka</span><span class="n b">3.5%</span></div>
+        <div class="row"><span>Staples &amp; Grains</span><span class="n b">15.4%</span></div>
+        <div class="row"><span>Dairy &amp; Eggs</span><span class="n b">16.3%</span></div>
+      </div>
+    </div>
+    <p style="font-size:.78rem; color:var(--muted); margin:12px 16px 4px;">
+      Gross margin %. Cooking oil is the largest line on the sales report and returns
+      less than half its share of the margin; fresh produce is two-thirds the size and returns half again as much.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Rhythm of the year</h2>
+  <div class="grid2">
+    <div class="card" style="padding-bottom:16px;">
+      <div class="row"><span>Payday window (25th–3rd)</span><span class="n">31% of days &rarr; 38% of sales</span></div>
+      <div class="row"><span>Saturday vs Tuesday</span><span class="n">UGX 37.8m vs 21.1m</span></div>
+      <div class="row"><span>Busiest hour</span><span class="n">18:00 &middot; 7.0 baskets/cashier</span></div>
+      <div class="row"><span>Quietest hour</span><span class="n">07:00 &middot; 1.9 baskets/cashier</span></div>
+      <div class="row"><span>Rainy day vs dry</span><span class="n b">&minus;12.5%</span></div>
+    </div>
+    <div class="card" style="padding-bottom:16px;">
+      <div class="row"><span>Election week (Jan 2026)</span><span class="n b">&minus;57%</span></div>
+      <div class="row"><span>School-term shopping window</span><span class="n g">+13%</span></div>
+      <div class="row"><span>Stationery in 3 months</span><span class="n">49% of its year</span></div>
+      <div class="row"><span>Power-cut day, cold-chain loss</span><span class="n b">UGX 691k</span></div>
+      <div class="row"><span>Mobile money share, H1 &rarr; H2</span><span class="n">34.5% &rarr; 40.4%</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>Demonstration data.</strong> Mutundwe Family Supermarket is a fictional chain; every figure was generated
+  to illustrate method and describes no real business. Payment-processing rates used in the tender analysis are
+  assumptions pending real merchant agreements.
+</footer>
+
+</div>

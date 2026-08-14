@@ -1,0 +1,1693 @@
+{
+ "data_quality": {
+  "raw_tickets": 293811,
+  "voided_tickets": 3718,
+  "voided_value": 122746250.0,
+  "raw_lines": 1306279,
+  "return_lines": 2086,
+  "efris_gap_pct": 3.576783996856181,
+  "unfiscalised_value": 335946950.0
+ },
+ "headline": {
+  "net_sales": 9455841950.0,
+  "retail_sales": 9046859600.0,
+  "service_sales": 408982350.0,
+  "gross_margin": 1785853921.0,
+  "gross_margin_pct": 18.886249690330324,
+  "retail_margin_pct": 19.580381937175197,
+  "service_margin_pct": 3.531755832494972,
+  "baskets": 288007,
+  "avg_basket": 32890.49450186975,
+  "units_per_basket": 4.6798063935946
+ },
+ "monthly": [
+  {
+   "month": "2025-07",
+   "sales": 727316150.0,
+   "margin": 137962520.0,
+   "margin_pct": 18.968713949222767,
+   "baskets": 22967,
+   "avg_basket": 31711.71027996691
+  },
+  {
+   "month": "2025-08",
+   "sales": 797239100.0,
+   "margin": 152996789.0,
+   "margin_pct": 19.190828573259893,
+   "baskets": 24850,
+   "avg_basket": 32129.00804828974
+  },
+  {
+   "month": "2025-09",
+   "sales": 765524950.0,
+   "margin": 146651261.0,
+   "margin_pct": 19.156953800134144,
+   "baskets": 23688,
+   "avg_basket": 32375.451705504896
+  },
+  {
+   "month": "2025-10",
+   "sales": 759910100.0,
+   "margin": 143575956.0,
+   "margin_pct": 18.893808096510366,
+   "baskets": 23536,
+   "avg_basket": 32348.111403806935
+  },
+  {
+   "month": "2025-11",
+   "sales": 745466000.0,
+   "margin": 137980213.0,
+   "margin_pct": 18.509256357768162,
+   "baskets": 22777,
+   "avg_basket": 32790.53870132151
+  },
+  {
+   "month": "2025-12",
+   "sales": 1224046050.0,
+   "margin": 224752723.0,
+   "margin_pct": 18.361459766975273,
+   "baskets": 36950,
+   "avg_basket": 33192.94451962111
+  },
+  {
+   "month": "2026-01",
+   "sales": 722738050.0,
+   "margin": 131286247.0,
+   "margin_pct": 18.165121789284512,
+   "baskets": 21384,
+   "avg_basket": 33856.079311634865
+  },
+  {
+   "month": "2026-02",
+   "sales": 729365350.0,
+   "margin": 137160347.0,
+   "margin_pct": 18.805437768602527,
+   "baskets": 21669,
+   "avg_basket": 33716.88356638516
+  },
+  {
+   "month": "2026-03",
+   "sales": 711197350.0,
+   "margin": 135197907.0,
+   "margin_pct": 19.009900275922007,
+   "baskets": 21757,
+   "avg_basket": 32741.901457002343
+  },
+  {
+   "month": "2026-04",
+   "sales": 717860000.0,
+   "margin": 137101365.0,
+   "margin_pct": 19.09862159752598,
+   "baskets": 21892,
+   "avg_basket": 32846.62890553627
+  },
+  {
+   "month": "2026-05",
+   "sales": 803246350.0,
+   "margin": 157247434.0,
+   "margin_pct": 19.576489080840517,
+   "baskets": 23726,
+   "avg_basket": 33920.003371828374
+  },
+  {
+   "month": "2026-06",
+   "sales": 751932500.0,
+   "margin": 143941159.0,
+   "margin_pct": 19.14282984177436,
+   "baskets": 22811,
+   "avg_basket": 33034.07128139932
+  }
+ ],
+ "category": [
+  {
+   "category": "Cooking Oil & Fats",
+   "sales": 880062150.0,
+   "margin": 82328998.0,
+   "units": 42261,
+   "margin_pct": 9.35490726421992,
+   "sales_share": 9.30707339075184,
+   "margin_share": 4.610063400588743,
+   "gap": -4.697009990163098
+  },
+  {
+   "category": "Butchery & Fish",
+   "sales": 810612750.0,
+   "margin": 161164625.0,
+   "units": 45445,
+   "margin_pct": 19.881827049969296,
+   "sales_share": 8.572613145252497,
+   "margin_share": 9.024513321322209,
+   "gap": 0.4519001760697119
+  },
+  {
+   "category": "Household Cleaning",
+   "sales": 795379550.0,
+   "margin": 165956819.0,
+   "units": 115989,
+   "margin_pct": 20.865110122582355,
+   "sales_share": 8.411514851937643,
+   "margin_share": 9.2928552021249,
+   "gap": 0.8813403501872568
+  },
+  {
+   "category": "Staples & Grains",
+   "sales": 767642300.0,
+   "margin": 118033000.0,
+   "units": 104091,
+   "margin_pct": 15.376041679829264,
+   "sales_share": 8.118180317089585,
+   "margin_share": 6.6093311783254185,
+   "gap": -1.508849138764167
+  },
+  {
+   "category": "Beverages - Alcohol",
+   "sales": 705125000.0,
+   "margin": 123247311.0,
+   "units": 72363,
+   "margin_pct": 17.478789009040952,
+   "sales_share": 7.457030307068531,
+   "margin_share": 6.9013097628381,
+   "gap": -0.5557205442304314
+  },
+  {
+   "category": "Personal Care",
+   "sales": 655029850.0,
+   "margin": 172564000.0,
+   "units": 101365,
+   "margin_pct": 26.344448272090194,
+   "sales_share": 6.927250407352674,
+   "margin_share": 9.662828407788904,
+   "gap": 2.73557800043623
+  },
+  {
+   "category": "Fresh Produce",
+   "sales": 600343450.0,
+   "margin": 170562663.0,
+   "units": 104031,
+   "margin_pct": 28.41084765728684,
+   "sales_share": 6.34891586782497,
+   "margin_share": 9.550762298883459,
+   "gap": 3.201846431058489
+  },
+  {
+   "category": "Dairy & Eggs",
+   "sales": 557758200.0,
+   "margin": 90924960.0,
+   "units": 79339,
+   "margin_pct": 16.301859838187944,
+   "sales_share": 5.898556711811369,
+   "margin_share": 5.0913996341361445,
+   "gap": -0.8071570776752246
+  },
+  {
+   "category": "Baby Care",
+   "sales": 509292400.0,
+   "margin": 93878881.0,
+   "units": 22778,
+   "margin_pct": 18.433198885355445,
+   "sales_share": 5.386007958815344,
+   "margin_share": 5.2568062760380725,
+   "gap": -0.1292016827772713
+  },
+  {
+   "category": "Sugar & Sweeteners",
+   "sales": 469934500.0,
+   "margin": 30499710.0,
+   "units": 69810,
+   "margin_pct": 6.490204485944318,
+   "sales_share": 4.9697795551669515,
+   "margin_share": 1.7078502133546007,
+   "gap": -3.2619293418123507
+  },
+  {
+   "category": "Airtime & Mobile Money",
+   "sales": 408982350.0,
+   "margin": 14444258.0,
+   "units": 91546,
+   "margin_pct": 3.531755832494972,
+   "sales_share": 4.325181746507512,
+   "margin_share": 0.8088152020805737,
+   "gap": -3.5163665444269387
+  },
+  {
+   "category": "Bakery",
+   "sales": 405424100.0,
+   "margin": 75302864.0,
+   "units": 78810,
+   "margin_pct": 18.57384995119925,
+   "sales_share": 4.2875515701698035,
+   "margin_share": 4.216630661360796,
+   "gap": -0.0709209088090077
+  },
+  {
+   "category": "Beverages - Soft",
+   "sales": 344214450.0,
+   "margin": 66777008.0,
+   "units": 135541,
+   "margin_pct": 19.399827055488228,
+   "sales_share": 3.6402305772464816,
+   "margin_share": 3.7392200568458476,
+   "gap": 0.09898947959936599
+  },
+  {
+   "category": "Home & Kitchen",
+   "sales": 327690450.0,
+   "margin": 96674299.0,
+   "units": 21117,
+   "margin_pct": 29.501713888824042,
+   "sales_share": 3.4654814635517464,
+   "margin_share": 5.413337443964433,
+   "gap": 1.9478559804126863
+  },
+  {
+   "category": "Canned & Packaged",
+   "sales": 277860850.0,
+   "margin": 73250557.0,
+   "units": 67786,
+   "margin_pct": 26.362316605595932,
+   "sales_share": 2.9385098806563703,
+   "margin_share": 4.101710455633622,
+   "gap": 1.1632005749772518
+  },
+  {
+   "category": "Frozen Foods",
+   "sales": 271658600.0,
+   "margin": 65398621.0,
+   "units": 25026,
+   "margin_pct": 24.073826854736055,
+   "sales_share": 2.8729181540518454,
+   "margin_share": 3.662036420278968,
+   "gap": 0.7891182662271228
+  },
+  {
+   "category": "Stationery & School",
+   "sales": 217604950.0,
+   "margin": 66907287.0,
+   "units": 35478,
+   "margin_pct": 30.74713465847169,
+   "sales_share": 2.3012752449822833,
+   "margin_share": 3.7465151104035908,
+   "gap": 1.4452398654213074
+  },
+  {
+   "category": "Tea & Coffee",
+   "sales": 214208450.0,
+   "margin": 46722203.0,
+   "units": 25885,
+   "margin_pct": 21.81155925454855,
+   "sales_share": 2.2653556513812076,
+   "margin_share": 2.6162387892195356,
+   "gap": 0.3508831378383279
+  },
+  {
+   "category": "Snacks & Confectionery",
+   "sales": 166793450.0,
+   "margin": 46280836.0,
+   "units": 54294,
+   "margin_pct": 27.747394157264573,
+   "sales_share": 1.7639196052763972,
+   "margin_share": 2.5915241697979843,
+   "gap": 0.827604564521587
+  },
+  {
+   "category": "Bags & Sundries",
+   "sales": 70224150.0,
+   "margin": 24935021.0,
+   "units": 52663,
+   "margin_pct": 35.507757658868066,
+   "sales_share": 0.7426535931049482,
+   "margin_share": 1.3962519950140984,
+   "gap": 0.6535984019091502
+  }
+ ],
+ "branches": [
+  {
+   "branch_code": "NTI",
+   "sales": 3967547600.0,
+   "margin": 766164481.0,
+   "baskets": 117440,
+   "avg_basket": 33842.94661103542,
+   "units": 4.731641689373297,
+   "waste": 70354064.0,
+   "unexplained": 14214706.0,
+   "lost_rev": 172263550.0,
+   "lost_margin": 41673566.0,
+   "branch_name": "Ntinda Branch",
+   "tills": 10,
+   "margin_pct": 19.310782333147056,
+   "shrink_pct_of_sales": 2.1315124234426324,
+   "unexplained_pct_of_sales": 0.35827436575682164
+  },
+  {
+   "branch_code": "NAK",
+   "sales": 3024433400.0,
+   "margin": 571523990.0,
+   "baskets": 92304,
+   "avg_basket": 32821.28022620905,
+   "units": 4.66781504593517,
+   "waste": 68563766.0,
+   "unexplained": 8145098.0,
+   "lost_rev": 155488200.0,
+   "lost_margin": 36850205.0,
+   "branch_name": "Nakawa Branch",
+   "tills": 8,
+   "margin_pct": 18.896894538990345,
+   "shrink_pct_of_sales": 2.536305279527729,
+   "unexplained_pct_of_sales": 0.2693098813152903
+  },
+  {
+   "branch_code": "KAB",
+   "sales": 2463860950.0,
+   "margin": 448165450.0,
+   "baskets": 78263,
+   "avg_basket": 31542.894471206062,
+   "units": 4.616166004369881,
+   "waste": 80796128.0,
+   "unexplained": 49059125.0,
+   "lost_rev": 127254800.0,
+   "lost_margin": 29366252.0,
+   "branch_name": "Kabalagala Branch",
+   "tills": 6,
+   "margin_pct": 18.189559358047376,
+   "shrink_pct_of_sales": 5.27039697593324,
+   "unexplained_pct_of_sales": 1.99114828294186
+  }
+ ],
+ "lost_sales": {
+  "lost_revenue": 455006550.0,
+  "lost_margin": 107890023.0,
+  "pct_of_turnover": 4.811909424945497,
+  "stockout_rate": 1.6394499909707712,
+  "stockout_month_end": 2.4340449644184456,
+  "stockout_rest": 1.2831435147819328,
+  "kvi_share": 6.9369221168354605,
+  "top_lost": [
+   {
+    "product_name": "Exercise Books Bundle of 10",
+    "category": "Stationery & School",
+    "is_kvi": false,
+    "lost_rev": 17672400.0,
+    "lost_units": 829
+   },
+   {
+    "product_name": "Chicken Whole Broiler 1.5kg",
+    "category": "Butchery & Fish",
+    "is_kvi": false,
+    "lost_rev": 16128350.0,
+    "lost_units": 705
+   },
+   {
+    "product_name": "Chicken Whole Local 1.5kg",
+    "category": "Butchery & Fish",
+    "is_kvi": false,
+    "lost_rev": 13396050.0,
+    "lost_units": 455
+   },
+   {
+    "product_name": "Beef Boneless 1kg",
+    "category": "Butchery & Fish",
+    "is_kvi": true,
+    "lost_rev": 13169350.0,
+    "lost_units": 720
+   },
+   {
+    "product_name": "Tilapia Fresh 1kg",
+    "category": "Butchery & Fish",
+    "is_kvi": false,
+    "lost_rev": 12699450.0,
+    "lost_units": 806
+   },
+   {
+    "product_name": "Nile Perch Fillet 1kg",
+    "category": "Butchery & Fish",
+    "is_kvi": false,
+    "lost_rev": 11526850.0,
+    "lost_units": 493
+   },
+   {
+    "product_name": "Goat Meat 1kg",
+    "category": "Butchery & Fish",
+    "is_kvi": false,
+    "lost_rev": 11159250.0,
+    "lost_units": 511
+   },
+   {
+    "product_name": "Chicken Drumsticks 1kg",
+    "category": "Butchery & Fish",
+    "is_kvi": false,
+    "lost_rev": 10657250.0,
+    "lost_units": 599
+   },
+   {
+    "product_name": "Beef With Bone 1kg",
+    "category": "Butchery & Fish",
+    "is_kvi": false,
+    "lost_rev": 9705900.0,
+    "lost_units": 616
+   },
+   {
+    "product_name": "Matooke Bunch Medium",
+    "category": "Fresh Produce",
+    "is_kvi": false,
+    "lost_rev": 9312850.0,
+    "lost_units": 493
+   },
+   {
+    "product_name": "Matooke Bunch Large",
+    "category": "Fresh Produce",
+    "is_kvi": false,
+    "lost_rev": 8757300.0,
+    "lost_units": 319
+   },
+   {
+    "product_name": "Ream of Paper A4",
+    "category": "Stationery & School",
+    "is_kvi": false,
+    "lost_rev": 7750700.0,
+    "lost_units": 346
+   },
+   {
+    "product_name": "School Backpack Medium",
+    "category": "Stationery & School",
+    "is_kvi": false,
+    "lost_rev": 7723950.0,
+    "lost_units": 181
+   },
+   {
+    "product_name": "Picfare Exercise Book 96pg",
+    "category": "Stationery & School",
+    "is_kvi": false,
+    "lost_rev": 7427250.0,
+    "lost_units": 2923
+   },
+   {
+    "product_name": "Blender 1.5L",
+    "category": "Home & Kitchen",
+    "is_kvi": false,
+    "lost_rev": 7377400.0,
+    "lost_units": 50
+   }
+  ]
+ },
+ "shrinkage": {
+  "waste": 219713958.0,
+  "unexplained": 71418929.0,
+  "total_pct_of_sales": 3.078867947872162,
+  "by_branch_unexplained": {
+   "KAB": 49059125.0,
+   "NAK": 8145098.0,
+   "NTI": 14214706.0
+  },
+  "outage_day_cost": 690615.3545946807,
+  "waste_by_category": [
+   {
+    "category": "Butchery & Fish",
+    "waste_cost_ugx": 97808799.0
+   },
+   {
+    "category": "Dairy & Eggs",
+    "waste_cost_ugx": 38807077.0
+   },
+   {
+    "category": "Bakery",
+    "waste_cost_ugx": 34503373.0
+   },
+   {
+    "category": "Fresh Produce",
+    "waste_cost_ugx": 26353233.0
+   },
+   {
+    "category": "Frozen Foods",
+    "waste_cost_ugx": 22241476.0
+   }
+  ]
+ },
+ "sugar": {
+  "monthly": [
+   {
+    "month": "2025-07",
+    "sales": 37375200.0,
+    "margin": 3185370.0,
+    "units": 5942,
+    "margin_pct": 8.522683490656906
+   },
+   {
+    "month": "2025-08",
+    "sales": 40421900.0,
+    "margin": 3526972.0,
+    "units": 6569,
+    "margin_pct": 8.725398855570866
+   },
+   {
+    "month": "2025-09",
+    "sales": 41503850.0,
+    "margin": 3343209.0,
+    "units": 6649,
+    "margin_pct": 8.055178013605966
+   },
+   {
+    "month": "2025-10",
+    "sales": 38006050.0,
+    "margin": 3315511.0,
+    "units": 6110,
+    "margin_pct": 8.723640052044345
+   },
+   {
+    "month": "2025-11",
+    "sales": 37613250.0,
+    "margin": 478849.0,
+    "units": 5881,
+    "margin_pct": 1.2730859471064053
+   },
+   {
+    "month": "2025-12",
+    "sales": 53814500.0,
+    "margin": -1981515.0,
+    "units": 8294,
+    "margin_pct": -3.6821209896960854
+   },
+   {
+    "month": "2026-01",
+    "sales": 41531350.0,
+    "margin": -1628237.0,
+    "units": 5964,
+    "margin_pct": -3.9205010191096603
+   },
+   {
+    "month": "2026-02",
+    "sales": 35025950.0,
+    "margin": 2825486.0,
+    "units": 4441,
+    "margin_pct": 8.066836160047052
+   },
+   {
+    "month": "2026-03",
+    "sales": 32280150.0,
+    "margin": 4052757.0,
+    "units": 4224,
+    "margin_pct": 12.554950952830147
+   },
+   {
+    "month": "2026-04",
+    "sales": 34881050.0,
+    "margin": 4437860.0,
+    "units": 4628,
+    "margin_pct": 12.722839478742756
+   },
+   {
+    "month": "2026-05",
+    "sales": 41799600.0,
+    "margin": 4917845.0,
+    "units": 5945,
+    "margin_pct": 11.765292012363755
+   },
+   {
+    "month": "2026-06",
+    "sales": 35681650.0,
+    "margin": 4025603.0,
+    "units": 5163,
+    "margin_pct": 11.281997889671581
+   }
+  ],
+  "margin_lost": 14782852.844234714,
+  "normal_margin": 8.50672510296952,
+  "trough_margin": -3.9205010191096603,
+  "trough_month": "2026-01"
+ },
+ "payments": {
+  "mix": [
+   {
+    "payment_method": "Cash",
+    "value": 5077604700.0,
+    "baskets": 160891,
+    "avg_basket": 31559.283614372463,
+    "share": 53.602548795880125,
+    "assumed_rate": 0.0035,
+    "annual_cost": 17771616.45
+   },
+   {
+    "payment_method": "MTN MoMo",
+    "value": 2203727400.0,
+    "baskets": 66515,
+    "avg_basket": 33131.28467263023,
+    "share": 23.264001920298767,
+    "assumed_rate": 0.01,
+    "annual_cost": 22037274.0
+   },
+   {
+    "payment_method": "Airtel Money",
+    "value": 1328705750.0,
+    "baskets": 40833,
+    "avg_basket": 32539.99828570029,
+    "share": 14.026695461295263,
+    "assumed_rate": 0.01,
+    "annual_cost": 13287057.5
+   },
+   {
+    "payment_method": "Card (Visa/Mastercard)",
+    "value": 745024900.0,
+    "baskets": 16320,
+    "avg_basket": 45651.035539215685,
+    "share": 7.864974907636214,
+    "assumed_rate": 0.03,
+    "annual_cost": 22350747.0
+   },
+   {
+    "payment_method": "Staff/Account Credit",
+    "value": 117629900.0,
+    "baskets": 3448,
+    "avg_basket": 34115.40023201856,
+    "share": 1.2417789148896328,
+    "assumed_rate": 0.0,
+    "annual_cost": 0.0
+   }
+  ],
+  "total_cost": 75446694.95,
+  "mm_h1": 34.50636457953724,
+  "mm_h2": 40.44088173151242,
+  "pct_of_margin": 4.224684564779697
+ },
+ "timing": {
+  "month_end_sales_share": 37.98747767775454,
+  "month_end_day_share": 30.958904109589042,
+  "rain_effect_pct": -12.475229574314739,
+  "hourly": [
+   {
+    "hour": 7,
+    "baskets": 7.007604562737643,
+    "rostered": 3.702471482889734,
+    "per_cashier": 1.897148288973384
+   },
+   {
+    "hour": 8,
+    "baskets": 12.05672461116194,
+    "rostered": 3.6697163769441903,
+    "per_cashier": 3.271973162549558
+   },
+   {
+    "hour": 9,
+    "baskets": 13.104109589041096,
+    "rostered": 3.6666666666666665,
+    "per_cashier": 3.5503196347031962
+   },
+   {
+    "hour": 10,
+    "baskets": 14.456124314442413,
+    "rostered": 3.6672760511883,
+    "per_cashier": 3.996099939061548
+   },
+   {
+    "hour": 11,
+    "baskets": 17.301369863013697,
+    "rostered": 3.6666666666666665,
+    "per_cashier": 4.869939117199391
+   },
+   {
+    "hour": 12,
+    "baskets": 21.660273972602738,
+    "rostered": 4.333333333333333,
+    "per_cashier": 5.389170471841704
+   },
+   {
+    "hour": 13,
+    "baskets": 22.253881278538813,
+    "rostered": 4.333333333333333,
+    "per_cashier": 5.497625570776256
+   },
+   {
+    "hour": 14,
+    "baskets": 19.17351598173516,
+    "rostered": 4.333333333333333,
+    "per_cashier": 4.7694368340943685
+   },
+   {
+    "hour": 15,
+    "baskets": 17.669406392694064,
+    "rostered": 4.333333333333333,
+    "per_cashier": 4.3555022831050225
+   },
+   {
+    "hour": 16,
+    "baskets": 19.421004566210044,
+    "rostered": 4.333333333333333,
+    "per_cashier": 4.71986301369863
+   },
+   {
+    "hour": 17,
+    "baskets": 25.718721461187215,
+    "rostered": 4.0,
+    "per_cashier": 6.491963470319635
+   },
+   {
+    "hour": 18,
+    "baskets": 27.87123287671233,
+    "rostered": 4.0,
+    "per_cashier": 6.989726027397261
+   },
+   {
+    "hour": 19,
+    "baskets": 24.755494505494507,
+    "rostered": 4.003663003663004,
+    "per_cashier": 6.183577533577533
+   },
+   {
+    "hour": 20,
+    "baskets": 15.464285714285714,
+    "rostered": 4.0319548872180455,
+    "per_cashier": 3.8671992481203006
+   },
+   {
+    "hour": 21,
+    "baskets": 6.485,
+    "rostered": 4.06,
+    "per_cashier": 1.6202833333333333
+   }
+  ],
+  "dow": [
+   {
+    "day": "Mon",
+    "line_total_ugx": 22041004.807692308
+   },
+   {
+    "day": "Tue",
+    "line_total_ugx": 21098642.452830188
+   },
+   {
+    "day": "Wed",
+    "line_total_ugx": 22751800.96153846
+   },
+   {
+    "day": "Thu",
+    "line_total_ugx": 23911123.076923076
+   },
+   {
+    "day": "Fri",
+    "line_total_ugx": 30868870.192307692
+   },
+   {
+    "day": "Sat",
+    "line_total_ugx": 37822870.192307696
+   },
+   {
+    "day": "Sun",
+    "line_total_ugx": 22943059.615384616
+   }
+  ],
+  "per_cashier_month_end": 5.109021983843199,
+  "per_cashier_rest": 4.259643961008083
+ },
+ "shocks": {
+  "baseline_day": 26166711.285714287,
+  "election": [
+   {
+    "phase": "election lull",
+    "avg": 11324300.0,
+    "vs_baseline_pct": -56.72249417838572
+   },
+   {
+    "phase": "pre-election stock-up",
+    "avg": 27277862.5,
+    "vs_baseline_pct": 4.246430520645305
+   }
+  ],
+  "school_uplift_pct": 13.448664898545836,
+  "stationery_top3_share": 49.370568086801335
+ },
+ "affinity": [
+  {
+   "item_a": "Club Pilsner 500ml",
+   "item_b": "Uganda Waragi Classic 375ml",
+   "cat_a": "Beverages - Alcohol",
+   "cat_b": "Beverages - Alcohol",
+   "support_pct": 0.6818135976791382,
+   "lift": 8.492177963256836,
+   "baskets": 1706.0
+  },
+  {
+   "item_a": "Nile Special Lager 500ml",
+   "item_b": "Uganda Waragi Classic 375ml",
+   "cat_a": "Beverages - Alcohol",
+   "cat_b": "Beverages - Alcohol",
+   "support_pct": 0.7473572492599487,
+   "lift": 8.438450813293457,
+   "baskets": 1870.0
+  },
+  {
+   "item_a": "Bell Lager 500ml",
+   "item_b": "Uganda Waragi Classic 375ml",
+   "cat_a": "Beverages - Alcohol",
+   "cat_b": "Beverages - Alcohol",
+   "support_pct": 0.6842116117477417,
+   "lift": 8.296138763427734,
+   "baskets": 1712.0
+  },
+  {
+   "item_a": "Nile Special Lager 500ml",
+   "item_b": "Club Pilsner 500ml",
+   "cat_a": "Beverages - Alcohol",
+   "cat_b": "Beverages - Alcohol",
+   "support_pct": 1.1130428314208984,
+   "lift": 8.200255393981934,
+   "baskets": 2785.0
+  },
+  {
+   "item_a": "Nile Special Lager 500ml",
+   "item_b": "Bell Lager 500ml",
+   "cat_a": "Beverages - Alcohol",
+   "cat_b": "Beverages - Alcohol",
+   "support_pct": 1.1150410175323486,
+   "lift": 7.997211456298828,
+   "baskets": 2790.0
+  },
+  {
+   "item_a": "Bell Lager 500ml",
+   "item_b": "Club Pilsner 500ml",
+   "cat_a": "Beverages - Alcohol",
+   "cat_b": "Beverages - Alcohol",
+   "support_pct": 1.0079331398010254,
+   "lift": 7.97440767288208,
+   "baskets": 2522.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Pembe Maize Flour 2kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.5247487425804138,
+   "lift": 4.822566986083984,
+   "baskets": 1313.0
+  },
+  {
+   "item_a": "Super Rice Pishori 1kg",
+   "item_b": "Beans Nambale 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.5599184632301331,
+   "lift": 4.668936252593994,
+   "baskets": 1401.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Super Rice Pishori 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.8748476505279541,
+   "lift": 4.598863124847412,
+   "baskets": 2189.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Kaiso Rice Broken 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.7809284329414368,
+   "lift": 4.582326889038086,
+   "baskets": 1954.0
+  },
+  {
+   "item_a": "Super Rice Pishori 1kg",
+   "item_b": "Kaiso Rice Broken 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.6670263409614563,
+   "lift": 4.558818817138672,
+   "baskets": 1669.0
+  },
+  {
+   "item_a": "Kaiso Rice Broken 1kg",
+   "item_b": "Beans Nambale 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.48758065700531006,
+   "lift": 4.538333892822266,
+   "baskets": 1220.0
+  },
+  {
+   "item_a": "Super Rice Pishori 1kg",
+   "item_b": "Pembe Maize Flour 2kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.42363569140434265,
+   "lift": 4.534755706787109,
+   "baskets": 1060.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Beans Nambale 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.6310572624206543,
+   "lift": 4.5178046226501465,
+   "baskets": 1579.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Fresh Fri Vegetable Oil 1L",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Cooking Oil & Fats",
+   "support_pct": 0.4136442542076111,
+   "lift": 3.8779218196868896,
+   "baskets": 1035.0
+  }
+ ],
+ "affinity_cross": [
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Fresh Fri Vegetable Oil 1L",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Cooking Oil & Fats",
+   "support_pct": 0.4136442542076111,
+   "lift": 3.8779218196868896,
+   "baskets": 1035.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Mukwano Cooking Oil 1L",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Cooking Oil & Fats",
+   "support_pct": 0.4316287934780121,
+   "lift": 3.785482406616211,
+   "baskets": 1080.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Kakira Sugar 2kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Sugar & Sweeteners",
+   "support_pct": 0.5591191053390503,
+   "lift": 3.4264156818389893,
+   "baskets": 1399.0
+  },
+  {
+   "item_a": "Super Rice Pishori 1kg",
+   "item_b": "Kakira Sugar 2kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Sugar & Sweeteners",
+   "support_pct": 0.4719941020011902,
+   "lift": 3.369044542312622,
+   "baskets": 1181.0
+  },
+  {
+   "item_a": "Kinyara Sugar 1kg",
+   "item_b": "Beans Nambale 1kg",
+   "cat_a": "Sugar & Sweeteners",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.41044703125953674,
+   "lift": 3.3626956939697266,
+   "baskets": 1027.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Lugazi Sugar 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Sugar & Sweeteners",
+   "support_pct": 0.4360250234603882,
+   "lift": 3.34789776802063,
+   "baskets": 1091.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Kinyara Sugar 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Sugar & Sweeteners",
+   "support_pct": 0.6438462734222412,
+   "lift": 3.3253514766693115,
+   "baskets": 1611.0
+  },
+  {
+   "item_a": "Kinyara Sugar 1kg",
+   "item_b": "Kaiso Rice Broken 1kg",
+   "cat_a": "Sugar & Sweeteners",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.49237656593322754,
+   "lift": 3.3063135147094727,
+   "baskets": 1232.0
+  },
+  {
+   "item_a": "Aponye Maize Flour 2kg",
+   "item_b": "Salt Refined Aquasal 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Sugar & Sweeteners",
+   "support_pct": 0.48238512873649597,
+   "lift": 3.278167963027954,
+   "baskets": 1207.0
+  },
+  {
+   "item_a": "Super Rice Pishori 1kg",
+   "item_b": "Salt Refined Aquasal 1kg",
+   "cat_a": "Staples & Grains",
+   "cat_b": "Sugar & Sweeteners",
+   "support_pct": 0.4084487557411194,
+   "lift": 3.233027219772339,
+   "baskets": 1022.0
+  },
+  {
+   "item_a": "Kinyara Sugar 1kg",
+   "item_b": "Super Rice Pishori 1kg",
+   "cat_a": "Sugar & Sweeteners",
+   "cat_b": "Staples & Grains",
+   "support_pct": 0.533940851688385,
+   "lift": 3.212054967880249,
+   "baskets": 1336.0
+  },
+  {
+   "item_a": "Fanta Orange PET 500ml",
+   "item_b": "Nile Special Lager 500ml",
+   "cat_a": "Beverages - Soft",
+   "cat_b": "Beverages - Alcohol",
+   "support_pct": 0.5455308556556702,
+   "lift": 3.1831917762756348,
+   "baskets": 1365.0
+  }
+ ],
+ "missions": [
+  {
+   "shopping_mission": "Baby run",
+   "baskets": 10575,
+   "avg": 43223.25768321513,
+   "total": 457085950.0,
+   "share": 4.825301177696291
+  },
+  {
+   "shopping_mission": "Breakfast run",
+   "baskets": 36799,
+   "avg": 22336.26728987201,
+   "total": 821952300.0,
+   "share": 8.677071349929209
+  },
+  {
+   "shopping_mission": "Fresh & meat",
+   "baskets": 30868,
+   "avg": 38012.4319683815,
+   "total": 1173367750.0,
+   "share": 12.386844937906858
+  },
+  {
+   "shopping_mission": "Household restock",
+   "baskets": 26909,
+   "avg": 36571.91088483407,
+   "total": 984113550.0,
+   "share": 10.388952606838775
+  },
+  {
+   "shopping_mission": "Party / event",
+   "baskets": 15361,
+   "avg": 70310.49085346005,
+   "total": 1080039450.0,
+   "share": 11.401609762985396
+  },
+  {
+   "shopping_mission": "School prep",
+   "baskets": 8777,
+   "avg": 47952.39261706734,
+   "total": 420878150.0,
+   "share": 4.4430677268938945
+  },
+  {
+   "shopping_mission": "Top-up",
+   "baskets": 123464,
+   "avg": 10608.06955873777,
+   "total": 1309714700.0,
+   "share": 13.826213394562103
+  },
+  {
+   "shopping_mission": "Weekly shop",
+   "baskets": 35254,
+   "avg": 91494.32121177738,
+   "total": 3225540800.0,
+   "share": 34.05093904318747
+  }
+ ],
+ "dead_stock": {
+  "skus_for_80pct": 165,
+  "total_skus": 354,
+  "tail_skus": 89,
+  "tail_sales_pct": 5.053996804589146,
+  "tail_stock_value": 18974456.019719623,
+  "slow_movers": [
+   {
+    "product_name": "Hennessy VS 700ml",
+    "category": "Beverages - Alcohol",
+    "days_cover": 67.55082598120953,
+    "stock_value": 816162.0344579014
+   },
+   {
+    "product_name": "Baby Car Seat",
+    "category": "Baby Care",
+    "days_cover": 103.22452134733335,
+    "stock_value": 784789.1691475343
+   },
+   {
+    "product_name": "Non-stick Cookware Set 5pc",
+    "category": "Home & Kitchen",
+    "days_cover": 277.276143408,
+    "stock_value": 626720.0501687671
+   },
+   {
+    "product_name": "Pressure Cooker 5L",
+    "category": "Home & Kitchen",
+    "days_cover": 164.17195095,
+    "stock_value": 521751.9537041096
+   },
+   {
+    "product_name": "Dinner Set 24pc Ceramic",
+    "category": "Home & Kitchen",
+    "days_cover": 198.6437433166667,
+    "stock_value": 391845.1922958904
+   },
+   {
+    "product_name": "Baby Walker",
+    "category": "Baby Care",
+    "days_cover": 87.02648515647059,
+    "stock_value": 385062.39322657534
+   },
+   {
+    "product_name": "Electric Toothbrush",
+    "category": "Personal Care",
+    "days_cover": 80.53794169555556,
+    "stock_value": 258162.7172158904
+   },
+   {
+    "product_name": "Vacuum Flask 2.5L Premium",
+    "category": "Home & Kitchen",
+    "days_cover": 75.43347334941176,
+    "stock_value": 168640.31302224658
+   },
+   {
+    "product_name": "Photo Frame A4",
+    "category": "Home & Kitchen",
+    "days_cover": 77.8105325331746,
+    "stock_value": 161163.73313720548
+   },
+   {
+    "product_name": "Balsamic Vinegar 250ml",
+    "category": "Canned & Packaged",
+    "days_cover": 62.5254446292,
+    "stock_value": 154172.32922268493
+   },
+   {
+    "product_name": "Olives Jar 300g",
+    "category": "Canned & Packaged",
+    "days_cover": 87.91686981135135,
+    "stock_value": 142593.9367899178
+   },
+   {
+    "product_name": "Prawns Frozen 500g",
+    "category": "Frozen Foods",
+    "days_cover": 64.88664914590476,
+    "stock_value": 141861.7699135123
+   },
+   {
+    "product_name": "Whiteboard A3 with Marker",
+    "category": "Stationery & School",
+    "days_cover": 198.77973024571426,
+    "stock_value": 133427.4901649315
+   },
+   {
+    "product_name": "Charcoal Iron Box",
+    "category": "Home & Kitchen",
+    "days_cover": 191.30127936166667,
+    "stock_value": 119497.78546427395
+   },
+   {
+    "product_name": "Mustard Jar 250g",
+    "category": "Canned & Packaged",
+    "days_cover": 70.88171508375,
+    "stock_value": 111857.17229654793
+   }
+  ]
+ },
+ "working_capital": {
+  "inventory_value": 221737478.74141687,
+  "cogs": 7669988029.0,
+  "inventory_days": 10.552060763929148,
+  "supplier_credit_days": 16.499918266613683,
+  "ccc": -5.947857502684535
+ },
+ "suppliers": [
+  {
+   "supplier_id": "SUP030",
+   "supplier_name": "City Abattoir Suppliers",
+   "orders": 1095,
+   "ordered": 44589.0,
+   "received": 36228.0,
+   "value": 558155251.0,
+   "lead": 1.3775342465753426,
+   "fill_rate": 81.24873847809998,
+   "credit_days": 0,
+   "lost_revenue_ugx": 82744300.0
+  },
+  {
+   "supplier_id": "SUP029",
+   "supplier_name": "Nakasero Produce Vendors",
+   "orders": 1095,
+   "ordered": 169579.0,
+   "received": 145387.0,
+   "value": 770566197.0,
+   "lead": 1.5942100456621005,
+   "fill_rate": 85.73408263994952,
+   "credit_days": 0,
+   "lost_revenue_ugx": 69113700.0
+  },
+  {
+   "supplier_id": "SUP028",
+   "supplier_name": "Picfare Industries Ltd",
+   "orders": 341,
+   "ordered": 36792.0,
+   "received": 34309.0,
+   "value": 139341441.0,
+   "lead": 4.974545454545455,
+   "fill_rate": 93.25125027179821,
+   "credit_days": 30,
+   "lost_revenue_ugx": 61412900.0
+  },
+  {
+   "supplier_id": "SUP025",
+   "supplier_name": "Nice House of Plastics",
+   "orders": 566,
+   "ordered": 14238.0,
+   "received": 12900.0,
+   "value": 154910918.0,
+   "lead": 5.959911660777385,
+   "fill_rate": 90.60261272650654,
+   "credit_days": 14,
+   "lost_revenue_ugx": 52598800.0
+  },
+  {
+   "supplier_id": "SUP031",
+   "supplier_name": "Ggaba Fish Landing Suppliers",
+   "orders": 1093,
+   "ordered": 16582.0,
+   "received": 12605.0,
+   "value": 142830917.0,
+   "lead": 2.4897529734675206,
+   "fill_rate": 76.01616210348571,
+   "credit_days": 0,
+   "lost_revenue_ugx": 32157200.0
+  },
+  {
+   "supplier_id": "SUP027",
+   "supplier_name": "House of Dawda (U)",
+   "orders": 1021,
+   "ordered": 99396.0,
+   "received": 89679.0,
+   "value": 404895747.0,
+   "lead": 6.021909892262488,
+   "fill_rate": 90.22395267415187,
+   "credit_days": 21,
+   "lost_revenue_ugx": 23158900.0
+  },
+  {
+   "supplier_id": "SUP017",
+   "supplier_name": "Uganda Breweries Ltd",
+   "orders": 460,
+   "ordered": 48202.0,
+   "received": 45420.0,
+   "value": 386725140.0,
+   "lead": 1.9846739130434783,
+   "fill_rate": 94.22845525081947,
+   "credit_days": 21,
+   "lost_revenue_ugx": 18115900.0
+  },
+  {
+   "supplier_id": "SUP032",
+   "supplier_name": "Quality Cuts Cold Chain Ltd",
+   "orders": 1047,
+   "ordered": 29131.0,
+   "received": 25935.0,
+   "value": 260638194.0,
+   "lead": 4.071050620821395,
+   "fill_rate": 89.02886958909752,
+   "credit_days": 14,
+   "lost_revenue_ugx": 16195450.0
+  },
+  {
+   "supplier_id": "SUP007",
+   "supplier_name": "Ntake Bakery & Confectionery",
+   "orders": 1095,
+   "ordered": 88844.0,
+   "received": 81216.0,
+   "value": 327950825.0,
+   "lead": 1.1082465753424657,
+   "fill_rate": 91.41416415289721,
+   "credit_days": 7,
+   "lost_revenue_ugx": 11215050.0
+  },
+  {
+   "supplier_id": "SUP024",
+   "supplier_name": "Procter & Gamble (E.A.)",
+   "orders": 458,
+   "ordered": 45750.0,
+   "received": 40665.0,
+   "value": 324633493.0,
+   "lead": 8.101572052401746,
+   "fill_rate": 88.88524590163934,
+   "credit_days": 30,
+   "lost_revenue_ugx": 11173500.0
+  },
+  {
+   "supplier_id": "SUP002",
+   "supplier_name": "Bidco Uganda Ltd",
+   "orders": 460,
+   "ordered": 30180.0,
+   "received": 28284.0,
+   "value": 431546283.0,
+   "lead": 3.967826086956522,
+   "fill_rate": 93.71769383697813,
+   "credit_days": 30,
+   "lost_revenue_ugx": 7407100.0
+  },
+  {
+   "supplier_id": "SUP001",
+   "supplier_name": "Mukwano Industries (U) Ltd",
+   "orders": 490,
+   "ordered": 73624.0,
+   "received": 70125.0,
+   "value": 622815890.0,
+   "lead": 3.0192040816326533,
+   "fill_rate": 95.24747364989678,
+   "credit_days": 30,
+   "lost_revenue_ugx": 7381200.0
+  }
+ ],
+ "till_control": {
+  "median_void": 1.0878128834164782,
+  "median_efris": 97.00269607511214,
+  "outlier": {
+   "staff_id": "CB-KAB-04",
+   "branch": "KAB",
+   "void_pct": 7.410604192355118,
+   "multiple": 6.81238869784364,
+   "efris_pct": 74.41430332922319,
+   "evening_void": 10.089285714285715,
+   "day_void": 6.388415672913117
+  },
+  "top": [
+   {
+    "branch_code": "KAB",
+    "staff_id": "CB-KAB-04",
+    "tickets": 8110,
+    "voids": 601,
+    "efris": 0.7441430332922319,
+    "value": 252358800.0,
+    "void_pct": 7.410604192355118,
+    "efris_pct": 74.41430332922319,
+    "void_vs_median": 6.81238869784364
+   },
+   {
+    "branch_code": "NTI",
+    "staff_id": "CB-NTI-04",
+    "tickets": 7185,
+    "voids": 112,
+    "efris": 0.9728601252609603,
+    "value": 239184900.0,
+    "void_pct": 1.5588030619345858,
+    "efris_pct": 97.28601252609603,
+    "void_vs_median": 1.4329698477544002
+   },
+   {
+    "branch_code": "KAB",
+    "staff_id": "CB-KAB-02",
+    "tickets": 8088,
+    "voids": 103,
+    "efris": 0.9714391691394659,
+    "value": 256010650.0,
+    "void_pct": 1.2734915924826904,
+    "efris_pct": 97.1439169139466,
+    "void_vs_median": 1.1706899338083345
+   },
+   {
+    "branch_code": "NAK",
+    "staff_id": "CB-NAK-04",
+    "tickets": 7311,
+    "voids": 89,
+    "efris": 0.9700451374640952,
+    "value": 237980350.0,
+    "void_pct": 1.2173437286280948,
+    "efris_pct": 97.00451374640951,
+    "void_vs_median": 1.1190745643725057
+   },
+   {
+    "branch_code": "NTI",
+    "staff_id": "CB-NTI-11",
+    "tickets": 7088,
+    "voids": 86,
+    "efris": 0.9669864559819413,
+    "value": 241937750.0,
+    "void_pct": 1.2133182844243793,
+    "efris_pct": 96.69864559819413,
+    "void_vs_median": 1.115374071148825
+   },
+   {
+    "branch_code": "KAB",
+    "staff_id": "CB-KAB-03",
+    "tickets": 8113,
+    "voids": 97,
+    "efris": 0.9688154813262665,
+    "value": 242350350.0,
+    "void_pct": 1.1956119807716012,
+    "efris_pct": 96.88154813262665,
+    "void_vs_median": 1.0990970956480677
+   }
+  ]
+ },
+ "promotions": [
+  {
+   "promo": "New Year Soap Bundle",
+   "product": "Mukwano Bar Soap 800g",
+   "discount": 12.0,
+   "funded": 0.0,
+   "days": 19,
+   "units_base": 42.92857142857143,
+   "units_promo": 30.105263157894736,
+   "unit_lift": -29.8712671862685,
+   "margin_base_day": 48165.75,
+   "margin_promo_day": 10687.368421052632,
+   "incr_margin": -712089.25,
+   "basket_base": 64392.04136690647,
+   "basket_promo": 60730.56603773585,
+   "basket_lift": -5.686223408118874
+  },
+  {
+   "promo": "New Year Detergent Deal",
+   "product": "Nomi Washing Powder 1kg",
+   "discount": 14.000000000000002,
+   "funded": 20.0,
+   "days": 19,
+   "units_base": 31.767857142857142,
+   "units_promo": 25.63157894736842,
+   "unit_lift": -19.315996568148876,
+   "margin_base_day": 48065.33928571428,
+   "margin_promo_day": 17788.315789473683,
+   "incr_margin": -575263.4464285714,
+   "basket_base": 67900.56784219964,
+   "basket_promo": 67278.28947368421,
+   "basket_lift": -0.9164553232626882
+  },
+  {
+   "promo": "Festive Rice Promo",
+   "product": "Super Rice Pishori 5kg",
+   "discount": 8.0,
+   "funded": 0.0,
+   "days": 20,
+   "units_base": 12.75,
+   "units_promo": 15.6,
+   "unit_lift": 22.352941176470576,
+   "margin_base_day": 38957.92857142857,
+   "margin_promo_day": 15412.8,
+   "incr_margin": -470902.5714285715,
+   "basket_base": 105883.93895348837,
+   "basket_promo": 97592.68707482993,
+   "basket_lift": -7.830509481046544
+  },
+  {
+   "promo": "Sugar Price Fight",
+   "product": "Kakira Sugar 1kg",
+   "discount": 5.0,
+   "funded": 0.0,
+   "days": 31,
+   "units_base": 46.964285714285715,
+   "units_promo": 45.83870967741935,
+   "unit_lift": -2.3966638047344557,
+   "margin_base_day": 28346.285714285714,
+   "margin_promo_day": 17376.516129032258,
+   "incr_margin": -340062.85714285716,
+   "basket_base": 68160.31779661016,
+   "basket_promo": 69420.6065318818,
+   "basket_lift": 1.849006542241094
+  },
+  {
+   "promo": "Back to School Sugar Deal",
+   "product": "Kakira Sugar 2kg",
+   "discount": 7.000000000000001,
+   "funded": 0.0,
+   "days": 12,
+   "units_base": 27.017857142857142,
+   "units_promo": 30.583333333333332,
+   "unit_lift": 13.196739369905263,
+   "margin_base_day": 19237.0,
+   "margin_promo_day": 1289.1666666666667,
+   "incr_margin": -215374.0,
+   "basket_base": 71051.43758765778,
+   "basket_promo": 63433.6231884058,
+   "basket_lift": -10.721548582115192
+  },
+  {
+   "promo": "Ramadan Staples Offer",
+   "product": "Super Rice Pishori 1kg",
+   "discount": 8.0,
+   "funded": 55.00000000000001,
+   "days": 30,
+   "units_base": 30.714285714285715,
+   "units_promo": 33.166666666666664,
+   "unit_lift": 7.984496124031004,
+   "margin_base_day": 18742.696428571428,
+   "margin_promo_day": 13558.933333333332,
+   "incr_margin": -155512.89285714284,
+   "basket_base": 85338.69086195722,
+   "basket_promo": 85996.432748538,
+   "basket_lift": 0.7707428833713115
+  },
+  {
+   "promo": "Easter Chicken Promo",
+   "product": "Chicken Whole Broiler 1.5kg",
+   "discount": 10.0,
+   "funded": 40.0,
+   "days": 10,
+   "units_base": 11.75,
+   "units_promo": 14.0,
+   "unit_lift": 19.14893617021276,
+   "margin_base_day": 48378.80357142857,
+   "margin_promo_day": 38142.5,
+   "incr_margin": -102363.03571428572,
+   "basket_base": 78062.8125,
+   "basket_promo": 80708.27067669173,
+   "basket_lift": 3.3888840178436075
+  },
+  {
+   "promo": "Kabalagala Bread Offer",
+   "product": "Ntake Bread White 600g",
+   "discount": 8.0,
+   "funded": 50.0,
+   "days": 31,
+   "units_base": 13.339285714285714,
+   "units_promo": 14.96774193548387,
+   "unit_lift": 12.207971671632766,
+   "margin_base_day": 11185.607142857143,
+   "margin_promo_day": 9190.193548387097,
+   "incr_margin": -61857.82142857144,
+   "basket_base": 37098.4593837535,
+   "basket_promo": 40602.866972477066,
+   "basket_lift": 9.446234821972821
+  },
+  {
+   "promo": "Independence Beer Offer",
+   "product": "Nile Special Lager 500ml",
+   "discount": 9.0,
+   "funded": 100.0,
+   "days": 8,
+   "units_base": 30.25,
+   "units_promo": 21.875,
+   "unit_lift": -27.685950413223136,
+   "margin_base_day": 24696.14285714286,
+   "margin_promo_day": 17806.25,
+   "incr_margin": -55119.14285714287,
+   "basket_base": 66580.0219138057,
+   "basket_promo": 62086.48648648649,
+   "basket_lift": -6.749074719645676
+  },
+  {
+   "promo": "Ntinda Fresh Milk Deal",
+   "product": "Fresh Dairy Milk UHT 1L",
+   "discount": 10.0,
+   "funded": 100.0,
+   "days": 28,
+   "units_base": 8.767857142857142,
+   "units_promo": 11.892857142857142,
+   "unit_lift": 35.64154786150713,
+   "margin_base_day": 6282.714285714285,
+   "margin_promo_day": 8515.285714285714,
+   "incr_margin": 62512.0,
+   "basket_base": 47164.705882352944,
+   "basket_promo": 45606.06060606061,
+   "basket_lift": -3.3046856693651483
+  },
+  {
+   "promo": "Festive Oil Promo",
+   "product": "Mukwano Cooking Oil 5L",
+   "discount": 6.0,
+   "funded": 85.0,
+   "days": 20,
+   "units_base": 10.017857142857142,
+   "units_promo": 14.95,
+   "unit_lift": 49.23351158645277,
+   "margin_base_day": 34579.392857142855,
+   "margin_promo_day": 47406.45,
+   "incr_margin": 256541.14285714284,
+   "basket_base": 112461.11111111111,
+   "basket_promo": 101687.23776223777,
+   "basket_lift": -9.5800879454488
+  },
+  {
+   "promo": "Term 1 Books Offer",
+   "product": "Picfare Exercise Book 96pg",
+   "discount": 15.0,
+   "funded": 70.0,
+   "days": 16,
+   "units_base": 18.75,
+   "units_promo": 69.25,
+   "unit_lift": 269.3333333333333,
+   "margin_base_day": 15293.767857142857,
+   "margin_promo_day": 48242.25,
+   "incr_margin": 527175.7142857143,
+   "basket_base": 47894.36536180309,
+   "basket_promo": 47352.61299435028,
+   "basket_lift": -1.1311400899882584
+  }
+ ],
+ "customers": {
+  "capture_pct": 38.22302930137115,
+  "identified": 13012,
+  "top10_share": 40.2683005805639,
+  "top20_share": 58.45845687466623,
+  "lapsed_count": 700,
+  "lapsed_spend": 197649850.0,
+  "lapsed_share": 4.389098386239552
+ },
+ "prize": {
+  "items": [
+   {
+    "name": "Recover half the sales lost to stockouts on top lines",
+    "value": 53945011.5,
+    "how": "Fix reorder points for the payday window"
+   },
+   {
+    "name": "Bring Kabalagala's unexplained loss down to the chain average",
+    "value": 26515456.099999998,
+    "how": "Supervision, till exception reports, stock counts"
+   },
+   {
+    "name": "Cut fresh/bakery spoilage by a quarter",
+    "value": 54928489.5,
+    "how": "Order to demand, mark down earlier, fix the chillers"
+   },
+   {
+    "name": "Stop the next commodity price lag (sugar was the last one)",
+    "value": 11826282.275387771,
+    "how": "Weekly cost-vs-price review on the top 30 lines"
+   },
+   {
+    "name": "Kill or shrink the slowest 5% of the range",
+    "value": 9487228.009859812,
+    "how": "Frees working capital, not P&L"
+   },
+   {
+    "name": "Reverse the loss-making promotions",
+    "value": 2688545.0178571427,
+    "how": "Same volume, better terms, or no promo"
+   }
+  ],
+  "total": 149903784.3932449,
+  "pct_of_margin": 8.393955554287741
+ }
+}
