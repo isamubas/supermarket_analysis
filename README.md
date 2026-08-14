@@ -37,6 +37,8 @@ What it finds, none of which is possible above:
 
 That dataset is invented too — the point is not that it is real, but that it is *shaped* like a real POS export, defects and all. It is complete for a **sales, margin, stock and shrinkage** analysis, and explicitly not for a profitability one; both claims are stated plainly there.
 
+It also opens with a plain-English key to the jargon — gross margin, shrinkage, SKU, basket, fill rate, lift — so none of it needs looking up.
+
 ### **[→ Read the findings](mutundwe_kampala/)**
 
 ---

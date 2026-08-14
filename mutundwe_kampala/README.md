@@ -18,6 +18,10 @@ The dataset was generated from a fixed random seed by [`src/generate_data.py`](s
 Its purpose is to demonstrate analytical method on data that behaves the way a Ugandan
 supermarket actually behaves. It is not a business record and cannot support a business decision.
 
+> 📖 **New to retail jargon?** Gross margin, shrinkage, SKU, basket, fill rate and the rest are all
+> defined in plain English in [**The words used below**](#the-words-used-below-in-plain-english).
+> Nothing in this README needs looking up elsewhere.
+
 ---
 
 ## Why this folder exists
@@ -84,6 +88,37 @@ A real back-office export is not clean, and an analysis has to survive that. The
 - **Returns are negative-quantity lines**, posted a few days after the original sale.
 - **Airtime and Yaka are booked at face value**, dragging blended margin from 19.6% down to 18.9% and hiding how the grocery business is really performing.
 - **Stockouts leave no trace in the POS.** A sale that never happened has no row.
+
+---
+
+## The words used below, in plain English
+
+Retail analysis carries a lot of jargon, and most of it is simpler than it sounds. Everything used
+in this README is defined here first, so nothing below needs looking up.
+
+| Term | What it actually means |
+|---|---|
+| **Turnover** · sales · revenue | The money customers handed over. |
+| **Cost of goods** | What *you* paid the supplier for those same items. Goods only — not rent, wages or power. |
+| **Gross margin (GM)** | Sale price minus what the goods cost you. The money the shop has **before** paying its bills. |
+| **Gross margin %** | That same figure as a share of the sale price. Says how hard each shilling of sales is working. UGX 1,000 earned on a UGX 5,000 sale is a very different business from UGX 1,000 earned on a UGX 50,000 sale. |
+| **Line** · line item | One product on one receipt. Buy three things and you create three lines. |
+| **Basket** · ticket · transaction | The whole receipt — one customer, one visit, one payment. |
+| **Average basket** | Total sales ÷ number of receipts. What a typical visit is worth. |
+| **SKU** | One product in one specific size. Sugar 1kg and sugar 2kg are two different SKUs, because you buy, price and count them separately. |
+| **Shrinkage** | Stock you paid for but never sold. Always worth splitting into the next two — as one number, neither gets fixed. |
+| **Spoilage** · waste | It rotted, expired or broke. An ordering and cold-chain problem. |
+| **Unexplained loss** · leakage · stock variance | The books say 50, the shelf has 43, and nothing was written down. Theft, sloppy counting, or goods that arrived but were never booked in. A control problem, not a waste one. |
+| **Stockout** | The shelf was empty when a customer wanted the item. |
+| **Lost sales** | The money you would have taken if it hadn't been empty. Invisible in the till — a sale that never happened leaves no record. |
+| **Days cover** | How many days the stock on the shelf would last at the current rate of selling. |
+| **Fill rate** | Of what you ordered from a supplier, how much actually turned up. |
+| **Known-value item (KVI)** | The handful of products customers know the price of by heart — sugar, oil, bread, soap, posho. They judge whether a whole shop is expensive on these few. |
+| **Void** | A sale cancelled at the till. Normal in small numbers; the *rate* is what matters. |
+| **EFRIS** | Uganda Revenue Authority's electronic invoicing system. A ticket not fiscalised is a ticket the taxman never saw. |
+| **Cash conversion cycle** | Whether you pay the supplier before or after the customer pays you. Negative means the supplier is financing your stock — a good position. |
+| **Lift** | How much more often two items are bought together than pure chance would predict. 1.0 is chance; 3.8 is a real habit. |
+| **Incremental margin** | Whether a promotion left you with more *money* — not more units. Volume nearly always rises when you cut the price; that on its own proves nothing. |
 
 ---
 
