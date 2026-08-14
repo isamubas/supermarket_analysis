@@ -16,6 +16,31 @@ The analysis is still presented in full, because the descriptive numbers are cor
 
 ---
 
+## So what *would* a usable dataset look like? → [`mutundwe_kampala/`](mutundwe_kampala/)
+
+That headline raises an obvious next question: if this file can't answer anything, what would a file need to carry before it could?
+
+**[`mutundwe_kampala/`](mutundwe_kampala/) is that question worked end to end** — a simulated three-branch Kampala supermarket carrying everything this dataset lacks: unit cost at the date of sale, 354 SKUs across 1.3 million line items, loyalty IDs, discounts and returns, daily stock per branch, supplier deliveries, and a full financial year.
+
+[![Revenue is not profit: where the two diverge](mutundwe_kampala/figures/category_revenue_vs_margin.png)](mutundwe_kampala/)
+
+**That chart cannot be drawn from the data on this page.** There is no unit cost here, so there is no margin to compare — every category would be identical by construction. With real cost present, the picture inverts: the largest line on the sales report returns less than half its share of the profit.
+
+What it finds, none of which is possible above:
+
+| | |
+|---|---|
+| **UGX 455m** | of sales lost to empty shelves — invisible in the till, found by joining to stock |
+| **3 months** | of sugar sold below cost, because the buying price moved and the shelf price didn't |
+| **7×** | more unexplained stock loss at one branch than its neighbours — the smallest one |
+| **UGX 2.31m** | lost on promotions the shop funded itself; the supplier-funded ones made money |
+
+That dataset is invented too — the point is not that it is real, but that it is *shaped* like a real POS export, defects and all. It is complete for a **sales, margin, stock and shrinkage** analysis, and explicitly not for a profitability one; both claims are stated plainly there.
+
+### **[→ Read the findings](mutundwe_kampala/)**
+
+---
+
 ## Dataset at a glance
 
 | | |
