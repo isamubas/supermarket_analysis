@@ -37,14 +37,14 @@ The analysis is still presented in full, because the descriptive numbers are cor
 
 No jargon. What the numbers say, and whether you can trust each one.
 
-> **One idea first.** Flip a coin 10 times and you might get 6 heads. That doesn't mean the coin is bent — it's just how chance works. Almost every "difference" below is exactly that: a small gap that showed up by luck. Findings are coloured $\textsf{\color{#0ca30c}green when real}$ and $\textsf{\color{#d03b3b}red when they are only chance}$.
+> **One idea first.** Flip a coin 10 times and you might get 6 heads. That doesn't mean the coin is bent — it's just how chance works. Almost every "difference" below is exactly that: a small gap that showed up by luck. Findings are coloured $\color{#0ca30c}\textsf{green when real}$ and $\color{#d03b3b}\textsf{red when they are only chance}$.
 
 ### What sold well, what sold badly
 
 | | Best | Worst | Gap |
 |---|---|---|---|
-| **Branch** | Alexandria — 105,304 | Ismailia — 101,141 | 4,163 (4.1%) · $\textsf{\color{#d03b3b}just chance}$ |
-| **Product range** | Food and beverages — 53,471 | Health and beauty — 46,851 | 6,620 (14.1%) · $\textsf{\color{#d03b3b}just chance}$ |
+| **Branch** | Alexandria — 105,304 | Ismailia — 101,141 | 4,163 (4.1%) · $\color{#d03b3b}\textsf{just chance}$ |
+| **Product range** | Food and beverages — 53,471 | Health and beauty — 46,851 | 6,620 (14.1%) · $\color{#d03b3b}\textsf{just chance}$ |
 
 All three shops took almost exactly the same money. All six product ranges did too — every one landed between 15% and 17% of sales. **Nothing here is a star performer and nothing is a problem area.**
 
@@ -59,14 +59,14 @@ All three shops took almost exactly the same money. All six product ranges did t
 
 Across the day: afternoon (1–4 pm) took **37.8%**, evening (5–8 pm) **35.0%**, morning (10 am–12 pm) **27.2%**. Mornings are the quietest stretch.
 
-The day-of-week pattern is $\textsf{\color{#d03b3b}just chance}$. The hourly pattern is $\textsf{\color{#bf8700}borderline}$ — the closest thing to a genuine signal anywhere in this file, but it still doesn't quite pass the test. **Don't set staffing rotas from it.**
+The day-of-week pattern is $\color{#d03b3b}\textsf{just chance}$. The hourly pattern is $\color{#bf8700}\textsf{borderline}$ — the closest thing to a genuine signal anywhere in this file, but it still doesn't quite pass the test. **Don't set staffing rotas from it.**
 
 ### Happiest and unhappiest customers
 
 - **Highest rated:** Food and beverages 7.11/10 · Alexandria branch 7.07/10
 - **Lowest rated:** Home and lifestyle 6.84/10 · Ismailia branch 6.82/10
 
-The whole gap is a quarter of one point — $\textsf{\color{#d03b3b}just chance}$. Everything averages about 7 out of 10. Ratings also have **no connection** to how much people spent — happy customers spent no more than unhappy ones.
+The whole gap is a quarter of one point — $\color{#d03b3b}\textsf{just chance}$. Everything averages about 7 out of 10. Ratings also have **no connection** to how much people spent — happy customers spent no more than unhappy ones.
 
 ### Where is the business losing money?
 
