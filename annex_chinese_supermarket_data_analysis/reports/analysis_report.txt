@@ -1,0 +1,728 @@
+==============================================================================
+VEGETABLE RETAIL LEDGER -- FULL ANALYSIS
+Three years of item-level sales, cost and spoilage
+==============================================================================
+
+==============================================================================
+1. WHAT THIS DATA IS
+==============================================================================
+Window            01 Jul 2020 to 30 Jun 2023
+Trading days      1,085 of 1,095 calendar days (10 days with no sales at all)
+Lines scanned     878,503
+Items sold        246 of 251 cataloged
+Categories        6
+
+Net revenue       RMB 3,369,766
+Book gross profit RMB 1,243,652   (36.9% of revenue)
+True gross profit RMB 1,003,953   (29.8% of revenue)
+Cost of spoilage  RMB 239,699  -- 19.3% of book profit never existed
+
+Revenue per trading day  RMB 3,106
+Lines per trading day    810
+
+Days the shop did not trade:
+  2021-02-11  (Thursday)  New Year
+  2021-02-12  (Friday)  New Year
+  2022-01-31  (Monday)  New Year
+  2022-11-02  (Wednesday)  
+  2022-11-04  (Friday)  
+  2022-11-30  (Wednesday)  
+  2022-12-01  (Thursday)  
+  2022-12-02  (Friday)  
+  2022-12-03  (Saturday)  
+  2023-01-21  (Saturday)  New Year
+
+  4 fall on Chinese New Year's eve or the day after -- a normal
+  holiday closure. The other 6 do not, and 4 of them run
+  consecutively (30 Nov - 3 Dec 2022). A four-day unplanned stop is an event,
+  not a holiday, and section 3 shows the three days before it collapsing to a
+  tenth of normal trade -- the shape of a shutdown, not of weak demand.
+
+Data quality checks:
+  Missing values, any column           0
+  Sold item-days lacking a cost quote  0 of 46,599
+  Returns (negative quantity rows)     461 (0.1% of lines, RMB 2,257 refunded)
+  Lines sold below wholesale cost      12,660 (1.4%)
+  Category name arrived with a non-breaking space; normalised in prepare.py
+
+  !! A CAVEAT THAT CHANGES HOW SECTION 7 SHOULD BE READ
+  85 of 251 items carry a loss rate of exactly 9.43%, which is
+  precisely the mean of the whole column (9.4267). That is not a
+  measurement -- it is a placeholder written over items nobody measured.
+  Those items are 16.7% of revenue. A further 22 items are recorded
+  at exactly 0.00% loss, which for fresh vegetables is not credible either.
+
+  So every 'true margin' in this report is exact for the items with a real
+  measured loss rate, and an assumption for the rest. The direction of the
+  finding survives -- spoilage is unpriced either way -- but no per-item
+  figure for a placeholder line should be taken to the decimal.
+
+==============================================================================
+2. THE TREND -- IS THE SHOP GROWING OR SHRINKING?
+==============================================================================
+Full July-June years (the data begins and ends exactly on this boundary):
+
+              revenue  profit_true  margin_true_pct        kg  avg_price   lines  days  rev_per_day
+FY2020/21 1,285,774.7    364,294.3             28.3 163,716.5        7.9  347263   363      3,542.1
+FY2021/22   929,719.7    264,024.8             28.4 115,359.7        8.1  246210   364      2,554.2
+FY2022/23 1,154,272.1    375,634.1             32.5 191,899.7        6.0  285030   358      3,224.2
+
+Per trading day, FY20/21 -> FY22/23 (day-adjusted, so the closures do not
+distort the comparison):
+  Revenue      RMB 3,542 -> RMB 3,224   -9.0%
+  Kilos        451 -> 536   +18.9%
+  Lines        957 -> 796   -16.8%
+  Price/kg     RMB 7.85 -> RMB 6.01   -23.4%
+  Kg per line  0.471 -> 0.673   +42.8%
+
+Read those five lines together, because any one of them alone misleads:
+
+  * The shop moved +19% MORE produce in year three than in year one.
+  * It did so across 17% FEWER scanned lines.
+  * Each line got +43% heavier -- fewer, bigger purchases.
+  * Average price per kilo fell 23%.
+  * Net effect on takings: -9.0% per day.
+
+This is not a demand problem. Volume grew. Revenue fell because price per
+kilo fell faster than volume rose -- and margin percentage actually improved
+(28.3% -> 32.5%), so the shop is not being
+squeezed on markup either. What changed is the mix and the ticket: there are
+fewer scanned lines, and each one is heavier and cheaper per kilo.
+
+Whether that means fewer customers or the same customers consolidating their
+shopping cannot be settled from this data -- there is no basket or customer
+ID in it. Both readings are consistent with what is here, and they call for
+different responses, so it is worth resolving before acting on it.
+
+The middle year is the one to be careful with. FY21/22 is the trough on every
+measure -- revenue, kilos and lines all bottom out there before recovering.
+The four-day closure sits in FY22/23, so it is not what caused the dip; the
+dip precedes it. Comparing year one straight to year three skips over a
+disrupted middle rather than describing a smooth trend, and nothing here
+should be read as three steady years of decline.
+
+Strongest month (revenue per trading day): 2021-02  RMB 6,878
+Weakest month:                             2022-06  RMB 1,764
+
+==============================================================================
+3. WHICH DAYS BRING IN THE MONEY
+==============================================================================
+Best 10 single trading days in three years:
+
+                  day  revenue  profit_true      kg  lines
+date                                                      
+2021-02-10  Wednesday 28,736.5      9,932.7 2,099.7   3747
+2021-02-09    Tuesday 18,775.4      5,822.9 1,471.6   2501
+2023-01-20     Friday 18,367.7      6,737.2 2,120.1   3177
+2022-01-30     Sunday 16,480.1      5,037.4 1,210.3   2158
+2022-01-29   Saturday 14,240.6      4,454.3 1,137.2   1859
+2023-01-19   Thursday 13,105.1      4,290.5 1,428.7   2128
+2021-02-08     Monday 11,443.6      3,058.2 1,068.9   1747
+2022-11-19   Saturday 10,121.3      4,707.2 2,483.9   3215
+2022-01-28     Friday  9,984.5      2,906.7   892.8   1292
+2022-11-21     Monday  9,411.8      3,674.6 1,969.2   2627
+
+8 of those 10 days fall in the week before Chinese New Year. The best day
+in three years (10 Feb 2021) took RMB 28,737 -- 10.4x the median day.
+
+The shop's peak is a holiday peak, not a weekend one. The two exceptions in
+the top ten are 19 and 21 November 2022, which sit immediately before the
+four-day closure -- stockpiling ahead of a shutdown, not ordinary trade.
+
+That matters for planning: the single largest revenue event of the year is
+predictable to the calendar and lasts about four days. Ordering, staffing and
+cash handling for it can be planned twelve months ahead.
+
+Worst 10 trading days:
+
+                 day  revenue  profit_true    kg  lines
+date                                                   
+2022-11-28    Monday    252.7        115.3  70.9     78
+2022-11-29   Tuesday    272.2        116.7  64.2     74
+2022-11-27    Sunday    299.6        142.7  76.6     84
+2021-04-06   Tuesday    830.8        173.1 122.2    277
+2022-12-04    Sunday    910.1        458.2 226.9    277
+2021-12-02  Thursday  1,050.7        264.4 149.3    344
+2021-11-29    Monday  1,058.0        296.4 143.5    324
+2021-11-25  Thursday  1,063.9        283.2 128.3    279
+2022-06-23  Thursday  1,066.2        304.6 179.5    383
+2021-11-18  Thursday  1,140.4        310.9 124.3    295
+
+The worst three days (27-29 Nov 2022) took under RMB 300 between them,
+against a median day of RMB 2,774. They are the three days leading into
+the closure. Excluding those, the weakest ordinary days are all late-November
+and early-December Thursdays -- the seasonal floor, not an incident.
+
+==============================================================================
+3b. DAY OF WEEK
+==============================================================================
+           days  rev_per_day  profit_per_day  lines_per_day  margin_pct
+dow_name                                                               
+Monday      155      2,743.2           819.2          728.7        29.9
+Tuesday     156      2,684.7           799.6          703.2        29.8
+Wednesday   155      2,809.7           836.4          722.6        29.8
+Thursday    155      2,667.1           789.5          698.5        29.6
+Friday      154      3,058.2           909.4          785.8        29.7
+Saturday    154      3,956.2         1,187.3        1,032.1        30.0
+Sunday      156      3,824.7         1,136.8          997.6        29.7
+
+Best day  Saturday   RMB 3,956 per day
+Worst day Thursday   RMB 2,667 per day
+Spread    48.3% between the best and worst weekday
+
+Weekend average: RMB 3,890 per day
+Weekday average: RMB 2,792 per day
+Weekend lift:    +39%
+
+That is a substantial weekly cycle, not a flat one -- Saturday takes 1.5x
+what Thursday takes, and the gap is driven by traffic rather than ticket size
+(1.48x the lines, at a near-identical margin across all seven days).
+
+Two consequences. Ordering should be stepped up for Friday and Saturday
+delivery rather than held flat, because the weekend sells a third more produce
+through the same shelf. And Monday-to-Thursday are close enough to each other
+(5.3% between the best and worst of the four) that any midweek
+promotion is competing with itself, not filling a genuine trough.
+
+==============================================================================
+4. WHICH HOURS BRING IN THE MONEY
+==============================================================================
+      lines_per_day  rev_per_day  avg_line_value  margin_pct  pct_of_revenue  cum_pct
+hour                                                                                 
+8              0.00         0.00            3.91       30.27            0.00     0.00
+9             68.24       259.52            3.80       29.73            8.36     8.36
+10           111.44       431.74            3.87       30.03           13.90    22.26
+11            87.31       339.24            3.89       30.39           10.92    33.18
+12            45.32       177.66            3.92       30.53            5.72    38.90
+13            32.81       131.61            4.01       30.40            4.24    43.14
+14            38.52       155.90            4.05       30.43            5.02    48.16
+15            57.26       227.75            3.98       30.27            7.33    55.49
+16            76.27       295.22            3.87       30.44            9.51    65.00
+17            85.50       325.12            3.80       30.54           10.47    75.46
+18            82.72       305.09            3.69       30.23            9.82    85.29
+19            57.39       212.18            3.70       28.47            6.83    92.12
+20            49.26       180.94            3.67       26.02            5.83    97.95
+21            17.38        62.95            3.62       24.90            2.03    99.97
+22             0.24         0.88            3.59       23.44            0.03   100.00
+23             0.00        -0.00           -1.91        7.27           -0.00   100.00
+
+Peak hour: 10:00-11:00, RMB 432 per day (13.9% of all revenue)
+
+Morning market 09:00-12:00   33.2% of revenue
+Midday trough  12:00-15:00   15.0% of revenue
+Evening rush   16:00-20:00   36.6% of revenue
+After 21:00                  2.1% of revenue
+
+Two peaks, not one: an early-morning market run and an after-work rush,
+separated by a 12:00-15:00 trough that carries about a third of peak trade.
+
+The tail after 21:00 is 19,128 lines in three years -- 2.1% of revenue, at
+24.9% margin against 29.9% for the trading day proper.
+It is the thinnest and the least profitable hour on both measures at once.
+
+Note two edge rows: one line at 08:xx and one at 23:xx across three years.
+The 23:00 row is a return, which is why that line shows negative revenue.
+Neither is a trading pattern; both are kept so the totals reconcile.
+
+Revenue per occurrence, hour x weekday (RMB):
+
+dow_name  Monday  Tuesday  Wednesday  Thursday  Friday  Saturday  Sunday
+hour                                                                    
+8            NaN        0        NaN       NaN     NaN       NaN     NaN
+9            224      226        234       236     247       326     324
+10           356      345        363       343     390       608     617
+11           276      266        275       256     312       500     489
+12           154      138        164       144     171       237     236
+13           113      109        116       104     129       175     176
+14           129      127        136       131     150       209     210
+15           202      203        200       203     220       282     284
+16           263      253        262       255     282       376     376
+17           298      289        286       285     310       411     398
+18           303      295        306       287     326       325     294
+19           200      201        215       200     232       234     204
+20           169      177        191       167     205       193     165
+21            54       56         60        56      83        79      52
+22             0        0          2         1       1         1       1
+23           NaN      NaN        NaN       NaN     NaN       NaN      -0
+
+==============================================================================
+5. CATEGORY PERFORMANCE
+==============================================================================
+                             items      revenue  pct_revenue         kg  avg_price  margin_book_pct  margin_true_pct  margin_lost_pts
+category                                                                                                                             
+Flower/Leaf Vegetables          99 1,079,069.80        32.02 198,520.98       5.44            39.87            31.18             8.69
+Capsicum                        43   754,133.02        22.38  91,588.63       8.23            37.07            31.60             5.47
+Edible Mushroom                 71   619,597.79        18.39  76,086.73       8.14            36.44            29.77             6.67
+Cabbage                          5   375,751.71        11.15  41,766.45       9.00            34.84            27.16             7.68
+Aquatic Tuberous Vegetables     18   350,089.90        10.39  40,581.35       8.63            30.81            23.34             7.47
+Solanum                         10   191,124.26         5.67  22,431.78       8.52            36.30            31.95             4.35
+
+Read the last three columns together. `margin_book_pct` is what a till report
+shows. `margin_true_pct` is what the bank sees once spoiled stock is paid for.
+The worst offender is Flower/Leaf Vegetables, which loses 8.7 percentage points of margin to waste.
+
+Volume-weighted loss rate by category:
+  Flower/Leaf Vegetables           12.5%
+  Cabbage                          10.9%
+  Aquatic Tuberous Vegetables      8.2%
+  Capsicum                         8.1%
+  Edible Mushroom                  6.8%
+  Solanum                          6.4%
+
+==============================================================================
+6. PRODUCT PERFORMANCE -- WHAT SOLD, WHAT DID NOT
+==============================================================================
+TOP 20 BY REVENUE
+
+                                                     category    revenue        kg  avg_price  margin_true_pct  days_sold  cum_pct
+item_name                                                                                                                         
+Broccoli                                              Cabbage 269,874.25 27,537.23       9.90            26.60       1076     8.01
+Net Lotus Root (1)                Aquatic Tuberous Vegetables 211,652.10 27,149.44       7.95            25.32       1057    14.29
+Xixia Mushroom (1)                            Edible Mushroom 211,198.39 11,920.23      17.99            23.23        821    20.56
+Wuhu Green Pepper (1)                                Capsicum 205,113.70 28,164.33       7.38            25.70        858    26.64
+Yunnan Shengcai                        Flower/Leaf Vegetables 129,756.96 15,910.46       8.21            27.45        810    30.49
+Eggplant (2)                                          Solanum 117,729.42 13,602.00       8.68            29.82       1022    33.99
+Paopaojiao (Jingpin)                                 Capsicum  95,568.63  9,703.12       9.86            21.61        228    36.82
+Luosi Pepper                                         Capsicum  82,009.35  7,792.18      10.66            26.93        858    39.26
+Yunnan Lettuces                        Flower/Leaf Vegetables  70,665.11 10,305.36       6.89            30.58        782    41.36
+Honghu Lotus Root Powder (Fenou)  Aquatic Tuberous Vegetables  64,339.60  6,052.00      10.62            20.99        393    43.26
+Yunnan Lettuce (Bag)                   Flower/Leaf Vegetables  63,994.90 14,325.00       4.47            33.69        400    45.16
+Xixia Black Mushroom (1)                      Edible Mushroom  60,116.34  2,810.72      21.47            27.01        297    46.95
+Needle Mushroom (Box)                         Edible Mushroom  58,640.90 15,596.00       3.76            35.35        429    48.69
+Qinggengsanhua                                        Cabbage  58,273.20  8,393.79       7.06            24.26        444    50.42
+Red Pepper (1)                                       Capsicum  57,285.87  3,457.88      16.09            30.52        755    52.12
+Shanghaiqing                           Flower/Leaf Vegetables  56,891.46  7,606.76       7.52            30.88        919    53.81
+Millet Pepper (Bag)                                  Capsicum  54,979.40 10,833.00       5.08            44.45        488    55.44
+Huangbaicai (2)                        Flower/Leaf Vegetables  53,478.17  7,987.99       6.75            31.45        904    57.02
+Spinach                                Flower/Leaf Vegetables  52,349.54  5,216.46       9.96            22.59        730    58.58
+Zhijiang Qinggengsanhua                               Cabbage  47,414.98  5,821.57       8.07            33.87        337    59.98
+
+50% of revenue comes from the top 14 items (5.7% of the range)
+
+80% of revenue comes from the top 42 items (17.1% of the range)
+
+90% of revenue comes from the top 64 items (26.0% of the range)
+
+The bottom half of the range (123 items) contributes 1.2% of revenue and 1.4% of true profit.
+
+BOTTOM 20 BY REVENUE (items that earn almost nothing)
+
+                                                            category  revenue   kg  days_sold first_sale  last_sale
+item_name                                                                                                          
+Green Hangjiao (1)                                          Capsicum    33.12 1.82          5 2021-02-10 2021-09-06
+Purple Hot Peppers                                          Capsicum    28.06 1.75          2 2021-12-10 2021-12-11
+Big Broccoli                                  Flower/Leaf Vegetables    27.42 7.48          2 2021-07-18 2021-07-19
+Round Eggplant (1)                                           Solanum    25.90 4.98          3 2022-09-06 2022-09-09
+Embroidered Aureus (Bag)                             Edible Mushroom    25.60 2.00          2 2022-04-25 2022-04-30
+Hericium                                             Edible Mushroom    24.50 3.00          3 2020-11-12 2022-03-09
+Green Butter                                  Flower/Leaf Vegetables    22.83 1.15          1 2022-04-13 2022-04-13
+Black Mushroom (Bag)                                 Edible Mushroom    18.70 3.00          3 2023-01-31 2023-02-13
+Shuanggou Cabbage                             Flower/Leaf Vegetables    17.32 2.89          2 2021-11-05 2021-11-08
+Bell Pepper (Bag)                                           Capsicum    16.50 6.00          4 2022-01-14 2022-01-24
+Velvet Antler Mushroom (Box)                         Edible Mushroom    14.70 3.00          2 2023-02-13 2023-02-17
+Red Coral (Leaf)                              Flower/Leaf Vegetables    13.50 0.68          1 2022-04-13 2022-04-13
+Chinese Caterpillar Fungus Flowers (Box) (2)         Edible Mushroom    12.90 1.00          1 2021-02-04 2021-02-04
+Ganlanye                                      Flower/Leaf Vegetables    11.32 0.94          1 2021-03-11 2021-03-11
+Fruit Pepper (Orange)                                       Capsicum    10.71 0.41          1 2022-02-05 2022-02-05
+Purple Cabbage (2)                                           Cabbage     9.02 0.61          2 2022-04-21 2022-04-23
+Red Oak Leaf                                  Flower/Leaf Vegetables     8.30 0.42          1 2022-04-13 2022-04-13
+Broccoli                                      Flower/Leaf Vegetables     6.71 0.67          1 2021-07-22 2021-07-22
+White Jelly Mushroom                                 Edible Mushroom     4.90 1.00          1 2021-03-31 2021-03-31
+Needle Mushroom (Bag)                                Edible Mushroom     3.50 1.00          1 2022-08-27 2022-08-27
+
+DELISTED IN PRACTICE: 110 items have not sold in the final six months
+of the ledger. Together they were 9.1% of three-year revenue.
+
+                                                                 category  revenue  days_sold  last_sale  days_since_last_sale
+item_name                                                                                                                     
+Kuaicai                                            Flower/Leaf Vegetables    753.5         10 2020-08-13                  1051
+Chicken Fir Bacteria                                      Edible Mushroom     92.1          3 2020-09-26                  1007
+Black Chicken  Mushroom                                   Edible Mushroom    603.1         16 2020-12-25                   917
+Chinese Caterpillar Fungus Flowers (Box) (2)              Edible Mushroom     12.9          1 2021-02-04                   876
+Xiuzhen Mushroom                                          Edible Mushroom    223.8         17 2021-02-17                   863
+Green Caitai                                       Flower/Leaf Vegetables     90.8          3 2021-03-07                   845
+Ganlanye                                           Flower/Leaf Vegetables     11.3          1 2021-03-11                   841
+Chinese Caterpillar Fungus Flowers (Bag)                  Edible Mushroom  5,973.0        141 2021-03-14                   838
+White Jelly Mushroom                                      Edible Mushroom      4.9          1 2021-03-31                   821
+Youcaitai                                          Flower/Leaf Vegetables    380.9         18 2021-04-09                   812
+Embroidered Aureus                                        Edible Mushroom     89.9          6 2021-04-12                   809
+The Crab Flavor Mushroom (Bag)                            Edible Mushroom  1,882.1        100 2021-05-01                   790
+Fresh Lotus Root Zone (Bag)                   Aquatic Tuberous Vegetables    388.2          7 2021-05-18                   773
+The White Mushroom (2)                                    Edible Mushroom  1,008.8         59 2021-05-29                   762
+Fresh Rice Dumplings Leaves                        Flower/Leaf Vegetables    122.0          8 2021-06-13                   747
+
+NEVER ESTABLISHED: 60 items sold on 10 days or fewer across three
+years -- 24.4% of the range earning 0.2% of revenue. These are range
+decisions that were made and never reviewed.
+
+==============================================================================
+7. THE MARGIN TRAP -- ITEMS THAT LOOK PROFITABLE AND ARE NOT
+==============================================================================
+The damage from spoilage in this business is broad, not concentrated in a few
+rotten lines. Said plainly so the section is not oversold:
+
+  * Only 2 items actually flip from profit to loss once spoilage is
+    paid for, and between them they lose RMB 21 over three years.
+    As a headline finding that would be trivial, and it is not the story.
+
+  * The real cost is RMB 239,699, spread across the whole book as a
+    7.1-point
+    haircut on margin. Markups here average about 1.6x, which is wide enough
+    that spoilage rarely pushes a line negative -- it just quietly takes a
+    fifth of the profit on every line at once.
+
+So the list worth acting on is not 'which items lose money' but 'which items
+destroy the most profit through waste'. Those are the big sellers, because
+volume multiplies the loss rate:
+
+                                                     category    revenue  loss_rate  spoilage_cost  margin_book_pct  margin_true_pct
+item_name                                                                                                                           
+Xixia Mushroom (1)                            Edible Mushroom 211,198.39       0.14      22,407.04            33.84            23.23
+Broccoli                                              Cabbage 269,874.25       0.09      18,342.38            33.40            26.60
+Yunnan Shengcai                        Flower/Leaf Vegetables 129,756.96       0.15      14,355.59            38.52            27.45
+Net Lotus Root (1)                Aquatic Tuberous Vegetables 211,652.10       0.06       8,757.00            29.45            25.32
+Wuhu Green Pepper (1)                                Capsicum 205,113.70       0.06       8,687.22            29.93            25.70
+Qinggengsanhua                                        Cabbage  58,273.20       0.17       7,529.23            37.18            24.26
+Spinach                                Flower/Leaf Vegetables  52,349.54       0.19       7,500.79            36.92            22.59
+Chinese Cabbage                        Flower/Leaf Vegetables  38,758.69       0.22       6,544.72            41.06            24.18
+Yunnan Lettuces                        Flower/Leaf Vegetables  70,665.11       0.13       6,284.26            39.47            30.58
+Luosi Pepper                                         Capsicum  82,009.35       0.10       6,100.07            34.37            26.93
+Honghu Lotus Root Powder (Fenou)  Aquatic Tuberous Vegetables  64,339.60       0.12       6,003.44            30.32            20.99
+Huangbaicai (2)                        Flower/Leaf Vegetables  53,478.17       0.16       5,722.34            42.15            31.45
+Shanghaiqing                           Flower/Leaf Vegetables  56,891.46       0.14       5,674.52            40.85            30.88
+Paopaojiao (Jingpin)                                 Capsicum  95,568.63       0.07       5,304.22            27.16            21.61
+Eggplant (2)                                          Solanum 117,729.42       0.06       5,014.94            34.08            29.82
+
+The top 10 items by waste cost account for 44.4% of all spoilage cost in the business.
+That is where a handling, ordering or pricing intervention pays back, and it
+is a short enough list to act on this week.
+
+For completeness, the items that do flip sign:
+
+                                              category  revenue  loss_rate  margin_book_pct  margin_true_pct  profit_true
+item_name                                                                                                                
+Caidian Quinoa Artemisia (Bag)  Flower/Leaf Vegetables   232.90       0.09             4.19            -5.79       -13.48
+Huanghuacai                     Flower/Leaf Vegetables   127.61       0.17            12.12            -5.74        -7.32
+
+A further 6 items lose money even before spoilage -- they were
+sold below what they cost to buy:
+
+                                    category  revenue  margin_book_pct  profit_book  profit_true
+item_name                                                                                       
+Hongshan Gift Box     Flower/Leaf Vegetables    48.80          -766.80      -374.20      -374.20
+Hongshan Shoutidai    Flower/Leaf Vegetables    44.50          -395.51      -176.00      -176.00
+Hongshan Caitai       Flower/Leaf Vegetables    99.00           -40.96       -40.55       -54.93
+Chicken Fir Bacteria         Edible Mushroom    92.10            -5.54        -5.10       -18.27
+Round Eggplant (1)                   Solanum    25.90           -19.04        -4.93        -8.14
+Big Broccoli          Flower/Leaf Vegetables    27.42           -17.56        -4.81        -6.40
+
+Correlation between an item's loss rate and its book margin: +0.047
+  (items with over RMB 2,000 of revenue; n = 115)
+
+  Robustness -- the same correlation at other revenue floors:
+    revenue >      0   n = 246   r = +0.176
+    revenue >    500   n = 151   r = +0.075
+    revenue >  1,000   n = 138   r = +0.016
+    revenue >  2,000   n = 115   r = +0.047
+    revenue >  5,000   n =  91   r = -0.017
+    revenue > 10,000   n =  64   r = +0.035
+
+  The strongest reading of the six is r = 0.176, on the unfiltered range.
+  Even that explains 3% of the variation in margin, and the sign is not
+  stable across cuts -- it turns negative at the RMB 5,000 floor. There is no
+  usable relationship here at any threshold, which is the point: a business
+  that priced for waste would show a clear positive slope at all of them.
+
+That is effectively zero. Pricing in this shop does not respond to spoilage
+at all -- a vegetable that loses a quarter of its stock to the bin carries the
+same markup as one that loses nothing. This is the single clearest structural
+fault in the data, and it is entirely fixable with a pricing rule.
+
+What the markup would have to be to hold a true 20% margin:
+
+                               loss_rate  margin_book_pct  margin_true_pct  required_markup  actual_markup
+item_name                                                                                                 
+High Melon (1)                     0.292           40.553           15.977            1.767          1.682
+Chuncai                            0.290           40.860           16.669            1.761          1.691
+Dongmenkou Xiaobaicai              0.278           40.470           17.502            1.732          1.680
+Foreign Garland Chrysanthemum      0.262           38.105           16.177            1.693          1.616
+Purple Cabbage (1)                 0.255           44.453           25.411            1.679          1.800
+Honghu Lotus Root                  0.241           31.727           10.109            1.646          1.465
+Chinese Cabbage                    0.223           41.063           24.177            1.608          1.697
+Kuaicai                            0.204           41.707           26.785            1.570          1.715
+
+==============================================================================
+8. DISCOUNTING -- IS THE MARKDOWN RECOVERING ANYTHING?
+==============================================================================
+             lines  pct_of_lines      revenue  pct_of_revenue         kg  avg_price  margin_book_pct  margin_true_pct
+Full price  831137         94.61 3,208,647.35           95.22 439,224.02       7.31            37.84            30.80
+Discounted   47366          5.39   161,119.13            4.78  31,751.90       5.07            18.26             9.75
+
+Discounted lines are 5.4% of trade and 4.8% of revenue.
+They run at 18.3% book margin and 9.7% true margin.
+
+The important thing here is that discounting stays PROFITABLE: 9.7% true
+margin, against 30.8% at full price. The markdown gives up 21.1 points
+of margin and still contributes RMB 15,704 of real profit.
+
+That reframes the discount question entirely. This is not money being
+thrown away -- it is a functioning clearance mechanism recovering cash from
+stock that would otherwise be binned at 100% loss. The average discounted
+kilo sells for RMB 5.07 against RMB 7.31 at full price.
+
+The problem is not the discount. It is the volume of stock needing one.
+
+Share of lines discounted, by hour:
+  08:00    0.0%  
+  09:00    3.1%  ##
+  10:00    3.0%  #
+  11:00    2.7%  #
+  12:00    2.8%  #
+  13:00    2.5%  #
+  14:00    2.7%  #
+  15:00    2.6%  #
+  16:00    2.7%  #
+  17:00    3.2%  ##
+  18:00    4.8%  ###
+  19:00   12.3%  ########
+  20:00   21.8%  ##############
+  21:00   26.6%  #################
+  22:00   37.4%  ########################
+  23:00    0.0%  
+
+Before noon: 2.9% of lines discounted.  After 19:00: 18.1%.
+So the markdown IS mostly end-of-day clearance, which is the right instinct.
+The failure is upstream: too much stock is being ordered to need clearing.
+
+Most-discounted items (500+ lines) -- the chronic over-order list:
+
+                           lines  disc_share_pct  loss_rate   revenue  profit_true
+item_name                                                                         
+Jigu (Bag)                   684           42.25       0.09  2,184.40       633.35
+Fresh Edible Fungus (Bag)    741           40.62       0.09  1,607.10       368.31
+Haixian Mushroom (Bag)      1305           32.18       0.09  8,188.20     4,081.50
+High Melon (2)              1926           31.26       0.09  8,966.07     2,181.89
+Apricot Bao Mushroom (2)    5063           30.69       0.09 15,390.19     4,338.76
+Shanghai Green (Bag)        3071           29.11       0.09  9,086.00     4,314.85
+Caixin (Bag)                2053           28.25       0.09  6,609.80     2,717.90
+Green Hot Peppers (Bag)      932           26.93       0.09  3,243.50     1,501.10
+Needle Mushroom (2)         1148           25.87       0.09  5,685.56     1,422.33
+Red Hang Pepper (Bag)        709           24.96       0.09  3,399.20     1,368.09
+Yunnan Leaf Lettuce (Bag)   8863           23.07       0.09 35,692.10    13,043.09
+Red Hot Peppers (Bag)        952           22.69       0.09  5,585.10     1,917.62
+Haixian Mushroom (Bunch)    1300           22.46       0.00  4,177.80     1,239.90
+Spinach (Bag)               6354           22.16       0.09 25,351.60     8,529.18
+Hongshujian (Bag)            726           21.35       0.09  1,421.70       544.73
+
+==============================================================================
+9. SEASONALITY
+==============================================================================
+       rev_per_day  avg_price  margin_pct
+month                                    
+Jan       4,473.53       8.16       28.73
+Feb       4,283.43       8.53       28.95
+Mar       2,791.60       7.38       29.24
+Apr       2,395.23       6.87       26.98
+May       2,167.17       6.53       28.86
+Jun       2,109.79       6.46       29.09
+Jul       3,197.29       7.80       31.23
+Aug       3,888.62       6.97       31.47
+Sep       3,443.10       7.86       30.58
+Oct       3,513.81       7.12       31.49
+Nov       2,477.03       5.72       32.46
+Dec       2,596.25       5.82       27.21
+
+Peak month Jan at RMB 4,474/day; trough Jun at RMB 2,110/day (2.12x).
+
+Seasonal swing by category (peak month / trough month, revenue per day):
+  Aquatic Tuberous Vegetables      4.92x   peaks  1, troughs  5
+  Capsicum                         3.72x   peaks  2, troughs  6
+  Solanum                          3.23x   peaks  2, troughs 11
+  Edible Mushroom                  2.90x   peaks  1, troughs  6
+  Flower/Leaf Vegetables           2.41x   peaks  8, troughs 12
+  Cabbage                          2.06x   peaks  8, troughs  5
+
+==============================================================================
+10. PRICE SENSITIVITY -- WHAT HAPPENS WHEN PRICE MOVES
+==============================================================================
+Fitted on 99 items with at least 90 trading days and 20 distinct prices.
+Elasticity is the log-log slope of kilos against price: -1.5 means a 10% price
+rise costs about 15% of volume.
+
+Median elasticity across the range: -0.35
+Revenue-weighted:                   -0.46
+
+Most price-sensitive (raising price here empties the shelf slowly):
+
+                                             category  elasticity     r    revenue
+item_name                                                                         
+Xixia Black Mushroom (1)              Edible Mushroom       -2.54 -0.20  60,182.66
+Honghu Lotus Root         Aquatic Tuberous Vegetables       -2.12 -0.43  21,463.04
+Wawacai                        Flower/Leaf Vegetables       -1.33 -0.40  45,162.40
+White Caitai                   Flower/Leaf Vegetables       -1.29 -0.46   2,877.13
+Zhuyecai                       Flower/Leaf Vegetables       -1.26 -0.75  38,957.09
+Red Bell Pepper (2)                          Capsicum       -1.18 -0.18   3,987.57
+Chinese Cabbage                Flower/Leaf Vegetables       -1.11 -0.52  38,780.57
+Xixia Mushroom (1)                    Edible Mushroom       -1.09 -0.17 211,356.72
+Round Eggplant (2)                            Solanum       -1.08 -0.43   7,804.09
+Dalong Eggplant                               Solanum       -1.04 -0.22  10,233.74
+
+Highest fitted slopes -- and these are an ARTEFACT, not a pricing opportunity:
+
+                                                             category  elasticity    r   revenue
+item_name                                                                                       
+Xiaoqingcai (Bag)                              Flower/Leaf Vegetables        1.31 0.28 12,225.80
+Apricot Bao Mushroom (1)                              Edible Mushroom        1.10 0.24 24,374.96
+Spinach (Bag)                                  Flower/Leaf Vegetables        1.07 0.38 25,378.50
+Green Hot Peppers (Bag)                                      Capsicum        0.94 0.26  3,243.50
+Chinese Caterpillar Fungus Flowers (Bag)              Edible Mushroom        0.84 0.25  5,935.40
+High Melon (2)                            Aquatic Tuberous Vegetables        0.80 0.25  8,969.14
+Foreign Garland Chrysanthemum                  Flower/Leaf Vegetables        0.80 0.28 11,699.69
+Ginger And Xiaomijiao Mix (Small Bag)                        Capsicum        0.66 0.16  7,547.80
+Shanghai Green (Bag)                           Flower/Leaf Vegetables        0.66 0.21  9,090.90
+The White Mushroom (Bag)                              Edible Mushroom        0.63 0.19 20,492.90
+
+A positive slope says kilos rise as price rises, which no customer does. Every
+one of these is a pre-packed bagged line sold at a near-fixed price, where the
+few price changes coincide with festival weeks when volume is high for
+unrelated reasons. The correlations are weak (r around 0.2) and the direction
+is backwards. Read this block as a diagnostic that the method breaks on
+fixed-price items -- not as a licence to raise prices on them.
+
+By category:
+
+                             items  median_elasticity      revenue
+category                                                          
+Solanum                       5.00              -0.99   185,518.67
+Aquatic Tuberous Vegetables   8.00              -0.55   339,984.04
+Capsicum                     25.00              -0.40   734,896.46
+Cabbage                       3.00              -0.35   375,791.57
+Flower/Leaf Vegetables       37.00              -0.29 1,044,525.20
+Edible Mushroom              21.00              -0.21   539,149.39
+
+Caveat worth stating: this is an observational fit, not an experiment. Price
+and volume both move with supply -- a glut lowers price and raises volume at
+the same time -- so these slopes overstate true customer sensitivity. They
+rank items reliably; they should not be read as a promise about a price change.
+
+==============================================================================
+11. WHAT WENT WRONG, AND WHAT TO DO ABOUT IT
+==============================================================================
+
+1. Footfall is draining away while volume grows
+   ----------------------------------------------------------------------
+   WHAT THE DATA SHOWS
+     Scanned lines per trading day fell 17% across the three years, yet kilos
+     sold ROSE 19%. Fewer, larger purchases. Revenue per day still ended -9%
+     because price per kilo fell 23%. A shop can survive losing customers
+     while each remaining one buys more -- right up until the point it
+     cannot.
+   WHAT TO DO
+     Put lines per day on the same chart as revenue and watch it weekly.
+     Revenue held flat here while the customer base eroded underneath it, and
+     no revenue-only report would have shown that. If the cause is a
+     competitor opening nearby, this is the only number that will say so
+     early.
+
+2. Spoilage is not priced in, anywhere
+   ----------------------------------------------------------------------
+   WHAT THE DATA SHOWS
+     RMB 239,699 of book profit over three years never existed -- it was
+     stock bought and binned, 19.3% of everything the till reported as
+     profit. The correlation between an item's loss rate and its markup is
+     +0.047: pricing ignores spoilage completely. A vegetable that bins a
+     quarter of its stock carries the same markup as one that bins none.
+   WHAT TO DO
+     Set price from loss-adjusted cost -- cost / (1 - loss rate) -- then
+     apply the target margin. On a 25%-loss line that is about a third more
+     markup than today. It is one formula in the pricing sheet and it is the
+     highest-value change available in this dataset.
+
+3. Waste is concentrated in the best sellers, not the worst
+   ----------------------------------------------------------------------
+   WHAT THE DATA SHOWS
+     The top 10 items by waste cost carry 44.4% of all spoilage cost. Only 2
+     items actually flip from profit to loss -- the damage is volume
+     multiplied by loss rate, so it lands hardest on the lines the shop sells
+     most of. The two worst (Xixia Mushroom (1) and Broccoli) waste RMB
+     40,750 between them -- 3.0x the true profit earned by the entire bottom
+     half of the range.
+   WHAT TO DO
+     Attack the short list, not the long one. For those ten lines
+     specifically: smaller and more frequent deliveries, cold-chain and
+     handling checks, and loss-adjusted pricing. A single point of loss rate
+     recovered on Broccoli is worth more than delisting fifty dead SKUs.
+
+4. The range has a long dead tail nobody has reviewed
+   ----------------------------------------------------------------------
+   WHAT THE DATA SHOWS
+     60 items sold on ten days or fewer in three years, and 110 have not sold
+     at all in the final six months. The bottom half of the range contributes
+     about 1% of revenue. These are not failing products so much as decisions
+     made once and never revisited.
+   WHAT TO DO
+     Run a quarterly range review with a hard rule: no sale in 90 days is a
+     delist unless someone signs to keep it. The gain is not the revenue --
+     there is none -- it is the ordering attention and shelf space returned
+     to the top decile, which is volume-constrained rather than
+     demand-constrained.
+
+5. Clearance works; the ordering that makes it necessary does not
+   ----------------------------------------------------------------------
+   WHAT THE DATA SHOWS
+     5.4% of lines are marked down, overwhelmingly after 19:00 (27% of lines
+     in the 21:00 hour). Those markdowns still return 9.7% true margin, so
+     the discount mechanism is doing its job -- recovering cash from stock
+     that would otherwise be binned entirely.
+   WHAT TO DO
+     Leave the markdown alone and fix what feeds it. Order to the hour
+     profile rather than the day total: a heavy delivery before 09:00 for the
+     morning market and a light top-up before 16:00 for the evening rush. The
+     evening clearance pile is the visible end of a morning over-order.
+
+6. The last trading hour does not pay for itself
+   ----------------------------------------------------------------------
+   WHAT THE DATA SHOWS
+     After 21:00 the shop takes 2.1% of revenue at 24.9% margin, against
+     about 30% through the rest of the day. It is simultaneously the thinnest
+     and the least profitable hour, and it is the hour with the heaviest
+     discounting.
+   WHAT TO DO
+     Close at 21:00 and move that staffed hour to the 09:00-11:00 peak, which
+     carries a quarter of all revenue at full margin. This is a roster
+     change, not an investment.
+
+7. The single biggest sales event of the year is fully predictable
+   ----------------------------------------------------------------------
+   WHAT THE DATA SHOWS
+     8 of the ten best days in three years fall in the week before Chinese
+     New Year, and the best single day took 10x the median day. The peak is a
+     calendar event, not a weekend effect.
+   WHAT TO DO
+     Plan it twelve months ahead -- ordering, staffing, cash handling and
+     cold storage. There is no forecasting difficulty here: the date is known
+     years in advance and the shape repeats in all three years of this data.
+
+==============================================================================
+12. WHERE THIS ANALYSIS STOPS
+==============================================================================
+Stated plainly, because the limits matter as much as the findings:
+
+  * There is no basket or customer ID. Nothing here counts shoppers, measures
+    basket size, or says what sells with what. 'Traffic' means lines scanned.
+
+  * There is no stock-on-hand figure. Spoilage is applied as a per-item rate
+    from annex 4, not observed day by day, so this report can say what waste
+    costs on average but not which delivery went bad.
+
+  * A stockout is invisible. An item that sold nothing on a Tuesday may have
+    had no demand or no stock, and this data cannot tell the two apart. Every
+    'weak seller' verdict here carries that caveat.
+
+  * Everything below gross margin is absent -- rent, wages, power, transport.
+    Gross margin is not profit. This report cannot say whether the shop makes
+    money, only which lines and hours contribute most to covering the costs
+    it cannot see.
+
+  * The elasticity fits are observational. They rank items; they do not
+    predict the result of a price change.

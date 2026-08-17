@@ -43,6 +43,42 @@ It also opens with a plain-English key to the jargon — gross margin, shrinkage
 
 ---
 
+## And a real one → [`annex_chinese_supermarket_data_analysis/`](annex_chinese_supermarket_data_analysis/)
+
+Both datasets above are invented. This one is not.
+
+**[`annex_chinese_supermarket_data_analysis/`](annex_chinese_supermarket_data_analysis/)** is a
+real item-level ledger from a vegetable retail business — **878,503 scanned lines, 251 items,
+1,085 trading days**, from July 2020 to June 2023 — with daily wholesale costs and per-item
+spoilage rates attached.
+
+[![Pricing does not respond to spoilage at all](annex_chinese_supermarket_data_analysis/figures/loss_rate_vs_margin.png)](annex_chinese_supermarket_data_analysis/)
+
+**The business reports a 36.9% gross margin. The real figure is 29.8%** — because
+RMB 239,699 of three-year "profit" was stock that spoiled before anyone could buy it.
+A till only counts the kilos that scanned; it never sees the ones that went in the bin.
+
+| | |
+|---|---|
+| **+0.047** | correlation between an item's spoilage rate and its markup — pricing ignores waste entirely |
+| **44%** | of all waste cost sits in just 10 items — waste is loss rate × volume, so it lands on the *best* sellers |
+| **+19% / −17%** | kilos sold rose while transactions fell; revenue-only reporting hides this completely |
+| **85 of 251** | items whose "loss rate" is really the column mean, backfilled — a defect the analysis had to work around |
+
+That last row is why a real dataset earns its place next to two clean simulated ones.
+The placeholder values are not noise to be smoothed over — they are a finding, they are
+visible as a vertical stripe on the chart above, and they bound what the rest of the
+analysis is allowed to claim.
+
+The full method is in a [rendered notebook](annex_chinese_supermarket_data_analysis/notebooks/analysis_walkthrough.ipynb),
+including a worked example of the elasticity method *breaking* on fixed-price lines and
+producing positive slopes — kept in deliberately, because a fit that returns the wrong
+sign is more instructive than one that quietly returns a plausible one.
+
+### **[→ Read the findings](annex_chinese_supermarket_data_analysis/)**
+
+---
+
 ## Dataset at a glance
 
 | | |
@@ -317,7 +353,8 @@ supermarket_analysis/
 ├── data/supermarket.xls
 ├── src/
 ├── figures/
-├── mutundwe_kampala/     ← simulated Kampala POS dataset + analysis
+├── mutundwe_kampala/                        ← simulated Kampala POS dataset + analysis
+├── annex_chinese_supermarket_data_analysis/ ← real vegetable retail ledger + analysis
 └── README.md
 ```
 

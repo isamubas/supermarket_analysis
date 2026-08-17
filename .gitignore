@@ -11,3 +11,7 @@ Thumbs.db
 
 # Mutundwe dataset is 167 MB and fully reproducible from a fixed seed
 mutundwe_kampala/data/
+
+# Derived cache: 35 MB, rebuilt in seconds by src/prepare.py from the raw
+# annexes, which ARE committed. The raw data is the source of truth.
+annex_chinese_supermarket_data_analysis/data/analysis_frame.parquet
