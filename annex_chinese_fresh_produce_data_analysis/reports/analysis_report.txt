@@ -437,14 +437,191 @@ placeholder loss rate rather than a measured one. Their true margin figures
 above are therefore estimates, and they are among the most valuable lines in
 the business -- which makes them the obvious place to start measuring for real.
 
-BAND C is ranks 43-64 (22 items) for the next 10%; band D is ranks 65-130
-(66 items) for the 9% after that. Band E is the remaining 116 items sharing the
-last 1% -- listed in full in reports/findings.json rather than here, because a
-table of 100+ near-zero rows is not something anyone reads.
+BAND C -- ranks 43-64 (22 items), the next 10%
 
-The practical split: bands A and B are the business (42 items, 80% of takings)
-and deserve individual attention. Bands D and E are a range-review problem,
-not a merchandising one.
+                                                    category   revenue  pct_of_revenue  cum_pct  margin_true_pct  loss_rate_pct
+item_name                                                                                                                      
+Honghu Lotus Root                Aquatic Tuberous Vegetables 21,463.04            0.64    81.08            10.11          24.05
+The White Mushroom (Bag)                     Edible Mushroom 20,492.90            0.61    81.69            34.28           6.57
+Ping Mushroom                                Edible Mushroom 19,641.66            0.58    82.27            32.61          11.60
+Xiaoqingcai (1)                       Flower/Leaf Vegetables 18,780.48            0.56    82.83            35.63          10.33
+Yellow Xincai (1)                     Flower/Leaf Vegetables 17,937.96            0.53    83.36            36.47          10.64
+Xiaozhoupi (Bag)                                    Capsicum 17,567.70            0.52    83.88            43.45           9.43
+High Melon (1)                   Aquatic Tuberous Vegetables 16,257.77            0.48    84.36            15.98          29.25
+Powcan Mountain Chinese Cabbage       Flower/Leaf Vegetables 16,003.22            0.47    84.84            49.55           9.43
+Apricot Bao Mushroom (2)                     Edible Mushroom 15,390.19            0.46    85.29            28.19           9.43
+Niushou Youcai                        Flower/Leaf Vegetables 15,172.18            0.45    85.75            32.86          12.17
+Red Hang Pepper                                     Capsicum 15,118.54            0.45    86.19            33.49           9.99
+Green Hot Peppers                                   Capsicum 13,361.21            0.40    86.59            36.10           6.72
+Caidian Quinoa Artemisia              Flower/Leaf Vegetables 13,243.11            0.39    86.98            35.21           0.47
+Huangxincai (2)                       Flower/Leaf Vegetables 13,235.57            0.39    87.38            40.37           9.43
+The Agaricus Bisporus                        Edible Mushroom 12,956.75            0.38    87.76            22.73          12.78
+Red Pepper (2)                                      Capsicum 12,936.76            0.38    88.14            30.68           9.43
+Xiaoqingcai (Bag)                     Flower/Leaf Vegetables 12,220.00            0.36    88.51            46.94           9.43
+Foreign Garland Chrysanthemum         Flower/Leaf Vegetables 11,699.69            0.35    88.85            16.18          26.16
+Muercai                               Flower/Leaf Vegetables 11,099.50            0.33    89.18            39.99           7.61
+Water Chestnut                   Aquatic Tuberous Vegetables 10,670.22            0.32    89.50            27.47          11.02
+Sichuan Red Cedar                     Flower/Leaf Vegetables 10,547.77            0.31    89.81            14.57          10.46
+Dalong Eggplant                                      Solanum 10,233.74            0.30    90.12            35.35          10.94
+
+Band C averages RMB 14,820 per item over three years -- about RMB 14 a day each.
+
+But the interesting thing about band C is not its size. Margins here run
+10.1% to 49.5%, which is by far the widest spread of any band -- and the
+bottom of it holds the worst-performing lines in the entire business:
+
+                                revenue  margin_true_pct  loss_rate_pct
+item_name                                                              
+Honghu Lotus Root             21,463.04            10.11          24.05
+Sichuan Red Cedar             10,547.77            14.57          10.46
+High Melon (1)                16,257.77            15.98          29.25
+Foreign Garland Chrysanthemum 11,699.69            16.18          26.16
+
+3 of those 4 are high-spoilage lines losing 24-29% of stock, and they
+are the clearest illustration in this report of the pricing fault from
+section 7: at that loss rate, a markup that would be healthy on a durable
+item leaves almost nothing behind. They are not small because they sell
+badly -- they turn over RMB 3,900 to RMB 7,154 a year each. They are small
+because a quarter of the stock never reaches a customer.
+
+Sichuan Red Cedar is the exception worth a second look: 10.5% loss is
+unremarkable, yet its margin is 14.6%. Spoilage does not explain that
+one -- it is either bought badly or priced badly, and the answer is not in
+this data. Worth asking the buyer.
+
+So band C splits in two. Most of it is healthy and small, and should be
+managed by category rule rather than item by item. The four lines above
+belong with the band A and B pricing work instead.
+
+BAND D -- ranks 65-130 (66 items), the 9% after that
+
+                                                                      category  revenue  pct_of_revenue  cum_pct  margin_true_pct  loss_rate_pct
+item_name                                                                                                                                       
+Needle Mushroom (Bag) (2)                                      Edible Mushroom 9,964.60            0.30    90.41            33.16           6.64
+Green Line Pepper (Bag)                                               Capsicum 9,473.80            0.28    90.69            46.03           9.43
+Pepper Mix                                                            Capsicum 9,398.90            0.28    90.97            81.93           9.43
+Shanghai Green (Bag)                                    Flower/Leaf Vegetables 9,086.00            0.27    91.24            47.49           9.43
+Xixia Xianggu Mushroom (2)                                     Edible Mushroom 9,001.05            0.27    91.51            31.04           9.43
+7 Colour Pepper (2)                                                   Capsicum 8,980.41            0.27    91.78            41.33           9.43
+High Melon (2)                                     Aquatic Tuberous Vegetables 8,966.07            0.27    92.04            24.33           9.43
+Needle Mushroom (Bag) (3)                                      Edible Mushroom 8,434.90            0.25    92.29            30.96          11.13
+Haixian Mushroom (Bag)                                         Edible Mushroom 8,188.20            0.24    92.54            49.85           9.43
+Dongmenkou Xiaobaicai                                   Flower/Leaf Vegetables 8,012.82            0.24    92.77            17.50          27.84
+Haixian Mushroom (Bag) (4)                                     Edible Mushroom 7,983.70            0.24    93.01            26.98          11.13
+Round Eggplant (2)                                                     Solanum 7,804.09            0.23    93.24            36.26           6.71
+Haixian Mushroom (1)                                           Edible Mushroom 7,739.51            0.23    93.47            34.65           9.89
+Ginger And Xiaomijiao Mix (Small Bag)                                 Capsicum 7,547.80            0.22    93.70            54.02           9.43
+Apricot Bao Mushroom (Bag)                                     Edible Mushroom 7,085.20            0.21    93.91            33.65          10.03
+Jigu Mushroom (Bunch)                                          Edible Mushroom 6,612.10            0.20    94.10            28.72          12.42
+Caixin (Bag)                                            Flower/Leaf Vegetables 6,609.80            0.20    94.30            41.12           9.43
+Haixian Mushroom (Bag) (3)                                     Edible Mushroom 6,437.00            0.19    94.49            42.05           1.30
+Red Hot Peppers                                                       Capsicum 6,413.06            0.19    94.68            40.35           6.73
+Needle Mushroom (Bag) (1)                                      Edible Mushroom 6,268.60            0.19    94.87            32.59           8.85
+Chinese Caterpillar Fungus Flowers (Bag)                       Edible Mushroom 5,973.00            0.18    95.04            29.20          11.13
+Chinese Caterpillar Fungus Flowers (Bag)                       Edible Mushroom 5,935.40            0.18    95.22            38.99           9.43
+Needle Mushroom (2)                                            Edible Mushroom 5,685.56            0.17    95.39            25.02           9.43
+Jigu Mushroom (1)                                              Edible Mushroom 5,661.94            0.17    95.56            35.50           8.99
+Red Hot Peppers (Bag)                                                 Capsicum 5,585.10            0.17    95.72            34.33           9.43
+7 Colour Pepper (1)                                                   Capsicum 5,557.99            0.16    95.89            34.44          15.98
+Haixian Mushroom (Bag) (1)                                     Edible Mushroom 5,262.00            0.16    96.04            38.24           5.96
+The Red Bell Pepper (1)                                               Capsicum 4,921.81            0.15    96.19            34.95           8.93
+Green And Red Hang Pepper Mix (Bag)                                   Capsicum 4,831.70            0.14    96.33            32.62           9.43
+Wild Lotus Root (1)                                Aquatic Tuberous Vegetables 4,659.10            0.14    96.47            26.57           7.97
+Lotus (Ea)                                         Aquatic Tuberous Vegetables 4,523.00            0.13    96.60            28.19          12.17
+Haixian Mushroom (Bunch)                                       Edible Mushroom 4,177.80            0.12    96.73            29.68           0.00
+The Local Yellow Youcai                                 Flower/Leaf Vegetables 4,138.37            0.12    96.85            37.48           6.73
+Red Bell Pepper (2)                                                   Capsicum 3,987.57            0.12    96.97            39.32           9.43
+Niushou Shengcai                                        Flower/Leaf Vegetables 3,506.09            0.10    97.07            40.23           4.39
+Red Hang Pepper (Bag)                                                 Capsicum 3,399.20            0.10    97.17            40.25           9.43
+Green Hot Peppers (Bag)                                               Capsicum 3,243.50            0.10    97.27            46.28           9.43
+Eggplant (1)                                                           Solanum 3,237.70            0.10    97.37            54.06           9.43
+Crab Flavor Mushroom And White Mushroom Mix (Box)              Edible Mushroom 2,931.80            0.09    97.45            32.13           0.84
+Haixian Mushroom (Bag) (2)                                     Edible Mushroom 2,926.70            0.09    97.54            27.09           0.00
+Fresh Black Fungus (1)                                         Edible Mushroom 2,907.35            0.09    97.63            41.95           7.63
+White Caitai                                            Flower/Leaf Vegetables 2,877.13            0.09    97.71            35.92           8.78
+Suizhou Bubble Green                                    Flower/Leaf Vegetables 2,840.27            0.08    97.80            30.14          12.20
+Chinese Cabbage (Bag)                                   Flower/Leaf Vegetables 2,800.60            0.08    97.88            19.28           9.43
+Bell Pepper (1)                                                       Capsicum 2,675.07            0.08    97.96            34.65          16.33
+Net Lotus Root (3)                                 Aquatic Tuberous Vegetables 2,552.86            0.08    98.03            40.61           9.43
+Zhuyecai (Bag)                                          Flower/Leaf Vegetables 2,274.50            0.07    98.10            31.89           9.43
+Yuxingcao (Bag)                                         Flower/Leaf Vegetables 2,190.20            0.06    98.17            59.66           9.43
+Fruit Pepper (Bag)                                                    Capsicum 2,190.00            0.06    98.23            32.52           9.43
+Jigu (Bag)                                                     Edible Mushroom 2,184.40            0.06    98.30            28.99           9.43
+Radish Leaves                                           Flower/Leaf Vegetables 2,103.82            0.06    98.36            40.41           5.35
+Xiaozhoupi                                                            Capsicum 1,921.86            0.06    98.42            35.11           8.71
+The Crab Flavor Mushroom (Bag)                                 Edible Mushroom 1,882.10            0.06    98.47            29.46          11.13
+Xixia Xianggu Mushroom (Bag)                                   Edible Mushroom 1,848.50            0.05    98.53            43.97           9.43
+Water Chestnut (Lingjiao)                          Aquatic Tuberous Vegetables 1,762.19            0.05    98.58            26.90           9.61
+Fresh Edible Fungus (Bag)                                      Edible Mushroom 1,607.10            0.05    98.63            22.92           9.43
+Longyacai                                               Flower/Leaf Vegetables 1,578.33            0.05    98.67            34.12           9.43
+Local Shanghaiqing                                      Flower/Leaf Vegetables 1,487.57            0.04    98.72            26.56          11.99
+Green Hang Pepper (Bag)                                               Capsicum 1,423.10            0.04    98.76            36.92           9.43
+Hongshujian (Bag)                                       Flower/Leaf Vegetables 1,421.70            0.04    98.80            38.32           9.43
+Lameizi                                                               Capsicum 1,391.11            0.04    98.84            45.65           0.00
+Garden Chrysanthemum (Bag)                              Flower/Leaf Vegetables 1,360.00            0.04    98.88            37.78           9.43
+Bell Pepper (2)                                                       Capsicum 1,228.80            0.04    98.92            41.18           9.43
+Tremella (Flower)                                              Edible Mushroom 1,220.50            0.04    98.96            23.20           9.14
+Green Eggplant (2)                                                     Solanum 1,201.17            0.04    98.99            29.53           9.43
+Xianzongye (Bag) (1)                                    Flower/Leaf Vegetables 1,180.00            0.04    99.03            44.47           0.00
+
+Here the economics change. A band-D item averages RMB 4,549 across three
+years -- roughly RMB 4 of revenue a day, or about RMB 2 of actual profit a day
+each. Every one still needs ordering, shelf space, handling and a price.
+
+43 of these 66 items sold on fewer than 200 of the 1,085 trading
+days, which is the more useful signal than revenue alone: an item that sells
+well but rarely is a stocking problem, while an item that sells poorly and
+often is a pricing or quality problem. The two need opposite responses.
+
+Band D also holds 31 items on the placeholder loss rate, so its margin column is
+the least trustworthy in this section.
+
+A pattern in those names worth naming outright: the tail is not 66 different
+products. 51 of the 66 band-D rows carry a (Bag), (Box), (Bunch) or
+numbered suffix -- they are repackagings of something the shop already sells.
+
+Across the whole range, 246 item codes represent only 167 distinct products.
+79 of the codes are duplicates of a product already stocked under
+another barcode. The worst offenders:
+
+                                    codes    revenue
+base_name                                           
+Haixian Mushroom                        7  42,714.91
+Needle Mushroom                         7 126,316.31
+Apricot Bao Mushroom                    5  47,207.54
+The Crab Flavor Mushroom                4   2,888.50
+The White Mushroom                      4  22,095.80
+Chinese Caterpillar Fungus Flowers      4  13,076.47
+Xianzongye                              4   2,200.47
+
+7 separate item codes for Haixian Mushroom, between them taking RMB 42,715
+over three years. Each of those codes is an ordering decision, a shelf
+facing, a price and a spoilage risk, for a product the shop already sells.
+
+This reframes the range review. The question for most of the tail is not
+'should we still sell this vegetable' -- it is 'why does this vegetable need
+seven barcodes'. Consolidating variants is a far easier conversation than
+delisting products, and it removes most of the same overhead.
+
+BAND E -- ranks 131-246 (116 items), the last 1%
+
+Not tabulated here: 116 rows averaging RMB 283 of revenue each across three
+years, which is RMB 0 a day. The full list is in reports/findings.json.
+59 of them sold on ten days or fewer, and 79 have not sold at all in
+the final six months.
+
+THE PRACTICAL SPLIT
+
+  A + B (42 items, 80.4% of revenue)
+      The business. Worth individual attention: pricing, ordering frequency,
+      handling, and measuring the loss rates that are currently guessed.
+
+  C (22 items, 9.7%)
+      Healthy, small. Manage by category rule, not item by item.
+
+  D + E (182 items, 9.9%)
+      A range-review problem, not a merchandising one. The question for each
+      is not 'how do we sell more' but 'why is this still listed'.
 
 DELISTED IN PRACTICE: 110 items have not sold in the final six months
 of the ledger. Together they were 9.1% of three-year revenue.
@@ -769,7 +946,22 @@ rank items reliably; they should not be read as a promise about a price change.
      handling checks, and loss-adjusted pricing. A single point of loss rate
      recovered on Broccoli is worth more than delisting fifty dead SKUs.
 
-4. The range has a long dead tail nobody has reviewed
+4. The range is duplicated, not just long
+   ----------------------------------------------------------------------
+   WHAT THE DATA SHOWS
+     7 separate item codes exist for Haixian Mushroom, 5 for Apricot Bao
+     Mushroom. Across the catalogue, 246 codes represent only 167 distinct
+     products -- 79 are a repackaging of something already stocked. Most of
+     the long tail is not obscure vegetables; it is the same vegetables
+     entered several times.
+   WHAT TO DO
+     Consolidate variants before delisting anything. Every duplicate code is
+     a separate ordering decision, shelf facing, price and spoilage risk for
+     a product the shop already sells, and merging them removes that overhead
+     without removing a single thing a customer can buy. It is a far easier
+     conversation than a delist, and it should come first.
+
+5. The range has a long dead tail nobody has reviewed
    ----------------------------------------------------------------------
    WHAT THE DATA SHOWS
      60 items sold on ten days or fewer in three years, and 110 have not sold
@@ -783,7 +975,7 @@ rank items reliably; they should not be read as a promise about a price change.
      to the top decile, which is volume-constrained rather than
      demand-constrained.
 
-5. Clearance works; the ordering that makes it necessary does not
+6. Clearance works; the ordering that makes it necessary does not
    ----------------------------------------------------------------------
    WHAT THE DATA SHOWS
      5.4% of lines are marked down, overwhelmingly after 19:00 (27% of lines
@@ -796,7 +988,7 @@ rank items reliably; they should not be read as a promise about a price change.
      morning market and a light top-up before 16:00 for the evening rush. The
      evening clearance pile is the visible end of a morning over-order.
 
-6. The last trading hour does not pay for itself -- at this counter
+7. The last trading hour does not pay for itself -- at this counter
    ----------------------------------------------------------------------
    WHAT THE DATA SHOWS
      After 21:00 the produce counter takes 2.1% of revenue at 24.9% margin,
@@ -808,7 +1000,7 @@ rank items reliably; they should not be read as a promise about a price change.
      closing time -- this data only sees the produce counter, so if the rest
      of the shop trades late, the answer is a pre-packed section after 21:00.
 
-7. The single biggest sales event of the year is fully predictable
+8. The single biggest sales event of the year is fully predictable
    ----------------------------------------------------------------------
    WHAT THE DATA SHOWS
      8 of the ten best days in three years fall in the week before Chinese

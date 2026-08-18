@@ -6561,6 +6561,43 @@
       "pct_revenue": 5.671736006510919
     }
   ],
+  "sku_families": [
+    {
+      "product": "Haixian Mushroom",
+      "codes": 7,
+      "revenue": 42714.9071
+    },
+    {
+      "product": "Needle Mushroom",
+      "codes": 7,
+      "revenue": 126316.3063
+    },
+    {
+      "product": "Apricot Bao Mushroom",
+      "codes": 5,
+      "revenue": 47207.5354
+    },
+    {
+      "product": "The Crab Flavor Mushroom",
+      "codes": 4,
+      "revenue": 2888.5
+    },
+    {
+      "product": "The White Mushroom",
+      "codes": 4,
+      "revenue": 22095.800000000003
+    },
+    {
+      "product": "Chinese Caterpillar Fungus Flowers",
+      "codes": 4,
+      "revenue": 13076.4684
+    },
+    {
+      "product": "Xianzongye",
+      "codes": 4,
+      "revenue": 2200.4742
+    }
+  ],
   "bands": [
     {
       "band": "A",
@@ -6764,7 +6801,8 @@
       "pct_of_revenue": 1.6999953704329045,
       "cum_pct": 52.11692676009233,
       "margin_true_pct": 30.51819768441397,
-      "loss_rate": 0.1176
+      "loss_rate": 0.1176,
+      "days_sold": 755
     },
     {
       "item_code": 102900005115823,
@@ -6774,7 +6812,8 @@
       "pct_of_revenue": 1.6882909718428118,
       "cum_pct": 53.805217731935144,
       "margin_true_pct": 30.878127238213725,
-      "loss_rate": 0.14429999999999998
+      "loss_rate": 0.14429999999999998,
+      "days_sold": 919
     },
     {
       "item_code": 102900011031100,
@@ -6784,7 +6823,8 @@
       "pct_of_revenue": 1.6315492595264218,
       "cum_pct": 55.43676699146157,
       "margin_true_pct": 44.445632184585165,
-      "loss_rate": 0.0943
+      "loss_rate": 0.0943,
+      "days_sold": 488
     },
     {
       "item_code": 102900051010455,
@@ -6794,7 +6834,8 @@
       "pct_of_revenue": 1.5869992644352011,
       "cum_pct": 57.02376625589677,
       "margin_true_pct": 31.452077565867313,
-      "loss_rate": 0.1561
+      "loss_rate": 0.1561,
+      "days_sold": 904
     },
     {
       "item_code": 102900005118817,
@@ -6804,7 +6845,8 @@
       "pct_of_revenue": 1.5535064925244375,
       "cum_pct": 58.5772727484212,
       "margin_true_pct": 22.59169063268336,
-      "loss_rate": 0.18510000000000001
+      "loss_rate": 0.18510000000000001,
+      "days_sold": 730
     },
     {
       "item_code": 102900011034026,
@@ -6814,7 +6856,8 @@
       "pct_of_revenue": 1.4070701256731073,
       "cum_pct": 59.98434287409431,
       "margin_true_pct": 33.86971287813724,
-      "loss_rate": 0.0943
+      "loss_rate": 0.0943,
+      "days_sold": 337
     },
     {
       "item_code": 102900005118831,
@@ -6824,7 +6867,8 @@
       "pct_of_revenue": 1.3364664973095384,
       "cum_pct": 61.32080937140385,
       "margin_true_pct": 33.5668654685549,
-      "loss_rate": 0.0248
+      "loss_rate": 0.0248,
+      "days_sold": 688
     },
     {
       "item_code": 102900005125808,
@@ -6834,7 +6878,8 @@
       "pct_of_revenue": 1.2146392986515924,
       "cum_pct": 62.53544867005544,
       "margin_true_pct": 35.319937591191774,
-      "loss_rate": 0.058600000000000006
+      "loss_rate": 0.058600000000000006,
+      "days_sold": 585
     },
     {
       "item_code": 102900011032251,
@@ -6844,7 +6889,8 @@
       "pct_of_revenue": 1.2083893729831527,
       "cum_pct": 63.74383804303859,
       "margin_true_pct": 37.49516918220927,
-      "loss_rate": 0.0943
+      "loss_rate": 0.0943,
+      "days_sold": 382
     },
     {
       "item_code": 102900005115786,
@@ -6854,7 +6900,8 @@
       "pct_of_revenue": 1.1554135358653466,
       "cum_pct": 64.89925157890394,
       "margin_true_pct": 26.497000766638504,
-      "loss_rate": 0.1362
+      "loss_rate": 0.1362,
+      "days_sold": 667
     },
     {
       "item_code": 102900005115960,
@@ -6864,7 +6911,8 @@
       "pct_of_revenue": 1.1501890699798891,
       "cum_pct": 66.04944064888383,
       "margin_true_pct": 24.176889223371578,
-      "loss_rate": 0.2227
+      "loss_rate": 0.2227,
+      "days_sold": 480
     },
     {
       "item_code": 102900005116547,
@@ -6874,7 +6922,8 @@
       "pct_of_revenue": 1.1074429862403454,
       "cum_pct": 67.15688363512417,
       "margin_true_pct": 39.23124017082201,
-      "loss_rate": 0.034300000000000004
+      "loss_rate": 0.034300000000000004,
+      "days_sold": 448
     },
     {
       "item_code": 102900011030097,
@@ -6884,7 +6933,8 @@
       "pct_of_revenue": 1.0591861556499889,
       "cum_pct": 68.21606979077416,
       "margin_true_pct": 36.54334764817293,
-      "loss_rate": 0.0943
+      "loss_rate": 0.0943,
+      "days_sold": 410
     },
     {
       "item_code": 102900011008522,
@@ -6894,7 +6944,8 @@
       "pct_of_revenue": 1.057048440752059,
       "cum_pct": 69.27311823152621,
       "margin_true_pct": 34.75439640119295,
-      "loss_rate": 0.0943
+      "loss_rate": 0.0943,
+      "days_sold": 340
     },
     {
       "item_code": 102900005115908,
@@ -6904,7 +6955,8 @@
       "pct_of_revenue": 0.972867702427017,
       "cum_pct": 70.24598593395324,
       "margin_true_pct": 29.617452246530473,
-      "loss_rate": 0.13699999999999998
+      "loss_rate": 0.13699999999999998,
+      "days_sold": 711
     },
     {
       "item_code": 102900051004294,
@@ -6914,7 +6966,8 @@
       "pct_of_revenue": 0.9161791955779004,
       "cum_pct": 71.16216512953113,
       "margin_true_pct": 34.25498114487342,
-      "loss_rate": 0.078
+      "loss_rate": 0.078,
+      "days_sold": 747
     },
     {
       "item_code": 102900005122654,
@@ -6924,7 +6977,8 @@
       "pct_of_revenue": 0.9153514854029661,
       "cum_pct": 72.0775166149341,
       "margin_true_pct": 25.629939640401915,
-      "loss_rate": 0.11380000000000001
+      "loss_rate": 0.11380000000000001,
+      "days_sold": 384
     },
     {
       "item_code": 102900005119975,
@@ -6934,7 +6988,8 @@
       "pct_of_revenue": 0.8983190410495806,
       "cum_pct": 72.97583565598367,
       "margin_true_pct": 34.36964569925384,
-      "loss_rate": 0.0842
+      "loss_rate": 0.0842,
+      "days_sold": 567
     },
     {
       "item_code": 102900011008164,
@@ -6944,7 +6999,8 @@
       "pct_of_revenue": 0.8253644456221091,
       "cum_pct": 73.80120010160579,
       "margin_true_pct": 29.656569973469598,
-      "loss_rate": 0.1568
+      "loss_rate": 0.1568,
+      "days_sold": 762
     },
     {
       "item_code": 102900005115793,
@@ -6954,7 +7010,8 @@
       "pct_of_revenue": 0.7987719945971063,
       "cum_pct": 74.59997209620289,
       "margin_true_pct": 31.734104533560902,
-      "loss_rate": 0.0759
+      "loss_rate": 0.0759,
+      "days_sold": 478
     },
     {
       "item_code": 102900005115878,
@@ -6964,7 +7021,8 @@
       "pct_of_revenue": 0.797415559357018,
       "cum_pct": 75.39738765555991,
       "margin_true_pct": 34.32224481629359,
-      "loss_rate": 0.06269999999999999
+      "loss_rate": 0.06269999999999999,
+      "days_sold": 514
     },
     {
       "item_code": 102900011022764,
@@ -6974,7 +7032,8 @@
       "pct_of_revenue": 0.7806022933962852,
       "cum_pct": 76.1779899489562,
       "margin_true_pct": 34.43128458277843,
-      "loss_rate": 0.069
+      "loss_rate": 0.069,
+      "days_sold": 454
     },
     {
       "item_code": 102900005115762,
@@ -6984,7 +7043,8 @@
       "pct_of_revenue": 0.7570788591922406,
       "cum_pct": 76.93506880814843,
       "margin_true_pct": 21.38643141086029,
-      "loss_rate": 0.1852
+      "loss_rate": 0.1852,
+      "days_sold": 635
     },
     {
       "item_code": 102900011030110,
@@ -6994,7 +7054,8 @@
       "pct_of_revenue": 0.7523251291903883,
       "cum_pct": 77.68739393733881,
       "margin_true_pct": 33.64353869609086,
-      "loss_rate": 0.0943
+      "loss_rate": 0.0943,
+      "days_sold": 386
     },
     {
       "item_code": 102900005125815,
@@ -7004,7 +7065,8 @@
       "pct_of_revenue": 0.7232473457075848,
       "cum_pct": 78.4106412830464,
       "margin_true_pct": 37.41773281643712,
-      "loss_rate": 0.050499999999999996
+      "loss_rate": 0.050499999999999996,
+      "days_sold": 452
     },
     {
       "item_code": 102900005116509,
@@ -7014,7 +7076,8 @@
       "pct_of_revenue": 0.6927545650631596,
       "cum_pct": 79.10339584810956,
       "margin_true_pct": 33.726538844401034,
-      "loss_rate": 0.0501
+      "loss_rate": 0.0501,
+      "days_sold": 845
     },
     {
       "item_code": 102900011034330,
@@ -7024,7 +7087,8 @@
       "pct_of_revenue": 0.6708150299324622,
       "cum_pct": 79.77421087804201,
       "margin_true_pct": 34.654554786395074,
-      "loss_rate": 0.002
+      "loss_rate": 0.002,
+      "days_sold": 293
     },
     {
       "item_code": 102900011034231,
@@ -7034,7 +7098,2258 @@
       "pct_of_revenue": 0.6675922546823764,
       "cum_pct": 80.44180313272439,
       "margin_true_pct": 42.04889039127998,
-      "loss_rate": 0.0943
+      "loss_rate": 0.0943,
+      "days_sold": 244
+    }
+  ],
+  "band_c_items": [
+    {
+      "item_code": 102900051000944,
+      "item_name": "Honghu Lotus Root",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 21463.0442,
+      "pct_of_revenue": 0.6369297204351605,
+      "cum_pct": 81.07873285315955,
+      "margin_true_pct": 10.108595148708185,
+      "loss_rate": 0.24050000000000002,
+      "days_sold": 258
+    },
+    {
+      "item_code": 102900011013274,
+      "item_name": "The White Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 20492.9,
+      "pct_of_revenue": 0.6081400637429476,
+      "cum_pct": 81.6868729169025,
+      "margin_true_pct": 34.28386819234278,
+      "loss_rate": 0.06570000000000001,
+      "days_sold": 698
+    },
+    {
+      "item_code": 102900005116837,
+      "item_name": "Ping Mushroom",
+      "category": "Edible Mushroom",
+      "revenue": 19641.6622,
+      "pct_of_revenue": 0.5828790313877218,
+      "cum_pct": 82.26975194829022,
+      "margin_true_pct": 32.60813947292799,
+      "loss_rate": 0.11599999999999999,
+      "days_sold": 362
+    },
+    {
+      "item_code": 102900011023464,
+      "item_name": "Xiaoqingcai (1)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 18780.4848,
+      "pct_of_revenue": 0.5573230349728665,
+      "cum_pct": 82.82707498326309,
+      "margin_true_pct": 35.6295171484061,
+      "loss_rate": 0.1033,
+      "days_sold": 492
+    },
+    {
+      "item_code": 102900005116790,
+      "item_name": "Yellow Xincai (1)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 17937.9581,
+      "pct_of_revenue": 0.5323205101450904,
+      "cum_pct": 83.35939549340817,
+      "margin_true_pct": 36.47220370777868,
+      "loss_rate": 0.10640000000000001,
+      "days_sold": 447
+    },
+    {
+      "item_code": 102900011032022,
+      "item_name": "Xiaozhoupi (Bag)",
+      "category": "Capsicum",
+      "revenue": 17567.7,
+      "pct_of_revenue": 0.5213328615187202,
+      "cum_pct": 83.88072835492689,
+      "margin_true_pct": 43.454448229929355,
+      "loss_rate": 0.0943,
+      "days_sold": 441
+    },
+    {
+      "item_code": 102900005118824,
+      "item_name": "High Melon (1)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 16257.766300000001,
+      "pct_of_revenue": 0.48245973161436134,
+      "cum_pct": 84.36318808654124,
+      "margin_true_pct": 15.976674389800117,
+      "loss_rate": 0.2925,
+      "days_sold": 544
+    },
+    {
+      "item_code": 102900011033906,
+      "item_name": "Powcan Mountain Chinese Cabbage",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 16003.2166,
+      "pct_of_revenue": 0.47490580460628784,
+      "cum_pct": 84.83809389114754,
+      "margin_true_pct": 49.54554672340432,
+      "loss_rate": 0.0943,
+      "days_sold": 200
+    },
+    {
+      "item_code": 102900011033944,
+      "item_name": "Apricot Bao Mushroom (2)",
+      "category": "Edible Mushroom",
+      "revenue": 15390.1888,
+      "pct_of_revenue": 0.45671380809197315,
+      "cum_pct": 85.29480769923951,
+      "margin_true_pct": 28.19174661377411,
+      "loss_rate": 0.0943,
+      "days_sold": 293
+    },
+    {
+      "item_code": 102900005115861,
+      "item_name": "Niushou Youcai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 15172.1753,
+      "pct_of_revenue": 0.4502441164530728,
+      "cum_pct": 85.74505181569259,
+      "margin_true_pct": 32.85661211145619,
+      "loss_rate": 0.1217,
+      "days_sold": 285
+    },
+    {
+      "item_code": 102900005116943,
+      "item_name": "Red Hang Pepper",
+      "category": "Capsicum",
+      "revenue": 15118.5445,
+      "pct_of_revenue": 0.44865258777091527,
+      "cum_pct": 86.1937044034635,
+      "margin_true_pct": 33.48555728703505,
+      "loss_rate": 0.0999,
+      "days_sold": 588
+    },
+    {
+      "item_code": 102900005116226,
+      "item_name": "Green Hot Peppers",
+      "category": "Capsicum",
+      "revenue": 13361.2127,
+      "pct_of_revenue": 0.39650262984063167,
+      "cum_pct": 86.59020703330413,
+      "margin_true_pct": 36.101131021065086,
+      "loss_rate": 0.0672,
+      "days_sold": 617
+    },
+    {
+      "item_code": 102900005115885,
+      "item_name": "Caidian Quinoa Artemisia",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 13243.1145,
+      "pct_of_revenue": 0.3929979893614448,
+      "cum_pct": 86.98320502266557,
+      "margin_true_pct": 35.206821069867175,
+      "loss_rate": 0.004699999999999999,
+      "days_sold": 303
+    },
+    {
+      "item_code": 102900011033920,
+      "item_name": "Huangxincai (2)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 13235.5698,
+      "pct_of_revenue": 0.3927740955085045,
+      "cum_pct": 87.37597911817407,
+      "margin_true_pct": 40.365812164789766,
+      "loss_rate": 0.0943,
+      "days_sold": 223
+    },
+    {
+      "item_code": 102900005119098,
+      "item_name": "The Agaricus Bisporus",
+      "category": "Edible Mushroom",
+      "revenue": 12956.7453,
+      "pct_of_revenue": 0.38449979810779034,
+      "cum_pct": 87.76047891628187,
+      "margin_true_pct": 22.727321275902277,
+      "loss_rate": 0.1278,
+      "days_sold": 224
+    },
+    {
+      "item_code": 102900011035078,
+      "item_name": "Red Pepper (2)",
+      "category": "Capsicum",
+      "revenue": 12936.7644,
+      "pct_of_revenue": 0.3839068519752448,
+      "cum_pct": 88.14438576825711,
+      "margin_true_pct": 30.67507080598991,
+      "loss_rate": 0.0943,
+      "days_sold": 288
+    },
+    {
+      "item_code": 102900011034224,
+      "item_name": "Xiaoqingcai (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 12220.0,
+      "pct_of_revenue": 0.36263640475183206,
+      "cum_pct": 88.50702217300893,
+      "margin_true_pct": 46.94413106878837,
+      "loss_rate": 0.0943,
+      "days_sold": 179
+    },
+    {
+      "item_code": 102900011006948,
+      "item_name": "Foreign Garland Chrysanthemum",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 11699.693000000001,
+      "pct_of_revenue": 0.3471959579558246,
+      "cum_pct": 88.85421813096475,
+      "margin_true_pct": 16.177192463763983,
+      "loss_rate": 0.2616,
+      "days_sold": 269
+    },
+    {
+      "item_code": 102900005115946,
+      "item_name": "Muercai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 11099.5006,
+      "pct_of_revenue": 0.3293848602393456,
+      "cum_pct": 89.1836029912041,
+      "margin_true_pct": 39.99452904170663,
+      "loss_rate": 0.0761,
+      "days_sold": 421
+    },
+    {
+      "item_code": 102900011009277,
+      "item_name": "Water Chestnut",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 10670.2154,
+      "pct_of_revenue": 0.316645544237613,
+      "cum_pct": 89.50024853544171,
+      "margin_true_pct": 27.46927654838208,
+      "loss_rate": 0.11019999999999999,
+      "days_sold": 213
+    },
+    {
+      "item_code": 102900005115199,
+      "item_name": "Sichuan Red Cedar",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 10547.765300000001,
+      "pct_of_revenue": 0.31301175831081257,
+      "cum_pct": 89.81326029375252,
+      "margin_true_pct": 14.568054195437892,
+      "loss_rate": 0.10460000000000001,
+      "days_sold": 151
+    },
+    {
+      "item_code": 102900011009444,
+      "item_name": "Dalong Eggplant",
+      "category": "Solanum",
+      "revenue": 10233.7446,
+      "pct_of_revenue": 0.3036929909077312,
+      "cum_pct": 90.11695328466026,
+      "margin_true_pct": 35.352426618441164,
+      "loss_rate": 0.1094,
+      "days_sold": 197
+    }
+  ],
+  "band_d_items": [
+    {
+      "item_code": 106949711300167,
+      "item_name": "Needle Mushroom (Bag) (2)",
+      "category": "Edible Mushroom",
+      "revenue": 9964.6,
+      "pct_of_revenue": 0.2957059508011543,
+      "cum_pct": 90.4126592354614,
+      "margin_true_pct": 33.160345635546406,
+      "loss_rate": 0.0664,
+      "days_sold": 215
+    },
+    {
+      "item_code": 102900011032237,
+      "item_name": "Green Line Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 9473.8,
+      "pct_of_revenue": 0.2811411433173409,
+      "cum_pct": 90.69380037877875,
+      "margin_true_pct": 46.03376473619185,
+      "loss_rate": 0.0943,
+      "days_sold": 280
+    },
+    {
+      "item_code": 102900011022030,
+      "item_name": "Pepper Mix",
+      "category": "Capsicum",
+      "revenue": 9398.9,
+      "pct_of_revenue": 0.2789184373667753,
+      "cum_pct": 90.97271881614552,
+      "margin_true_pct": 81.92793106306398,
+      "loss_rate": 0.0943,
+      "days_sold": 176
+    },
+    {
+      "item_code": 102900011030141,
+      "item_name": "Shanghai Green (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 9086.0,
+      "pct_of_revenue": 0.26963292746114126,
+      "cum_pct": 91.24235174360666,
+      "margin_true_pct": 47.48900080107517,
+      "loss_rate": 0.0943,
+      "days_sold": 287
+    },
+    {
+      "item_code": 102900011032619,
+      "item_name": "Xixia Xianggu Mushroom (2)",
+      "category": "Edible Mushroom",
+      "revenue": 9001.054,
+      "pct_of_revenue": 0.2671120999621192,
+      "cum_pct": 91.50946384356878,
+      "margin_true_pct": 31.04413931550368,
+      "loss_rate": 0.0943,
+      "days_sold": 69
+    },
+    {
+      "item_code": 102900011032343,
+      "item_name": "7 Colour Pepper (2)",
+      "category": "Capsicum",
+      "revenue": 8980.4066,
+      "pct_of_revenue": 0.26649937501093485,
+      "cum_pct": 91.77596321857972,
+      "margin_true_pct": 41.33019183428498,
+      "loss_rate": 0.0943,
+      "days_sold": 258
+    },
+    {
+      "item_code": 102900011032732,
+      "item_name": "High Melon (2)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 8966.074700000001,
+      "pct_of_revenue": 0.2660740666075582,
+      "cum_pct": 92.04203728518728,
+      "margin_true_pct": 24.33494468350911,
+      "loss_rate": 0.0943,
+      "days_sold": 159
+    },
+    {
+      "item_code": 106949711300068,
+      "item_name": "Needle Mushroom (Bag) (3)",
+      "category": "Edible Mushroom",
+      "revenue": 8434.9,
+      "pct_of_revenue": 0.25031111378406123,
+      "cum_pct": 92.29234839897134,
+      "margin_true_pct": 30.962993864580678,
+      "loss_rate": 0.11130000000000001,
+      "days_sold": 258
+    },
+    {
+      "item_code": 102900011030912,
+      "item_name": "Haixian Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 8188.2,
+      "pct_of_revenue": 0.2429901317012235,
+      "cum_pct": 92.53533853067256,
+      "margin_true_pct": 49.84609561986475,
+      "loss_rate": 0.0943,
+      "days_sold": 162
+    },
+    {
+      "item_code": 102900011006689,
+      "item_name": "Dongmenkou Xiaobaicai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 8012.8222,
+      "pct_of_revenue": 0.2377856820395798,
+      "cum_pct": 92.77312421271215,
+      "margin_true_pct": 17.50222000931349,
+      "loss_rate": 0.2784,
+      "days_sold": 435
+    },
+    {
+      "item_code": 106958851400125,
+      "item_name": "Haixian Mushroom (Bag) (4)",
+      "category": "Edible Mushroom",
+      "revenue": 7983.7,
+      "pct_of_revenue": 0.23692146191630128,
+      "cum_pct": 93.01004567462844,
+      "margin_true_pct": 26.9759462461872,
+      "loss_rate": 0.11130000000000001,
+      "days_sold": 314
+    },
+    {
+      "item_code": 102900051000463,
+      "item_name": "Round Eggplant (2)",
+      "category": "Solanum",
+      "revenue": 7804.0886,
+      "pct_of_revenue": 0.2315913774360686,
+      "cum_pct": 93.24163705206452,
+      "margin_true_pct": 36.261831540456065,
+      "loss_rate": 0.06709999999999999,
+      "days_sold": 501
+    },
+    {
+      "item_code": 102900005119944,
+      "item_name": "Haixian Mushroom (1)",
+      "category": "Edible Mushroom",
+      "revenue": 7739.5071,
+      "pct_of_revenue": 0.22967487964773142,
+      "cum_pct": 93.47131193171225,
+      "margin_true_pct": 34.64769712005085,
+      "loss_rate": 0.0989,
+      "days_sold": 326
+    },
+    {
+      "item_code": 102900011032848,
+      "item_name": "Ginger And Xiaomijiao Mix (Small Bag)",
+      "category": "Capsicum",
+      "revenue": 7547.8,
+      "pct_of_revenue": 0.22398584744565286,
+      "cum_pct": 93.6952977791579,
+      "margin_true_pct": 54.021496817911796,
+      "loss_rate": 0.0943,
+      "days_sold": 366
+    },
+    {
+      "item_code": 102900011012994,
+      "item_name": "Apricot Bao Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 7085.200000000001,
+      "pct_of_revenue": 0.21025789320357455,
+      "cum_pct": 93.90555567236147,
+      "margin_true_pct": 33.64916654472873,
+      "loss_rate": 0.1003,
+      "days_sold": 327
+    },
+    {
+      "item_code": 102900011001806,
+      "item_name": "Jigu Mushroom (Bunch)",
+      "category": "Edible Mushroom",
+      "revenue": 6612.1,
+      "pct_of_revenue": 0.19621834466936078,
+      "cum_pct": 94.10177401703083,
+      "margin_true_pct": 28.718053039418812,
+      "loss_rate": 0.1242,
+      "days_sold": 359
+    },
+    {
+      "item_code": 102900011030134,
+      "item_name": "Caixin (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 6609.8,
+      "pct_of_revenue": 0.1961500906815597,
+      "cum_pct": 94.29792410771239,
+      "margin_true_pct": 41.11931115575848,
+      "loss_rate": 0.0943,
+      "days_sold": 275
+    },
+    {
+      "item_code": 106971533455008,
+      "item_name": "Haixian Mushroom (Bag) (3)",
+      "category": "Edible Mushroom",
+      "revenue": 6437.0,
+      "pct_of_revenue": 0.1910221389024176,
+      "cum_pct": 94.4889462466148,
+      "margin_true_pct": 42.05327955356877,
+      "loss_rate": 0.013000000000000001,
+      "days_sold": 240
+    },
+    {
+      "item_code": 102900005116219,
+      "item_name": "Red Hot Peppers",
+      "category": "Capsicum",
+      "revenue": 6413.064,
+      "pct_of_revenue": 0.19031182261893642,
+      "cum_pct": 94.67925806923374,
+      "margin_true_pct": 40.34787943088869,
+      "loss_rate": 0.0673,
+      "days_sold": 314
+    },
+    {
+      "item_code": 102900011001813,
+      "item_name": "Needle Mushroom (Bag) (1)",
+      "category": "Edible Mushroom",
+      "revenue": 6268.6,
+      "pct_of_revenue": 0.18602475996950363,
+      "cum_pct": 94.86528282920324,
+      "margin_true_pct": 32.59248627483402,
+      "loss_rate": 0.0885,
+      "days_sold": 123
+    },
+    {
+      "item_code": 102900011018095,
+      "item_name": "Chinese Caterpillar Fungus Flowers (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 5973.0,
+      "pct_of_revenue": 0.1772526387547212,
+      "cum_pct": 95.04253546795796,
+      "margin_true_pct": 29.195840605330044,
+      "loss_rate": 0.11130000000000001,
+      "days_sold": 141
+    },
+    {
+      "item_code": 102900011031926,
+      "item_name": "Chinese Caterpillar Fungus Flowers (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 5935.400000000001,
+      "pct_of_revenue": 0.17613683443240785,
+      "cum_pct": 95.21867230239037,
+      "margin_true_pct": 38.98887558616688,
+      "loss_rate": 0.0943,
+      "days_sold": 245
+    },
+    {
+      "item_code": 102900011033937,
+      "item_name": "Needle Mushroom (2)",
+      "category": "Edible Mushroom",
+      "revenue": 5685.5638,
+      "pct_of_revenue": 0.16872278358585632,
+      "cum_pct": 95.38739508597622,
+      "margin_true_pct": 25.0164923631705,
+      "loss_rate": 0.0943,
+      "days_sold": 89
+    },
+    {
+      "item_code": 102900005116912,
+      "item_name": "Jigu Mushroom (1)",
+      "category": "Edible Mushroom",
+      "revenue": 5661.9376,
+      "pct_of_revenue": 0.1680216608177755,
+      "cum_pct": 95.555416746794,
+      "margin_true_pct": 35.50048961072807,
+      "loss_rate": 0.08990000000000001,
+      "days_sold": 308
+    },
+    {
+      "item_code": 102900011032244,
+      "item_name": "Red Hot Peppers (Bag)",
+      "category": "Capsicum",
+      "revenue": 5585.1,
+      "pct_of_revenue": 0.16574145533383447,
+      "cum_pct": 95.72115820212782,
+      "margin_true_pct": 34.33450226040414,
+      "loss_rate": 0.0943,
+      "days_sold": 246
+    },
+    {
+      "item_code": 102900005117209,
+      "item_name": "7 Colour Pepper (1)",
+      "category": "Capsicum",
+      "revenue": 5557.9864,
+      "pct_of_revenue": 0.1649368417148591,
+      "cum_pct": 95.88609504384269,
+      "margin_true_pct": 34.43751694083864,
+      "loss_rate": 0.1598,
+      "days_sold": 284
+    },
+    {
+      "item_code": 102900011011546,
+      "item_name": "Haixian Mushroom (Bag) (1)",
+      "category": "Edible Mushroom",
+      "revenue": 5262.0,
+      "pct_of_revenue": 0.15615325383012604,
+      "cum_pct": 96.04224829767281,
+      "margin_true_pct": 38.244293370232654,
+      "loss_rate": 0.0596,
+      "days_sold": 172
+    },
+    {
+      "item_code": 102900011001219,
+      "item_name": "The Red Bell Pepper (1)",
+      "category": "Capsicum",
+      "revenue": 4921.8121,
+      "pct_of_revenue": 0.14605795784026715,
+      "cum_pct": 96.18830625551308,
+      "margin_true_pct": 34.94829348097212,
+      "loss_rate": 0.08929999999999999,
+      "days_sold": 272
+    },
+    {
+      "item_code": 102900011034439,
+      "item_name": "Green And Red Hang Pepper Mix (Bag)",
+      "category": "Capsicum",
+      "revenue": 4831.7,
+      "pct_of_revenue": 0.14338382298194982,
+      "cum_pct": 96.33169007849503,
+      "margin_true_pct": 32.61717625498412,
+      "loss_rate": 0.0943,
+      "days_sold": 228
+    },
+    {
+      "item_code": 102900011010891,
+      "item_name": "Wild Lotus Root (1)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 4659.0984,
+      "pct_of_revenue": 0.13826175885114672,
+      "cum_pct": 96.46995183734617,
+      "margin_true_pct": 26.572715200308032,
+      "loss_rate": 0.0797,
+      "days_sold": 164
+    },
+    {
+      "item_code": 102900011001561,
+      "item_name": "Lotus (Ea)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 4523.0,
+      "pct_of_revenue": 0.13422295079316993,
+      "cum_pct": 96.60417478813935,
+      "margin_true_pct": 28.1914801897189,
+      "loss_rate": 0.1217,
+      "days_sold": 86
+    },
+    {
+      "item_code": 106971533450003,
+      "item_name": "Haixian Mushroom (Bunch)",
+      "category": "Edible Mushroom",
+      "revenue": 4177.8,
+      "pct_of_revenue": 0.12397891749363371,
+      "cum_pct": 96.72815370563298,
+      "margin_true_pct": 29.678299583512857,
+      "loss_rate": 0.0,
+      "days_sold": 119
+    },
+    {
+      "item_code": 102900011022849,
+      "item_name": "The Local Yellow Youcai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 4138.3678,
+      "pct_of_revenue": 0.12280874145112511,
+      "cum_pct": 96.8509624470841,
+      "margin_true_pct": 37.48273431318584,
+      "loss_rate": 0.0673,
+      "days_sold": 115
+    },
+    {
+      "item_code": 102900011032367,
+      "item_name": "Red Bell Pepper (2)",
+      "category": "Capsicum",
+      "revenue": 3987.5684,
+      "pct_of_revenue": 0.1183336717085119,
+      "cum_pct": 96.96929611879261,
+      "margin_true_pct": 39.315414884489,
+      "loss_rate": 0.0943,
+      "days_sold": 182
+    },
+    {
+      "item_code": 102900005115168,
+      "item_name": "Niushou Shengcai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 3506.0886,
+      "pct_of_revenue": 0.10404544718865665,
+      "cum_pct": 97.07334156598127,
+      "margin_true_pct": 40.232307527115346,
+      "loss_rate": 0.043899999999999995,
+      "days_sold": 102
+    },
+    {
+      "item_code": 102900011032213,
+      "item_name": "Red Hang Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 3399.2000000000003,
+      "pct_of_revenue": 0.10087345884062418,
+      "cum_pct": 97.17421502482189,
+      "margin_true_pct": 40.247291850237055,
+      "loss_rate": 0.0943,
+      "days_sold": 192
+    },
+    {
+      "item_code": 102900011031582,
+      "item_name": "Green Hot Peppers (Bag)",
+      "category": "Capsicum",
+      "revenue": 3243.5,
+      "pct_of_revenue": 0.09625296062295968,
+      "cum_pct": 97.27046798544485,
+      "margin_true_pct": 46.280310002122626,
+      "loss_rate": 0.0943,
+      "days_sold": 193
+    },
+    {
+      "item_code": 102900011033982,
+      "item_name": "Eggplant (1)",
+      "category": "Solanum",
+      "revenue": 3237.7046,
+      "pct_of_revenue": 0.09608097837908908,
+      "cum_pct": 97.36654896382394,
+      "margin_true_pct": 54.05660865012706,
+      "loss_rate": 0.0943,
+      "days_sold": 44
+    },
+    {
+      "item_code": 102900011035740,
+      "item_name": "Crab Flavor Mushroom And White Mushroom Mix (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 2931.8,
+      "pct_of_revenue": 0.08700306149356966,
+      "cum_pct": 97.45355202531752,
+      "margin_true_pct": 32.12821935790761,
+      "loss_rate": 0.0084,
+      "days_sold": 137
+    },
+    {
+      "item_code": 106930274620090,
+      "item_name": "Haixian Mushroom (Bag) (2)",
+      "category": "Edible Mushroom",
+      "revenue": 2926.7,
+      "pct_of_revenue": 0.08685171569453248,
+      "cum_pct": 97.54040374101206,
+      "margin_true_pct": 27.089213106912222,
+      "loss_rate": 0.0,
+      "days_sold": 51
+    },
+    {
+      "item_code": 102900011009246,
+      "item_name": "Fresh Black Fungus (1)",
+      "category": "Edible Mushroom",
+      "revenue": 2907.348,
+      "pct_of_revenue": 0.08627743257630355,
+      "cum_pct": 97.62668117358837,
+      "margin_true_pct": 41.947363274593506,
+      "loss_rate": 0.07629999999999999,
+      "days_sold": 252
+    },
+    {
+      "item_code": 102900005115748,
+      "item_name": "White Caitai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 2877.1296,
+      "pct_of_revenue": 0.08538068200892608,
+      "cum_pct": 97.7120618555973,
+      "margin_true_pct": 35.92046186063292,
+      "loss_rate": 0.08779999999999999,
+      "days_sold": 92
+    },
+    {
+      "item_code": 102900011000571,
+      "item_name": "Suizhou Bubble Green",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 2840.2674,
+      "pct_of_revenue": 0.08428677237887346,
+      "cum_pct": 97.79634862797617,
+      "margin_true_pct": 30.13793994788302,
+      "loss_rate": 0.122,
+      "days_sold": 142
+    },
+    {
+      "item_code": 102900011034217,
+      "item_name": "Chinese Cabbage (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 2800.6,
+      "pct_of_revenue": 0.08310961662422102,
+      "cum_pct": 97.8794582446004,
+      "margin_true_pct": 19.283373172033805,
+      "loss_rate": 0.0943,
+      "days_sold": 47
+    },
+    {
+      "item_code": 102900005123880,
+      "item_name": "Bell Pepper (1)",
+      "category": "Capsicum",
+      "revenue": 2675.0713,
+      "pct_of_revenue": 0.07938447125096641,
+      "cum_pct": 97.95884271585136,
+      "margin_true_pct": 34.65338545801685,
+      "loss_rate": 0.16329999999999997,
+      "days_sold": 217
+    },
+    {
+      "item_code": 102900011035511,
+      "item_name": "Net Lotus Root (3)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 2552.8646,
+      "pct_of_revenue": 0.07575790837661406,
+      "cum_pct": 98.03460062422798,
+      "margin_true_pct": 40.60842185203538,
+      "loss_rate": 0.0943,
+      "days_sold": 70
+    },
+    {
+      "item_code": 102900011032787,
+      "item_name": "Zhuyecai (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 2274.5,
+      "pct_of_revenue": 0.06749725880589542,
+      "cum_pct": 98.10209788303388,
+      "margin_true_pct": 31.89465909866223,
+      "loss_rate": 0.0943,
+      "days_sold": 78
+    },
+    {
+      "item_code": 102900011030905,
+      "item_name": "Yuxingcao (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 2190.2000000000003,
+      "pct_of_revenue": 0.06499560177475144,
+      "cum_pct": 98.16709348480863,
+      "margin_true_pct": 59.66202222116088,
+      "loss_rate": 0.0943,
+      "days_sold": 130
+    },
+    {
+      "item_code": 102900011032220,
+      "item_name": "Fruit Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 2190.0,
+      "pct_of_revenue": 0.06498966664537743,
+      "cum_pct": 98.232083151454,
+      "margin_true_pct": 32.522739040364854,
+      "loss_rate": 0.0943,
+      "days_sold": 85
+    },
+    {
+      "item_code": 102900011031995,
+      "item_name": "Jigu (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 2184.4,
+      "pct_of_revenue": 0.06482348302290523,
+      "cum_pct": 98.29690663447691,
+      "margin_true_pct": 28.994028885038386,
+      "loss_rate": 0.0943,
+      "days_sold": 100
+    },
+    {
+      "item_code": 102900005115854,
+      "item_name": "Radish Leaves",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 2103.8182,
+      "pct_of_revenue": 0.06243216598195342,
+      "cum_pct": 98.35933880045887,
+      "margin_true_pct": 40.405655205887705,
+      "loss_rate": 0.0535,
+      "days_sold": 164
+    },
+    {
+      "item_code": 102900011027479,
+      "item_name": "Xiaozhoupi",
+      "category": "Capsicum",
+      "revenue": 1921.8562,
+      "pct_of_revenue": 0.057032325926188045,
+      "cum_pct": 98.41637112638506,
+      "margin_true_pct": 35.10734633599663,
+      "loss_rate": 0.08710000000000001,
+      "days_sold": 81
+    },
+    {
+      "item_code": 106930274220092,
+      "item_name": "The Crab Flavor Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 1882.1000000000001,
+      "pct_of_revenue": 0.055852534974093544,
+      "cum_pct": 98.47222366135915,
+      "margin_true_pct": 29.4604632999416,
+      "loss_rate": 0.11130000000000001,
+      "days_sold": 100
+    },
+    {
+      "item_code": 102900011035788,
+      "item_name": "Xixia Xianggu Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 1848.5,
+      "pct_of_revenue": 0.05485543323926036,
+      "cum_pct": 98.5270790945984,
+      "margin_true_pct": 43.97338480430301,
+      "loss_rate": 0.0943,
+      "days_sold": 65
+    },
+    {
+      "item_code": 102900011001691,
+      "item_name": "Water Chestnut (Lingjiao)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 1762.1858,
+      "pct_of_revenue": 0.05229400352019075,
+      "cum_pct": 98.5793730981186,
+      "margin_true_pct": 26.89777713464901,
+      "loss_rate": 0.09609999999999999,
+      "days_sold": 105
+    },
+    {
+      "item_code": 102900011030929,
+      "item_name": "Fresh Edible Fungus (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 1607.1,
+      "pct_of_revenue": 0.04769173208483382,
+      "cum_pct": 98.62706483020342,
+      "margin_true_pct": 22.917822286162288,
+      "loss_rate": 0.0943,
+      "days_sold": 182
+    },
+    {
+      "item_code": 102900011035764,
+      "item_name": "Longyacai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 1578.3292000000001,
+      "pct_of_revenue": 0.046837939983865415,
+      "cum_pct": 98.67390277018728,
+      "margin_true_pct": 34.11536464546396,
+      "loss_rate": 0.0943,
+      "days_sold": 63
+    },
+    {
+      "item_code": 102900005118572,
+      "item_name": "Local Shanghaiqing",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 1487.5732,
+      "pct_of_revenue": 0.04414469697652848,
+      "cum_pct": 98.71804746716381,
+      "margin_true_pct": 26.560423497587788,
+      "loss_rate": 0.1199,
+      "days_sold": 61
+    },
+    {
+      "item_code": 102900011032206,
+      "item_name": "Green Hang Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 1423.1,
+      "pct_of_revenue": 0.04223141306074732,
+      "cum_pct": 98.76027888022456,
+      "margin_true_pct": 36.92381514254691,
+      "loss_rate": 0.0943,
+      "days_sold": 110
+    },
+    {
+      "item_code": 102900011033234,
+      "item_name": "Hongshujian (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 1421.7,
+      "pct_of_revenue": 0.04218986715512927,
+      "cum_pct": 98.80246874737969,
+      "margin_true_pct": 38.31553133717711,
+      "loss_rate": 0.0943,
+      "days_sold": 58
+    },
+    {
+      "item_code": 102900011029176,
+      "item_name": "Lameizi",
+      "category": "Capsicum",
+      "revenue": 1391.106,
+      "pct_of_revenue": 0.04128197041478741,
+      "cum_pct": 98.84375071779448,
+      "margin_true_pct": 45.65468483350658,
+      "loss_rate": 0.0,
+      "days_sold": 73
+    },
+    {
+      "item_code": 102900011030103,
+      "item_name": "Garden Chrysanthemum (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 1360.0,
+      "pct_of_revenue": 0.04035887974324809,
+      "cum_pct": 98.88410959753773,
+      "margin_true_pct": 37.77968292318583,
+      "loss_rate": 0.0943,
+      "days_sold": 83
+    },
+    {
+      "item_code": 102900011032350,
+      "item_name": "Bell Pepper (2)",
+      "category": "Capsicum",
+      "revenue": 1228.795,
+      "pct_of_revenue": 0.0364652864956651,
+      "cum_pct": 98.9205748840334,
+      "margin_true_pct": 41.177100172304755,
+      "loss_rate": 0.0943,
+      "days_sold": 101
+    },
+    {
+      "item_code": 102900011007044,
+      "item_name": "Tremella (Flower)",
+      "category": "Edible Mushroom",
+      "revenue": 1220.5,
+      "pct_of_revenue": 0.03621912700487815,
+      "cum_pct": 98.95679401103828,
+      "margin_true_pct": 23.196461361564573,
+      "loss_rate": 0.09140000000000001,
+      "days_sold": 141
+    },
+    {
+      "item_code": 102900011033975,
+      "item_name": "Green Eggplant (2)",
+      "category": "Solanum",
+      "revenue": 1201.1688,
+      "pct_of_revenue": 0.03564546114010412,
+      "cum_pct": 98.99243947217839,
+      "margin_true_pct": 29.525029945554234,
+      "loss_rate": 0.0943,
+      "days_sold": 52
+    },
+    {
+      "item_code": 102900011034354,
+      "item_name": "Xianzongye (Bag) (1)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 1180.0,
+      "pct_of_revenue": 0.03501726330664172,
+      "cum_pct": 99.02745673548503,
+      "margin_true_pct": 44.474576271186436,
+      "loss_rate": 0.0,
+      "days_sold": 7
+    }
+  ],
+  "band_e_items": [
+    {
+      "item_code": 102900011034200,
+      "item_name": "Amaranth (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 1171.2,
+      "pct_of_revenue": 0.03475611761418541,
+      "cum_pct": 99.06221285309921,
+      "margin_true_pct": 39.5016293287624,
+      "loss_rate": 0.0943,
+      "days_sold": 56
+    },
+    {
+      "item_code": 102900011035771,
+      "item_name": "Yellow Baicai (1)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 1169.1042,
+      "pct_of_revenue": 0.03469392339347519,
+      "cum_pct": 99.09690677649269,
+      "margin_true_pct": 38.575222524490584,
+      "loss_rate": 0.0943,
+      "days_sold": 70
+    },
+    {
+      "item_code": 102900051009336,
+      "item_name": "Chinese Caterpillar Fungus Flowers",
+      "category": "Edible Mushroom",
+      "revenue": 1155.1684,
+      "pct_of_revenue": 0.03428036951382375,
+      "cum_pct": 99.13118714600651,
+      "margin_true_pct": 36.722822430735725,
+      "loss_rate": 0.1168,
+      "days_sold": 82
+    },
+    {
+      "item_code": 102900011016909,
+      "item_name": "Hua Eggplant",
+      "category": "Solanum",
+      "revenue": 1149.0114,
+      "pct_of_revenue": 0.03409765655604495,
+      "cum_pct": 99.16528480256255,
+      "margin_true_pct": 36.66656992771317,
+      "loss_rate": 0.0698,
+      "days_sold": 81
+    },
+    {
+      "item_code": 102900005119968,
+      "item_name": "Green Hangzhou Pepper (2)",
+      "category": "Capsicum",
+      "revenue": 1142.42,
+      "pct_of_revenue": 0.03390205249726579,
+      "cum_pct": 99.19918685505982,
+      "margin_true_pct": 43.24508739977657,
+      "loss_rate": 0.09,
+      "days_sold": 90
+    },
+    {
+      "item_code": 102900005115977,
+      "item_name": "Wandoujian",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 1134.0808,
+      "pct_of_revenue": 0.033654581342887194,
+      "cum_pct": 99.23284143640271,
+      "margin_true_pct": 31.739378887981957,
+      "loss_rate": 0.0836,
+      "days_sold": 39
+    },
+    {
+      "item_code": 102900011007969,
+      "item_name": "Red Lotus Root Zone",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 1073.3308,
+      "pct_of_revenue": 0.03185178579553254,
+      "cum_pct": 99.26469322219825,
+      "margin_true_pct": 23.763833214689477,
+      "loss_rate": 0.1663,
+      "days_sold": 96
+    },
+    {
+      "item_code": 106956146480197,
+      "item_name": "The White Mushroom (2)",
+      "category": "Edible Mushroom",
+      "revenue": 1008.8000000000001,
+      "pct_of_revenue": 0.029936792562491668,
+      "cum_pct": 99.29463001476074,
+      "margin_true_pct": 36.14552242317231,
+      "loss_rate": 0.073,
+      "days_sold": 59
+    },
+    {
+      "item_code": 102900011035481,
+      "item_name": "Foreign Garland Chrysanthemum  (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 952.4,
+      "pct_of_revenue": 0.028263086079021674,
+      "cum_pct": 99.32289310083976,
+      "margin_true_pct": 38.70427328121208,
+      "loss_rate": 0.0943,
+      "days_sold": 22
+    },
+    {
+      "item_code": 102900005116639,
+      "item_name": "Machixian",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 868.8514,
+      "pct_of_revenue": 0.025783727328935836,
+      "cum_pct": 99.3486768281687,
+      "margin_true_pct": 32.885907789698805,
+      "loss_rate": 0.11779999999999999,
+      "days_sold": 93
+    },
+    {
+      "item_code": 106972776821582,
+      "item_name": "Xianzongye (Bag) (3)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 867.0,
+      "pct_of_revenue": 0.025728785836320656,
+      "cum_pct": 99.37440561400503,
+      "margin_true_pct": 45.92876411714657,
+      "loss_rate": 0.0943,
+      "days_sold": 31
+    },
+    {
+      "item_code": 102900011012482,
+      "item_name": "Tea Tree Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 771.0,
+      "pct_of_revenue": 0.02287992373679726,
+      "cum_pct": 99.39728553774182,
+      "margin_true_pct": 28.166328186036274,
+      "loss_rate": 0.09970000000000001,
+      "days_sold": 48
+    },
+    {
+      "item_code": 102900011000175,
+      "item_name": "Kuaicai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 753.452,
+      "pct_of_revenue": 0.022359175485521878,
+      "cum_pct": 99.41964471322734,
+      "margin_true_pct": 26.785479062582144,
+      "loss_rate": 0.20379999999999998,
+      "days_sold": 10
+    },
+    {
+      "item_code": 102900011018132,
+      "item_name": "Wild Pink Lotus Root",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 734.56,
+      "pct_of_revenue": 0.021798543164853173,
+      "cum_pct": 99.44144325639219,
+      "margin_true_pct": 24.223523508282764,
+      "loss_rate": 0.12689999999999999,
+      "days_sold": 23
+    },
+    {
+      "item_code": 102900011032633,
+      "item_name": "Fresh Sea (2)",
+      "category": "Edible Mushroom",
+      "revenue": 734.2768,
+      "pct_of_revenue": 0.021790139021659577,
+      "cum_pct": 99.46323339541385,
+      "margin_true_pct": 35.350794365082976,
+      "loss_rate": 0.0943,
+      "days_sold": 43
+    },
+    {
+      "item_code": 102900011030042,
+      "item_name": "Zhijiang Red Bolt (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 681.6,
+      "pct_of_revenue": 0.0202269209066161,
+      "cum_pct": 99.48346031632047,
+      "margin_true_pct": 40.2648639990545,
+      "loss_rate": 0.0943,
+      "days_sold": 52
+    },
+    {
+      "item_code": 102900011029305,
+      "item_name": "Fruit Chili",
+      "category": "Capsicum",
+      "revenue": 629.4794,
+      "pct_of_revenue": 0.018680208386361735,
+      "cum_pct": 99.50214052470683,
+      "margin_true_pct": 23.936855871390325,
+      "loss_rate": 0.0018,
+      "days_sold": 30
+    },
+    {
+      "item_code": 102900011002414,
+      "item_name": "Panax Notoginseng",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 609.8486,
+      "pct_of_revenue": 0.018097651697785443,
+      "cum_pct": 99.52023817640462,
+      "margin_true_pct": 44.889165109653106,
+      "loss_rate": 0.16949999999999998,
+      "days_sold": 96
+    },
+    {
+      "item_code": 102900011012871,
+      "item_name": "Black Chicken  Mushroom",
+      "category": "Edible Mushroom",
+      "revenue": 603.127,
+      "pct_of_revenue": 0.017898183869783812,
+      "cum_pct": 99.53813636027441,
+      "margin_true_pct": 32.098863291814915,
+      "loss_rate": 0.1103,
+      "days_sold": 16
+    },
+    {
+      "item_code": 102900011007464,
+      "item_name": "Perilla",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 583.9350000000001,
+      "pct_of_revenue": 0.0173286488550541,
+      "cum_pct": 99.55546500912946,
+      "margin_true_pct": 34.30185581981742,
+      "loss_rate": 0.1288,
+      "days_sold": 84
+    },
+    {
+      "item_code": 102900005115625,
+      "item_name": "Local Xiaomao Cabbage",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 554.5,
+      "pct_of_revenue": 0.016455146189434604,
+      "cum_pct": 99.57192015531889,
+      "margin_true_pct": 32.10240290051398,
+      "loss_rate": 0.0018,
+      "days_sold": 47
+    },
+    {
+      "item_code": 106957634300010,
+      "item_name": "The White Mushroom (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 486.3,
+      "pct_of_revenue": 0.014431267072898194,
+      "cum_pct": 99.58635142239179,
+      "margin_true_pct": 41.49701830146,
+      "loss_rate": 0.0,
+      "days_sold": 42
+    },
+    {
+      "item_code": 102900011030158,
+      "item_name": "Xiaoqingcai (2)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 454.6,
+      "pct_of_revenue": 0.013490549067118073,
+      "cum_pct": 99.5998419714589,
+      "margin_true_pct": 36.371111231254204,
+      "loss_rate": 0.0943,
+      "days_sold": 46
+    },
+    {
+      "item_code": 102900051010790,
+      "item_name": "Purple Beicai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 446.0582,
+      "pct_of_revenue": 0.013237065626683605,
+      "cum_pct": 99.61307903708558,
+      "margin_true_pct": 38.85698391914304,
+      "loss_rate": 0.19579999999999997,
+      "days_sold": 53
+    },
+    {
+      "item_code": 102900005116806,
+      "item_name": "Black Rapeseed",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 435.9168,
+      "pct_of_revenue": 0.012936113021515828,
+      "cum_pct": 99.6260151501071,
+      "margin_true_pct": 46.35760167393727,
+      "loss_rate": 0.001,
+      "days_sold": 27
+    },
+    {
+      "item_code": 102900011028407,
+      "item_name": "Yuganjiao",
+      "category": "Capsicum",
+      "revenue": 429.548,
+      "pct_of_revenue": 0.012747114761729949,
+      "cum_pct": 99.63876226486882,
+      "margin_true_pct": 33.629759815756636,
+      "loss_rate": 0.0943,
+      "days_sold": 20
+    },
+    {
+      "item_code": 102900011034569,
+      "item_name": "Honghu Lotus (Lotus Root)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 395.20000000000005,
+      "pct_of_revenue": 0.011727815643037974,
+      "cum_pct": 99.65049008051186,
+      "margin_true_pct": 6.826044140595844,
+      "loss_rate": 0.0943,
+      "days_sold": 12
+    },
+    {
+      "item_code": 106956146480203,
+      "item_name": "The Crab Flavor Mushroom (2)",
+      "category": "Edible Mushroom",
+      "revenue": 394.3,
+      "pct_of_revenue": 0.011701107560854941,
+      "cum_pct": 99.66219118807271,
+      "margin_true_pct": 42.65290876166893,
+      "loss_rate": 0.1604,
+      "days_sold": 32
+    },
+    {
+      "item_code": 102900011024010,
+      "item_name": "Fresh Lotus Root Zone (Bag)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 388.2,
+      "pct_of_revenue": 0.011520086114947726,
+      "cum_pct": 99.67371127418765,
+      "margin_true_pct": 7.0624895887860255,
+      "loss_rate": 0.12689999999999999,
+      "days_sold": 7
+    },
+    {
+      "item_code": 102900011000861,
+      "item_name": "Red Line Pepper",
+      "category": "Capsicum",
+      "revenue": 382.649,
+      "pct_of_revenue": 0.01135535659917216,
+      "cum_pct": 99.68506663078682,
+      "margin_true_pct": 31.438714442626353,
+      "loss_rate": 0.0771,
+      "days_sold": 32
+    },
+    {
+      "item_code": 102900051009220,
+      "item_name": "Youcaitai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 380.879,
+      "pct_of_revenue": 0.011302830704212197,
+      "cum_pct": 99.69636946149103,
+      "margin_true_pct": 18.686542530848996,
+      "loss_rate": 0.1094,
+      "days_sold": 18
+    },
+    {
+      "item_code": 102900005119104,
+      "item_name": "The Crab Flavor Mushroom (1)",
+      "category": "Edible Mushroom",
+      "revenue": 379.9,
+      "pct_of_revenue": 0.011273778245926432,
+      "cum_pct": 99.70764323973695,
+      "margin_true_pct": 36.748333600350165,
+      "loss_rate": 0.0924,
+      "days_sold": 51
+    },
+    {
+      "item_code": 102900011023976,
+      "item_name": "Net Lotus Root (2)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 371.0292,
+      "pct_of_revenue": 0.011010531517671722,
+      "cum_pct": 99.71865377125462,
+      "margin_true_pct": 25.626778712685887,
+      "loss_rate": 0.1162,
+      "days_sold": 8
+    },
+    {
+      "item_code": 102900011008485,
+      "item_name": "Mustard",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 370.363,
+      "pct_of_revenue": 0.010990761601726906,
+      "cum_pct": 99.72964453285635,
+      "margin_true_pct": 37.78098236328816,
+      "loss_rate": 0.1375,
+      "days_sold": 14
+    },
+    {
+      "item_code": 102900011032626,
+      "item_name": "Fresh Edible Fungus (2)",
+      "category": "Edible Mushroom",
+      "revenue": 357.7266,
+      "pct_of_revenue": 0.010615768257618391,
+      "cum_pct": 99.74026030111398,
+      "margin_true_pct": 35.77966752253995,
+      "loss_rate": 0.0943,
+      "days_sold": 41
+    },
+    {
+      "item_code": 102900011032589,
+      "item_name": "Yuxingcao",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 332.9484,
+      "pct_of_revenue": 0.009880459144343278,
+      "cum_pct": 99.75014076025832,
+      "margin_true_pct": 52.43959861316879,
+      "loss_rate": 0.0943,
+      "days_sold": 31
+    },
+    {
+      "item_code": 102900011034262,
+      "item_name": "Red Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 317.9,
+      "pct_of_revenue": 0.009433888139984239,
+      "cum_pct": 99.7595746483983,
+      "margin_true_pct": 23.017352996573408,
+      "loss_rate": 0.0943,
+      "days_sold": 27
+    },
+    {
+      "item_code": 102900011031599,
+      "item_name": "Apricot Bao Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 311.4,
+      "pct_of_revenue": 0.009240996435329009,
+      "cum_pct": 99.76881564483362,
+      "margin_true_pct": 47.89298830946431,
+      "loss_rate": 0.0943,
+      "days_sold": 19
+    },
+    {
+      "item_code": 102900011008133,
+      "item_name": "Siguajian",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 286.49060000000003,
+      "pct_of_revenue": 0.008501793877184551,
+      "cum_pct": 99.77731743871081,
+      "margin_true_pct": 9.957231378960154,
+      "loss_rate": 0.1598,
+      "days_sold": 19
+    },
+    {
+      "item_code": 102900011030608,
+      "item_name": "The Steak Mushrooms (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 280.8,
+      "pct_of_revenue": 0.008332921641105929,
+      "cum_pct": 99.78565036035192,
+      "margin_true_pct": 23.135537225312795,
+      "loss_rate": 0.198,
+      "days_sold": 25
+    },
+    {
+      "item_code": 102900011031216,
+      "item_name": "Ice Grass (Box)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 255.4,
+      "pct_of_revenue": 0.00757916021060703,
+      "cum_pct": 99.79322952056253,
+      "margin_true_pct": 18.79616216557077,
+      "loss_rate": 0.10339999999999999,
+      "days_sold": 23
+    },
+    {
+      "item_code": 102900011036242,
+      "item_name": "Green And Red Jian Pepper Mix (Bag)",
+      "category": "Capsicum",
+      "revenue": 249.3,
+      "pct_of_revenue": 0.007398138764699814,
+      "cum_pct": 99.80062765932723,
+      "margin_true_pct": 39.35985316687321,
+      "loss_rate": 0.0943,
+      "days_sold": 24
+    },
+    {
+      "item_code": 106973990980123,
+      "item_name": "Hfyg Haixian Mushroom (Bunch)",
+      "category": "Edible Mushroom",
+      "revenue": 244.0,
+      "pct_of_revenue": 0.007240857836288627,
+      "cum_pct": 99.80786851716353,
+      "margin_true_pct": 23.769178752207573,
+      "loss_rate": 0.0012,
+      "days_sold": 19
+    },
+    {
+      "item_code": 102900011032640,
+      "item_name": "Jigu (2)",
+      "category": "Edible Mushroom",
+      "revenue": 243.6166,
+      "pct_of_revenue": 0.007229480193278655,
+      "cum_pct": 99.8150979973568,
+      "margin_true_pct": 30.29620091786753,
+      "loss_rate": 0.0943,
+      "days_sold": 33
+    },
+    {
+      "item_code": 102900011033241,
+      "item_name": "Caidian Quinoa Artemisia (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 232.9,
+      "pct_of_revenue": 0.0069114581560312345,
+      "cum_pct": 99.82200945551283,
+      "margin_true_pct": -5.7896145839955615,
+      "loss_rate": 0.0943,
+      "days_sold": 16
+    },
+    {
+      "item_code": 106957634300058,
+      "item_name": "The Crab Flavor Mushroom (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 232.2,
+      "pct_of_revenue": 0.00689068520322221,
+      "cum_pct": 99.82890014071604,
+      "margin_true_pct": 39.621016365202415,
+      "loss_rate": 0.0,
+      "days_sold": 32
+    },
+    {
+      "item_code": 102900011006955,
+      "item_name": "Ice Grass",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 229.8204,
+      "pct_of_revenue": 0.006820069033930274,
+      "cum_pct": 99.83572020974998,
+      "margin_true_pct": 38.18692084234306,
+      "loss_rate": 0.1501,
+      "days_sold": 17
+    },
+    {
+      "item_code": 102900011011669,
+      "item_name": "Xiuzhen Mushroom",
+      "category": "Edible Mushroom",
+      "revenue": 223.83,
+      "pct_of_revenue": 0.006642300038920014,
+      "cum_pct": 99.8423625097889,
+      "margin_true_pct": 27.09068217775721,
+      "loss_rate": 0.1193,
+      "days_sold": 17
+    },
+    {
+      "item_code": 102900011021699,
+      "item_name": "The Steak Mushrooms",
+      "category": "Edible Mushroom",
+      "revenue": 187.4036,
+      "pct_of_revenue": 0.005561323055773358,
+      "cum_pct": 99.84792383284467,
+      "margin_true_pct": 39.64817015488219,
+      "loss_rate": 0.08109999999999999,
+      "days_sold": 10
+    },
+    {
+      "item_code": 102900011033081,
+      "item_name": "Chuncai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 183.711,
+      "pct_of_revenue": 0.005451742762141066,
+      "cum_pct": 99.85337557560682,
+      "margin_true_pct": 16.668620383437354,
+      "loss_rate": 0.2903,
+      "days_sold": 22
+    },
+    {
+      "item_code": 102900011000632,
+      "item_name": "Purple Cabbage (1)",
+      "category": "Cabbage",
+      "revenue": 180.2526,
+      "pct_of_revenue": 0.005349112505005735,
+      "cum_pct": 99.85872468811182,
+      "margin_true_pct": 25.410881712544768,
+      "loss_rate": 0.2553,
+      "days_sold": 15
+    },
+    {
+      "item_code": 102900011033968,
+      "item_name": "Xixia Black Mushroom (2)",
+      "category": "Edible Mushroom",
+      "revenue": 178.0668,
+      "pct_of_revenue": 0.005284247476077212,
+      "cum_pct": 99.8640089355879,
+      "margin_true_pct": 27.80113641145556,
+      "loss_rate": 0.0943,
+      "days_sold": 10
+    },
+    {
+      "item_code": 102900011033173,
+      "item_name": "Sophora Japonica",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 174.0708,
+      "pct_of_revenue": 0.00516566359118455,
+      "cum_pct": 99.86917459917909,
+      "margin_true_pct": 36.256623299697154,
+      "loss_rate": 0.168,
+      "days_sold": 20
+    },
+    {
+      "item_code": 102900011027462,
+      "item_name": "Naibai Caimiao",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 168.29,
+      "pct_of_revenue": 0.00499411461175825,
+      "cum_pct": 99.87416871379085,
+      "margin_true_pct": 38.844911731974015,
+      "loss_rate": 0.1094,
+      "days_sold": 4
+    },
+    {
+      "item_code": 102900011015384,
+      "item_name": "Malan Head",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 161.2658,
+      "pct_of_revenue": 0.004785666933013748,
+      "cum_pct": 99.87895438072387,
+      "margin_true_pct": 25.171906257796692,
+      "loss_rate": 0.1516,
+      "days_sold": 14
+    },
+    {
+      "item_code": 102900011032282,
+      "item_name": "Xiangtianhongcaitai (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 152.7,
+      "pct_of_revenue": 0.004531471277054398,
+      "cum_pct": 99.88348585200092,
+      "margin_true_pct": 32.874918140144075,
+      "loss_rate": 0.0,
+      "days_sold": 7
+    },
+    {
+      "item_code": 102900005115816,
+      "item_name": "Nanguajian",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 151.592,
+      "pct_of_revenue": 0.0044985906603224,
+      "cum_pct": 99.88798444266124,
+      "margin_true_pct": 35.28189065944624,
+      "loss_rate": 0.1346,
+      "days_sold": 4
+    },
+    {
+      "item_code": 102900011032176,
+      "item_name": "Basil (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 148.9,
+      "pct_of_revenue": 0.004418703818948265,
+      "cum_pct": 99.89240314648018,
+      "margin_true_pct": 53.47724244474198,
+      "loss_rate": 0.0943,
+      "days_sold": 33
+    },
+    {
+      "item_code": 102900011035962,
+      "item_name": "Wild Lotus Root (2)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 148.174,
+      "pct_of_revenue": 0.004397159299320619,
+      "cum_pct": 99.8968003057795,
+      "margin_true_pct": 64.51899617183578,
+      "loss_rate": 0.0943,
+      "days_sold": 6
+    },
+    {
+      "item_code": 102900011007471,
+      "item_name": "Mint",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 133.50480000000002,
+      "pct_of_revenue": 0.003961841300254697,
+      "cum_pct": 99.90076214707975,
+      "margin_true_pct": 30.352677618943662,
+      "loss_rate": 0.1328,
+      "days_sold": 31
+    },
+    {
+      "item_code": 102900005128748,
+      "item_name": "Huanghuacai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 127.60759999999999,
+      "pct_of_revenue": 0.003786838075532723,
+      "cum_pct": 99.90454898515527,
+      "margin_true_pct": -5.738996005550592,
+      "loss_rate": 0.1689,
+      "days_sold": 6
+    },
+    {
+      "item_code": 102900011007495,
+      "item_name": "The Dandelion",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 123.91550000000001,
+      "pct_of_revenue": 0.0036772726197238665,
+      "cum_pct": 99.908226257775,
+      "margin_true_pct": 25.52242437116104,
+      "loss_rate": 0.1592,
+      "days_sold": 18
+    },
+    {
+      "item_code": 102900011026502,
+      "item_name": "Fresh Rice Dumplings Leaves",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 122.0292,
+      "pct_of_revenue": 0.0036212954470329186,
+      "cum_pct": 99.91184755322203,
+      "margin_true_pct": 28.771976543613594,
+      "loss_rate": 0.1094,
+      "days_sold": 8
+    },
+    {
+      "item_code": 102900011029299,
+      "item_name": "Purple Screw Pepper",
+      "category": "Capsicum",
+      "revenue": 119.5854,
+      "pct_of_revenue": 0.003548774101211926,
+      "cum_pct": 99.91539632732325,
+      "margin_true_pct": 25.352459413941833,
+      "loss_rate": 0.0,
+      "days_sold": 10
+    },
+    {
+      "item_code": 102900011008515,
+      "item_name": "Miantiaocai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 117.8972,
+      "pct_of_revenue": 0.0034986756741659324,
+      "cum_pct": 99.91889500299742,
+      "margin_true_pct": 19.107124020064504,
+      "loss_rate": 0.128,
+      "days_sold": 33
+    },
+    {
+      "item_code": 102900011035849,
+      "item_name": "Chinese Cabbage Seedling",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 116.564,
+      "pct_of_revenue": 0.0034591121017588013,
+      "cum_pct": 99.92235411509918,
+      "margin_true_pct": 48.803352664630594,
+      "loss_rate": 0.0,
+      "days_sold": 4
+    },
+    {
+      "item_code": 102900011034323,
+      "item_name": "Xianzongye",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 114.27420000000001,
+      "pct_of_revenue": 0.003391160805555794,
+      "cum_pct": 99.92574527590473,
+      "margin_true_pct": 17.436490476415504,
+      "loss_rate": 0.0,
+      "days_sold": 9
+    },
+    {
+      "item_code": 102900005117353,
+      "item_name": "The White Mushroom (1)",
+      "category": "Edible Mushroom",
+      "revenue": 107.80000000000001,
+      "pct_of_revenue": 0.003199034732589812,
+      "cum_pct": 99.92894431063732,
+      "margin_true_pct": 77.46697221452344,
+      "loss_rate": 0.0943,
+      "days_sold": 8
+    },
+    {
+      "item_code": 102900011021644,
+      "item_name": "Hongshan Caitai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 99.0,
+      "pct_of_revenue": 0.0029378890401335,
+      "cum_pct": 99.93188219967746,
+      "margin_true_pct": -55.48157507125078,
+      "loss_rate": 0.0934,
+      "days_sold": 11
+    },
+    {
+      "item_code": 102900011036686,
+      "item_name": "Muercai (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 96.9,
+      "pct_of_revenue": 0.002875570181706426,
+      "cum_pct": 99.93475776985916,
+      "margin_true_pct": 33.547798924663915,
+      "loss_rate": 0.0943,
+      "days_sold": 25
+    },
+    {
+      "item_code": 102900011000335,
+      "item_name": "Round Eggplant",
+      "category": "Solanum",
+      "revenue": 94.53,
+      "pct_of_revenue": 0.002805238898624442,
+      "cum_pct": 99.93756300875779,
+      "margin_true_pct": 64.0545821950245,
+      "loss_rate": 0.0032,
+      "days_sold": 8
+    },
+    {
+      "item_code": 102900011010563,
+      "item_name": "Chicken Fir Bacteria",
+      "category": "Edible Mushroom",
+      "revenue": 92.097,
+      "pct_of_revenue": 0.002733038049789646,
+      "cum_pct": 99.94029604680757,
+      "margin_true_pct": -19.83751231704932,
+      "loss_rate": 0.1193,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011008676,
+      "item_name": "Jicai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 92.08840000000001,
+      "pct_of_revenue": 0.002732782839226564,
+      "cum_pct": 99.9430288296468,
+      "margin_true_pct": 14.65533409915599,
+      "loss_rate": 0.11560000000000001,
+      "days_sold": 14
+    },
+    {
+      "item_code": 102900011031735,
+      "item_name": "7 Colour Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 91.0,
+      "pct_of_revenue": 0.0027004838651732174,
+      "cum_pct": 99.94572931351198,
+      "margin_true_pct": 25.077682613290428,
+      "loss_rate": 0.0943,
+      "days_sold": 10
+    },
+    {
+      "item_code": 102900011022924,
+      "item_name": "Green Caitai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 90.825,
+      "pct_of_revenue": 0.002695290626970961,
+      "cum_pct": 99.94842460413895,
+      "margin_true_pct": 47.6008683284677,
+      "loss_rate": 0.1094,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011034705,
+      "item_name": "The Fungus Mushroom Hot Pot Package (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 90.10000000000001,
+      "pct_of_revenue": 0.0026737757829901855,
+      "cum_pct": 99.95109837992194,
+      "margin_true_pct": 34.31659913898374,
+      "loss_rate": 0.0943,
+      "days_sold": 4
+    },
+    {
+      "item_code": 106931885000035,
+      "item_name": "Embroidered Aureus",
+      "category": "Edible Mushroom",
+      "revenue": 89.9,
+      "pct_of_revenue": 0.0026678406536161784,
+      "cum_pct": 99.95376622057556,
+      "margin_true_pct": 40.67148612795459,
+      "loss_rate": 0.11130000000000001,
+      "days_sold": 6
+    },
+    {
+      "item_code": 102900011036068,
+      "item_name": "Mushroom And Leaf Mix (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 86.7,
+      "pct_of_revenue": 0.002572878583632065,
+      "cum_pct": 99.9563390991592,
+      "margin_true_pct": 52.81708732048048,
+      "loss_rate": 0.0943,
+      "days_sold": 4
+    },
+    {
+      "item_code": 102900011027615,
+      "item_name": "Juhua Youcai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 84.72,
+      "pct_of_revenue": 0.0025141208028293953,
+      "cum_pct": 99.95885321996202,
+      "margin_true_pct": 34.76234855545201,
+      "loss_rate": 0.034300000000000004,
+      "days_sold": 5
+    },
+    {
+      "item_code": 102900011030561,
+      "item_name": "Chopped Red Pine (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 84.0,
+      "pct_of_revenue": 0.00249275433708297,
+      "cum_pct": 99.9613459742991,
+      "margin_true_pct": 26.190476190476197,
+      "loss_rate": 0.0,
+      "days_sold": 5
+    },
+    {
+      "item_code": 102900011011058,
+      "item_name": "Black Porcini",
+      "category": "Edible Mushroom",
+      "revenue": 81.14439999999999,
+      "pct_of_revenue": 0.0024080125598808966,
+      "cum_pct": 99.96375398685899,
+      "margin_true_pct": 5.998537080903812,
+      "loss_rate": 0.1017,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011031841,
+      "item_name": "Agaricus Bisporus (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 79.8,
+      "pct_of_revenue": 0.0023681166202288214,
+      "cum_pct": 99.96612210347922,
+      "margin_true_pct": 41.501097338687345,
+      "loss_rate": 0.0943,
+      "days_sold": 4
+    },
+    {
+      "item_code": 102900011030615,
+      "item_name": "The Pork Stomach Mushroom (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 79.4,
+      "pct_of_revenue": 0.0023562463614808077,
+      "cum_pct": 99.96847834984071,
+      "margin_true_pct": 8.19899244332494,
+      "loss_rate": 0.0,
+      "days_sold": 6
+    },
+    {
+      "item_code": 102900011030622,
+      "item_name": "Black Porcini (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 79.2,
+      "pct_of_revenue": 0.0023503112321068003,
+      "cum_pct": 99.97082866107282,
+      "margin_true_pct": 26.6540404040404,
+      "loss_rate": 0.0,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900051006229,
+      "item_name": "Lotus Root Tip",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 74.456,
+      "pct_of_revenue": 0.0022095299633553525,
+      "cum_pct": 99.97303819103617,
+      "margin_true_pct": 26.685720425486195,
+      "loss_rate": 0.0,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011030639,
+      "item_name": "Black Chicken Fir Bacteria (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 69.3,
+      "pct_of_revenue": 0.0020565223280934503,
+      "cum_pct": 99.97509471336426,
+      "margin_true_pct": 10.634920634920636,
+      "loss_rate": 0.0,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011021675,
+      "item_name": "Chopped Red Pine",
+      "category": "Edible Mushroom",
+      "revenue": 61.6104,
+      "pct_of_revenue": 0.0018283284739216263,
+      "cum_pct": 99.97692304183818,
+      "margin_true_pct": 49.02154039462115,
+      "loss_rate": 0.0875,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011032114,
+      "item_name": "Water Chestnut (Bag)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 59.0,
+      "pct_of_revenue": 0.001750863165332086,
+      "cum_pct": 99.9786739050035,
+      "margin_true_pct": 25.294228829466107,
+      "loss_rate": 0.0943,
+      "days_sold": 6
+    },
+    {
+      "item_code": 102900011034316,
+      "item_name": "Zhimaxiancai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 56.286,
+      "pct_of_revenue": 0.0016703234597268103,
+      "cum_pct": 99.98034422846322,
+      "margin_true_pct": 29.83333333333333,
+      "loss_rate": 0.0,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900011032480,
+      "item_name": "Artemisia Stelleriana",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 54.7254,
+      "pct_of_revenue": 0.001624011645221433,
+      "cum_pct": 99.98196824010844,
+      "margin_true_pct": 32.480402153296275,
+      "loss_rate": 0.0,
+      "days_sold": 14
+    },
+    {
+      "item_code": 102900011026793,
+      "item_name": "Apricot Bao Mushroom (250 G)",
+      "category": "Edible Mushroom",
+      "revenue": 49.0,
+      "pct_of_revenue": 0.0014541066966317325,
+      "cum_pct": 99.98342234680507,
+      "margin_true_pct": 32.08545425457365,
+      "loss_rate": 0.0943,
+      "days_sold": 5
+    },
+    {
+      "item_code": 102900011030417,
+      "item_name": "Hongshan Gift Box",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 48.8,
+      "pct_of_revenue": 0.0014481715672577254,
+      "cum_pct": 99.98487051837233,
+      "margin_true_pct": -766.8032786885246,
+      "loss_rate": 0.0,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011031759,
+      "item_name": "Red Bell Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 47.3,
+      "pct_of_revenue": 0.0014036580969526724,
+      "cum_pct": 99.98627417646928,
+      "margin_true_pct": 15.592135409262593,
+      "loss_rate": 0.0943,
+      "days_sold": 8
+    },
+    {
+      "item_code": 102900011030400,
+      "item_name": "Hongshan Shoutidai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 44.5,
+      "pct_of_revenue": 0.0013205662857165735,
+      "cum_pct": 99.987594742755,
+      "margin_true_pct": -395.5056179775281,
+      "loss_rate": 0.0,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900011026618,
+      "item_name": "Aihao",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 43.32,
+      "pct_of_revenue": 0.0012855490224099317,
+      "cum_pct": 99.9888802917774,
+      "margin_true_pct": 25.744492273046603,
+      "loss_rate": 0.09269999999999999,
+      "days_sold": 4
+    },
+    {
+      "item_code": 106971563780002,
+      "item_name": "Xianzongye (Bag) (2)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 39.2,
+      "pct_of_revenue": 0.001163285357305386,
+      "cum_pct": 99.99004357713471,
+      "margin_true_pct": 40.433673469387756,
+      "loss_rate": 0.0,
+      "days_sold": 4
+    },
+    {
+      "item_code": 102900005116905,
+      "item_name": "Green Hangjiao (1)",
+      "category": "Capsicum",
+      "revenue": 33.1168,
+      "pct_of_revenue": 0.0009827624622655868,
+      "cum_pct": 99.99102633959698,
+      "margin_true_pct": 56.848517972751004,
+      "loss_rate": 0.0,
+      "days_sold": 5
+    },
+    {
+      "item_code": 102900011029275,
+      "item_name": "Purple Hot Peppers",
+      "category": "Capsicum",
+      "revenue": 28.064,
+      "pct_of_revenue": 0.0008328173537606723,
+      "cum_pct": 99.99185915695075,
+      "margin_true_pct": 10.277832752884333,
+      "loss_rate": 0.0943,
+      "days_sold": 2
+    },
+    {
+      "item_code": 102900011008492,
+      "item_name": "Big Broccoli",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 27.424,
+      "pct_of_revenue": 0.0008138249397638496,
+      "cum_pct": 99.99267298189052,
+      "margin_true_pct": -23.341605792410856,
+      "loss_rate": 0.046900000000000004,
+      "days_sold": 2
+    },
+    {
+      "item_code": 102900011033999,
+      "item_name": "Round Eggplant (1)",
+      "category": "Solanum",
+      "revenue": 25.9012,
+      "pct_of_revenue": 0.0007686348647101597,
+      "cum_pct": 99.99344161675523,
+      "margin_true_pct": -31.434170974886122,
+      "loss_rate": 0.0943,
+      "days_sold": 3
+    },
+    {
+      "item_code": 106931885000356,
+      "item_name": "Embroidered Aureus (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 25.6,
+      "pct_of_revenue": 0.0007596965598729051,
+      "cum_pct": 99.9942013133151,
+      "margin_true_pct": 30.705187650010917,
+      "loss_rate": 0.0834,
+      "days_sold": 2
+    },
+    {
+      "item_code": 102900011008577,
+      "item_name": "Hericium",
+      "category": "Edible Mushroom",
+      "revenue": 24.5,
+      "pct_of_revenue": 0.0007270533483158662,
+      "cum_pct": 99.99492836666342,
+      "margin_true_pct": 38.101001049507026,
+      "loss_rate": 0.16190000000000002,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011033586,
+      "item_name": "Green Butter",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 22.8294,
+      "pct_of_revenue": 0.0006774772126547852,
+      "cum_pct": 99.99560584387608,
+      "margin_true_pct": 33.08373566737263,
+      "loss_rate": 0.0943,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900011034538,
+      "item_name": "Black Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 18.7,
+      "pct_of_revenue": 0.0005549345964696612,
+      "cum_pct": 99.99616077847254,
+      "margin_true_pct": 56.01239682840526,
+      "loss_rate": 0.0943,
+      "days_sold": 3
+    },
+    {
+      "item_code": 102900011029688,
+      "item_name": "Shuanggou Cabbage",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 17.316,
+      "pct_of_revenue": 0.0005138635012015322,
+      "cum_pct": 99.99667464197374,
+      "margin_true_pct": 36.50793650793651,
+      "loss_rate": 0.1075,
+      "days_sold": 2
+    },
+    {
+      "item_code": 102900011031742,
+      "item_name": "Bell Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 16.5,
+      "pct_of_revenue": 0.0004896481733555833,
+      "cum_pct": 99.9971642901471,
+      "margin_true_pct": 25.589114062118362,
+      "loss_rate": 0.0943,
+      "days_sold": 4
+    },
+    {
+      "item_code": 102900011036266,
+      "item_name": "Velvet Antler Mushroom (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 14.700000000000001,
+      "pct_of_revenue": 0.00043623200898951973,
+      "cum_pct": 99.99760052215609,
+      "margin_true_pct": 30.680272108843546,
+      "loss_rate": 0.0,
+      "days_sold": 2
+    },
+    {
+      "item_code": 102900011033531,
+      "item_name": "Red Coral (Leaf)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 13.5036,
+      "pct_of_revenue": 0.00040072806507420947,
+      "cum_pct": 99.99800125022117,
+      "margin_true_pct": 33.13949922098315,
+      "loss_rate": 0.0943,
+      "days_sold": 1
+    },
+    {
+      "item_code": 106973223300667,
+      "item_name": "Chinese Caterpillar Fungus Flowers (Box) (2)",
+      "category": "Edible Mushroom",
+      "revenue": 12.9,
+      "pct_of_revenue": 0.0003828158446234561,
+      "cum_pct": 99.99838406606578,
+      "margin_true_pct": 56.386080879396175,
+      "loss_rate": 0.11130000000000001,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900011015391,
+      "item_name": "Ganlanye",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 11.315999999999999,
+      "pct_of_revenue": 0.0003358096199813201,
+      "cum_pct": 99.99871987568577,
+      "margin_true_pct": 81.15056925280857,
+      "loss_rate": 0.1158,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900011009772,
+      "item_name": "Fruit Pepper (Orange)",
+      "category": "Capsicum",
+      "revenue": 10.706999999999999,
+      "pct_of_revenue": 0.0003177371510374685,
+      "cum_pct": 99.9990376128368,
+      "margin_true_pct": 14.409429341988236,
+      "loss_rate": 0.0943,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900011033913,
+      "item_name": "Purple Cabbage (2)",
+      "category": "Cabbage",
+      "revenue": 9.024,
+      "pct_of_revenue": 0.000267793037355199,
+      "cum_pct": 99.99930540587415,
+      "margin_true_pct": 26.09197599599698,
+      "loss_rate": 0.0943,
+      "days_sold": 2
+    },
+    {
+      "item_code": 102900011033562,
+      "item_name": "Red Oak Leaf",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 8.2962,
+      "pct_of_revenue": 0.0002461951015631874,
+      "cum_pct": 99.99955160097572,
+      "margin_true_pct": 33.08373566737264,
+      "loss_rate": 0.0943,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900051000890,
+      "item_name": "Broccoli",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 6.710000000000001,
+      "pct_of_revenue": 0.00019912359049793727,
+      "cum_pct": 99.99975072456621,
+      "margin_true_pct": 55.94567737661477,
+      "loss_rate": 0.0943,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900011023075,
+      "item_name": "White Jelly Mushroom",
+      "category": "Edible Mushroom",
+      "revenue": 4.9,
+      "pct_of_revenue": 0.00014541066966317325,
+      "cum_pct": 99.99989613523587,
+      "margin_true_pct": 31.10780938908703,
+      "loss_rate": 0.11130000000000001,
+      "days_sold": 1
+    },
+    {
+      "item_code": 102900011031858,
+      "item_name": "Needle Mushroom (Bag)",
+      "category": "Edible Mushroom",
+      "revenue": 3.5,
+      "pct_of_revenue": 0.00010386476404512375,
+      "cum_pct": 99.99999999999991,
+      "margin_true_pct": 96.84537611003329,
+      "loss_rate": 0.0943,
+      "days_sold": 1
     }
   ],
   "items": [
@@ -7057,6 +9372,7 @@
       "pct_of_revenue": 8.008692859223828,
       "cum_pct": 8.008692859223828,
       "loss_rate_pct": 9.26,
+      "base_name": "Broccoli",
       "days_since_last_sale": 0
     },
     {
@@ -7078,6 +9394,7 @@
       "pct_of_revenue": 6.280913017479752,
       "cum_pct": 14.289605876703579,
       "loss_rate_pct": 5.54,
+      "base_name": "Net Lotus Root",
       "days_since_last_sale": 0
     },
     {
@@ -7099,6 +9416,7 @@
       "pct_of_revenue": 6.267448734327678,
       "cum_pct": 20.557054611031255,
       "loss_rate_pct": 13.819999999999999,
+      "base_name": "Xixia Mushroom",
       "days_since_last_sale": 108
     },
     {
@@ -7120,6 +9438,7 @@
       "pct_of_revenue": 6.086881702698289,
       "cum_pct": 26.643936313729544,
       "loss_rate_pct": 5.7,
+      "base_name": "Wuhu Green Pepper",
       "days_since_last_sale": 0
     },
     {
@@ -7141,6 +9460,7 @@
       "pct_of_revenue": 3.8506217684027733,
       "cum_pct": 30.49455808213232,
       "loss_rate_pct": 15.25,
+      "base_name": "Yunnan Shengcai",
       "days_since_last_sale": 1
     },
     {
@@ -7162,6 +9482,7 @@
       "pct_of_revenue": 3.4936968098691,
       "cum_pct": 33.98825489200142,
       "loss_rate_pct": 6.07,
+      "base_name": "Eggplant",
       "days_since_last_sale": 0
     },
     {
@@ -7183,6 +9504,7 @@
       "pct_of_revenue": 2.83606103146809,
       "cum_pct": 36.82431592346951,
       "loss_rate_pct": 7.08,
+      "base_name": "Paopaojiao",
       "days_since_last_sale": 501
     },
     {
@@ -7204,6 +9526,7 @@
       "pct_of_revenue": 2.433680365230465,
       "cum_pct": 39.25799628869998,
       "loss_rate_pct": 10.18,
+      "base_name": "Luosi Pepper",
       "days_since_last_sale": 0
     },
     {
@@ -7225,6 +9548,7 @@
       "pct_of_revenue": 2.0970327346571813,
       "cum_pct": 41.35502902335716,
       "loss_rate_pct": 12.809999999999999,
+      "base_name": "Yunnan Lettuces",
       "days_since_last_sale": 3
     },
     {
@@ -7246,6 +9570,7 @@
       "pct_of_revenue": 1.9093192493593272,
       "cum_pct": 43.26434827271649,
       "loss_rate_pct": 11.81,
+      "base_name": "Honghu Lotus Root Powder (Fenou)",
       "days_since_last_sale": 69
     },
     {
@@ -7267,6 +9592,7 @@
       "pct_of_revenue": 1.8990900538832256,
       "cum_pct": 45.16343832659972,
       "loss_rate_pct": 9.43,
+      "base_name": "Yunnan Lettuce",
       "days_since_last_sale": 0
     },
     {
@@ -7288,6 +9614,7 @@
       "pct_of_revenue": 1.783991404564263,
       "cum_pct": 46.94742973116398,
       "loss_rate_pct": 10.8,
+      "base_name": "Xixia Black Mushroom",
       "days_since_last_sale": 0
     },
     {
@@ -7309,6 +9636,7 @@
       "pct_of_revenue": 1.7402066405410563,
       "cum_pct": 48.68763637170503,
       "loss_rate_pct": 0.45000000000000007,
+      "base_name": "Needle Mushroom",
       "days_since_last_sale": 0
     },
     {
@@ -7330,6 +9658,7 @@
       "pct_of_revenue": 1.7292950179544024,
       "cum_pct": 50.41693138965943,
       "loss_rate_pct": 17.06,
+      "base_name": "Qinggengsanhua",
       "days_since_last_sale": 14
     },
     {
@@ -7351,6 +9680,7 @@
       "pct_of_revenue": 1.6999953704329045,
       "cum_pct": 52.11692676009233,
       "loss_rate_pct": 11.76,
+      "base_name": "Red Pepper",
       "days_since_last_sale": 106
     },
     {
@@ -7372,6 +9702,7 @@
       "pct_of_revenue": 1.6882909718428118,
       "cum_pct": 53.805217731935144,
       "loss_rate_pct": 14.429999999999998,
+      "base_name": "Shanghaiqing",
       "days_since_last_sale": 0
     },
     {
@@ -7393,6 +9724,7 @@
       "pct_of_revenue": 1.6315492595264218,
       "cum_pct": 55.43676699146157,
       "loss_rate_pct": 9.43,
+      "base_name": "Millet Pepper",
       "days_since_last_sale": 0
     },
     {
@@ -7414,6 +9746,7 @@
       "pct_of_revenue": 1.5869992644352011,
       "cum_pct": 57.02376625589677,
       "loss_rate_pct": 15.61,
+      "base_name": "Huangbaicai",
       "days_since_last_sale": 12
     },
     {
@@ -7435,6 +9768,7 @@
       "pct_of_revenue": 1.5535064925244375,
       "cum_pct": 58.5772727484212,
       "loss_rate_pct": 18.51,
+      "base_name": "Spinach",
       "days_since_last_sale": 4
     },
     {
@@ -7456,6 +9790,7 @@
       "pct_of_revenue": 1.4070701256731073,
       "cum_pct": 59.98434287409431,
       "loss_rate_pct": 9.43,
+      "base_name": "Zhijiang Qinggengsanhua",
       "days_since_last_sale": 0
     },
     {
@@ -7477,6 +9812,7 @@
       "pct_of_revenue": 1.3364664973095384,
       "cum_pct": 61.32080937140385,
       "loss_rate_pct": 2.48,
+      "base_name": "Wawacai",
       "days_since_last_sale": 0
     },
     {
@@ -7498,6 +9834,7 @@
       "pct_of_revenue": 1.2146392986515924,
       "cum_pct": 62.53544867005544,
       "loss_rate_pct": 5.86,
+      "base_name": "Millet Pepper",
       "days_since_last_sale": 59
     },
     {
@@ -7519,6 +9856,7 @@
       "pct_of_revenue": 1.2083893729831527,
       "cum_pct": 63.74383804303859,
       "loss_rate_pct": 9.43,
+      "base_name": "Luosi Pepper",
       "days_since_last_sale": 0
     },
     {
@@ -7540,6 +9878,7 @@
       "pct_of_revenue": 1.1554135358653466,
       "cum_pct": 64.89925157890394,
       "loss_rate_pct": 13.62,
+      "base_name": "Zhuyecai",
       "days_since_last_sale": 0
     },
     {
@@ -7561,6 +9900,7 @@
       "pct_of_revenue": 1.1501890699798891,
       "cum_pct": 66.04944064888383,
       "loss_rate_pct": 22.27,
+      "base_name": "Chinese Cabbage",
       "days_since_last_sale": 94
     },
     {
@@ -7582,6 +9922,7 @@
       "pct_of_revenue": 1.1074429862403454,
       "cum_pct": 67.15688363512417,
       "loss_rate_pct": 3.4300000000000006,
+      "base_name": "Needle Mushroom",
       "days_since_last_sale": 135
     },
     {
@@ -7603,6 +9944,7 @@
       "pct_of_revenue": 1.0591861556499889,
       "cum_pct": 68.21606979077416,
       "loss_rate_pct": 9.43,
+      "base_name": "Yunnan Leaf Lettuce",
       "days_since_last_sale": 0
     },
     {
@@ -7624,6 +9966,7 @@
       "pct_of_revenue": 1.057048440752059,
       "cum_pct": 69.27311823152621,
       "loss_rate_pct": 9.43,
+      "base_name": "Sweet Chinese Cabbage",
       "days_since_last_sale": 252
     },
     {
@@ -7645,6 +9988,7 @@
       "pct_of_revenue": 0.972867702427017,
       "cum_pct": 70.24598593395324,
       "loss_rate_pct": 13.699999999999998,
+      "base_name": "Caixin",
       "days_since_last_sale": 2
     },
     {
@@ -7666,6 +10010,7 @@
       "pct_of_revenue": 0.9161791955779004,
       "cum_pct": 71.16216512953113,
       "loss_rate_pct": 7.8,
+      "base_name": "Green Line Pepper",
       "days_since_last_sale": 155
     },
     {
@@ -7687,6 +10032,7 @@
       "pct_of_revenue": 0.9153514854029661,
       "cum_pct": 72.0775166149341,
       "loss_rate_pct": 11.38,
+      "base_name": "Zhijiang Red Bolt",
       "days_since_last_sale": 112
     },
     {
@@ -7708,6 +10054,7 @@
       "pct_of_revenue": 0.8983190410495806,
       "cum_pct": 72.97583565598367,
       "loss_rate_pct": 8.42,
+      "base_name": "Hongshujian",
       "days_since_last_sale": 0
     },
     {
@@ -7729,6 +10076,7 @@
       "pct_of_revenue": 0.8253644456221091,
       "cum_pct": 73.80120010160579,
       "loss_rate_pct": 15.68,
+      "base_name": "Naibaicai",
       "days_since_last_sale": 0
     },
     {
@@ -7750,6 +10098,7 @@
       "pct_of_revenue": 0.7987719945971063,
       "cum_pct": 74.59997209620289,
       "loss_rate_pct": 7.59,
+      "base_name": "Chinese Cabbage",
       "days_since_last_sale": 130
     },
     {
@@ -7771,6 +10120,7 @@
       "pct_of_revenue": 0.797415559357018,
       "cum_pct": 75.39738765555991,
       "loss_rate_pct": 6.27,
+      "base_name": "Garden Chrysanthemum",
       "days_since_last_sale": 55
     },
     {
@@ -7792,6 +10142,7 @@
       "pct_of_revenue": 0.7806022933962852,
       "cum_pct": 76.1779899489562,
       "loss_rate_pct": 6.9,
+      "base_name": "Changxianqie",
       "days_since_last_sale": 0
     },
     {
@@ -7813,6 +10164,7 @@
       "pct_of_revenue": 0.7570788591922406,
       "cum_pct": 76.93506880814843,
       "loss_rate_pct": 18.52,
+      "base_name": "Amaranth",
       "days_since_last_sale": 0
     },
     {
@@ -7834,6 +10186,7 @@
       "pct_of_revenue": 0.7523251291903883,
       "cum_pct": 77.68739393733881,
       "loss_rate_pct": 9.43,
+      "base_name": "Spinach",
       "days_since_last_sale": 0
     },
     {
@@ -7855,6 +10208,7 @@
       "pct_of_revenue": 0.7232473457075848,
       "cum_pct": 78.4106412830464,
       "loss_rate_pct": 5.05,
+      "base_name": "Apricot Bao Mushroom",
       "days_since_last_sale": 39
     },
     {
@@ -7876,6 +10230,7 @@
       "pct_of_revenue": 0.6927545650631596,
       "cum_pct": 79.10339584810956,
       "loss_rate_pct": 5.01,
+      "base_name": "Green Eggplant",
       "days_since_last_sale": 1
     },
     {
@@ -7897,6 +10252,7 @@
       "pct_of_revenue": 0.6708150299324622,
       "cum_pct": 79.77421087804201,
       "loss_rate_pct": 0.2,
+      "base_name": "Agaricus Bisporus",
       "days_since_last_sale": 0
     },
     {
@@ -7918,6 +10274,7 @@
       "pct_of_revenue": 0.6675922546823764,
       "cum_pct": 80.44180313272439,
       "loss_rate_pct": 9.43,
+      "base_name": "Cabbage Stem",
       "days_since_last_sale": 51
     },
     {
@@ -7939,6 +10296,7 @@
       "pct_of_revenue": 0.6369297204351605,
       "cum_pct": 81.07873285315955,
       "loss_rate_pct": 24.05,
+      "base_name": "Honghu Lotus Root",
       "days_since_last_sale": 0
     },
     {
@@ -7960,6 +10318,7 @@
       "pct_of_revenue": 0.6081400637429476,
       "cum_pct": 81.6868729169025,
       "loss_rate_pct": 6.570000000000001,
+      "base_name": "The White Mushroom",
       "days_since_last_sale": 0
     },
     {
@@ -7981,6 +10340,7 @@
       "pct_of_revenue": 0.5828790313877218,
       "cum_pct": 82.26975194829022,
       "loss_rate_pct": 11.6,
+      "base_name": "Ping Mushroom",
       "days_since_last_sale": 144
     },
     {
@@ -8002,6 +10362,7 @@
       "pct_of_revenue": 0.5573230349728665,
       "cum_pct": 82.82707498326309,
       "loss_rate_pct": 10.33,
+      "base_name": "Xiaoqingcai",
       "days_since_last_sale": 0
     },
     {
@@ -8023,6 +10384,7 @@
       "pct_of_revenue": 0.5323205101450904,
       "cum_pct": 83.35939549340817,
       "loss_rate_pct": 10.64,
+      "base_name": "Yellow Xincai",
       "days_since_last_sale": 76
     },
     {
@@ -8044,6 +10406,7 @@
       "pct_of_revenue": 0.5213328615187202,
       "cum_pct": 83.88072835492689,
       "loss_rate_pct": 9.43,
+      "base_name": "Xiaozhoupi",
       "days_since_last_sale": 0
     },
     {
@@ -8065,6 +10428,7 @@
       "pct_of_revenue": 0.48245973161436134,
       "cum_pct": 84.36318808654124,
       "loss_rate_pct": 29.25,
+      "base_name": "High Melon",
       "days_since_last_sale": 0
     },
     {
@@ -8086,6 +10450,7 @@
       "pct_of_revenue": 0.47490580460628784,
       "cum_pct": 84.83809389114754,
       "loss_rate_pct": 9.43,
+      "base_name": "Powcan Mountain Chinese Cabbage",
       "days_since_last_sale": 137
     },
     {
@@ -8107,6 +10472,7 @@
       "pct_of_revenue": 0.45671380809197315,
       "cum_pct": 85.29480769923951,
       "loss_rate_pct": 9.43,
+      "base_name": "Apricot Bao Mushroom",
       "days_since_last_sale": 37
     },
     {
@@ -8128,6 +10494,7 @@
       "pct_of_revenue": 0.4502441164530728,
       "cum_pct": 85.74505181569259,
       "loss_rate_pct": 12.17,
+      "base_name": "Niushou Youcai",
       "days_since_last_sale": 486
     },
     {
@@ -8149,6 +10516,7 @@
       "pct_of_revenue": 0.44865258777091527,
       "cum_pct": 86.1937044034635,
       "loss_rate_pct": 9.99,
+      "base_name": "Red Hang Pepper",
       "days_since_last_sale": 121
     },
     {
@@ -8170,6 +10538,7 @@
       "pct_of_revenue": 0.39650262984063167,
       "cum_pct": 86.59020703330413,
       "loss_rate_pct": 6.72,
+      "base_name": "Green Hot Peppers",
       "days_since_last_sale": 61
     },
     {
@@ -8191,6 +10560,7 @@
       "pct_of_revenue": 0.3929979893614448,
       "cum_pct": 86.98320502266557,
       "loss_rate_pct": 0.4699999999999999,
+      "base_name": "Caidian Quinoa Artemisia",
       "days_since_last_sale": 68
     },
     {
@@ -8212,6 +10582,7 @@
       "pct_of_revenue": 0.3927740955085045,
       "cum_pct": 87.37597911817407,
       "loss_rate_pct": 9.43,
+      "base_name": "Huangxincai",
       "days_since_last_sale": 8
     },
     {
@@ -8233,6 +10604,7 @@
       "pct_of_revenue": 0.38449979810779034,
       "cum_pct": 87.76047891628187,
       "loss_rate_pct": 12.78,
+      "base_name": "The Agaricus Bisporus",
       "days_since_last_sale": 633
     },
     {
@@ -8254,6 +10626,7 @@
       "pct_of_revenue": 0.3839068519752448,
       "cum_pct": 88.14438576825711,
       "loss_rate_pct": 9.43,
+      "base_name": "Red Pepper",
       "days_since_last_sale": 0
     },
     {
@@ -8275,6 +10648,7 @@
       "pct_of_revenue": 0.36263640475183206,
       "cum_pct": 88.50702217300893,
       "loss_rate_pct": 9.43,
+      "base_name": "Xiaoqingcai",
       "days_since_last_sale": 130
     },
     {
@@ -8296,6 +10670,7 @@
       "pct_of_revenue": 0.3471959579558246,
       "cum_pct": 88.85421813096475,
       "loss_rate_pct": 26.16,
+      "base_name": "Foreign Garland Chrysanthemum",
       "days_since_last_sale": 3
     },
     {
@@ -8317,6 +10692,7 @@
       "pct_of_revenue": 0.3293848602393456,
       "cum_pct": 89.1836029912041,
       "loss_rate_pct": 7.61,
+      "base_name": "Muercai",
       "days_since_last_sale": 0
     },
     {
@@ -8338,6 +10714,7 @@
       "pct_of_revenue": 0.316645544237613,
       "cum_pct": 89.50024853544171,
       "loss_rate_pct": 11.02,
+      "base_name": "Water Chestnut",
       "days_since_last_sale": 141
     },
     {
@@ -8359,6 +10736,7 @@
       "pct_of_revenue": 0.31301175831081257,
       "cum_pct": 89.81326029375252,
       "loss_rate_pct": 10.46,
+      "base_name": "Sichuan Red Cedar",
       "days_since_last_sale": 68
     },
     {
@@ -8380,6 +10758,7 @@
       "pct_of_revenue": 0.3036929909077312,
       "cum_pct": 90.11695328466026,
       "loss_rate_pct": 10.94,
+      "base_name": "Dalong Eggplant",
       "days_since_last_sale": 744
     },
     {
@@ -8401,6 +10780,7 @@
       "pct_of_revenue": 0.2957059508011543,
       "cum_pct": 90.4126592354614,
       "loss_rate_pct": 6.64,
+      "base_name": "Needle Mushroom",
       "days_since_last_sale": 292
     },
     {
@@ -8422,6 +10802,7 @@
       "pct_of_revenue": 0.2811411433173409,
       "cum_pct": 90.69380037877875,
       "loss_rate_pct": 9.43,
+      "base_name": "Green Line Pepper",
       "days_since_last_sale": 4
     },
     {
@@ -8443,6 +10824,7 @@
       "pct_of_revenue": 0.2789184373667753,
       "cum_pct": 90.97271881614552,
       "loss_rate_pct": 9.43,
+      "base_name": "Pepper Mix",
       "days_since_last_sale": 677
     },
     {
@@ -8464,6 +10846,7 @@
       "pct_of_revenue": 0.26963292746114126,
       "cum_pct": 91.24235174360666,
       "loss_rate_pct": 9.43,
+      "base_name": "Shanghai Green",
       "days_since_last_sale": 132
     },
     {
@@ -8485,6 +10868,7 @@
       "pct_of_revenue": 0.2671120999621192,
       "cum_pct": 91.50946384356878,
       "loss_rate_pct": 9.43,
+      "base_name": "Xixia Xianggu Mushroom",
       "days_since_last_sale": 195
     },
     {
@@ -8506,6 +10890,7 @@
       "pct_of_revenue": 0.26649937501093485,
       "cum_pct": 91.77596321857972,
       "loss_rate_pct": 9.43,
+      "base_name": "7 Colour Pepper",
       "days_since_last_sale": 1
     },
     {
@@ -8527,6 +10912,7 @@
       "pct_of_revenue": 0.2660740666075582,
       "cum_pct": 92.04203728518728,
       "loss_rate_pct": 9.43,
+      "base_name": "High Melon",
       "days_since_last_sale": 0
     },
     {
@@ -8548,6 +10934,7 @@
       "pct_of_revenue": 0.25031111378406123,
       "cum_pct": 92.29234839897134,
       "loss_rate_pct": 11.13,
+      "base_name": "Needle Mushroom",
       "days_since_last_sale": 660
     },
     {
@@ -8569,6 +10956,7 @@
       "pct_of_revenue": 0.2429901317012235,
       "cum_pct": 92.53533853067256,
       "loss_rate_pct": 9.43,
+      "base_name": "Haixian Mushroom",
       "days_since_last_sale": 178
     },
     {
@@ -8590,6 +10978,7 @@
       "pct_of_revenue": 0.2377856820395798,
       "cum_pct": 92.77312421271215,
       "loss_rate_pct": 27.839999999999996,
+      "base_name": "Dongmenkou Xiaobaicai",
       "days_since_last_sale": 407
     },
     {
@@ -8611,6 +11000,7 @@
       "pct_of_revenue": 0.23692146191630128,
       "cum_pct": 93.01004567462844,
       "loss_rate_pct": 11.13,
+      "base_name": "Haixian Mushroom",
       "days_since_last_sale": 530
     },
     {
@@ -8632,6 +11022,7 @@
       "pct_of_revenue": 0.2315913774360686,
       "cum_pct": 93.24163705206452,
       "loss_rate_pct": 6.709999999999999,
+      "base_name": "Round Eggplant",
       "days_since_last_sale": 0
     },
     {
@@ -8653,6 +11044,7 @@
       "pct_of_revenue": 0.22967487964773142,
       "cum_pct": 93.47131193171225,
       "loss_rate_pct": 9.89,
+      "base_name": "Haixian Mushroom",
       "days_since_last_sale": 643
     },
     {
@@ -8674,6 +11066,7 @@
       "pct_of_revenue": 0.22398584744565286,
       "cum_pct": 93.6952977791579,
       "loss_rate_pct": 9.43,
+      "base_name": "Ginger And Xiaomijiao Mix (Small Bag)",
       "days_since_last_sale": 0
     },
     {
@@ -8695,6 +11088,7 @@
       "pct_of_revenue": 0.21025789320357455,
       "cum_pct": 93.90555567236147,
       "loss_rate_pct": 10.03,
+      "base_name": "Apricot Bao Mushroom",
       "days_since_last_sale": 139
     },
     {
@@ -8716,6 +11110,7 @@
       "pct_of_revenue": 0.19621834466936078,
       "cum_pct": 94.10177401703083,
       "loss_rate_pct": 12.42,
+      "base_name": "Jigu Mushroom",
       "days_since_last_sale": 166
     },
     {
@@ -8737,6 +11132,7 @@
       "pct_of_revenue": 0.1961500906815597,
       "cum_pct": 94.29792410771239,
       "loss_rate_pct": 9.43,
+      "base_name": "Caixin",
       "days_since_last_sale": 113
     },
     {
@@ -8758,6 +11154,7 @@
       "pct_of_revenue": 0.1910221389024176,
       "cum_pct": 94.4889462466148,
       "loss_rate_pct": 1.3,
+      "base_name": "Haixian Mushroom",
       "days_since_last_sale": 67
     },
     {
@@ -8779,6 +11176,7 @@
       "pct_of_revenue": 0.19031182261893642,
       "cum_pct": 94.67925806923374,
       "loss_rate_pct": 6.7299999999999995,
+      "base_name": "Red Hot Peppers",
       "days_since_last_sale": 78
     },
     {
@@ -8800,6 +11198,7 @@
       "pct_of_revenue": 0.18602475996950363,
       "cum_pct": 94.86528282920324,
       "loss_rate_pct": 8.85,
+      "base_name": "Needle Mushroom",
       "days_since_last_sale": 640
     },
     {
@@ -8821,6 +11220,7 @@
       "pct_of_revenue": 0.1772526387547212,
       "cum_pct": 95.04253546795796,
       "loss_rate_pct": 11.13,
+      "base_name": "Chinese Caterpillar Fungus Flowers",
       "days_since_last_sale": 838
     },
     {
@@ -8842,6 +11242,7 @@
       "pct_of_revenue": 0.17613683443240785,
       "cum_pct": 95.21867230239037,
       "loss_rate_pct": 9.43,
+      "base_name": "Chinese Caterpillar Fungus Flowers",
       "days_since_last_sale": 0
     },
     {
@@ -8863,6 +11264,7 @@
       "pct_of_revenue": 0.16872278358585632,
       "cum_pct": 95.38739508597622,
       "loss_rate_pct": 9.43,
+      "base_name": "Needle Mushroom",
       "days_since_last_sale": 196
     },
     {
@@ -8884,6 +11286,7 @@
       "pct_of_revenue": 0.1680216608177755,
       "cum_pct": 95.555416746794,
       "loss_rate_pct": 8.99,
+      "base_name": "Jigu Mushroom",
       "days_since_last_sale": 643
     },
     {
@@ -8905,6 +11308,7 @@
       "pct_of_revenue": 0.16574145533383447,
       "cum_pct": 95.72115820212782,
       "loss_rate_pct": 9.43,
+      "base_name": "Red Hot Peppers",
       "days_since_last_sale": 108
     },
     {
@@ -8926,6 +11330,7 @@
       "pct_of_revenue": 0.1649368417148591,
       "cum_pct": 95.88609504384269,
       "loss_rate_pct": 15.98,
+      "base_name": "7 Colour Pepper",
       "days_since_last_sale": 88
     },
     {
@@ -8947,6 +11352,7 @@
       "pct_of_revenue": 0.15615325383012604,
       "cum_pct": 96.04224829767281,
       "loss_rate_pct": 5.96,
+      "base_name": "Haixian Mushroom",
       "days_since_last_sale": 650
     },
     {
@@ -8968,6 +11374,7 @@
       "pct_of_revenue": 0.14605795784026715,
       "cum_pct": 96.18830625551308,
       "loss_rate_pct": 8.93,
+      "base_name": "The Red Bell Pepper",
       "days_since_last_sale": 72
     },
     {
@@ -8989,6 +11396,7 @@
       "pct_of_revenue": 0.14338382298194982,
       "cum_pct": 96.33169007849503,
       "loss_rate_pct": 9.43,
+      "base_name": "Green And Red Hang Pepper Mix",
       "days_since_last_sale": 0
     },
     {
@@ -9010,6 +11418,7 @@
       "pct_of_revenue": 0.13826175885114672,
       "cum_pct": 96.46995183734617,
       "loss_rate_pct": 7.969999999999999,
+      "base_name": "Wild Lotus Root",
       "days_since_last_sale": 25
     },
     {
@@ -9031,6 +11440,7 @@
       "pct_of_revenue": 0.13422295079316993,
       "cum_pct": 96.60417478813935,
       "loss_rate_pct": 12.17,
+      "base_name": "Lotus",
       "days_since_last_sale": 285
     },
     {
@@ -9052,6 +11462,7 @@
       "pct_of_revenue": 0.12397891749363371,
       "cum_pct": 96.72815370563298,
       "loss_rate_pct": 0.0,
+      "base_name": "Haixian Mushroom",
       "days_since_last_sale": 0
     },
     {
@@ -9073,6 +11484,7 @@
       "pct_of_revenue": 0.12280874145112511,
       "cum_pct": 96.8509624470841,
       "loss_rate_pct": 6.7299999999999995,
+      "base_name": "The Local Yellow Youcai",
       "days_since_last_sale": 171
     },
     {
@@ -9094,6 +11506,7 @@
       "pct_of_revenue": 0.1183336717085119,
       "cum_pct": 96.96929611879261,
       "loss_rate_pct": 9.43,
+      "base_name": "Red Bell Pepper",
       "days_since_last_sale": 133
     },
     {
@@ -9115,6 +11528,7 @@
       "pct_of_revenue": 0.10404544718865665,
       "cum_pct": 97.07334156598127,
       "loss_rate_pct": 4.39,
+      "base_name": "Niushou Shengcai",
       "days_since_last_sale": 31
     },
     {
@@ -9136,6 +11550,7 @@
       "pct_of_revenue": 0.10087345884062418,
       "cum_pct": 97.17421502482189,
       "loss_rate_pct": 9.43,
+      "base_name": "Red Hang Pepper",
       "days_since_last_sale": 153
     },
     {
@@ -9157,6 +11572,7 @@
       "pct_of_revenue": 0.09625296062295968,
       "cum_pct": 97.27046798544485,
       "loss_rate_pct": 9.43,
+      "base_name": "Green Hot Peppers",
       "days_since_last_sale": 174
     },
     {
@@ -9178,6 +11594,7 @@
       "pct_of_revenue": 0.09608097837908908,
       "cum_pct": 97.36654896382394,
       "loss_rate_pct": 9.43,
+      "base_name": "Eggplant",
       "days_since_last_sale": 1
     },
     {
@@ -9199,6 +11616,7 @@
       "pct_of_revenue": 0.08700306149356966,
       "cum_pct": 97.45355202531752,
       "loss_rate_pct": 0.84,
+      "base_name": "Crab Flavor Mushroom And White Mushroom Mix",
       "days_since_last_sale": 0
     },
     {
@@ -9220,6 +11638,7 @@
       "pct_of_revenue": 0.08685171569453248,
       "cum_pct": 97.54040374101206,
       "loss_rate_pct": 0.0,
+      "base_name": "Haixian Mushroom",
       "days_since_last_sale": 132
     },
     {
@@ -9241,6 +11660,7 @@
       "pct_of_revenue": 0.08627743257630355,
       "cum_pct": 97.62668117358837,
       "loss_rate_pct": 7.629999999999999,
+      "base_name": "Fresh Black Fungus",
       "days_since_last_sale": 706
     },
     {
@@ -9262,6 +11682,7 @@
       "pct_of_revenue": 0.08538068200892608,
       "cum_pct": 97.7120618555973,
       "loss_rate_pct": 8.78,
+      "base_name": "White Caitai",
       "days_since_last_sale": 106
     },
     {
@@ -9283,6 +11704,7 @@
       "pct_of_revenue": 0.08428677237887346,
       "cum_pct": 97.79634862797617,
       "loss_rate_pct": 12.2,
+      "base_name": "Suizhou Bubble Green",
       "days_since_last_sale": 132
     },
     {
@@ -9304,6 +11726,7 @@
       "pct_of_revenue": 0.08310961662422102,
       "cum_pct": 97.8794582446004,
       "loss_rate_pct": 9.43,
+      "base_name": "Chinese Cabbage",
       "days_since_last_sale": 285
     },
     {
@@ -9325,6 +11748,7 @@
       "pct_of_revenue": 0.07938447125096641,
       "cum_pct": 97.95884271585136,
       "loss_rate_pct": 16.33,
+      "base_name": "Bell Pepper",
       "days_since_last_sale": 88
     },
     {
@@ -9346,6 +11770,7 @@
       "pct_of_revenue": 0.07575790837661406,
       "cum_pct": 98.03460062422798,
       "loss_rate_pct": 9.43,
+      "base_name": "Net Lotus Root",
       "days_since_last_sale": 169
     },
     {
@@ -9367,6 +11792,7 @@
       "pct_of_revenue": 0.06749725880589542,
       "cum_pct": 98.10209788303388,
       "loss_rate_pct": 9.43,
+      "base_name": "Zhuyecai",
       "days_since_last_sale": 300
     },
     {
@@ -9388,6 +11814,7 @@
       "pct_of_revenue": 0.06499560177475144,
       "cum_pct": 98.16709348480863,
       "loss_rate_pct": 9.43,
+      "base_name": "Yuxingcao",
       "days_since_last_sale": 74
     },
     {
@@ -9409,6 +11836,7 @@
       "pct_of_revenue": 0.06498966664537743,
       "cum_pct": 98.232083151454,
       "loss_rate_pct": 9.43,
+      "base_name": "Fruit Pepper",
       "days_since_last_sale": 332
     },
     {
@@ -9430,6 +11858,7 @@
       "pct_of_revenue": 0.06482348302290523,
       "cum_pct": 98.29690663447691,
       "loss_rate_pct": 9.43,
+      "base_name": "Jigu",
       "days_since_last_sale": 237
     },
     {
@@ -9451,6 +11880,7 @@
       "pct_of_revenue": 0.06243216598195342,
       "cum_pct": 98.35933880045887,
       "loss_rate_pct": 5.35,
+      "base_name": "Radish Leaves",
       "days_since_last_sale": 223
     },
     {
@@ -9472,6 +11902,7 @@
       "pct_of_revenue": 0.057032325926188045,
       "cum_pct": 98.41637112638506,
       "loss_rate_pct": 8.71,
+      "base_name": "Xiaozhoupi",
       "days_since_last_sale": 35
     },
     {
@@ -9493,6 +11924,7 @@
       "pct_of_revenue": 0.055852534974093544,
       "cum_pct": 98.47222366135915,
       "loss_rate_pct": 11.13,
+      "base_name": "The Crab Flavor Mushroom",
       "days_since_last_sale": 790
     },
     {
@@ -9514,6 +11946,7 @@
       "pct_of_revenue": 0.05485543323926036,
       "cum_pct": 98.5270790945984,
       "loss_rate_pct": 9.43,
+      "base_name": "Xixia Xianggu Mushroom",
       "days_since_last_sale": 132
     },
     {
@@ -9535,6 +11968,7 @@
       "pct_of_revenue": 0.05229400352019075,
       "cum_pct": 98.5793730981186,
       "loss_rate_pct": 9.61,
+      "base_name": "Water Chestnut (Lingjiao)",
       "days_since_last_sale": 0
     },
     {
@@ -9556,6 +11990,7 @@
       "pct_of_revenue": 0.04769173208483382,
       "cum_pct": 98.62706483020342,
       "loss_rate_pct": 9.43,
+      "base_name": "Fresh Edible Fungus",
       "days_since_last_sale": 4
     },
     {
@@ -9577,6 +12012,7 @@
       "pct_of_revenue": 0.046837939983865415,
       "cum_pct": 98.67390277018728,
       "loss_rate_pct": 9.43,
+      "base_name": "Longyacai",
       "days_since_last_sale": 142
     },
     {
@@ -9598,6 +12034,7 @@
       "pct_of_revenue": 0.04414469697652848,
       "cum_pct": 98.71804746716381,
       "loss_rate_pct": 11.99,
+      "base_name": "Local Shanghaiqing",
       "days_since_last_sale": 236
     },
     {
@@ -9619,6 +12056,7 @@
       "pct_of_revenue": 0.04223141306074732,
       "cum_pct": 98.76027888022456,
       "loss_rate_pct": 9.43,
+      "base_name": "Green Hang Pepper",
       "days_since_last_sale": 277
     },
     {
@@ -9640,6 +12078,7 @@
       "pct_of_revenue": 0.04218986715512927,
       "cum_pct": 98.80246874737969,
       "loss_rate_pct": 9.43,
+      "base_name": "Hongshujian",
       "days_since_last_sale": 299
     },
     {
@@ -9661,6 +12100,7 @@
       "pct_of_revenue": 0.04128197041478741,
       "cum_pct": 98.84375071779448,
       "loss_rate_pct": 0.0,
+      "base_name": "Lameizi",
       "days_since_last_sale": 542
     },
     {
@@ -9682,6 +12122,7 @@
       "pct_of_revenue": 0.04035887974324809,
       "cum_pct": 98.88410959753773,
       "loss_rate_pct": 9.43,
+      "base_name": "Garden Chrysanthemum",
       "days_since_last_sale": 467
     },
     {
@@ -9703,6 +12144,7 @@
       "pct_of_revenue": 0.0364652864956651,
       "cum_pct": 98.9205748840334,
       "loss_rate_pct": 9.43,
+      "base_name": "Bell Pepper",
       "days_since_last_sale": 133
     },
     {
@@ -9724,6 +12166,7 @@
       "pct_of_revenue": 0.03621912700487815,
       "cum_pct": 98.95679401103828,
       "loss_rate_pct": 9.14,
+      "base_name": "Tremella (Flower)",
       "days_since_last_sale": 62
     },
     {
@@ -9745,6 +12188,7 @@
       "pct_of_revenue": 0.03564546114010412,
       "cum_pct": 98.99243947217839,
       "loss_rate_pct": 9.43,
+      "base_name": "Green Eggplant",
       "days_since_last_sale": 157
     },
     {
@@ -9766,6 +12210,7 @@
       "pct_of_revenue": 0.03501726330664172,
       "cum_pct": 99.02745673548503,
       "loss_rate_pct": 0.0,
+      "base_name": "Xianzongye",
       "days_since_last_sale": 386
     },
     {
@@ -9787,6 +12232,7 @@
       "pct_of_revenue": 0.03475611761418541,
       "cum_pct": 99.06221285309921,
       "loss_rate_pct": 9.43,
+      "base_name": "Amaranth",
       "days_since_last_sale": 246
     },
     {
@@ -9808,6 +12254,7 @@
       "pct_of_revenue": 0.03469392339347519,
       "cum_pct": 99.09690677649269,
       "loss_rate_pct": 9.43,
+      "base_name": "Yellow Baicai",
       "days_since_last_sale": 166
     },
     {
@@ -9829,6 +12276,7 @@
       "pct_of_revenue": 0.03428036951382375,
       "cum_pct": 99.13118714600651,
       "loss_rate_pct": 11.68,
+      "base_name": "Chinese Caterpillar Fungus Flowers",
       "days_since_last_sale": 28
     },
     {
@@ -9850,6 +12298,7 @@
       "pct_of_revenue": 0.03409765655604495,
       "cum_pct": 99.16528480256255,
       "loss_rate_pct": 6.98,
+      "base_name": "Hua Eggplant",
       "days_since_last_sale": 355
     },
     {
@@ -9871,6 +12320,7 @@
       "pct_of_revenue": 0.03390205249726579,
       "cum_pct": 99.19918685505982,
       "loss_rate_pct": 9.0,
+      "base_name": "Green Hangzhou Pepper",
       "days_since_last_sale": 374
     },
     {
@@ -9892,6 +12342,7 @@
       "pct_of_revenue": 0.033654581342887194,
       "cum_pct": 99.23284143640271,
       "loss_rate_pct": 8.36,
+      "base_name": "Wandoujian",
       "days_since_last_sale": 120
     },
     {
@@ -9913,6 +12364,7 @@
       "pct_of_revenue": 0.03185178579553254,
       "cum_pct": 99.26469322219825,
       "loss_rate_pct": 16.63,
+      "base_name": "Red Lotus Root Zone",
       "days_since_last_sale": 0
     },
     {
@@ -9934,6 +12386,7 @@
       "pct_of_revenue": 0.029936792562491668,
       "cum_pct": 99.29463001476074,
       "loss_rate_pct": 7.3,
+      "base_name": "The White Mushroom",
       "days_since_last_sale": 762
     },
     {
@@ -9955,6 +12408,7 @@
       "pct_of_revenue": 0.028263086079021674,
       "cum_pct": 99.32289310083976,
       "loss_rate_pct": 9.43,
+      "base_name": "Foreign Garland Chrysanthemum",
       "days_since_last_sale": 271
     },
     {
@@ -9976,6 +12430,7 @@
       "pct_of_revenue": 0.025783727328935836,
       "cum_pct": 99.3486768281687,
       "loss_rate_pct": 11.78,
+      "base_name": "Machixian",
       "days_since_last_sale": 18
     },
     {
@@ -9997,6 +12452,7 @@
       "pct_of_revenue": 0.025728785836320656,
       "cum_pct": 99.37440561400503,
       "loss_rate_pct": 9.43,
+      "base_name": "Xianzongye",
       "days_since_last_sale": 12
     },
     {
@@ -10018,6 +12474,7 @@
       "pct_of_revenue": 0.02287992373679726,
       "cum_pct": 99.39728553774182,
       "loss_rate_pct": 9.97,
+      "base_name": "Tea Tree Mushroom",
       "days_since_last_sale": 147
     },
     {
@@ -10039,6 +12496,7 @@
       "pct_of_revenue": 0.022359175485521878,
       "cum_pct": 99.41964471322734,
       "loss_rate_pct": 20.38,
+      "base_name": "Kuaicai",
       "days_since_last_sale": 1051
     },
     {
@@ -10060,6 +12518,7 @@
       "pct_of_revenue": 0.021798543164853173,
       "cum_pct": 99.44144325639219,
       "loss_rate_pct": 12.689999999999998,
+      "base_name": "Wild Pink Lotus Root",
       "days_since_last_sale": 0
     },
     {
@@ -10081,6 +12540,7 @@
       "pct_of_revenue": 0.021790139021659577,
       "cum_pct": 99.46323339541385,
       "loss_rate_pct": 9.43,
+      "base_name": "Fresh Sea",
       "days_since_last_sale": 427
     },
     {
@@ -10102,6 +12562,7 @@
       "pct_of_revenue": 0.0202269209066161,
       "cum_pct": 99.48346031632047,
       "loss_rate_pct": 9.43,
+      "base_name": "Zhijiang Red Bolt",
       "days_since_last_sale": 499
     },
     {
@@ -10123,6 +12584,7 @@
       "pct_of_revenue": 0.018680208386361735,
       "cum_pct": 99.50214052470683,
       "loss_rate_pct": 0.18,
+      "base_name": "Fruit Chili",
       "days_since_last_sale": 162
     },
     {
@@ -10144,6 +12606,7 @@
       "pct_of_revenue": 0.018097651697785443,
       "cum_pct": 99.52023817640462,
       "loss_rate_pct": 16.95,
+      "base_name": "Panax Notoginseng",
       "days_since_last_sale": 111
     },
     {
@@ -10165,6 +12628,7 @@
       "pct_of_revenue": 0.017898183869783812,
       "cum_pct": 99.53813636027441,
       "loss_rate_pct": 11.03,
+      "base_name": "Black Chicken Mushroom",
       "days_since_last_sale": 917
     },
     {
@@ -10186,6 +12650,7 @@
       "pct_of_revenue": 0.0173286488550541,
       "cum_pct": 99.55546500912946,
       "loss_rate_pct": 12.879999999999999,
+      "base_name": "Perilla",
       "days_since_last_sale": 20
     },
     {
@@ -10207,6 +12672,7 @@
       "pct_of_revenue": 0.016455146189434604,
       "cum_pct": 99.57192015531889,
       "loss_rate_pct": 0.18,
+      "base_name": "Local Xiaomao Cabbage",
       "days_since_last_sale": 193
     },
     {
@@ -10228,6 +12694,7 @@
       "pct_of_revenue": 0.014431267072898194,
       "cum_pct": 99.58635142239179,
       "loss_rate_pct": 0.0,
+      "base_name": "The White Mushroom",
       "days_since_last_sale": 482
     },
     {
@@ -10249,6 +12716,7 @@
       "pct_of_revenue": 0.013490549067118073,
       "cum_pct": 99.5998419714589,
       "loss_rate_pct": 9.43,
+      "base_name": "Xiaoqingcai",
       "days_since_last_sale": 502
     },
     {
@@ -10270,6 +12738,7 @@
       "pct_of_revenue": 0.013237065626683605,
       "cum_pct": 99.61307903708558,
       "loss_rate_pct": 19.58,
+      "base_name": "Purple Beicai",
       "days_since_last_sale": 35
     },
     {
@@ -10291,6 +12760,7 @@
       "pct_of_revenue": 0.012936113021515828,
       "cum_pct": 99.6260151501071,
       "loss_rate_pct": 0.1,
+      "base_name": "Black Rapeseed",
       "days_since_last_sale": 193
     },
     {
@@ -10312,6 +12782,7 @@
       "pct_of_revenue": 0.012747114761729949,
       "cum_pct": 99.63876226486882,
       "loss_rate_pct": 9.43,
+      "base_name": "Yuganjiao",
       "days_since_last_sale": 634
     },
     {
@@ -10333,6 +12804,7 @@
       "pct_of_revenue": 0.011727815643037974,
       "cum_pct": 99.65049008051186,
       "loss_rate_pct": 9.43,
+      "base_name": "Honghu Lotus (Lotus Root)",
       "days_since_last_sale": 280
     },
     {
@@ -10354,6 +12826,7 @@
       "pct_of_revenue": 0.011701107560854941,
       "cum_pct": 99.66219118807271,
       "loss_rate_pct": 16.04,
+      "base_name": "The Crab Flavor Mushroom",
       "days_since_last_sale": 508
     },
     {
@@ -10375,6 +12848,7 @@
       "pct_of_revenue": 0.011520086114947726,
       "cum_pct": 99.67371127418765,
       "loss_rate_pct": 12.689999999999998,
+      "base_name": "Fresh Lotus Root Zone",
       "days_since_last_sale": 773
     },
     {
@@ -10396,6 +12870,7 @@
       "pct_of_revenue": 0.01135535659917216,
       "cum_pct": 99.68506663078682,
       "loss_rate_pct": 7.71,
+      "base_name": "Red Line Pepper",
       "days_since_last_sale": 346
     },
     {
@@ -10417,6 +12892,7 @@
       "pct_of_revenue": 0.011302830704212197,
       "cum_pct": 99.69636946149103,
       "loss_rate_pct": 10.94,
+      "base_name": "Youcaitai",
       "days_since_last_sale": 812
     },
     {
@@ -10438,6 +12914,7 @@
       "pct_of_revenue": 0.011273778245926432,
       "cum_pct": 99.70764323973695,
       "loss_rate_pct": 9.24,
+      "base_name": "The Crab Flavor Mushroom",
       "days_since_last_sale": 247
     },
     {
@@ -10459,6 +12936,7 @@
       "pct_of_revenue": 0.011010531517671722,
       "cum_pct": 99.71865377125462,
       "loss_rate_pct": 11.62,
+      "base_name": "Net Lotus Root",
       "days_since_last_sale": 138
     },
     {
@@ -10480,6 +12958,7 @@
       "pct_of_revenue": 0.010990761601726906,
       "cum_pct": 99.72964453285635,
       "loss_rate_pct": 13.750000000000002,
+      "base_name": "Mustard",
       "days_since_last_sale": 63
     },
     {
@@ -10501,6 +12980,7 @@
       "pct_of_revenue": 0.010615768257618391,
       "cum_pct": 99.74026030111398,
       "loss_rate_pct": 9.43,
+      "base_name": "Fresh Edible Fungus",
       "days_since_last_sale": 425
     },
     {
@@ -10522,6 +13002,7 @@
       "pct_of_revenue": 0.009880459144343278,
       "cum_pct": 99.75014076025832,
       "loss_rate_pct": 9.43,
+      "base_name": "Yuxingcao",
       "days_since_last_sale": 429
     },
     {
@@ -10543,6 +13024,7 @@
       "pct_of_revenue": 0.009433888139984239,
       "cum_pct": 99.7595746483983,
       "loss_rate_pct": 9.43,
+      "base_name": "Red Pepper",
       "days_since_last_sale": 274
     },
     {
@@ -10564,6 +13046,7 @@
       "pct_of_revenue": 0.009240996435329009,
       "cum_pct": 99.76881564483362,
       "loss_rate_pct": 9.43,
+      "base_name": "Apricot Bao Mushroom",
       "days_since_last_sale": 499
     },
     {
@@ -10585,6 +13068,7 @@
       "pct_of_revenue": 0.008501793877184551,
       "cum_pct": 99.77731743871081,
       "loss_rate_pct": 15.98,
+      "base_name": "Siguajian",
       "days_since_last_sale": 125
     },
     {
@@ -10606,6 +13090,7 @@
       "pct_of_revenue": 0.008332921641105929,
       "cum_pct": 99.78565036035192,
       "loss_rate_pct": 19.8,
+      "base_name": "The Steak Mushrooms",
       "days_since_last_sale": 119
     },
     {
@@ -10627,6 +13112,7 @@
       "pct_of_revenue": 0.00757916021060703,
       "cum_pct": 99.79322952056253,
       "loss_rate_pct": 10.34,
+      "base_name": "Ice Grass",
       "days_since_last_sale": 13
     },
     {
@@ -10648,6 +13134,7 @@
       "pct_of_revenue": 0.007398138764699814,
       "cum_pct": 99.80062765932723,
       "loss_rate_pct": 9.43,
+      "base_name": "Green And Red Jian Pepper Mix",
       "days_since_last_sale": 73
     },
     {
@@ -10669,6 +13156,7 @@
       "pct_of_revenue": 0.007240857836288627,
       "cum_pct": 99.80786851716353,
       "loss_rate_pct": 0.12,
+      "base_name": "Hfyg Haixian Mushroom",
       "days_since_last_sale": 336
     },
     {
@@ -10690,6 +13178,7 @@
       "pct_of_revenue": 0.007229480193278655,
       "cum_pct": 99.8150979973568,
       "loss_rate_pct": 9.43,
+      "base_name": "Jigu",
       "days_since_last_sale": 427
     },
     {
@@ -10711,6 +13200,7 @@
       "pct_of_revenue": 0.0069114581560312345,
       "cum_pct": 99.82200945551283,
       "loss_rate_pct": 9.43,
+      "base_name": "Caidian Quinoa Artemisia",
       "days_since_last_sale": 283
     },
     {
@@ -10732,6 +13222,7 @@
       "pct_of_revenue": 0.00689068520322221,
       "cum_pct": 99.82890014071604,
       "loss_rate_pct": 0.0,
+      "base_name": "The Crab Flavor Mushroom",
       "days_since_last_sale": 485
     },
     {
@@ -10753,6 +13244,7 @@
       "pct_of_revenue": 0.006820069033930274,
       "cum_pct": 99.83572020974998,
       "loss_rate_pct": 15.010000000000002,
+      "base_name": "Ice Grass",
       "days_since_last_sale": 511
     },
     {
@@ -10774,6 +13266,7 @@
       "pct_of_revenue": 0.006642300038920014,
       "cum_pct": 99.8423625097889,
       "loss_rate_pct": 11.93,
+      "base_name": "Xiuzhen Mushroom",
       "days_since_last_sale": 863
     },
     {
@@ -10795,6 +13288,7 @@
       "pct_of_revenue": 0.005561323055773358,
       "cum_pct": 99.84792383284467,
       "loss_rate_pct": 8.11,
+      "base_name": "The Steak Mushrooms",
       "days_since_last_sale": 600
     },
     {
@@ -10816,6 +13310,7 @@
       "pct_of_revenue": 0.005451742762141066,
       "cum_pct": 99.85337557560682,
       "loss_rate_pct": 29.03,
+      "base_name": "Chuncai",
       "days_since_last_sale": 425
     },
     {
@@ -10837,6 +13332,7 @@
       "pct_of_revenue": 0.005349112505005735,
       "cum_pct": 99.85872468811182,
       "loss_rate_pct": 25.53,
+      "base_name": "Purple Cabbage",
       "days_since_last_sale": 427
     },
     {
@@ -10858,6 +13354,7 @@
       "pct_of_revenue": 0.005284247476077212,
       "cum_pct": 99.8640089355879,
       "loss_rate_pct": 9.43,
+      "base_name": "Xixia Black Mushroom",
       "days_since_last_sale": 427
     },
     {
@@ -10879,6 +13376,7 @@
       "pct_of_revenue": 0.00516566359118455,
       "cum_pct": 99.86917459917909,
       "loss_rate_pct": 16.8,
+      "base_name": "Sophora Japonica",
       "days_since_last_sale": 45
     },
     {
@@ -10900,6 +13398,7 @@
       "pct_of_revenue": 0.00499411461175825,
       "cum_pct": 99.87416871379085,
       "loss_rate_pct": 10.94,
+      "base_name": "Naibai Caimiao",
       "days_since_last_sale": 700
     },
     {
@@ -10921,6 +13420,7 @@
       "pct_of_revenue": 0.004785666933013748,
       "cum_pct": 99.87895438072387,
       "loss_rate_pct": 15.160000000000002,
+      "base_name": "Malan Head",
       "days_since_last_sale": 442
     },
     {
@@ -10942,6 +13442,7 @@
       "pct_of_revenue": 0.004531471277054398,
       "cum_pct": 99.88348585200092,
       "loss_rate_pct": 0.0,
+      "base_name": "Xiangtianhongcaitai",
       "days_since_last_sale": 510
     },
     {
@@ -10963,6 +13464,7 @@
       "pct_of_revenue": 0.0044985906603224,
       "cum_pct": 99.88798444266124,
       "loss_rate_pct": 13.459999999999999,
+      "base_name": "Nanguajian",
       "days_since_last_sale": 718
     },
     {
@@ -10984,6 +13486,7 @@
       "pct_of_revenue": 0.004418703818948265,
       "cum_pct": 99.89240314648018,
       "loss_rate_pct": 9.43,
+      "base_name": "Basil",
       "days_since_last_sale": 363
     },
     {
@@ -11005,6 +13508,7 @@
       "pct_of_revenue": 0.004397159299320619,
       "cum_pct": 99.8968003057795,
       "loss_rate_pct": 9.43,
+      "base_name": "Wild Lotus Root",
       "days_since_last_sale": 221
     },
     {
@@ -11026,6 +13530,7 @@
       "pct_of_revenue": 0.003961841300254697,
       "cum_pct": 99.90076214707975,
       "loss_rate_pct": 13.28,
+      "base_name": "Mint",
       "days_since_last_sale": 20
     },
     {
@@ -11047,6 +13552,7 @@
       "pct_of_revenue": 0.003786838075532723,
       "cum_pct": 99.90454898515527,
       "loss_rate_pct": 16.89,
+      "base_name": "Huanghuacai",
       "days_since_last_sale": 48
     },
     {
@@ -11068,6 +13574,7 @@
       "pct_of_revenue": 0.0036772726197238665,
       "cum_pct": 99.908226257775,
       "loss_rate_pct": 15.920000000000002,
+      "base_name": "The Dandelion",
       "days_since_last_sale": 83
     },
     {
@@ -11089,6 +13596,7 @@
       "pct_of_revenue": 0.0036212954470329186,
       "cum_pct": 99.91184755322203,
       "loss_rate_pct": 10.94,
+      "base_name": "Fresh Rice Dumplings Leaves",
       "days_since_last_sale": 747
     },
     {
@@ -11110,6 +13618,7 @@
       "pct_of_revenue": 0.003548774101211926,
       "cum_pct": 99.91539632732325,
       "loss_rate_pct": 0.0,
+      "base_name": "Purple Screw Pepper",
       "days_since_last_sale": 161
     },
     {
@@ -11131,6 +13640,7 @@
       "pct_of_revenue": 0.0034986756741659324,
       "cum_pct": 99.91889500299742,
       "loss_rate_pct": 12.8,
+      "base_name": "Miantiaocai",
       "days_since_last_sale": 88
     },
     {
@@ -11152,6 +13662,7 @@
       "pct_of_revenue": 0.0034591121017588013,
       "cum_pct": 99.92235411509918,
       "loss_rate_pct": 0.0,
+      "base_name": "Chinese Cabbage Seedling",
       "days_since_last_sale": 86
     },
     {
@@ -11173,6 +13684,7 @@
       "pct_of_revenue": 0.003391160805555794,
       "cum_pct": 99.92574527590473,
       "loss_rate_pct": 0.0,
+      "base_name": "Xianzongye",
       "days_since_last_sale": 394
     },
     {
@@ -11194,6 +13706,7 @@
       "pct_of_revenue": 0.003199034732589812,
       "cum_pct": 99.92894431063732,
       "loss_rate_pct": 9.43,
+      "base_name": "The White Mushroom",
       "days_since_last_sale": 719
     },
     {
@@ -11215,6 +13728,7 @@
       "pct_of_revenue": 0.0029378890401335,
       "cum_pct": 99.93188219967746,
       "loss_rate_pct": 9.34,
+      "base_name": "Hongshan Caitai",
       "days_since_last_sale": 230
     },
     {
@@ -11236,6 +13750,7 @@
       "pct_of_revenue": 0.002875570181706426,
       "cum_pct": 99.93475776985916,
       "loss_rate_pct": 9.43,
+      "base_name": "Muercai",
       "days_since_last_sale": 0
     },
     {
@@ -11257,6 +13772,7 @@
       "pct_of_revenue": 0.002805238898624442,
       "cum_pct": 99.93756300875779,
       "loss_rate_pct": 0.32,
+      "base_name": "Round Eggplant",
       "days_since_last_sale": 363
     },
     {
@@ -11278,6 +13794,7 @@
       "pct_of_revenue": 0.002733038049789646,
       "cum_pct": 99.94029604680757,
       "loss_rate_pct": 11.93,
+      "base_name": "Chicken Fir Bacteria",
       "days_since_last_sale": 1007
     },
     {
@@ -11299,6 +13816,7 @@
       "pct_of_revenue": 0.002732782839226564,
       "cum_pct": 99.9430288296468,
       "loss_rate_pct": 11.56,
+      "base_name": "Jicai",
       "days_since_last_sale": 140
     },
     {
@@ -11320,6 +13838,7 @@
       "pct_of_revenue": 0.0027004838651732174,
       "cum_pct": 99.94572931351198,
       "loss_rate_pct": 9.43,
+      "base_name": "7 Colour Pepper",
       "days_since_last_sale": 503
     },
     {
@@ -11341,6 +13860,7 @@
       "pct_of_revenue": 0.002695290626970961,
       "cum_pct": 99.94842460413895,
       "loss_rate_pct": 10.94,
+      "base_name": "Green Caitai",
       "days_since_last_sale": 845
     },
     {
@@ -11362,6 +13882,7 @@
       "pct_of_revenue": 0.0026737757829901855,
       "cum_pct": 99.95109837992194,
       "loss_rate_pct": 9.43,
+      "base_name": "The Fungus Mushroom Hot Pot Package",
       "days_since_last_sale": 162
     },
     {
@@ -11383,6 +13904,7 @@
       "pct_of_revenue": 0.0026678406536161784,
       "cum_pct": 99.95376622057556,
       "loss_rate_pct": 11.13,
+      "base_name": "Embroidered Aureus",
       "days_since_last_sale": 809
     },
     {
@@ -11404,6 +13926,7 @@
       "pct_of_revenue": 0.002572878583632065,
       "cum_pct": 99.9563390991592,
       "loss_rate_pct": 9.43,
+      "base_name": "Mushroom And Leaf Mix",
       "days_since_last_sale": 180
     },
     {
@@ -11425,6 +13948,7 @@
       "pct_of_revenue": 0.0025141208028293953,
       "cum_pct": 99.95885321996202,
       "loss_rate_pct": 3.4300000000000006,
+      "base_name": "Juhua Youcai",
       "days_since_last_sale": 707
     },
     {
@@ -11446,6 +13970,7 @@
       "pct_of_revenue": 0.00249275433708297,
       "cum_pct": 99.9613459742991,
       "loss_rate_pct": 0.0,
+      "base_name": "Chopped Red Pine",
       "days_since_last_sale": 541
     },
     {
@@ -11467,6 +13992,7 @@
       "pct_of_revenue": 0.0024080125598808966,
       "cum_pct": 99.96375398685899,
       "loss_rate_pct": 10.17,
+      "base_name": "Black Porcini",
       "days_since_last_sale": 35
     },
     {
@@ -11488,6 +14014,7 @@
       "pct_of_revenue": 0.0023681166202288214,
       "cum_pct": 99.96612210347922,
       "loss_rate_pct": 9.43,
+      "base_name": "Agaricus Bisporus",
       "days_since_last_sale": 223
     },
     {
@@ -11509,6 +14036,7 @@
       "pct_of_revenue": 0.0023562463614808077,
       "cum_pct": 99.96847834984071,
       "loss_rate_pct": 0.0,
+      "base_name": "The Pork Stomach Mushroom",
       "days_since_last_sale": 535
     },
     {
@@ -11530,6 +14058,7 @@
       "pct_of_revenue": 0.0023503112321068003,
       "cum_pct": 99.97082866107282,
       "loss_rate_pct": 0.0,
+      "base_name": "Black Porcini",
       "days_since_last_sale": 546
     },
     {
@@ -11551,6 +14080,7 @@
       "pct_of_revenue": 0.0022095299633553525,
       "cum_pct": 99.97303819103617,
       "loss_rate_pct": 0.0,
+      "base_name": "Lotus Root Tip",
       "days_since_last_sale": 535
     },
     {
@@ -11572,6 +14102,7 @@
       "pct_of_revenue": 0.0020565223280934503,
       "cum_pct": 99.97509471336426,
       "loss_rate_pct": 0.0,
+      "base_name": "Black Chicken Fir Bacteria",
       "days_since_last_sale": 541
     },
     {
@@ -11593,6 +14124,7 @@
       "pct_of_revenue": 0.0018283284739216263,
       "cum_pct": 99.97692304183818,
       "loss_rate_pct": 8.75,
+      "base_name": "Chopped Red Pine",
       "days_since_last_sale": 72
     },
     {
@@ -11614,6 +14146,7 @@
       "pct_of_revenue": 0.001750863165332086,
       "cum_pct": 99.9786739050035,
       "loss_rate_pct": 9.43,
+      "base_name": "Water Chestnut",
       "days_since_last_sale": 496
     },
     {
@@ -11635,6 +14168,7 @@
       "pct_of_revenue": 0.0016703234597268103,
       "cum_pct": 99.98034422846322,
       "loss_rate_pct": 0.0,
+      "base_name": "Zhimaxiancai",
       "days_since_last_sale": 407
     },
     {
@@ -11656,6 +14190,7 @@
       "pct_of_revenue": 0.001624011645221433,
       "cum_pct": 99.98196824010844,
       "loss_rate_pct": 0.0,
+      "base_name": "Artemisia Stelleriana",
       "days_since_last_sale": 99
     },
     {
@@ -11677,6 +14212,7 @@
       "pct_of_revenue": 0.0014541066966317325,
       "cum_pct": 99.98342234680507,
       "loss_rate_pct": 9.43,
+      "base_name": "Apricot Bao Mushroom",
       "days_since_last_sale": 632
     },
     {
@@ -11698,6 +14234,7 @@
       "pct_of_revenue": 0.0014481715672577254,
       "cum_pct": 99.98487051837233,
       "loss_rate_pct": 0.0,
+      "base_name": "Hongshan Gift Box",
       "days_since_last_sale": 158
     },
     {
@@ -11719,6 +14256,7 @@
       "pct_of_revenue": 0.0014036580969526724,
       "cum_pct": 99.98627417646928,
       "loss_rate_pct": 9.43,
+      "base_name": "Red Bell Pepper",
       "days_since_last_sale": 504
     },
     {
@@ -11740,6 +14278,7 @@
       "pct_of_revenue": 0.0013205662857165735,
       "cum_pct": 99.987594742755,
       "loss_rate_pct": 0.0,
+      "base_name": "Hongshan Shoutidai",
       "days_since_last_sale": 174
     },
     {
@@ -11761,6 +14300,7 @@
       "pct_of_revenue": 0.0012855490224099317,
       "cum_pct": 99.9888802917774,
       "loss_rate_pct": 9.27,
+      "base_name": "Aihao",
       "days_since_last_sale": 8
     },
     {
@@ -11782,6 +14322,7 @@
       "pct_of_revenue": 0.001163285357305386,
       "cum_pct": 99.99004357713471,
       "loss_rate_pct": 0.0,
+      "base_name": "Xianzongye",
       "days_since_last_sale": 400
     },
     {
@@ -11803,6 +14344,7 @@
       "pct_of_revenue": 0.0009827624622655868,
       "cum_pct": 99.99102633959698,
       "loss_rate_pct": 0.0,
+      "base_name": "Green Hangjiao",
       "days_since_last_sale": 662
     },
     {
@@ -11824,6 +14366,7 @@
       "pct_of_revenue": 0.0008328173537606723,
       "cum_pct": 99.99185915695075,
       "loss_rate_pct": 9.43,
+      "base_name": "Purple Hot Peppers",
       "days_since_last_sale": 566
     },
     {
@@ -11845,6 +14388,7 @@
       "pct_of_revenue": 0.0008138249397638496,
       "cum_pct": 99.99267298189052,
       "loss_rate_pct": 4.69,
+      "base_name": "Big Broccoli",
       "days_since_last_sale": 711
     },
     {
@@ -11866,6 +14410,7 @@
       "pct_of_revenue": 0.0007686348647101597,
       "cum_pct": 99.99344161675523,
       "loss_rate_pct": 9.43,
+      "base_name": "Round Eggplant",
       "days_since_last_sale": 294
     },
     {
@@ -11887,6 +14432,7 @@
       "pct_of_revenue": 0.0007596965598729051,
       "cum_pct": 99.9942013133151,
       "loss_rate_pct": 8.34,
+      "base_name": "Embroidered Aureus",
       "days_since_last_sale": 426
     },
     {
@@ -11908,6 +14454,7 @@
       "pct_of_revenue": 0.0007270533483158662,
       "cum_pct": 99.99492836666342,
       "loss_rate_pct": 16.19,
+      "base_name": "Hericium",
       "days_since_last_sale": 478
     },
     {
@@ -11929,6 +14476,7 @@
       "pct_of_revenue": 0.0006774772126547852,
       "cum_pct": 99.99560584387608,
       "loss_rate_pct": 9.43,
+      "base_name": "Green Butter",
       "days_since_last_sale": 443
     },
     {
@@ -11950,6 +14498,7 @@
       "pct_of_revenue": 0.0005549345964696612,
       "cum_pct": 99.99616077847254,
       "loss_rate_pct": 9.43,
+      "base_name": "Black Mushroom",
       "days_since_last_sale": 137
     },
     {
@@ -11971,6 +14520,7 @@
       "pct_of_revenue": 0.0005138635012015322,
       "cum_pct": 99.99667464197374,
       "loss_rate_pct": 10.75,
+      "base_name": "Shuanggou Cabbage",
       "days_since_last_sale": 599
     },
     {
@@ -11992,6 +14542,7 @@
       "pct_of_revenue": 0.0004896481733555833,
       "cum_pct": 99.9971642901471,
       "loss_rate_pct": 9.43,
+      "base_name": "Bell Pepper",
       "days_since_last_sale": 522
     },
     {
@@ -12013,6 +14564,7 @@
       "pct_of_revenue": 0.00043623200898951973,
       "cum_pct": 99.99760052215609,
       "loss_rate_pct": 0.0,
+      "base_name": "Velvet Antler Mushroom",
       "days_since_last_sale": 133
     },
     {
@@ -12034,6 +14586,7 @@
       "pct_of_revenue": 0.00040072806507420947,
       "cum_pct": 99.99800125022117,
       "loss_rate_pct": 9.43,
+      "base_name": "Red Coral (Leaf)",
       "days_since_last_sale": 443
     },
     {
@@ -12055,6 +14608,7 @@
       "pct_of_revenue": 0.0003828158446234561,
       "cum_pct": 99.99838406606578,
       "loss_rate_pct": 11.13,
+      "base_name": "Chinese Caterpillar Fungus Flowers",
       "days_since_last_sale": 876
     },
     {
@@ -12076,6 +14630,7 @@
       "pct_of_revenue": 0.0003358096199813201,
       "cum_pct": 99.99871987568577,
       "loss_rate_pct": 11.58,
+      "base_name": "Ganlanye",
       "days_since_last_sale": 841
     },
     {
@@ -12097,6 +14652,7 @@
       "pct_of_revenue": 0.0003177371510374685,
       "cum_pct": 99.9990376128368,
       "loss_rate_pct": 9.43,
+      "base_name": "Fruit Pepper (Orange)",
       "days_since_last_sale": 510
     },
     {
@@ -12118,6 +14674,7 @@
       "pct_of_revenue": 0.000267793037355199,
       "cum_pct": 99.99930540587415,
       "loss_rate_pct": 9.43,
+      "base_name": "Purple Cabbage",
       "days_since_last_sale": 433
     },
     {
@@ -12139,6 +14696,7 @@
       "pct_of_revenue": 0.0002461951015631874,
       "cum_pct": 99.99955160097572,
       "loss_rate_pct": 9.43,
+      "base_name": "Red Oak Leaf",
       "days_since_last_sale": 443
     },
     {
@@ -12160,6 +14718,7 @@
       "pct_of_revenue": 0.00019912359049793727,
       "cum_pct": 99.99975072456621,
       "loss_rate_pct": 9.43,
+      "base_name": "Broccoli",
       "days_since_last_sale": 708
     },
     {
@@ -12181,6 +14740,7 @@
       "pct_of_revenue": 0.00014541066966317325,
       "cum_pct": 99.99989613523587,
       "loss_rate_pct": 11.13,
+      "base_name": "White Jelly Mushroom",
       "days_since_last_sale": 821
     },
     {
@@ -12202,6 +14762,7 @@
       "pct_of_revenue": 0.00010386476404512375,
       "cum_pct": 99.99999999999991,
       "loss_rate_pct": 9.43,
+      "base_name": "Needle Mushroom",
       "days_since_last_sale": 307
     }
   ],
@@ -13635,6 +16196,11 @@
       "title": "Waste is concentrated in the best sellers, not the worst",
       "evidence": "The top 10 items by waste cost carry 44.4% of all spoilage cost. Only 2 items actually flip from profit to loss -- the damage is volume multiplied by loss rate, so it lands hardest on the lines the shop sells most of. The two worst (Xixia Mushroom (1) and Broccoli) waste RMB 40,750 between them -- 3.0x the true profit earned by the entire bottom half of the range.",
       "action": "Attack the short list, not the long one. For those ten lines specifically: smaller and more frequent deliveries, cold-chain and handling checks, and loss-adjusted pricing. A single point of loss rate recovered on Broccoli is worth more than delisting fifty dead SKUs."
+    },
+    {
+      "title": "The range is duplicated, not just long",
+      "evidence": "7 separate item codes exist for Haixian Mushroom, 5 for Apricot Bao Mushroom. Across the catalogue, 246 codes represent only 167 distinct products -- 79 are a repackaging of something already stocked. Most of the long tail is not obscure vegetables; it is the same vegetables entered several times.",
+      "action": "Consolidate variants before delisting anything. Every duplicate code is a separate ordering decision, shelf facing, price and spoilage risk for a product the shop already sells, and merging them removes that overhead without removing a single thing a customer can buy. It is a far easier conversation than a delist, and it should come first."
     },
     {
       "title": "The range has a long dead tail nobody has reviewed",

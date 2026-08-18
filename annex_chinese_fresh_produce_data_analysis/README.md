@@ -209,9 +209,41 @@ The pairing worth noticing: **Xixia Mushroom is the 3rd biggest seller and loses
 13.8%**, and **Qinggengsanhua is 14th and loses 17.1%**. Those two are why the waste
 list and the bestseller list are nearly the same list.
 
-The full band B list (28 items, ranks 15–42) is in
-[the report](reports/analysis_report.txt); bands C–E are in
+**Bands B, C and D are listed item by item in
+[the report](reports/analysis_report.txt)**; band E and the raw records are in
 [`findings.json`](reports/findings.json).
+
+### What bands C and D turn out to hide
+
+Two things only became visible once the items were named rather than counted.
+
+**Band C holds the worst margins in the business.** Its spread is 10.1% to 49.5%
+— the widest of any band — and the bottom of it is where loss-adjusted pricing
+matters most:
+
+| Item | Revenue | True margin | Loss rate |
+|---|---|---|---|
+| Honghu Lotus Root | 21,463 | **10.1%** | 24.1% |
+| Sichuan Red Cedar | 10,548 | 14.6% | 10.5% |
+| High Melon (1) | 16,258 | 16.0% | 29.3% |
+| Foreign Garland Chrysanthemum | 11,700 | 16.2% | 26.2% |
+
+Three of those four are high-spoilage lines losing 24–29% of stock — they are small
+*because* a quarter never reaches a customer, not because they sell badly. Sichuan
+Red Cedar is the odd one out: 10.5% loss doesn't explain a 14.6% margin, so it is
+bought or priced badly, and this data can't say which. Worth asking the buyer.
+
+**Band D is mostly the same products entered twice.** 51 of its 66 rows carry a
+(Bag), (Box), (Bunch) or numbered suffix. Across the whole range:
+
+> **246 item codes represent only 167 distinct products.** 79 codes are a
+> repackaging of something already stocked — 7 separate codes for *Haixian
+> Mushroom*, 7 for *Needle Mushroom*, 5 for *Apricot Bao Mushroom*.
+
+Each duplicate is its own ordering decision, shelf facing, price and spoilage risk
+for a product the shop already sells. **Consolidating variants should come before
+delisting anything** — it removes the same overhead without removing a single thing
+a customer can buy, and it is a far easier conversation.
 
 **Two cautions on that table.** "Chinese Cabbage" appears twice in band B as two
 different item codes with different loss rates — a catalogue quirk that ranking by
@@ -318,6 +350,7 @@ repeats in all three years.
 | Price from `cost / (1 − loss_rate)` | One formula; recovers the single largest leak in the data |
 | Attack the top 10 waste items specifically | 44% of waste cost sits in a list short enough to act on this week |
 | Put lines/day on the revenue chart | The erosion is invisible on revenue alone |
+| Consolidate duplicate SKUs before delisting | 246 codes are only 167 products; merging costs the customer nothing |
 | Quarterly range review, 90-day delist rule | Returns ordering attention to the volume-constrained lines |
 | Split deliveries: heavy pre-09:00, light pre-16:00 | Fixes what *feeds* the evening clearance pile |
 | Close at 21:00; move the hour to 09:00–11:00 | A roster change, not an investment |

@@ -516,6 +516,65 @@ r.iloc[a_stop:b_stop][['item_name', 'category', 'revenue', 'pct', 'cum',
                        'margin_true_pct', 'loss_rate_pct']].round(2)
 """)
 
+code("""
+# Bands C and D.
+c_stop = int((r.cum >= 90).argmax()) + 1
+d_stop = int((r.cum >= 99).argmax()) + 1
+cols = ['item_name', 'category', 'revenue', 'pct', 'cum', 'margin_true_pct', 'loss_rate_pct']
+r.iloc[b_stop:c_stop][cols].round(2)
+""")
+
+md("""
+Band C is where naming the items pays off. Its margin spread is the widest of any
+band, and the bottom of it holds the worst-performing lines in the business — three
+of the four losing 24–29% of stock to spoilage. They are small *because* a quarter
+never reaches a customer, not because they sell badly.
+""")
+
+code("""
+r.iloc[b_stop:c_stop].nsmallest(4, 'margin_true_pct')[
+    ['item_name', 'revenue', 'margin_true_pct', 'loss_rate_pct']].round(2)
+""")
+
+code("""
+r.iloc[c_stop:d_stop][cols].round(2)
+""")
+
+md("""
+### Band D is mostly the same products entered twice
+
+Reading those names, the tail is not 66 different products. Most rows carry a
+`(Bag)`, `(Box)`, `(Bunch)` or numbered suffix — repackagings of something already
+stocked. Stripping the suffix shows how far the duplication goes.
+""")
+
+code("""
+import re
+
+def base_name(n):
+    n = re.sub(r'\\s*\\((Bag|Box|Bunch|Ea|Jingpin|\\d+ ?G|\\d+)\\)', '', n, flags=re.I)
+    return re.sub(r'\\s+', ' ', n).strip()
+
+r['base_name'] = r.item_name.map(base_name)
+print(f"{len(r)} item codes -> {r.base_name.nunique()} distinct products "
+      f"({len(r) - r.base_name.nunique()} duplicates)")
+
+fam = (r.groupby('base_name')
+        .agg(codes=('item_code', 'size'), revenue=('revenue', 'sum'))
+        .sort_values('codes', ascending=False))
+fam[fam.codes >= 4].round(2)
+""")
+
+md("""
+Seven separate barcodes for Haixian Mushroom. Each one is its own ordering decision,
+shelf facing, price and spoilage risk — for a product the shop already sells.
+
+This reframes the range review entirely. For most of the tail the question is not
+"should we still sell this vegetable" but **"why does this vegetable need seven
+barcodes"**. Consolidating variants removes the same overhead as delisting, without
+removing anything a customer can actually buy.
+""")
+
 md("""
 A band-A item earns roughly **430x** what a band-E item earns — from the same shelf,
 the same ordering decision and the same spoilage risk.
@@ -646,8 +705,10 @@ md("""
    indistinguishable from zero at any revenue threshold.
 3. **Waste concentrates in the best sellers.** The top 10 items carry 44% of all
    spoilage cost, because waste is loss rate times volume.
-4. **The range has a long unreviewed tail.** 60 items sold on ten days or fewer;
-   110 have not sold at all in the final six months.
+4. **The range is duplicated, not just long.** 246 item codes represent only 167
+   distinct products — 7 separate barcodes for Haixian Mushroom alone. Separately,
+   60 items sold on ten days or fewer and 110 have not sold at all in the final
+   six months.
 5. **The last trading hour does not pay for itself.** 2% of revenue at the
    thinnest margin and the heaviest discounting of the day.
 
@@ -658,6 +719,7 @@ md("""
 | Price from `cost / (1 - loss_rate)` | One formula; recovers the single largest leak in the data |
 | Attack the top 10 waste items specifically | 44% of waste cost sits in a list short enough to act on this week |
 | Put lines/day on the revenue chart | The erosion is invisible on revenue alone |
+| Consolidate duplicate SKUs first | 246 codes are only 167 products; merging costs the customer nothing |
 | Quarterly range review, 90-day delist rule | Returns ordering attention to the lines that are volume-constrained |
 | Split the delivery: heavy pre-09:00, light pre-16:00 | Fixes what feeds the evening clearance pile, rather than the markdown itself |
 | Close at 21:00, move the hour to 09:00–11:00 | A roster change, not an investment |

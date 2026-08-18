@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 
 import numpy as np
@@ -622,24 +623,144 @@ def section_products(df: pd.DataFrame) -> None:
     out("")
     c_stop = int((it.cum_pct >= 90).argmax()) + 1
     d_stop = int((it.cum_pct >= 99).argmax()) + 1
-    out(f"BAND C is ranks {b_stop+1}-{c_stop} ({c_stop-b_stop} items) for the next 10%; "
-        f"band D is ranks {c_stop+1}-{d_stop}")
-    out(f"({d_stop-c_stop} items) for the 9% after that. Band E is the remaining "
-        f"{len(it)-d_stop} items sharing the")
-    out("last 1% -- listed in full in reports/findings.json rather than here, because a")
-    out("table of 100+ near-zero rows is not something anyone reads.")
+
+    c = it.iloc[b_stop:c_stop]
+    out(f"BAND C -- ranks {b_stop+1}-{c_stop} ({len(c)} items), the next 10%")
     out("")
-    out("The practical split: bands A and B are the business (42 items, 80% of takings)")
-    out("and deserve individual attention. Bands D and E are a range-review problem,")
-    out("not a merchandising one.")
+    table(c[band_cols].set_index("item_name"), "{:,.2f}")
+    out("")
+    out(f"Band C averages {RMB(c.revenue.mean())} per item over three years -- about "
+        f"{RMB(c.revenue.mean()/1085)} a day each.")
+    out("")
+    out("But the interesting thing about band C is not its size. Margins here run")
+    out(f"{c.margin_true_pct.min():.1f}% to {c.margin_true_pct.max():.1f}%, which is by far the widest "
+        f"spread of any band -- and the")
+    out("bottom of it holds the worst-performing lines in the entire business:")
+    out("")
+    worst_c = c.nsmallest(4, "margin_true_pct")
+    table(worst_c[["item_name", "revenue", "margin_true_pct", "loss_rate_pct"]]
+          .set_index("item_name"), "{:,.2f}")
+    out("")
+    hi_loss = worst_c[worst_c.loss_rate_pct > 20]
+    out(f"{len(hi_loss)} of those {len(worst_c)} are high-spoilage lines losing "
+        f"{hi_loss.loss_rate_pct.min():.0f}-{hi_loss.loss_rate_pct.max():.0f}% of stock, and they")
+    out("are the clearest illustration in this report of the pricing fault from")
+    out("section 7: at that loss rate, a markup that would be healthy on a durable")
+    out("item leaves almost nothing behind. They are not small because they sell")
+    out(f"badly -- they turn over {RMB(hi_loss.revenue.min()/3)} to {RMB(hi_loss.revenue.max()/3)} a year each. They are small")
+    out("because a quarter of the stock never reaches a customer.")
+    out("")
+    odd = worst_c[worst_c.loss_rate_pct <= 20]
+    if len(odd):
+        o = odd.iloc[0]
+        out(f"{o.item_name} is the exception worth a second look: {o.loss_rate_pct:.1f}% loss is")
+        out(f"unremarkable, yet its margin is {o.margin_true_pct:.1f}%. Spoilage does not explain that")
+        out("one -- it is either bought badly or priced badly, and the answer is not in")
+        out("this data. Worth asking the buyer.")
+        out("")
+    out("So band C splits in two. Most of it is healthy and small, and should be")
+    out("managed by category rule rather than item by item. The four lines above")
+    out("belong with the band A and B pricing work instead.")
+    out("")
+
+    d = it.iloc[c_stop:d_stop]
+    out(f"BAND D -- ranks {c_stop+1}-{d_stop} ({len(d)} items), the 9% after that")
+    out("")
+    table(d[band_cols].set_index("item_name"), "{:,.2f}")
+    out("")
+    out(f"Here the economics change. A band-D item averages {RMB(d.revenue.mean())} across three")
+    out(f"years -- roughly {RMB(d.revenue.mean()/1085)} of revenue a day, or about "
+        f"{RMB(d.profit_true.sum()/len(d)/1085)} of actual profit a day")
+    out("each. Every one still needs ordering, shelf space, handling and a price.")
+    out("")
+    d_thin = d[d.days_sold < 200]
+    out(f"{len(d_thin)} of these {len(d)} items sold on fewer than 200 of the 1,085 trading")
+    out("days, which is the more useful signal than revenue alone: an item that sells")
+    out("well but rarely is a stocking problem, while an item that sells poorly and")
+    out("often is a pricing or quality problem. The two need opposite responses.")
+    out("")
+    out(f"Band D also holds {int((d.loss_rate_pct.round(2) == 9.43).sum())} items on the placeholder loss rate, so its "
+        f"margin column is")
+    out("the least trustworthy in this section.")
+    out("")
+
+    # ---- SKU proliferation ------------------------------------------------
+    # Reading the band D names, the tail is not 66 different products. It is a
+    # much smaller set of products split across packaging and numbered variants.
+    def base_name(n: str) -> str:
+        n = re.sub(r"\s*\((Bag|Box|Bunch|Ea|Jingpin|\d+ ?G|\d+)\)", "", n, flags=re.I)
+        return re.sub(r"\s+", " ", n).strip()
+
+    it["base_name"] = it.item_name.map(base_name)
+    d2 = it.iloc[c_stop:d_stop]
+    variant = d2.item_name.str.contains(r"\((Bag|Box|Bunch|Ea|\d)\)", case=False,
+                                        regex=True).sum()
+    fam = (it.groupby("base_name")
+             .agg(codes=("item_code", "size"), revenue=("revenue", "sum"))
+             .sort_values("codes", ascending=False))
+    multi = fam[fam.codes >= 4]
+
+    out("A pattern in those names worth naming outright: the tail is not 66 different")
+    out(f"products. {variant} of the {len(d2)} band-D rows carry a (Bag), (Box), (Bunch) or")
+    out("numbered suffix -- they are repackagings of something the shop already sells.")
+    out("")
+    out(f"Across the whole range, {len(it)} item codes represent only "
+        f"{it.base_name.nunique()} distinct products.")
+    out(f"{len(it) - it.base_name.nunique()} of the codes are duplicates of a product already stocked under")
+    out("another barcode. The worst offenders:")
+    out("")
+    table(multi.head(8), "{:,.2f}")
+    out("")
+    out(f"{multi.codes.iloc[0]} separate item codes for {multi.index[0]}, between them taking "
+        f"{RMB(multi.revenue.iloc[0])}")
+    out("over three years. Each of those codes is an ordering decision, a shelf")
+    out("facing, a price and a spoilage risk, for a product the shop already sells.")
+    out("")
+    out("This reframes the range review. The question for most of the tail is not")
+    out("'should we still sell this vegetable' -- it is 'why does this vegetable need")
+    out("seven barcodes'. Consolidating variants is a far easier conversation than")
+    out("delisting products, and it removes most of the same overhead.")
+    out("")
+
+    F["sku_families"] = (multi.reset_index()
+                         .rename(columns={"base_name": "product"})
+                         .to_dict("records"))
+
+    e = it.iloc[d_stop:]
+    out(f"BAND E -- ranks {d_stop+1}-{len(it)} ({len(e)} items), the last 1%")
+    out("")
+    out(f"Not tabulated here: {len(e)} rows averaging {RMB(e.revenue.mean())} of revenue each "
+        f"across three")
+    out(f"years, which is {RMB(e.revenue.mean()/1085)} a day. The full list is in "
+        f"reports/findings.json.")
+    ledger_end = it.last_sale.max()
+    out(f"{int((e.days_sold <= 10).sum())} of them sold on ten days or fewer, and "
+        f"{int((e.last_sale < ledger_end - pd.Timedelta(days=180)).sum())} have not sold at all in")
+    out("the final six months.")
+    out("")
+    out("THE PRACTICAL SPLIT")
+    out("")
+    out(f"  A + B ({a_stop + (b_stop-a_stop)} items, {PCT(it.head(b_stop).pct_of_revenue.sum())} of revenue)")
+    out("      The business. Worth individual attention: pricing, ordering frequency,")
+    out("      handling, and measuring the loss rates that are currently guessed.")
+    out("")
+    out(f"  C ({len(c)} items, {PCT(c.pct_of_revenue.sum())})")
+    out("      Healthy, small. Manage by category rule, not item by item.")
+    out("")
+    out(f"  D + E ({len(d) + len(e)} items, {PCT(d.pct_of_revenue.sum() + e.pct_of_revenue.sum())})")
+    out("      A range-review problem, not a merchandising one. The question for each")
+    out("      is not 'how do we sell more' but 'why is this still listed'.")
 
     F["bands"] = bt.reset_index().to_dict("records")
     F["band_a_items"] = it.head(a_stop)[
         ["item_code", "item_name", "category", "revenue", "pct_of_revenue",
          "cum_pct", "margin_true_pct", "loss_rate"]].to_dict("records")
-    F["band_b_items"] = it.iloc[a_stop:b_stop][
-        ["item_code", "item_name", "category", "revenue", "pct_of_revenue",
-         "cum_pct", "margin_true_pct", "loss_rate"]].to_dict("records")
+    band_json = ["item_code", "item_name", "category", "revenue", "pct_of_revenue",
+                 "cum_pct", "margin_true_pct", "loss_rate", "days_sold"]
+    F["band_b_items"] = it.iloc[a_stop:b_stop][band_json].to_dict("records")
+    F["band_c_items"] = it.iloc[b_stop:c_stop][band_json].to_dict("records")
+    F["band_d_items"] = it.iloc[c_stop:d_stop][band_json].to_dict("records")
+    F["band_e_items"] = it.iloc[d_stop:][band_json].to_dict("records")
 
     # Dead and dying SKUs
     end = df.date.max()
@@ -1057,6 +1178,18 @@ def section_verdict(df: pd.DataFrame) -> None:
          "smaller and more frequent deliveries, cold-chain and handling checks, and "
          "loss-adjusted pricing. A single point of loss rate recovered on Broccoli is "
          "worth more than delisting fifty dead SKUs."),
+
+        ("The range is duplicated, not just long",
+         f"{F['sku_families'][0]['codes']} separate item codes exist for {F['sku_families'][0]['product']}, "
+         f"{F['sku_families'][2]['codes']} for {F['sku_families'][2]['product']}. Across the "
+         f"catalogue, 246 codes represent only 167 distinct products -- 79 are a "
+         f"repackaging of something already stocked. Most of the long tail is not "
+         f"obscure vegetables; it is the same vegetables entered several times.",
+         "Consolidate variants before delisting anything. Every duplicate code is a "
+         "separate ordering decision, shelf facing, price and spoilage risk for a "
+         "product the shop already sells, and merging them removes that overhead "
+         "without removing a single thing a customer can buy. It is a far easier "
+         "conversation than a delist, and it should come first."),
 
         ("The range has a long dead tail nobody has reviewed",
          f"{F['thin_skus']} items sold on ten days or fewer in three years, and "
