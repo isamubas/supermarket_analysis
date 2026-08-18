@@ -165,8 +165,63 @@ this week.
 
 ![Revenue concentration](figures/revenue_concentration.png)
 
-- **50%** of revenue comes from **14 items** (5.7% of the range)
-- **80%** comes from **42 items**
+Cut the ranked list into bands, and the shape of the business is obvious:
+
+| Band | Ranks | Items | Revenue | Share | Avg per item |
+|---|---|---|---|---|---|
+| **A** | 1–14 | 14 | RMB 1,698,933 | **50.4%** | RMB 121,352 |
+| **B** | 15–42 | 28 | RMB 1,011,768 | 30.0% | RMB 36,135 |
+| **C** | 43–64 | 22 | RMB 326,030 | 9.7% | RMB 14,820 |
+| **D** | 65–130 | 66 | RMB 300,263 | 8.9% | RMB 4,549 |
+| **E** | 131–246 | 116 | RMB 32,772 | 1.0% | RMB 283 |
+
+**A band-A item earns 430× what a band-E item earns** — from the same shelf, the same
+ordering decision, and the same risk of spoiling.
+
+### Band A — the 14 items that make the first half of the money
+
+| # | Item | Category | Revenue | Share | True margin | Loss rate |
+|---|---|---|---|---|---|---|
+| 1 | Broccoli | Cabbage | 269,874 | 8.01% | 26.6% | 9.26% |
+| 2 | Net Lotus Root (1) | Aquatic Tuberous | 211,652 | 6.28% | 25.3% | 5.54% |
+| 3 | Xixia Mushroom (1) | Edible Mushroom | 211,198 | 6.27% | 23.2% | 13.82% |
+| 4 | Wuhu Green Pepper (1) | Capsicum | 205,114 | 6.09% | 25.7% | 5.70% |
+| 5 | Yunnan Shengcai | Flower/Leaf | 129,757 | 3.85% | 27.5% | 15.25% |
+| 6 | Eggplant (2) | Solanum | 117,729 | 3.49% | 29.8% | 6.07% |
+| 7 | Paopaojiao (Jingpin) | Capsicum | 95,569 | 2.84% | 21.6% | 7.08% |
+| 8 | Luosi Pepper | Capsicum | 82,009 | 2.43% | 26.9% | 10.18% |
+| 9 | Yunnan Lettuces | Flower/Leaf | 70,665 | 2.10% | 30.6% | 12.81% |
+| 10 | Honghu Lotus Root Powder | Aquatic Tuberous | 64,340 | 1.91% | **20.99%** | 11.81% |
+| 11 | Yunnan Lettuce (Bag) | Flower/Leaf | 63,995 | 1.90% | 33.7% | 9.43%* |
+| 12 | Xixia Black Mushroom (1) | Edible Mushroom | 60,116 | 1.78% | 27.0% | 10.80% |
+| 13 | Needle Mushroom (Box) | Edible Mushroom | 58,641 | 1.74% | 35.4% | 0.45% |
+| 14 | Qinggengsanhua | Cabbage | 58,273 | 1.73% | 24.3% | 17.06% |
+
+<sub>* the 9.43% placeholder, not a measured rate</sub>
+
+**All six categories appear here**, so there is no single category to protect — the
+concentration is at *item* level, which is where ordering decisions get made anyway.
+
+Margins run 21.0% to 35.4%. The weakest is **Honghu Lotus Root Powder at 21.0% on
+RMB 64,340** — the single most valuable pricing conversation in the business.
+
+The pairing worth noticing: **Xixia Mushroom is the 3rd biggest seller and loses
+13.8%**, and **Qinggengsanhua is 14th and loses 17.1%**. Those two are why the waste
+list and the bestseller list are nearly the same list.
+
+The full band B list (28 items, ranks 15–42) is in
+[the report](reports/analysis_report.txt); bands C–E are in
+[`findings.json`](reports/findings.json).
+
+**Two cautions on that table.** "Chinese Cabbage" appears twice in band B as two
+different item codes with different loss rates — a catalogue quirk that ranking by
+*name* would silently merge. And **8 of the 42 items in bands A and B carry the 9.43%
+placeholder loss rate**, so their true-margin figures are estimates. Those are the
+most valuable lines in the business, which makes them the obvious place to start
+measuring waste for real.
+
+### The tail
+
 - The **bottom half of the range** contributes **1.2%** of revenue
 - **60 items** sold on ten days or fewer in three years
 - **110 items** have not sold at all in the final six months

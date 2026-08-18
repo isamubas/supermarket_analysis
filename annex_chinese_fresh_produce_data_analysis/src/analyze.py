@@ -506,7 +506,8 @@ def section_products(df: pd.DataFrame) -> None:
     it = it.sort_values("revenue", ascending=False)
 
     total_rev = it.revenue.sum()
-    it["cum_pct"] = 100 * it.revenue.cumsum() / total_rev
+    it["pct_of_revenue"] = 100 * it.revenue / total_rev
+    it["cum_pct"] = it.pct_of_revenue.cumsum()
 
     out("TOP 20 BY REVENUE")
     out("")
@@ -534,6 +535,112 @@ def section_products(df: pd.DataFrame) -> None:
     table(it.tail(20)[["item_name", "category", "revenue", "kg", "days_sold",
                        "first_sale", "last_sale"]].set_index("item_name"), "{:,.2f}")
 
+    # ---- who exactly is in each band of the curve -------------------------
+    # The Pareto chart shows the shape; it does not say which items make it up.
+    # Cut the ranked list into revenue bands and name every item in the top two,
+    # because those are the ones any decision actually lands on.
+    out("")
+    out("=" * 78)
+    out("WHO IS ACTUALLY IN EACH BAND")
+    out("=" * 78)
+    out("")
+
+    bands = [(50, "A"), (80, "B"), (90, "C"), (99, "D"), (100, "E")]
+    start = 0
+    band_rows = []
+    for pct, letter in bands:
+        stop = int((it.cum_pct >= pct).argmax()) + 1 if pct < 100 else len(it)
+        grp = it.iloc[start:stop]
+        if not len(grp):
+            continue
+        band_rows.append({
+            "band": letter, "rank_from": start + 1, "rank_to": stop,
+            "items": len(grp),
+            "revenue": grp.revenue.sum(),
+            "pct_revenue": 100 * grp.revenue.sum() / total_rev,
+            "profit_true": grp.profit_true.sum(),
+            "rev_per_item": grp.revenue.mean(),
+        })
+        start = stop
+
+    bt = pd.DataFrame(band_rows).set_index("band")
+    table(bt, "{:,.1f}")
+    out("")
+    out("Read the last column. A band-A item earns "
+        f"{bt.rev_per_item.iloc[0] / bt.rev_per_item.iloc[-1]:,.0f}x what a band-E item earns.")
+    out("They occupy the same shelf, take the same ordering decision, and carry the")
+    out("same risk of spoiling.")
+    out("")
+
+    # Band A named in full -- 14 items is short enough to act on directly.
+    a_stop = int((it.cum_pct >= 50).argmax()) + 1
+    band_cols = ["item_name", "category", "revenue", "pct_of_revenue",
+                 "cum_pct", "margin_true_pct", "loss_rate_pct"]
+    it["loss_rate_pct"] = 100 * it.loss_rate
+
+    out(f"BAND A -- the {a_stop} items that make the first half of the money")
+    out("")
+    table(it.head(a_stop)[band_cols].set_index("item_name"), "{:,.2f}")
+    out("")
+    a = it.head(a_stop)
+    ncat = a.category.nunique()
+    top_cat = a.category.value_counts()
+    out(f"All {ncat} categories appear in band A, the most frequent being "
+        f"{top_cat.index[0]} with {top_cat.iloc[0]} items.")
+    out("So there is no single category to protect: the concentration is at item")
+    out("level, which is where ordering and handling decisions get made anyway.")
+    out("")
+    out(f"Band A margins run {a.margin_true_pct.min():.1f}% to {a.margin_true_pct.max():.1f}%, "
+        f"and loss rates {a.loss_rate_pct.min():.1f}% to {a.loss_rate_pct.max():.1f}%. The weakest")
+    out(f"margin in the band is {a.loc[a.margin_true_pct.idxmin(), 'item_name']} at "
+        f"{a.margin_true_pct.min():.1f}%, which on "
+        f"{RMB(a.loc[a.margin_true_pct.idxmin(), 'revenue'])} of revenue is")
+    out("the single most valuable pricing conversation in the business.")
+    out("")
+
+    b_stop = int((it.cum_pct >= 80).argmax()) + 1
+    out(f"BAND B -- the next {b_stop - a_stop} items, carrying the following 30%")
+    out("")
+    table(it.iloc[a_stop:b_stop][band_cols].set_index("item_name"), "{:,.2f}")
+    out("")
+
+    ab = it.head(b_stop)
+    dupes = ab.item_name[ab.item_name.duplicated(keep=False)].unique()
+    if len(dupes):
+        out("Two rows above share a name -- '" + "', '".join(dupes) + "' appears twice,")
+        out("as two different item codes with different loss rates. That is a catalogue")
+        out("quirk, not a duplicate row: they are separate lines that were never")
+        out("reconciled. Ranking on item name rather than item code silently merges")
+        out("them and gets the item counts wrong.")
+        out("")
+
+    ph = (ab.loss_rate_pct.round(2) == 9.43).sum()
+    out(f"Note also that {ph} of the {b_stop} items in bands A and B carry the 9.43%")
+    out("placeholder loss rate rather than a measured one. Their true margin figures")
+    out("above are therefore estimates, and they are among the most valuable lines in")
+    out("the business -- which makes them the obvious place to start measuring for real.")
+    out("")
+    c_stop = int((it.cum_pct >= 90).argmax()) + 1
+    d_stop = int((it.cum_pct >= 99).argmax()) + 1
+    out(f"BAND C is ranks {b_stop+1}-{c_stop} ({c_stop-b_stop} items) for the next 10%; "
+        f"band D is ranks {c_stop+1}-{d_stop}")
+    out(f"({d_stop-c_stop} items) for the 9% after that. Band E is the remaining "
+        f"{len(it)-d_stop} items sharing the")
+    out("last 1% -- listed in full in reports/findings.json rather than here, because a")
+    out("table of 100+ near-zero rows is not something anyone reads.")
+    out("")
+    out("The practical split: bands A and B are the business (42 items, 80% of takings)")
+    out("and deserve individual attention. Bands D and E are a range-review problem,")
+    out("not a merchandising one.")
+
+    F["bands"] = bt.reset_index().to_dict("records")
+    F["band_a_items"] = it.head(a_stop)[
+        ["item_code", "item_name", "category", "revenue", "pct_of_revenue",
+         "cum_pct", "margin_true_pct", "loss_rate"]].to_dict("records")
+    F["band_b_items"] = it.iloc[a_stop:b_stop][
+        ["item_code", "item_name", "category", "revenue", "pct_of_revenue",
+         "cum_pct", "margin_true_pct", "loss_rate"]].to_dict("records")
+
     # Dead and dying SKUs
     end = df.date.max()
     it["days_since_last_sale"] = (end - it.last_sale).dt.days
@@ -558,8 +665,12 @@ def section_products(df: pd.DataFrame) -> None:
     F["items"] = it.assign(
         first_sale=it.first_sale.astype(str), last_sale=it.last_sale.astype(str)
     ).to_dict("records")
+    # First rank at which the cumulative share reaches the threshold. The
+    # (cum <= s).sum() + 1 form gets this wrong whenever a boundary lands
+    # exactly on the threshold.
     F["concentration"] = {
-        f"items_for_{s}pct": int((it.cum_pct <= s).sum()) + 1 for s in (50, 80, 90)}
+        f"items_for_{s}pct": int((it.cum_pct >= s).argmax()) + 1
+        for s in (50, 80, 90, 99)}
     F["dead_skus"] = int(len(dead))
     F["thin_skus"] = int(len(thin))
 

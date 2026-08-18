@@ -6561,6 +6561,482 @@
       "pct_revenue": 5.671736006510919
     }
   ],
+  "bands": [
+    {
+      "band": "A",
+      "rank_from": 1,
+      "rank_to": 14,
+      "items": 14,
+      "revenue": 1698932.8525999999,
+      "pct_revenue": 50.416931389659425,
+      "profit_true": 448396.30942474055,
+      "rev_per_item": 121352.3466142857
+    },
+    {
+      "band": "B",
+      "rank_from": 15,
+      "rank_to": 42,
+      "items": 28,
+      "revenue": 1011768.0627,
+      "pct_revenue": 30.024871743064992,
+      "profit_true": 330719.0886747106,
+      "rev_per_item": 36134.57366785714
+    },
+    {
+      "band": "C",
+      "rank_from": 43,
+      "rank_to": 64,
+      "items": 22,
+      "revenue": 326029.9664,
+      "pct_revenue": 9.675150151935892,
+      "profit_true": 103276.26608500973,
+      "rev_per_item": 14819.543927272725
+    },
+    {
+      "band": "D",
+      "rank_from": 65,
+      "rank_to": 130,
+      "items": 66,
+      "revenue": 300263.15819999995,
+      "pct_revenue": 8.91050345082476,
+      "profit_true": 111358.36421729483,
+      "rev_per_item": 4549.44179090909
+    },
+    {
+      "band": "E",
+      "rank_from": 131,
+      "rank_to": 246,
+      "items": 116,
+      "revenue": 32772.43689999999,
+      "pct_revenue": 0.972543264514916,
+      "profit_true": 10203.147994124387,
+      "rev_per_item": 282.5210077586206
+    }
+  ],
+  "band_a_items": [
+    {
+      "item_code": 102900005116714,
+      "item_name": "Broccoli",
+      "category": "Cabbage",
+      "revenue": 269874.2472,
+      "pct_of_revenue": 8.008692859223828,
+      "cum_pct": 8.008692859223828,
+      "margin_true_pct": 26.602172491367252,
+      "loss_rate": 0.0926
+    },
+    {
+      "item_code": 102900005116899,
+      "item_name": "Net Lotus Root (1)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 211652.1013,
+      "pct_of_revenue": 6.280913017479752,
+      "cum_pct": 14.289605876703579,
+      "margin_true_pct": 25.316762069444664,
+      "loss_rate": 0.0554
+    },
+    {
+      "item_code": 102900005116530,
+      "item_name": "Xixia Mushroom (1)",
+      "category": "Edible Mushroom",
+      "revenue": 211198.38640000002,
+      "pct_of_revenue": 6.267448734327678,
+      "cum_pct": 20.557054611031255,
+      "margin_true_pct": 23.23099354451249,
+      "loss_rate": 0.1382
+    },
+    {
+      "item_code": 102900011016701,
+      "item_name": "Wuhu Green Pepper (1)",
+      "category": "Capsicum",
+      "revenue": 205113.6991,
+      "pct_of_revenue": 6.086881702698289,
+      "cum_pct": 26.643936313729544,
+      "margin_true_pct": 25.696183034528893,
+      "loss_rate": 0.057
+    },
+    {
+      "item_code": 102900005115779,
+      "item_name": "Yunnan Shengcai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 129756.9615,
+      "pct_of_revenue": 3.8506217684027733,
+      "cum_pct": 30.49455808213232,
+      "margin_true_pct": 27.452825144712808,
+      "loss_rate": 0.1525
+    },
+    {
+      "item_code": 102900005116257,
+      "item_name": "Eggplant (2)",
+      "category": "Solanum",
+      "revenue": 117729.4239,
+      "pct_of_revenue": 3.4936968098691,
+      "cum_pct": 33.98825489200142,
+      "margin_true_pct": 29.82348127291237,
+      "loss_rate": 0.060700000000000004
+    },
+    {
+      "item_code": 102900005117056,
+      "item_name": "Paopaojiao (Jingpin)",
+      "category": "Capsicum",
+      "revenue": 95568.6339,
+      "pct_of_revenue": 2.83606103146809,
+      "cum_pct": 36.82431592346951,
+      "margin_true_pct": 21.607841267776596,
+      "loss_rate": 0.0708
+    },
+    {
+      "item_code": 102900011000328,
+      "item_name": "Luosi Pepper",
+      "category": "Capsicum",
+      "revenue": 82009.3451,
+      "pct_of_revenue": 2.433680365230465,
+      "cum_pct": 39.25799628869998,
+      "margin_true_pct": 26.932567752504422,
+      "loss_rate": 0.1018
+    },
+    {
+      "item_code": 102900005115984,
+      "item_name": "Yunnan Lettuces",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 70665.1061,
+      "pct_of_revenue": 2.0970327346571813,
+      "cum_pct": 41.35502902335716,
+      "margin_true_pct": 30.57758631927438,
+      "loss_rate": 0.1281
+    },
+    {
+      "item_code": 102900011021842,
+      "item_name": "Honghu Lotus Root Powder (Fenou)",
+      "category": "Aquatic Tuberous Vegetables",
+      "revenue": 64339.600000000006,
+      "pct_of_revenue": 1.9093192493593272,
+      "cum_pct": 43.26434827271649,
+      "margin_true_pct": 20.991793706934228,
+      "loss_rate": 0.11810000000000001
+    },
+    {
+      "item_code": 102900011030059,
+      "item_name": "Yunnan Lettuce (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 63994.9,
+      "pct_of_revenue": 1.8990900538832256,
+      "cum_pct": 45.16343832659972,
+      "margin_true_pct": 33.692097948390575,
+      "loss_rate": 0.0943
+    },
+    {
+      "item_code": 102900005115250,
+      "item_name": "Xixia Black Mushroom (1)",
+      "category": "Edible Mushroom",
+      "revenue": 60116.344300000004,
+      "pct_of_revenue": 1.783991404564263,
+      "cum_pct": 46.94742973116398,
+      "margin_true_pct": 27.009007485984135,
+      "loss_rate": 0.10800000000000001
+    },
+    {
+      "item_code": 106949711300259,
+      "item_name": "Needle Mushroom (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 58640.9,
+      "pct_of_revenue": 1.7402066405410563,
+      "cum_pct": 48.68763637170503,
+      "margin_true_pct": 35.348887938490115,
+      "loss_rate": 0.0045000000000000005
+    },
+    {
+      "item_code": 102900011009970,
+      "item_name": "Qinggengsanhua",
+      "category": "Cabbage",
+      "revenue": 58273.2038,
+      "pct_of_revenue": 1.7292950179544024,
+      "cum_pct": 50.41693138965943,
+      "margin_true_pct": 24.263946260418393,
+      "loss_rate": 0.17059999999999997
+    }
+  ],
+  "band_b_items": [
+    {
+      "item_code": 102900005116233,
+      "item_name": "Red Pepper (1)",
+      "category": "Capsicum",
+      "revenue": 57285.8741,
+      "pct_of_revenue": 1.6999953704329045,
+      "cum_pct": 52.11692676009233,
+      "margin_true_pct": 30.51819768441397,
+      "loss_rate": 0.1176
+    },
+    {
+      "item_code": 102900005115823,
+      "item_name": "Shanghaiqing",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 56891.4632,
+      "pct_of_revenue": 1.6882909718428118,
+      "cum_pct": 53.805217731935144,
+      "margin_true_pct": 30.878127238213725,
+      "loss_rate": 0.14429999999999998
+    },
+    {
+      "item_code": 102900011031100,
+      "item_name": "Millet Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 54979.4,
+      "pct_of_revenue": 1.6315492595264218,
+      "cum_pct": 55.43676699146157,
+      "margin_true_pct": 44.445632184585165,
+      "loss_rate": 0.0943
+    },
+    {
+      "item_code": 102900051010455,
+      "item_name": "Huangbaicai (2)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 53478.1692,
+      "pct_of_revenue": 1.5869992644352011,
+      "cum_pct": 57.02376625589677,
+      "margin_true_pct": 31.452077565867313,
+      "loss_rate": 0.1561
+    },
+    {
+      "item_code": 102900005118817,
+      "item_name": "Spinach",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 52349.541,
+      "pct_of_revenue": 1.5535064925244375,
+      "cum_pct": 58.5772727484212,
+      "margin_true_pct": 22.59169063268336,
+      "loss_rate": 0.18510000000000001
+    },
+    {
+      "item_code": 102900011034026,
+      "item_name": "Zhijiang Qinggengsanhua",
+      "category": "Cabbage",
+      "revenue": 47414.9774,
+      "pct_of_revenue": 1.4070701256731073,
+      "cum_pct": 59.98434287409431,
+      "margin_true_pct": 33.86971287813724,
+      "loss_rate": 0.0943
+    },
+    {
+      "item_code": 102900005118831,
+      "item_name": "Wawacai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 45035.8,
+      "pct_of_revenue": 1.3364664973095384,
+      "cum_pct": 61.32080937140385,
+      "margin_true_pct": 33.5668654685549,
+      "loss_rate": 0.0248
+    },
+    {
+      "item_code": 102900005125808,
+      "item_name": "Millet Pepper",
+      "category": "Capsicum",
+      "revenue": 40930.5079,
+      "pct_of_revenue": 1.2146392986515924,
+      "cum_pct": 62.53544867005544,
+      "margin_true_pct": 35.319937591191774,
+      "loss_rate": 0.058600000000000006
+    },
+    {
+      "item_code": 102900011032251,
+      "item_name": "Luosi Pepper (Bag)",
+      "category": "Capsicum",
+      "revenue": 40719.9,
+      "pct_of_revenue": 1.2083893729831527,
+      "cum_pct": 63.74383804303859,
+      "margin_true_pct": 37.49516918220927,
+      "loss_rate": 0.0943
+    },
+    {
+      "item_code": 102900005115786,
+      "item_name": "Zhuyecai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 38934.738,
+      "pct_of_revenue": 1.1554135358653466,
+      "cum_pct": 64.89925157890394,
+      "margin_true_pct": 26.497000766638504,
+      "loss_rate": 0.1362
+    },
+    {
+      "item_code": 102900005115960,
+      "item_name": "Chinese Cabbage",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 38758.6857,
+      "pct_of_revenue": 1.1501890699798891,
+      "cum_pct": 66.04944064888383,
+      "margin_true_pct": 24.176889223371578,
+      "loss_rate": 0.2227
+    },
+    {
+      "item_code": 102900005116547,
+      "item_name": "Needle Mushroom (1)",
+      "category": "Edible Mushroom",
+      "revenue": 37318.2425,
+      "pct_of_revenue": 1.1074429862403454,
+      "cum_pct": 67.15688363512417,
+      "margin_true_pct": 39.23124017082201,
+      "loss_rate": 0.034300000000000004
+    },
+    {
+      "item_code": 102900011030097,
+      "item_name": "Yunnan Leaf Lettuce (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 35692.1,
+      "pct_of_revenue": 1.0591861556499889,
+      "cum_pct": 68.21606979077416,
+      "margin_true_pct": 36.54334764817293,
+      "loss_rate": 0.0943
+    },
+    {
+      "item_code": 102900011008522,
+      "item_name": "Sweet Chinese Cabbage",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 35620.064,
+      "pct_of_revenue": 1.057048440752059,
+      "cum_pct": 69.27311823152621,
+      "margin_true_pct": 34.75439640119295,
+      "loss_rate": 0.0943
+    },
+    {
+      "item_code": 102900005115908,
+      "item_name": "Caixin",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 32783.3697,
+      "pct_of_revenue": 0.972867702427017,
+      "cum_pct": 70.24598593395324,
+      "margin_true_pct": 29.617452246530473,
+      "loss_rate": 0.13699999999999998
+    },
+    {
+      "item_code": 102900051004294,
+      "item_name": "Green Line Pepper",
+      "category": "Capsicum",
+      "revenue": 30873.0994,
+      "pct_of_revenue": 0.9161791955779004,
+      "cum_pct": 71.16216512953113,
+      "margin_true_pct": 34.25498114487342,
+      "loss_rate": 0.078
+    },
+    {
+      "item_code": 102900005122654,
+      "item_name": "Zhijiang Red Bolt",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 30845.2075,
+      "pct_of_revenue": 0.9153514854029661,
+      "cum_pct": 72.0775166149341,
+      "margin_true_pct": 25.629939640401915,
+      "loss_rate": 0.11380000000000001
+    },
+    {
+      "item_code": 102900005119975,
+      "item_name": "Hongshujian",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 30271.2539,
+      "pct_of_revenue": 0.8983190410495806,
+      "cum_pct": 72.97583565598367,
+      "margin_true_pct": 34.36964569925384,
+      "loss_rate": 0.0842
+    },
+    {
+      "item_code": 102900011008164,
+      "item_name": "Naibaicai",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 27812.8544,
+      "pct_of_revenue": 0.8253644456221091,
+      "cum_pct": 73.80120010160579,
+      "margin_true_pct": 29.656569973469598,
+      "loss_rate": 0.1568
+    },
+    {
+      "item_code": 102900005115793,
+      "item_name": "Chinese Cabbage",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 26916.7509,
+      "pct_of_revenue": 0.7987719945971063,
+      "cum_pct": 74.59997209620289,
+      "margin_true_pct": 31.734104533560902,
+      "loss_rate": 0.0759
+    },
+    {
+      "item_code": 102900005115878,
+      "item_name": "Garden Chrysanthemum",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 26871.0422,
+      "pct_of_revenue": 0.797415559357018,
+      "cum_pct": 75.39738765555991,
+      "margin_true_pct": 34.32224481629359,
+      "loss_rate": 0.06269999999999999
+    },
+    {
+      "item_code": 102900011022764,
+      "item_name": "Changxianqie",
+      "category": "Solanum",
+      "revenue": 26304.4744,
+      "pct_of_revenue": 0.7806022933962852,
+      "cum_pct": 76.1779899489562,
+      "margin_true_pct": 34.43128458277843,
+      "loss_rate": 0.069
+    },
+    {
+      "item_code": 102900005115762,
+      "item_name": "Amaranth",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 25511.7896,
+      "pct_of_revenue": 0.7570788591922406,
+      "cum_pct": 76.93506880814843,
+      "margin_true_pct": 21.38643141086029,
+      "loss_rate": 0.1852
+    },
+    {
+      "item_code": 102900011030110,
+      "item_name": "Spinach (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 25351.600000000002,
+      "pct_of_revenue": 0.7523251291903883,
+      "cum_pct": 77.68739393733881,
+      "margin_true_pct": 33.64353869609086,
+      "loss_rate": 0.0943
+    },
+    {
+      "item_code": 102900005125815,
+      "item_name": "Apricot Bao Mushroom (1)",
+      "category": "Edible Mushroom",
+      "revenue": 24371.7466,
+      "pct_of_revenue": 0.7232473457075848,
+      "cum_pct": 78.4106412830464,
+      "margin_true_pct": 37.41773281643712,
+      "loss_rate": 0.050499999999999996
+    },
+    {
+      "item_code": 102900005116509,
+      "item_name": "Green Eggplant (1)",
+      "category": "Solanum",
+      "revenue": 23344.2111,
+      "pct_of_revenue": 0.6927545650631596,
+      "cum_pct": 79.10339584810956,
+      "margin_true_pct": 33.726538844401034,
+      "loss_rate": 0.0501
+    },
+    {
+      "item_code": 102900011034330,
+      "item_name": "Agaricus Bisporus (Box)",
+      "category": "Edible Mushroom",
+      "revenue": 22604.9,
+      "pct_of_revenue": 0.6708150299324622,
+      "cum_pct": 79.77421087804201,
+      "margin_true_pct": 34.654554786395074,
+      "loss_rate": 0.002
+    },
+    {
+      "item_code": 102900011034231,
+      "item_name": "Cabbage Stem (Bag)",
+      "category": "Flower/Leaf Vegetables",
+      "revenue": 22496.3,
+      "pct_of_revenue": 0.6675922546823764,
+      "cum_pct": 80.44180313272439,
+      "margin_true_pct": 42.04889039127998,
+      "loss_rate": 0.0943
+    }
+  ],
   "items": [
     {
       "item_code": 102900005116714,
@@ -6578,7 +7054,9 @@
       "avg_price": 9.90091842797725,
       "margin_true_pct": 26.602172491367252,
       "rev_per_day_sold": 250.8124973977695,
+      "pct_of_revenue": 8.008692859223828,
       "cum_pct": 8.008692859223828,
+      "loss_rate_pct": 9.26,
       "days_since_last_sale": 0
     },
     {
@@ -6597,7 +7075,9 @@
       "avg_price": 7.952709685630648,
       "margin_true_pct": 25.316762069444664,
       "rev_per_day_sold": 200.2385064333018,
-      "cum_pct": 14.289605876703577,
+      "pct_of_revenue": 6.280913017479752,
+      "cum_pct": 14.289605876703579,
+      "loss_rate_pct": 5.54,
       "days_since_last_sale": 0
     },
     {
@@ -6616,7 +7096,9 @@
       "avg_price": 17.98501547075291,
       "margin_true_pct": 23.23099354451249,
       "rev_per_day_sold": 257.2452940316687,
-      "cum_pct": 20.55705461103126,
+      "pct_of_revenue": 6.267448734327678,
+      "cum_pct": 20.557054611031255,
+      "loss_rate_pct": 13.819999999999999,
       "days_since_last_sale": 108
     },
     {
@@ -6635,7 +7117,9 @@
       "avg_price": 7.378117092000858,
       "margin_true_pct": 25.696183034528893,
       "rev_per_day_sold": 239.06025536130537,
-      "cum_pct": 26.643936313729547,
+      "pct_of_revenue": 6.086881702698289,
+      "cum_pct": 26.643936313729544,
+      "loss_rate_pct": 5.7,
       "days_since_last_sale": 0
     },
     {
@@ -6654,7 +7138,9 @@
       "avg_price": 8.209421616065384,
       "margin_true_pct": 27.452825144712808,
       "rev_per_day_sold": 160.19377962962963,
+      "pct_of_revenue": 3.8506217684027733,
       "cum_pct": 30.49455808213232,
+      "loss_rate_pct": 15.25,
       "days_since_last_sale": 1
     },
     {
@@ -6673,7 +7159,9 @@
       "avg_price": 8.678459297031507,
       "margin_true_pct": 29.82348127291237,
       "rev_per_day_sold": 115.19513101761252,
+      "pct_of_revenue": 3.4936968098691,
       "cum_pct": 33.98825489200142,
+      "loss_rate_pct": 6.07,
       "days_since_last_sale": 0
     },
     {
@@ -6692,7 +7180,9 @@
       "avg_price": 9.857506511958324,
       "margin_true_pct": 21.607841267776596,
       "rev_per_day_sold": 419.160675,
+      "pct_of_revenue": 2.83606103146809,
       "cum_pct": 36.82431592346951,
+      "loss_rate_pct": 7.08,
       "days_since_last_sale": 501
     },
     {
@@ -6711,7 +7201,9 @@
       "avg_price": 10.658329658700062,
       "margin_true_pct": 26.932567752504422,
       "rev_per_day_sold": 95.5819872960373,
+      "pct_of_revenue": 2.433680365230465,
       "cum_pct": 39.25799628869998,
+      "loss_rate_pct": 10.18,
       "days_since_last_sale": 0
     },
     {
@@ -6730,7 +7222,9 @@
       "avg_price": 6.892826133677198,
       "margin_true_pct": 30.57758631927438,
       "rev_per_day_sold": 90.3645858056266,
-      "cum_pct": 41.355029023357154,
+      "pct_of_revenue": 2.0970327346571813,
+      "cum_pct": 41.35502902335716,
+      "loss_rate_pct": 12.809999999999999,
       "days_since_last_sale": 3
     },
     {
@@ -6749,7 +7243,9 @@
       "avg_price": 10.624650233177881,
       "margin_true_pct": 20.991793706934228,
       "rev_per_day_sold": 163.7139949109415,
+      "pct_of_revenue": 1.9093192493593272,
       "cum_pct": 43.26434827271649,
+      "loss_rate_pct": 11.81,
       "days_since_last_sale": 69
     },
     {
@@ -6768,7 +7264,9 @@
       "avg_price": 4.467895030709101,
       "margin_true_pct": 33.692097948390575,
       "rev_per_day_sold": 159.98725000000002,
-      "cum_pct": 45.1634383265997,
+      "pct_of_revenue": 1.8990900538832256,
+      "cum_pct": 45.16343832659972,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -6787,7 +7285,9 @@
       "avg_price": 21.473910756552996,
       "margin_true_pct": 27.009007485984135,
       "rev_per_day_sold": 202.41193367003368,
-      "cum_pct": 46.94742973116397,
+      "pct_of_revenue": 1.783991404564263,
+      "cum_pct": 46.94742973116398,
+      "loss_rate_pct": 10.8,
       "days_since_last_sale": 0
     },
     {
@@ -6806,7 +7306,9 @@
       "avg_price": 3.7605990635623114,
       "margin_true_pct": 35.348887938490115,
       "rev_per_day_sold": 136.6920745920746,
-      "cum_pct": 48.687636371705025,
+      "pct_of_revenue": 1.7402066405410563,
+      "cum_pct": 48.68763637170503,
+      "loss_rate_pct": 0.45000000000000007,
       "days_since_last_sale": 0
     },
     {
@@ -6825,7 +7327,9 @@
       "avg_price": 7.058703339882121,
       "margin_true_pct": 24.263946260418393,
       "rev_per_day_sold": 131.2459545045045,
-      "cum_pct": 50.416931389659425,
+      "pct_of_revenue": 1.7292950179544024,
+      "cum_pct": 50.41693138965943,
+      "loss_rate_pct": 17.06,
       "days_since_last_sale": 14
     },
     {
@@ -6844,7 +7348,9 @@
       "avg_price": 16.091310879190384,
       "margin_true_pct": 30.51819768441397,
       "rev_per_day_sold": 75.87532993377484,
+      "pct_of_revenue": 1.6999953704329045,
       "cum_pct": 52.11692676009233,
+      "loss_rate_pct": 11.76,
       "days_since_last_sale": 106
     },
     {
@@ -6863,7 +7369,9 @@
       "avg_price": 7.524657534246575,
       "margin_true_pct": 30.878127238213725,
       "rev_per_day_sold": 61.9058359085963,
-      "cum_pct": 53.80521773193513,
+      "pct_of_revenue": 1.6882909718428118,
+      "cum_pct": 53.805217731935144,
+      "loss_rate_pct": 14.429999999999998,
       "days_since_last_sale": 0
     },
     {
@@ -6882,7 +7390,9 @@
       "avg_price": 5.080595501474926,
       "margin_true_pct": 44.445632184585165,
       "rev_per_day_sold": 112.66270491803279,
-      "cum_pct": 55.43676699146155,
+      "pct_of_revenue": 1.6315492595264218,
+      "cum_pct": 55.43676699146157,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -6901,7 +7411,9 @@
       "avg_price": 6.750834956860563,
       "margin_true_pct": 31.452077565867313,
       "rev_per_day_sold": 59.157266814159286,
-      "cum_pct": 57.02376625589675,
+      "pct_of_revenue": 1.5869992644352011,
+      "cum_pct": 57.02376625589677,
+      "loss_rate_pct": 15.61,
       "days_since_last_sale": 12
     },
     {
@@ -6920,7 +7432,9 @@
       "avg_price": 9.963779749331081,
       "margin_true_pct": 22.59169063268336,
       "rev_per_day_sold": 71.7117,
-      "cum_pct": 58.57727274842119,
+      "pct_of_revenue": 1.5535064925244375,
+      "cum_pct": 58.5772727484212,
+      "loss_rate_pct": 18.51,
       "days_since_last_sale": 4
     },
     {
@@ -6939,7 +7453,9 @@
       "avg_price": 8.065955210607163,
       "margin_true_pct": 33.86971287813724,
       "rev_per_day_sold": 140.69726231454007,
-      "cum_pct": 59.984342874094295,
+      "pct_of_revenue": 1.4070701256731073,
+      "cum_pct": 59.98434287409431,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -6958,7 +7474,9 @@
       "avg_price": 5.0217700689348455,
       "margin_true_pct": 33.5668654685549,
       "rev_per_day_sold": 65.45901162790697,
-      "cum_pct": 61.32080937140383,
+      "pct_of_revenue": 1.3364664973095384,
+      "cum_pct": 61.32080937140385,
+      "loss_rate_pct": 2.48,
       "days_since_last_sale": 0
     },
     {
@@ -6977,7 +7495,9 @@
       "avg_price": 26.577390326209223,
       "margin_true_pct": 35.319937591191774,
       "rev_per_day_sold": 69.96668017094017,
-      "cum_pct": 62.53544867005542,
+      "pct_of_revenue": 1.2146392986515924,
+      "cum_pct": 62.53544867005544,
+      "loss_rate_pct": 5.86,
       "days_since_last_sale": 59
     },
     {
@@ -6996,7 +7516,9 @@
       "avg_price": 4.946239689471131,
       "margin_true_pct": 37.49516918220927,
       "rev_per_day_sold": 106.59659685863875,
-      "cum_pct": 63.74383804303858,
+      "pct_of_revenue": 1.2083893729831527,
+      "cum_pct": 63.74383804303859,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -7015,7 +7537,9 @@
       "avg_price": 5.474428518472755,
       "margin_true_pct": 26.497000766638504,
       "rev_per_day_sold": 58.37292053973013,
-      "cum_pct": 64.89925157890391,
+      "pct_of_revenue": 1.1554135358653466,
+      "cum_pct": 64.89925157890394,
+      "loss_rate_pct": 13.62,
       "days_since_last_sale": 0
     },
     {
@@ -7034,7 +7558,9 @@
       "avg_price": 2.1455988931348005,
       "margin_true_pct": 24.176889223371578,
       "rev_per_day_sold": 80.747261875,
-      "cum_pct": 66.0494406488838,
+      "pct_of_revenue": 1.1501890699798891,
+      "cum_pct": 66.04944064888383,
+      "loss_rate_pct": 22.27,
       "days_since_last_sale": 94
     },
     {
@@ -7053,7 +7579,9 @@
       "avg_price": 8.027740849064966,
       "margin_true_pct": 39.23124017082201,
       "rev_per_day_sold": 83.2996484375,
-      "cum_pct": 67.15688363512415,
+      "pct_of_revenue": 1.1074429862403454,
+      "cum_pct": 67.15688363512417,
+      "loss_rate_pct": 3.4300000000000006,
       "days_since_last_sale": 135
     },
     {
@@ -7072,7 +7600,9 @@
       "avg_price": 4.03411937267291,
       "margin_true_pct": 36.54334764817293,
       "rev_per_day_sold": 87.05390243902438,
-      "cum_pct": 68.21606979077414,
+      "pct_of_revenue": 1.0591861556499889,
+      "cum_pct": 68.21606979077416,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -7091,7 +7621,9 @@
       "avg_price": 7.638536005434782,
       "margin_true_pct": 34.75439640119295,
       "rev_per_day_sold": 104.76489411764706,
-      "cum_pct": 69.2731182315262,
+      "pct_of_revenue": 1.057048440752059,
+      "cum_pct": 69.27311823152621,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 252
     },
     {
@@ -7110,7 +7642,9 @@
       "avg_price": 7.315399648231386,
       "margin_true_pct": 29.617452246530473,
       "rev_per_day_sold": 46.10881814345992,
-      "cum_pct": 70.24598593395322,
+      "pct_of_revenue": 0.972867702427017,
+      "cum_pct": 70.24598593395324,
+      "loss_rate_pct": 13.699999999999998,
       "days_since_last_sale": 2
     },
     {
@@ -7129,7 +7663,9 @@
       "avg_price": 13.802403846153846,
       "margin_true_pct": 34.25498114487342,
       "rev_per_day_sold": 41.32945033467202,
+      "pct_of_revenue": 0.9161791955779004,
       "cum_pct": 71.16216512953113,
+      "loss_rate_pct": 7.8,
       "days_since_last_sale": 155
     },
     {
@@ -7148,7 +7684,9 @@
       "avg_price": 6.389383875400824,
       "margin_true_pct": 25.629939640401915,
       "rev_per_day_sold": 80.32606119791667,
+      "pct_of_revenue": 0.9153514854029661,
       "cum_pct": 72.0775166149341,
+      "loss_rate_pct": 11.38,
       "days_since_last_sale": 112
     },
     {
@@ -7167,7 +7705,9 @@
       "avg_price": 5.985344234736761,
       "margin_true_pct": 34.36964569925384,
       "rev_per_day_sold": 53.38845485008818,
+      "pct_of_revenue": 0.8983190410495806,
       "cum_pct": 72.97583565598367,
+      "loss_rate_pct": 8.42,
       "days_since_last_sale": 0
     },
     {
@@ -7186,7 +7726,9 @@
       "avg_price": 4.859513290902284,
       "margin_true_pct": 29.656569973469598,
       "rev_per_day_sold": 36.499808923884515,
-      "cum_pct": 73.80120010160577,
+      "pct_of_revenue": 0.8253644456221091,
+      "cum_pct": 73.80120010160579,
+      "loss_rate_pct": 15.68,
       "days_since_last_sale": 0
     },
     {
@@ -7205,7 +7747,9 @@
       "avg_price": 15.793224181360202,
       "margin_true_pct": 31.734104533560902,
       "rev_per_day_sold": 56.31119435146444,
+      "pct_of_revenue": 0.7987719945971063,
       "cum_pct": 74.59997209620289,
+      "loss_rate_pct": 7.59,
       "days_since_last_sale": 130
     },
     {
@@ -7224,7 +7768,9 @@
       "avg_price": 6.637282780410742,
       "margin_true_pct": 34.32224481629359,
       "rev_per_day_sold": 52.27829221789883,
-      "cum_pct": 75.3973876555599,
+      "pct_of_revenue": 0.797415559357018,
+      "cum_pct": 75.39738765555991,
+      "loss_rate_pct": 6.27,
       "days_since_last_sale": 55
     },
     {
@@ -7243,7 +7789,9 @@
       "avg_price": 10.76186282811177,
       "margin_true_pct": 34.43128458277843,
       "rev_per_day_sold": 57.93937092511013,
-      "cum_pct": 76.17798994895618,
+      "pct_of_revenue": 0.7806022933962852,
+      "cum_pct": 76.1779899489562,
+      "loss_rate_pct": 6.9,
       "days_since_last_sale": 0
     },
     {
@@ -7262,7 +7810,9 @@
       "avg_price": 5.071307893970289,
       "margin_true_pct": 21.38643141086029,
       "rev_per_day_sold": 40.17604661417323,
-      "cum_pct": 76.93506880814842,
+      "pct_of_revenue": 0.7570788591922406,
+      "cum_pct": 76.93506880814843,
+      "loss_rate_pct": 18.52,
       "days_since_last_sale": 0
     },
     {
@@ -7281,7 +7831,9 @@
       "avg_price": 3.9983317595215615,
       "margin_true_pct": 33.64353869609086,
       "rev_per_day_sold": 65.6777202072539,
+      "pct_of_revenue": 0.7523251291903883,
       "cum_pct": 77.68739393733881,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -7300,7 +7852,9 @@
       "avg_price": 10.105935892362487,
       "margin_true_pct": 37.41773281643712,
       "rev_per_day_sold": 53.919793362831854,
+      "pct_of_revenue": 0.7232473457075848,
       "cum_pct": 78.4106412830464,
+      "loss_rate_pct": 5.05,
       "days_since_last_sale": 39
     },
     {
@@ -7319,7 +7873,9 @@
       "avg_price": 6.902015994668444,
       "margin_true_pct": 33.726538844401034,
       "rev_per_day_sold": 27.62628532544379,
-      "cum_pct": 79.10339584810957,
+      "pct_of_revenue": 0.6927545650631596,
+      "cum_pct": 79.10339584810956,
+      "loss_rate_pct": 5.01,
       "days_since_last_sale": 1
     },
     {
@@ -7338,7 +7894,9 @@
       "avg_price": 5.346077504725899,
       "margin_true_pct": 34.654554786395074,
       "rev_per_day_sold": 77.14982935153584,
+      "pct_of_revenue": 0.6708150299324622,
       "cum_pct": 79.77421087804201,
+      "loss_rate_pct": 0.2,
       "days_since_last_sale": 0
     },
     {
@@ -7357,7 +7915,9 @@
       "avg_price": 3.2462527075812275,
       "margin_true_pct": 42.04889039127998,
       "rev_per_day_sold": 92.19795081967213,
-      "cum_pct": 80.4418031327244,
+      "pct_of_revenue": 0.6675922546823764,
+      "cum_pct": 80.44180313272439,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 51
     },
     {
@@ -7376,7 +7936,9 @@
       "avg_price": 29.199225931301406,
       "margin_true_pct": 10.108595148708185,
       "rev_per_day_sold": 83.19009379844961,
-      "cum_pct": 81.07873285315954,
+      "pct_of_revenue": 0.6369297204351605,
+      "cum_pct": 81.07873285315955,
+      "loss_rate_pct": 24.05,
       "days_since_last_sale": 0
     },
     {
@@ -7395,7 +7957,9 @@
       "avg_price": 6.999486477233824,
       "margin_true_pct": 34.28386819234278,
       "rev_per_day_sold": 29.359455587392553,
-      "cum_pct": 81.68687291690249,
+      "pct_of_revenue": 0.6081400637429476,
+      "cum_pct": 81.6868729169025,
+      "loss_rate_pct": 6.570000000000001,
       "days_since_last_sale": 0
     },
     {
@@ -7414,7 +7978,9 @@
       "avg_price": 7.831319000581058,
       "margin_true_pct": 32.60813947292799,
       "rev_per_day_sold": 54.25873535911602,
+      "pct_of_revenue": 0.5828790313877218,
       "cum_pct": 82.26975194829022,
+      "loss_rate_pct": 11.6,
       "days_since_last_sale": 144
     },
     {
@@ -7433,7 +7999,9 @@
       "avg_price": 5.893957016434892,
       "margin_true_pct": 35.6295171484061,
       "rev_per_day_sold": 38.171717073170726,
+      "pct_of_revenue": 0.5573230349728665,
       "cum_pct": 82.82707498326309,
+      "loss_rate_pct": 10.33,
       "days_since_last_sale": 0
     },
     {
@@ -7452,7 +8020,9 @@
       "avg_price": 6.077299209321681,
       "margin_true_pct": 36.47220370777868,
       "rev_per_day_sold": 40.129660178970916,
-      "cum_pct": 83.35939549340819,
+      "pct_of_revenue": 0.5323205101450904,
+      "cum_pct": 83.35939549340817,
+      "loss_rate_pct": 10.64,
       "days_since_last_sale": 76
     },
     {
@@ -7471,7 +8041,9 @@
       "avg_price": 3.3977597528003085,
       "margin_true_pct": 43.454448229929355,
       "rev_per_day_sold": 39.83605442176871,
-      "cum_pct": 83.8807283549269,
+      "pct_of_revenue": 0.5213328615187202,
+      "cum_pct": 83.88072835492689,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -7490,7 +8062,9 @@
       "avg_price": 13.736976678842371,
       "margin_true_pct": 15.976674389800117,
       "rev_per_day_sold": 29.885599816176473,
-      "cum_pct": 84.36318808654127,
+      "pct_of_revenue": 0.48245973161436134,
+      "cum_pct": 84.36318808654124,
+      "loss_rate_pct": 29.25,
       "days_since_last_sale": 0
     },
     {
@@ -7509,7 +8083,9 @@
       "avg_price": 2.498798377028714,
       "margin_true_pct": 49.54554672340432,
       "rev_per_day_sold": 80.016083,
+      "pct_of_revenue": 0.47490580460628784,
       "cum_pct": 84.83809389114754,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 137
     },
     {
@@ -7528,7 +8104,9 @@
       "avg_price": 11.751668970965829,
       "margin_true_pct": 28.19174661377411,
       "rev_per_day_sold": 52.52624163822526,
-      "cum_pct": 85.29480769923953,
+      "pct_of_revenue": 0.45671380809197315,
+      "cum_pct": 85.29480769923951,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 37
     },
     {
@@ -7547,7 +8125,9 @@
       "avg_price": 4.107791074545001,
       "margin_true_pct": 32.85661211145619,
       "rev_per_day_sold": 53.235702807017546,
+      "pct_of_revenue": 0.4502441164530728,
       "cum_pct": 85.74505181569259,
+      "loss_rate_pct": 12.17,
       "days_since_last_sale": 486
     },
     {
@@ -7566,7 +8146,9 @@
       "avg_price": 21.88921113689095,
       "margin_true_pct": 33.48555728703505,
       "rev_per_day_sold": 25.71181037414966,
-      "cum_pct": 86.19370440346351,
+      "pct_of_revenue": 0.44865258777091527,
+      "cum_pct": 86.1937044034635,
+      "loss_rate_pct": 9.99,
       "days_since_last_sale": 121
     },
     {
@@ -7585,7 +8167,9 @@
       "avg_price": 11.255956068713038,
       "margin_true_pct": 36.101131021065086,
       "rev_per_day_sold": 21.655125931928687,
-      "cum_pct": 86.59020703330414,
+      "pct_of_revenue": 0.39650262984063167,
+      "cum_pct": 86.59020703330413,
+      "loss_rate_pct": 6.72,
       "days_since_last_sale": 61
     },
     {
@@ -7604,7 +8188,9 @@
       "avg_price": 14.294796288826142,
       "margin_true_pct": 35.206821069867175,
       "rev_per_day_sold": 43.70664851485149,
-      "cum_pct": 86.98320502266559,
+      "pct_of_revenue": 0.3929979893614448,
+      "cum_pct": 86.98320502266557,
+      "loss_rate_pct": 0.4699999999999999,
       "days_since_last_sale": 68
     },
     {
@@ -7623,7 +8209,9 @@
       "avg_price": 7.083819628647214,
       "margin_true_pct": 40.365812164789766,
       "rev_per_day_sold": 59.35233094170403,
-      "cum_pct": 87.37597911817409,
+      "pct_of_revenue": 0.3927740955085045,
+      "cum_pct": 87.37597911817407,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 8
     },
     {
@@ -7642,7 +8230,9 @@
       "avg_price": 21.53397823458283,
       "margin_true_pct": 22.727321275902277,
       "rev_per_day_sold": 57.842612946428574,
-      "cum_pct": 87.76047891628188,
+      "pct_of_revenue": 0.38449979810779034,
+      "cum_pct": 87.76047891628187,
+      "loss_rate_pct": 12.78,
       "days_since_last_sale": 633
     },
     {
@@ -7661,7 +8251,9 @@
       "avg_price": 16.906148055207026,
       "margin_true_pct": 30.67507080598991,
       "rev_per_day_sold": 44.91932083333333,
-      "cum_pct": 88.14438576825712,
+      "pct_of_revenue": 0.3839068519752448,
+      "cum_pct": 88.14438576825711,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -7680,7 +8272,9 @@
       "avg_price": 3.011754558896008,
       "margin_true_pct": 46.94413106878837,
       "rev_per_day_sold": 68.26815642458101,
-      "cum_pct": 88.50702217300896,
+      "pct_of_revenue": 0.36263640475183206,
+      "cum_pct": 88.50702217300893,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 130
     },
     {
@@ -7699,7 +8293,9 @@
       "avg_price": 16.151889168765745,
       "margin_true_pct": 16.177192463763983,
       "rev_per_day_sold": 43.49328252788104,
-      "cum_pct": 88.8542181309648,
+      "pct_of_revenue": 0.3471959579558246,
+      "cum_pct": 88.85421813096475,
+      "loss_rate_pct": 26.16,
       "days_since_last_sale": 3
     },
     {
@@ -7718,7 +8314,9 @@
       "avg_price": 7.098733195449845,
       "margin_true_pct": 39.99452904170663,
       "rev_per_day_sold": 26.364609501187648,
-      "cum_pct": 89.18360299120414,
+      "pct_of_revenue": 0.3293848602393456,
+      "cum_pct": 89.1836029912041,
+      "loss_rate_pct": 7.61,
       "days_since_last_sale": 0
     },
     {
@@ -7737,7 +8335,9 @@
       "avg_price": 6.324841660802252,
       "margin_true_pct": 27.46927654838208,
       "rev_per_day_sold": 50.09490798122065,
-      "cum_pct": 89.50024853544176,
+      "pct_of_revenue": 0.316645544237613,
+      "cum_pct": 89.50024853544171,
+      "loss_rate_pct": 11.02,
       "days_since_last_sale": 141
     },
     {
@@ -7756,7 +8356,9 @@
       "avg_price": 32.752994791666666,
       "margin_true_pct": 14.568054195437892,
       "rev_per_day_sold": 69.85275033112583,
-      "cum_pct": 89.81326029375256,
+      "pct_of_revenue": 0.31301175831081257,
+      "cum_pct": 89.81326029375252,
+      "loss_rate_pct": 10.46,
       "days_since_last_sale": 68
     },
     {
@@ -7775,7 +8377,9 @@
       "avg_price": 8.853798256537983,
       "margin_true_pct": 35.352426618441164,
       "rev_per_day_sold": 51.947942131979694,
-      "cum_pct": 90.1169532846603,
+      "pct_of_revenue": 0.3036929909077312,
+      "cum_pct": 90.11695328466026,
+      "loss_rate_pct": 10.94,
       "days_since_last_sale": 744
     },
     {
@@ -7794,7 +8398,9 @@
       "avg_price": 3.1422291993720566,
       "margin_true_pct": 33.160345635546406,
       "rev_per_day_sold": 46.34697674418605,
-      "cum_pct": 90.41265923546146,
+      "pct_of_revenue": 0.2957059508011543,
+      "cum_pct": 90.4126592354614,
+      "loss_rate_pct": 6.64,
       "days_since_last_sale": 292
     },
     {
@@ -7813,7 +8419,9 @@
       "avg_price": 4.10654529692241,
       "margin_true_pct": 46.03376473619185,
       "rev_per_day_sold": 33.835,
-      "cum_pct": 90.69380037877877,
+      "pct_of_revenue": 0.2811411433173409,
+      "cum_pct": 90.69380037877875,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 4
     },
     {
@@ -7832,7 +8440,9 @@
       "avg_price": 14.681591263650546,
       "margin_true_pct": 81.92793106306398,
       "rev_per_day_sold": 53.402840909090905,
-      "cum_pct": 90.97271881614556,
+      "pct_of_revenue": 0.2789184373667753,
+      "cum_pct": 90.97271881614552,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 677
     },
     {
@@ -7851,7 +8461,9 @@
       "avg_price": 2.9608922175187233,
       "margin_true_pct": 47.48900080107517,
       "rev_per_day_sold": 31.658536585365855,
-      "cum_pct": 91.24235174360669,
+      "pct_of_revenue": 0.26963292746114126,
+      "cum_pct": 91.24235174360666,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 132
     },
     {
@@ -7870,7 +8482,9 @@
       "avg_price": 21.786177565124934,
       "margin_true_pct": 31.04413931550368,
       "rev_per_day_sold": 130.4500579710145,
-      "cum_pct": 91.50946384356882,
+      "pct_of_revenue": 0.2671120999621192,
+      "cum_pct": 91.50946384356878,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 195
     },
     {
@@ -7889,7 +8503,9 @@
       "avg_price": 24.036767485822306,
       "margin_true_pct": 41.33019183428498,
       "rev_per_day_sold": 34.80777751937985,
-      "cum_pct": 91.77596321857975,
+      "pct_of_revenue": 0.26649937501093485,
+      "cum_pct": 91.77596321857972,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 1
     },
     {
@@ -7908,7 +8524,9 @@
       "avg_price": 20.23447559709242,
       "margin_true_pct": 24.33494468350911,
       "rev_per_day_sold": 56.390406918239,
-      "cum_pct": 92.04203728518732,
+      "pct_of_revenue": 0.2660740666075582,
+      "cum_pct": 92.04203728518728,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -7927,7 +8545,9 @@
       "avg_price": 3.311198738170347,
       "margin_true_pct": 30.962993864580678,
       "rev_per_day_sold": 32.69341085271318,
-      "cum_pct": 92.29234839897138,
+      "pct_of_revenue": 0.25031111378406123,
+      "cum_pct": 92.29234839897134,
+      "loss_rate_pct": 11.13,
       "days_since_last_sale": 660
     },
     {
@@ -7946,7 +8566,9 @@
       "avg_price": 6.298390804597701,
       "margin_true_pct": 49.84609561986475,
       "rev_per_day_sold": 50.544444444444444,
-      "cum_pct": 92.5353385306726,
+      "pct_of_revenue": 0.2429901317012235,
+      "cum_pct": 92.53533853067256,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 178
     },
     {
@@ -7965,7 +8587,9 @@
       "avg_price": 5.253676117251321,
       "margin_true_pct": 17.50222000931349,
       "rev_per_day_sold": 18.42028091954023,
-      "cum_pct": 92.77312421271218,
+      "pct_of_revenue": 0.2377856820395798,
+      "cum_pct": 92.77312421271215,
+      "loss_rate_pct": 27.839999999999996,
       "days_since_last_sale": 407
     },
     {
@@ -7984,7 +8608,9 @@
       "avg_price": 3.7151627906976743,
       "margin_true_pct": 26.9759462461872,
       "rev_per_day_sold": 25.425796178343948,
-      "cum_pct": 93.01004567462849,
+      "pct_of_revenue": 0.23692146191630128,
+      "cum_pct": 93.01004567462844,
+      "loss_rate_pct": 11.13,
       "days_since_last_sale": 530
     },
     {
@@ -8003,7 +8629,9 @@
       "avg_price": 7.591652566271856,
       "margin_true_pct": 36.261831540456065,
       "rev_per_day_sold": 15.577023153692615,
-      "cum_pct": 93.24163705206455,
+      "pct_of_revenue": 0.2315913774360686,
+      "cum_pct": 93.24163705206452,
+      "loss_rate_pct": 6.709999999999999,
       "days_since_last_sale": 0
     },
     {
@@ -8022,7 +8650,9 @@
       "avg_price": 15.425442176870748,
       "margin_true_pct": 34.64769712005085,
       "rev_per_day_sold": 23.740819325153375,
-      "cum_pct": 93.4713119317123,
+      "pct_of_revenue": 0.22967487964773142,
+      "cum_pct": 93.47131193171225,
+      "loss_rate_pct": 9.89,
       "days_since_last_sale": 643
     },
     {
@@ -8041,7 +8671,9 @@
       "avg_price": 4.040578158458244,
       "margin_true_pct": 54.021496817911796,
       "rev_per_day_sold": 20.6224043715847,
-      "cum_pct": 93.69529777915793,
+      "pct_of_revenue": 0.22398584744565286,
+      "cum_pct": 93.6952977791579,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -8060,7 +8692,9 @@
       "avg_price": 5.273507462686567,
       "margin_true_pct": 33.64916654472873,
       "rev_per_day_sold": 21.667278287461777,
-      "cum_pct": 93.90555567236152,
+      "pct_of_revenue": 0.21025789320357455,
+      "cum_pct": 93.90555567236147,
+      "loss_rate_pct": 10.03,
       "days_since_last_sale": 139
     },
     {
@@ -8079,7 +8713,9 @@
       "avg_price": 6.172744186046512,
       "margin_true_pct": 28.718053039418812,
       "rev_per_day_sold": 18.418105849582172,
-      "cum_pct": 94.10177401703088,
+      "pct_of_revenue": 0.19621834466936078,
+      "cum_pct": 94.10177401703083,
+      "loss_rate_pct": 12.42,
       "days_since_last_sale": 166
     },
     {
@@ -8098,7 +8734,9 @@
       "avg_price": 3.2195811008280564,
       "margin_true_pct": 41.11931115575848,
       "rev_per_day_sold": 24.035636363636364,
-      "cum_pct": 94.29792410771242,
+      "pct_of_revenue": 0.1961500906815597,
+      "cum_pct": 94.29792410771239,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 113
     },
     {
@@ -8117,7 +8755,9 @@
       "avg_price": 3.626126126126126,
       "margin_true_pct": 42.05327955356877,
       "rev_per_day_sold": 26.820833333333333,
-      "cum_pct": 94.48894624661483,
+      "pct_of_revenue": 0.1910221389024176,
+      "cum_pct": 94.4889462466148,
+      "loss_rate_pct": 1.3,
       "days_since_last_sale": 67
     },
     {
@@ -8136,7 +8776,9 @@
       "avg_price": 14.646741452991453,
       "margin_true_pct": 40.34787943088869,
       "rev_per_day_sold": 20.423770700636943,
-      "cum_pct": 94.67925806923378,
+      "pct_of_revenue": 0.19031182261893642,
+      "cum_pct": 94.67925806923374,
+      "loss_rate_pct": 6.7299999999999995,
       "days_since_last_sale": 78
     },
     {
@@ -8155,7 +8797,9 @@
       "avg_price": 2.952414486921529,
       "margin_true_pct": 32.59248627483402,
       "rev_per_day_sold": 50.96422764227643,
-      "cum_pct": 94.86528282920328,
+      "pct_of_revenue": 0.18602475996950363,
+      "cum_pct": 94.86528282920324,
+      "loss_rate_pct": 8.85,
       "days_since_last_sale": 640
     },
     {
@@ -8174,7 +8818,9 @@
       "avg_price": 6.107361963190184,
       "margin_true_pct": 29.195840605330044,
       "rev_per_day_sold": 42.361702127659576,
-      "cum_pct": 95.042535467958,
+      "pct_of_revenue": 0.1772526387547212,
+      "cum_pct": 95.04253546795796,
+      "loss_rate_pct": 11.13,
       "days_since_last_sale": 838
     },
     {
@@ -8193,7 +8839,9 @@
       "avg_price": 5.352028854824167,
       "margin_true_pct": 38.98887558616688,
       "rev_per_day_sold": 24.226122448979595,
-      "cum_pct": 95.21867230239042,
+      "pct_of_revenue": 0.17613683443240785,
+      "cum_pct": 95.21867230239037,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -8212,7 +8860,9 @@
       "avg_price": 12.283449477351915,
       "margin_true_pct": 25.0164923631705,
       "rev_per_day_sold": 63.88273932584269,
-      "cum_pct": 95.38739508597627,
+      "pct_of_revenue": 0.16872278358585632,
+      "cum_pct": 95.38739508597622,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 196
     },
     {
@@ -8231,7 +8881,9 @@
       "avg_price": 15.101315789473684,
       "margin_true_pct": 35.50048961072807,
       "rev_per_day_sold": 18.382914285714286,
-      "cum_pct": 95.55541674679404,
+      "pct_of_revenue": 0.1680216608177755,
+      "cum_pct": 95.555416746794,
+      "loss_rate_pct": 8.99,
       "days_since_last_sale": 643
     },
     {
@@ -8250,7 +8902,9 @@
       "avg_price": 5.859453781512605,
       "margin_true_pct": 34.33450226040414,
       "rev_per_day_sold": 22.70365853658537,
-      "cum_pct": 95.72115820212788,
+      "pct_of_revenue": 0.16574145533383447,
+      "cum_pct": 95.72115820212782,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 108
     },
     {
@@ -8269,7 +8923,9 @@
       "avg_price": 21.25842044134727,
       "margin_true_pct": 34.43751694083864,
       "rev_per_day_sold": 19.570374647887324,
-      "cum_pct": 95.88609504384273,
+      "pct_of_revenue": 0.1649368417148591,
+      "cum_pct": 95.88609504384269,
+      "loss_rate_pct": 15.98,
       "days_since_last_sale": 88
     },
     {
@@ -8288,7 +8944,9 @@
       "avg_price": 4.160509554140128,
       "margin_true_pct": 38.244293370232654,
       "rev_per_day_sold": 30.593023255813954,
-      "cum_pct": 96.04224829767286,
+      "pct_of_revenue": 0.15615325383012604,
+      "cum_pct": 96.04224829767281,
+      "loss_rate_pct": 5.96,
       "days_since_last_sale": 650
     },
     {
@@ -8307,7 +8965,9 @@
       "avg_price": 17.71689655172414,
       "margin_true_pct": 34.94829348097212,
       "rev_per_day_sold": 18.094897426470588,
-      "cum_pct": 96.18830625551313,
+      "pct_of_revenue": 0.14605795784026715,
+      "cum_pct": 96.18830625551308,
+      "loss_rate_pct": 8.93,
       "days_since_last_sale": 72
     },
     {
@@ -8326,7 +8986,9 @@
       "avg_price": 3.842335186656076,
       "margin_true_pct": 32.61717625498412,
       "rev_per_day_sold": 21.191666666666666,
-      "cum_pct": 96.33169007849509,
+      "pct_of_revenue": 0.14338382298194982,
+      "cum_pct": 96.33169007849503,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -8345,7 +9007,9 @@
       "avg_price": 10.173430493273543,
       "margin_true_pct": 26.572715200308032,
       "rev_per_day_sold": 28.409136585365854,
-      "cum_pct": 96.46995183734623,
+      "pct_of_revenue": 0.13826175885114672,
+      "cum_pct": 96.46995183734617,
+      "loss_rate_pct": 7.969999999999999,
       "days_since_last_sale": 25
     },
     {
@@ -8364,7 +9028,9 @@
       "avg_price": 2.342914979757085,
       "margin_true_pct": 28.1914801897189,
       "rev_per_day_sold": 52.593023255813954,
-      "cum_pct": 96.6041747881394,
+      "pct_of_revenue": 0.13422295079316993,
+      "cum_pct": 96.60417478813935,
+      "loss_rate_pct": 12.17,
       "days_since_last_sale": 285
     },
     {
@@ -8383,7 +9049,9 @@
       "avg_price": 3.207692307692308,
       "margin_true_pct": 29.678299583512857,
       "rev_per_day_sold": 35.107563025210084,
-      "cum_pct": 96.72815370563303,
+      "pct_of_revenue": 0.12397891749363371,
+      "cum_pct": 96.72815370563298,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 0
     },
     {
@@ -8402,7 +9070,9 @@
       "avg_price": 3.2037590773173856,
       "margin_true_pct": 37.48273431318584,
       "rev_per_day_sold": 35.98580695652174,
-      "cum_pct": 96.85096244708417,
+      "pct_of_revenue": 0.12280874145112511,
+      "cum_pct": 96.8509624470841,
+      "loss_rate_pct": 6.7299999999999995,
       "days_since_last_sale": 171
     },
     {
@@ -8421,7 +9091,9 @@
       "avg_price": 18.563846153846153,
       "margin_true_pct": 39.315414884489,
       "rev_per_day_sold": 21.909716483516483,
-      "cum_pct": 96.96929611879267,
+      "pct_of_revenue": 0.1183336717085119,
+      "cum_pct": 96.96929611879261,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 133
     },
     {
@@ -8440,7 +9112,9 @@
       "avg_price": 4.08001916626737,
       "margin_true_pct": 40.232307527115346,
       "rev_per_day_sold": 34.37341764705882,
-      "cum_pct": 97.07334156598132,
+      "pct_of_revenue": 0.10404544718865665,
+      "cum_pct": 97.07334156598127,
+      "loss_rate_pct": 4.39,
       "days_since_last_sale": 31
     },
     {
@@ -8459,7 +9133,9 @@
       "avg_price": 4.80818053596615,
       "margin_true_pct": 40.247291850237055,
       "rev_per_day_sold": 17.70416666666667,
-      "cum_pct": 97.17421502482195,
+      "pct_of_revenue": 0.10087345884062418,
+      "cum_pct": 97.17421502482189,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 153
     },
     {
@@ -8478,7 +9154,9 @@
       "avg_price": 3.4801502145922747,
       "margin_true_pct": 46.280310002122626,
       "rev_per_day_sold": 16.805699481865286,
-      "cum_pct": 97.27046798544491,
+      "pct_of_revenue": 0.09625296062295968,
+      "cum_pct": 97.27046798544485,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 174
     },
     {
@@ -8497,7 +9175,9 @@
       "avg_price": 10.909374999999999,
       "margin_true_pct": 54.05660865012706,
       "rev_per_day_sold": 73.58419545454545,
-      "cum_pct": 97.366548963824,
+      "pct_of_revenue": 0.09608097837908908,
+      "cum_pct": 97.36654896382394,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 1
     },
     {
@@ -8516,7 +9196,9 @@
       "avg_price": 7.902425876010782,
       "margin_true_pct": 32.12821935790761,
       "rev_per_day_sold": 21.400000000000002,
-      "cum_pct": 97.45355202531756,
+      "pct_of_revenue": 0.08700306149356966,
+      "cum_pct": 97.45355202531752,
+      "loss_rate_pct": 0.84,
       "days_since_last_sale": 0
     },
     {
@@ -8535,7 +9217,9 @@
       "avg_price": 4.135119887165021,
       "margin_true_pct": 27.089213106912222,
       "rev_per_day_sold": 57.38627450980392,
-      "cum_pct": 97.5404037410121,
+      "pct_of_revenue": 0.08685171569453248,
+      "cum_pct": 97.54040374101206,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 132
     },
     {
@@ -8554,7 +9238,9 @@
       "avg_price": 13.71900826446281,
       "margin_true_pct": 41.947363274593506,
       "rev_per_day_sold": 11.537095238095239,
-      "cum_pct": 97.62668117358842,
+      "pct_of_revenue": 0.08627743257630355,
+      "cum_pct": 97.62668117358837,
+      "loss_rate_pct": 7.629999999999999,
       "days_since_last_sale": 706
     },
     {
@@ -8573,7 +9259,9 @@
       "avg_price": 4.060229885057471,
       "margin_true_pct": 35.92046186063292,
       "rev_per_day_sold": 31.27314782608696,
-      "cum_pct": 97.71206185559734,
+      "pct_of_revenue": 0.08538068200892608,
+      "cum_pct": 97.7120618555973,
+      "loss_rate_pct": 8.78,
       "days_since_last_sale": 106
     },
     {
@@ -8592,7 +9280,9 @@
       "avg_price": 4.696127562642369,
       "margin_true_pct": 30.13793994788302,
       "rev_per_day_sold": 20.001883098591552,
-      "cum_pct": 97.79634862797622,
+      "pct_of_revenue": 0.08428677237887346,
+      "cum_pct": 97.79634862797617,
+      "loss_rate_pct": 12.2,
       "days_since_last_sale": 132
     },
     {
@@ -8611,7 +9301,9 @@
       "avg_price": 8.216909620991254,
       "margin_true_pct": 19.283373172033805,
       "rev_per_day_sold": 59.58723404255319,
-      "cum_pct": 97.87945824460044,
+      "pct_of_revenue": 0.08310961662422102,
+      "cum_pct": 97.8794582446004,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 285
     },
     {
@@ -8630,7 +9322,9 @@
       "avg_price": 12.652600297176821,
       "margin_true_pct": 34.65338545801685,
       "rev_per_day_sold": 12.327517511520737,
-      "cum_pct": 97.9588427158514,
+      "pct_of_revenue": 0.07938447125096641,
+      "cum_pct": 97.95884271585136,
+      "loss_rate_pct": 16.33,
       "days_since_last_sale": 88
     },
     {
@@ -8649,7 +9343,9 @@
       "avg_price": 7.313132911392405,
       "margin_true_pct": 40.60842185203538,
       "rev_per_day_sold": 36.46949428571428,
-      "cum_pct": 98.03460062422802,
+      "pct_of_revenue": 0.07575790837661406,
+      "cum_pct": 98.03460062422798,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 169
     },
     {
@@ -8668,7 +9364,9 @@
       "avg_price": 2.115506035283194,
       "margin_true_pct": 31.89465909866223,
       "rev_per_day_sold": 29.16025641025641,
-      "cum_pct": 98.1020978830339,
+      "pct_of_revenue": 0.06749725880589542,
+      "cum_pct": 98.10209788303388,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 300
     },
     {
@@ -8687,7 +9385,9 @@
       "avg_price": 4.66,
       "margin_true_pct": 59.66202222116088,
       "rev_per_day_sold": 16.84769230769231,
-      "cum_pct": 98.16709348480866,
+      "pct_of_revenue": 0.06499560177475144,
+      "cum_pct": 98.16709348480863,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 74
     },
     {
@@ -8706,7 +9406,9 @@
       "avg_price": 7.738515901060071,
       "margin_true_pct": 32.522739040364854,
       "rev_per_day_sold": 25.764705882352942,
-      "cum_pct": 98.23208315145403,
+      "pct_of_revenue": 0.06498966664537743,
+      "cum_pct": 98.232083151454,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 332
     },
     {
@@ -8725,7 +9427,9 @@
       "avg_price": 3.2002923976608186,
       "margin_true_pct": 28.994028885038386,
       "rev_per_day_sold": 21.844,
-      "cum_pct": 98.29690663447694,
+      "pct_of_revenue": 0.06482348302290523,
+      "cum_pct": 98.29690663447691,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 237
     },
     {
@@ -8744,7 +9448,9 @@
       "avg_price": 5.125609756097561,
       "margin_true_pct": 40.405655205887705,
       "rev_per_day_sold": 12.828159756097563,
-      "cum_pct": 98.35933880045891,
+      "pct_of_revenue": 0.06243216598195342,
+      "cum_pct": 98.35933880045887,
+      "loss_rate_pct": 5.35,
       "days_since_last_sale": 223
     },
     {
@@ -8763,7 +9469,9 @@
       "avg_price": 11.716692667706708,
       "margin_true_pct": 35.10734633599663,
       "rev_per_day_sold": 23.726619753086418,
-      "cum_pct": 98.41637112638509,
+      "pct_of_revenue": 0.057032325926188045,
+      "cum_pct": 98.41637112638506,
+      "loss_rate_pct": 8.71,
       "days_since_last_sale": 35
     },
     {
@@ -8782,7 +9490,9 @@
       "avg_price": 5.1922693266832916,
       "margin_true_pct": 29.4604632999416,
       "rev_per_day_sold": 18.821,
-      "cum_pct": 98.47222366135918,
+      "pct_of_revenue": 0.055852534974093544,
+      "cum_pct": 98.47222366135915,
+      "loss_rate_pct": 11.13,
       "days_since_last_sale": 790
     },
     {
@@ -8801,7 +9511,9 @@
       "avg_price": 4.87730870712401,
       "margin_true_pct": 43.97338480430301,
       "rev_per_day_sold": 28.43846153846154,
-      "cum_pct": 98.52707909459843,
+      "pct_of_revenue": 0.05485543323926036,
+      "cum_pct": 98.5270790945984,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 132
     },
     {
@@ -8820,7 +9532,9 @@
       "avg_price": 14.29185667752443,
       "margin_true_pct": 26.89777713464901,
       "rev_per_day_sold": 16.782721904761903,
-      "cum_pct": 98.57937309811864,
+      "pct_of_revenue": 0.05229400352019075,
+      "cum_pct": 98.5793730981186,
+      "loss_rate_pct": 9.61,
       "days_since_last_sale": 0
     },
     {
@@ -8839,7 +9553,9 @@
       "avg_price": 2.168825910931174,
       "margin_true_pct": 22.917822286162288,
       "rev_per_day_sold": 8.83021978021978,
-      "cum_pct": 98.62706483020348,
+      "pct_of_revenue": 0.04769173208483382,
+      "cum_pct": 98.62706483020342,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 4
     },
     {
@@ -8858,7 +9574,9 @@
       "avg_price": 8.463878326996198,
       "margin_true_pct": 34.11536464546396,
       "rev_per_day_sold": 25.052844444444446,
-      "cum_pct": 98.67390277018734,
+      "pct_of_revenue": 0.046837939983865415,
+      "cum_pct": 98.67390277018728,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 142
     },
     {
@@ -8877,7 +9595,9 @@
       "avg_price": 2.570127795527157,
       "margin_true_pct": 26.560423497587788,
       "rev_per_day_sold": 24.386445901639345,
-      "cum_pct": 98.71804746716387,
+      "pct_of_revenue": 0.04414469697652848,
+      "cum_pct": 98.71804746716381,
+      "loss_rate_pct": 11.99,
       "days_since_last_sale": 236
     },
     {
@@ -8896,7 +9616,9 @@
       "avg_price": 3.114945054945055,
       "margin_true_pct": 36.92381514254691,
       "rev_per_day_sold": 12.937272727272726,
-      "cum_pct": 98.76027888022462,
+      "pct_of_revenue": 0.04223141306074732,
+      "cum_pct": 98.76027888022456,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 277
     },
     {
@@ -8915,7 +9637,9 @@
       "avg_price": 1.9556473829201102,
       "margin_true_pct": 38.31553133717711,
       "rev_per_day_sold": 24.51206896551724,
-      "cum_pct": 98.80246874737975,
+      "pct_of_revenue": 0.04218986715512927,
+      "cum_pct": 98.80246874737969,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 299
     },
     {
@@ -8934,7 +9658,9 @@
       "avg_price": 11.639560439560439,
       "margin_true_pct": 45.65468483350658,
       "rev_per_day_sold": 19.056246575342467,
-      "cum_pct": 98.84375071779455,
+      "pct_of_revenue": 0.04128197041478741,
+      "cum_pct": 98.84375071779448,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 542
     },
     {
@@ -8953,7 +9679,9 @@
       "avg_price": 2.318259385665529,
       "margin_true_pct": 37.77968292318583,
       "rev_per_day_sold": 16.3855421686747,
-      "cum_pct": 98.88410959753779,
+      "pct_of_revenue": 0.04035887974324809,
+      "cum_pct": 98.88410959753773,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 467
     },
     {
@@ -8972,7 +9700,9 @@
       "avg_price": 15.969896193771627,
       "margin_true_pct": 41.177100172304755,
       "rev_per_day_sold": 12.166287128712872,
-      "cum_pct": 98.92057488403346,
+      "pct_of_revenue": 0.0364652864956651,
+      "cum_pct": 98.9205748840334,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 133
     },
     {
@@ -8991,7 +9721,9 @@
       "avg_price": 4.257093425605536,
       "margin_true_pct": 23.196461361564573,
       "rev_per_day_sold": 8.656028368794326,
-      "cum_pct": 98.95679401103834,
+      "pct_of_revenue": 0.03621912700487815,
+      "cum_pct": 98.95679401103828,
+      "loss_rate_pct": 9.14,
       "days_since_last_sale": 62
     },
     {
@@ -9010,7 +9742,9 @@
       "avg_price": 6.294117647058823,
       "margin_true_pct": 29.525029945554234,
       "rev_per_day_sold": 23.0994,
-      "cum_pct": 98.99243947217843,
+      "pct_of_revenue": 0.03564546114010412,
+      "cum_pct": 98.99243947217839,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 157
     },
     {
@@ -9029,7 +9763,9 @@
       "avg_price": 5.9,
       "margin_true_pct": 44.474576271186436,
       "rev_per_day_sold": 168.57142857142858,
-      "cum_pct": 99.02745673548507,
+      "pct_of_revenue": 0.03501726330664172,
+      "cum_pct": 99.02745673548503,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 386
     },
     {
@@ -9048,7 +9784,9 @@
       "avg_price": 2.748941176470588,
       "margin_true_pct": 39.5016293287624,
       "rev_per_day_sold": 20.914285714285715,
-      "cum_pct": 99.06221285309927,
+      "pct_of_revenue": 0.03475611761418541,
+      "cum_pct": 99.06221285309921,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 246
     },
     {
@@ -9067,7 +9805,9 @@
       "avg_price": 7.48494382022472,
       "margin_true_pct": 38.575222524490584,
       "rev_per_day_sold": 16.70148857142857,
-      "cum_pct": 99.09690677649274,
+      "pct_of_revenue": 0.03469392339347519,
+      "cum_pct": 99.09690677649269,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 166
     },
     {
@@ -9086,7 +9826,9 @@
       "avg_price": 28.8778816199377,
       "margin_true_pct": 36.722822430735725,
       "rev_per_day_sold": 14.087419512195122,
-      "cum_pct": 99.13118714600655,
+      "pct_of_revenue": 0.03428036951382375,
+      "cum_pct": 99.13118714600651,
+      "loss_rate_pct": 11.68,
       "days_since_last_sale": 28
     },
     {
@@ -9105,7 +9847,9 @@
       "avg_price": 11.366839378238343,
       "margin_true_pct": 36.66656992771317,
       "rev_per_day_sold": 14.185325925925927,
-      "cum_pct": 99.16528480256262,
+      "pct_of_revenue": 0.03409765655604495,
+      "cum_pct": 99.16528480256255,
+      "loss_rate_pct": 6.98,
       "days_since_last_sale": 355
     },
     {
@@ -9124,7 +9868,9 @@
       "avg_price": 8.848494453248811,
       "margin_true_pct": 43.24508739977657,
       "rev_per_day_sold": 12.693555555555557,
-      "cum_pct": 99.19918685505988,
+      "pct_of_revenue": 0.03390205249726579,
+      "cum_pct": 99.19918685505982,
+      "loss_rate_pct": 9.0,
       "days_since_last_sale": 374
     },
     {
@@ -9143,7 +9889,9 @@
       "avg_price": 14.767263427109974,
       "margin_true_pct": 31.739378887981957,
       "rev_per_day_sold": 29.07899487179487,
-      "cum_pct": 99.23284143640277,
+      "pct_of_revenue": 0.033654581342887194,
+      "cum_pct": 99.23284143640271,
+      "loss_rate_pct": 8.36,
       "days_since_last_sale": 120
     },
     {
@@ -9162,7 +9910,9 @@
       "avg_price": 10.698016997167139,
       "margin_true_pct": 23.763833214689477,
       "rev_per_day_sold": 11.180529166666666,
-      "cum_pct": 99.26469322219832,
+      "pct_of_revenue": 0.03185178579553254,
+      "cum_pct": 99.26469322219825,
+      "loss_rate_pct": 16.63,
       "days_since_last_sale": 0
     },
     {
@@ -9181,7 +9931,9 @@
       "avg_price": 4.019123505976096,
       "margin_true_pct": 36.14552242317231,
       "rev_per_day_sold": 17.098305084745764,
-      "cum_pct": 99.29463001476078,
+      "pct_of_revenue": 0.029936792562491668,
+      "cum_pct": 99.29463001476074,
+      "loss_rate_pct": 7.3,
       "days_since_last_sale": 762
     },
     {
@@ -9200,7 +9952,9 @@
       "avg_price": 7.4992125984251965,
       "margin_true_pct": 38.70427328121208,
       "rev_per_day_sold": 43.29090909090909,
-      "cum_pct": 99.3228931008398,
+      "pct_of_revenue": 0.028263086079021674,
+      "cum_pct": 99.32289310083976,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 271
     },
     {
@@ -9219,7 +9973,9 @@
       "avg_price": 9.61405750798722,
       "margin_true_pct": 32.885907789698805,
       "rev_per_day_sold": 9.34248817204301,
-      "cum_pct": 99.34867682816875,
+      "pct_of_revenue": 0.025783727328935836,
+      "cum_pct": 99.3486768281687,
+      "loss_rate_pct": 11.78,
       "days_since_last_sale": 18
     },
     {
@@ -9238,7 +9994,9 @@
       "avg_price": 6.763043478260869,
       "margin_true_pct": 45.92876411714657,
       "rev_per_day_sold": 27.967741935483872,
-      "cum_pct": 99.37440561400507,
+      "pct_of_revenue": 0.025728785836320656,
+      "cum_pct": 99.37440561400503,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 12
     },
     {
@@ -9257,7 +10015,9 @@
       "avg_price": 8.566666666666666,
       "margin_true_pct": 28.166328186036274,
       "rev_per_day_sold": 16.0625,
-      "cum_pct": 99.39728553774188,
+      "pct_of_revenue": 0.02287992373679726,
+      "cum_pct": 99.39728553774182,
+      "loss_rate_pct": 9.97,
       "days_since_last_sale": 147
     },
     {
@@ -9276,7 +10036,9 @@
       "avg_price": 8.217391304347826,
       "margin_true_pct": 26.785479062582144,
       "rev_per_day_sold": 75.3452,
-      "cum_pct": 99.4196447132274,
+      "pct_of_revenue": 0.022359175485521878,
+      "cum_pct": 99.41964471322734,
+      "loss_rate_pct": 20.38,
       "days_since_last_sale": 1051
     },
     {
@@ -9295,7 +10057,9 @@
       "avg_price": 14.986666666666666,
       "margin_true_pct": 24.223523508282764,
       "rev_per_day_sold": 31.937391304347823,
-      "cum_pct": 99.44144325639225,
+      "pct_of_revenue": 0.021798543164853173,
+      "cum_pct": 99.44144325639219,
+      "loss_rate_pct": 12.689999999999998,
       "days_since_last_sale": 0
     },
     {
@@ -9314,7 +10078,9 @@
       "avg_price": 14.227692307692308,
       "margin_true_pct": 35.350794365082976,
       "rev_per_day_sold": 17.07620465116279,
-      "cum_pct": 99.46323339541391,
+      "pct_of_revenue": 0.021790139021659577,
+      "cum_pct": 99.46323339541385,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 427
     },
     {
@@ -9333,7 +10099,9 @@
       "avg_price": 2.177635782747604,
       "margin_true_pct": 40.2648639990545,
       "rev_per_day_sold": 13.107692307692307,
-      "cum_pct": 99.48346031632052,
+      "pct_of_revenue": 0.0202269209066161,
+      "cum_pct": 99.48346031632047,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 499
     },
     {
@@ -9352,7 +10120,9 @@
       "avg_price": 21.81954887218045,
       "margin_true_pct": 23.936855871390325,
       "rev_per_day_sold": 20.982646666666668,
-      "cum_pct": 99.50214052470689,
+      "pct_of_revenue": 0.018680208386361735,
+      "cum_pct": 99.50214052470683,
+      "loss_rate_pct": 0.18,
       "days_since_last_sale": 162
     },
     {
@@ -9371,7 +10141,9 @@
       "avg_price": 13.50960451977401,
       "margin_true_pct": 44.889165109653106,
       "rev_per_day_sold": 6.352589583333334,
-      "cum_pct": 99.52023817640467,
+      "pct_of_revenue": 0.018097651697785443,
+      "cum_pct": 99.52023817640462,
+      "loss_rate_pct": 16.95,
       "days_since_last_sale": 111
     },
     {
@@ -9390,7 +10162,9 @@
       "avg_price": 104.89142857142856,
       "margin_true_pct": 32.098863291814915,
       "rev_per_day_sold": 37.6954375,
-      "cum_pct": 99.53813636027445,
+      "pct_of_revenue": 0.017898183869783812,
+      "cum_pct": 99.53813636027441,
+      "loss_rate_pct": 11.03,
       "days_since_last_sale": 917
     },
     {
@@ -9409,7 +10183,9 @@
       "avg_price": 20.466666666666665,
       "margin_true_pct": 34.30185581981742,
       "rev_per_day_sold": 6.951607142857144,
-      "cum_pct": 99.5554650091295,
+      "pct_of_revenue": 0.0173286488550541,
+      "cum_pct": 99.55546500912946,
+      "loss_rate_pct": 12.879999999999999,
       "days_since_last_sale": 20
     },
     {
@@ -9428,7 +10204,9 @@
       "avg_price": 4.612418300653594,
       "margin_true_pct": 32.10240290051398,
       "rev_per_day_sold": 11.797872340425531,
-      "cum_pct": 99.57192015531895,
+      "pct_of_revenue": 0.016455146189434604,
+      "cum_pct": 99.57192015531889,
+      "loss_rate_pct": 0.18,
       "days_since_last_sale": 193
     },
     {
@@ -9447,7 +10225,9 @@
       "avg_price": 2.8945121951219512,
       "margin_true_pct": 41.49701830146,
       "rev_per_day_sold": 11.57857142857143,
-      "cum_pct": 99.58635142239184,
+      "pct_of_revenue": 0.014431267072898194,
+      "cum_pct": 99.58635142239179,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 482
     },
     {
@@ -9466,7 +10246,9 @@
       "avg_price": 1.5358108108108108,
       "margin_true_pct": 36.371111231254204,
       "rev_per_day_sold": 9.882608695652175,
-      "cum_pct": 99.59984197145896,
+      "pct_of_revenue": 0.013490549067118073,
+      "cum_pct": 99.5998419714589,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 502
     },
     {
@@ -9485,7 +10267,9 @@
       "avg_price": 16.396078431372548,
       "margin_true_pct": 38.85698391914304,
       "rev_per_day_sold": 8.416192452830188,
-      "cum_pct": 99.61307903708564,
+      "pct_of_revenue": 0.013237065626683605,
+      "cum_pct": 99.61307903708558,
+      "loss_rate_pct": 19.58,
       "days_since_last_sale": 35
     },
     {
@@ -9504,7 +10288,9 @@
       "avg_price": 4.306666666666667,
       "margin_true_pct": 46.35760167393727,
       "rev_per_day_sold": 16.14506666666667,
-      "cum_pct": 99.62601515010716,
+      "pct_of_revenue": 0.012936113021515828,
+      "cum_pct": 99.6260151501071,
+      "loss_rate_pct": 0.1,
       "days_since_last_sale": 193
     },
     {
@@ -9523,7 +10309,9 @@
       "avg_price": 12.677685950413224,
       "margin_true_pct": 33.629759815756636,
       "rev_per_day_sold": 21.4774,
-      "cum_pct": 99.63876226486887,
+      "pct_of_revenue": 0.012747114761729949,
+      "cum_pct": 99.63876226486882,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 634
     },
     {
@@ -9542,7 +10330,9 @@
       "avg_price": 9.88,
       "margin_true_pct": 6.826044140595844,
       "rev_per_day_sold": 32.93333333333334,
-      "cum_pct": 99.65049008051193,
+      "pct_of_revenue": 0.011727815643037974,
+      "cum_pct": 99.65049008051186,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 280
     },
     {
@@ -9561,7 +10351,9 @@
       "avg_price": 4.150526315789474,
       "margin_true_pct": 42.65290876166893,
       "rev_per_day_sold": 12.321875,
-      "cum_pct": 99.66219118807277,
+      "pct_of_revenue": 0.011701107560854941,
+      "cum_pct": 99.66219118807271,
+      "loss_rate_pct": 16.04,
       "days_since_last_sale": 508
     },
     {
@@ -9580,7 +10372,9 @@
       "avg_price": 19.378947368421052,
       "margin_true_pct": 7.0624895887860255,
       "rev_per_day_sold": 55.457142857142856,
-      "cum_pct": 99.67371127418774,
+      "pct_of_revenue": 0.011520086114947726,
+      "cum_pct": 99.67371127418765,
+      "loss_rate_pct": 12.689999999999998,
       "days_since_last_sale": 773
     },
     {
@@ -9599,7 +10393,9 @@
       "avg_price": 14.104032258064517,
       "margin_true_pct": 31.438714442626353,
       "rev_per_day_sold": 11.95778125,
-      "cum_pct": 99.68506663078689,
+      "pct_of_revenue": 0.01135535659917216,
+      "cum_pct": 99.68506663078682,
+      "loss_rate_pct": 7.71,
       "days_since_last_sale": 346
     },
     {
@@ -9618,7 +10414,9 @@
       "avg_price": 9.64,
       "margin_true_pct": 18.686542530848996,
       "rev_per_day_sold": 21.159944444444445,
-      "cum_pct": 99.69636946149112,
+      "pct_of_revenue": 0.011302830704212197,
+      "cum_pct": 99.69636946149103,
+      "loss_rate_pct": 10.94,
       "days_since_last_sale": 812
     },
     {
@@ -9637,7 +10435,9 @@
       "avg_price": 3.7245098039215683,
       "margin_true_pct": 36.748333600350165,
       "rev_per_day_sold": 7.4490196078431365,
-      "cum_pct": 99.70764323973705,
+      "pct_of_revenue": 0.011273778245926432,
+      "cum_pct": 99.70764323973695,
+      "loss_rate_pct": 9.24,
       "days_since_last_sale": 247
     },
     {
@@ -9656,7 +10456,9 @@
       "avg_price": 5.9460674157303375,
       "margin_true_pct": 25.626778712685887,
       "rev_per_day_sold": 46.37865,
-      "cum_pct": 99.71865377125472,
+      "pct_of_revenue": 0.011010531517671722,
+      "cum_pct": 99.71865377125462,
+      "loss_rate_pct": 11.62,
       "days_since_last_sale": 138
     },
     {
@@ -9675,7 +10477,9 @@
       "avg_price": 7.451923076923077,
       "margin_true_pct": 37.78098236328816,
       "rev_per_day_sold": 26.4545,
-      "cum_pct": 99.72964453285645,
+      "pct_of_revenue": 0.010990761601726906,
+      "cum_pct": 99.72964453285635,
+      "loss_rate_pct": 13.750000000000002,
       "days_since_last_sale": 63
     },
     {
@@ -9694,7 +10498,9 @@
       "avg_price": 12.583720930232559,
       "margin_true_pct": 35.77966752253995,
       "rev_per_day_sold": 8.725039024390245,
-      "cum_pct": 99.74026030111406,
+      "pct_of_revenue": 0.010615768257618391,
+      "cum_pct": 99.74026030111398,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 425
     },
     {
@@ -9713,7 +10519,9 @@
       "avg_price": 11.728301886792453,
       "margin_true_pct": 52.43959861316879,
       "rev_per_day_sold": 10.740270967741935,
-      "cum_pct": 99.75014076025842,
+      "pct_of_revenue": 0.009880459144343278,
+      "cum_pct": 99.75014076025832,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 429
     },
     {
@@ -9732,7 +10540,9 @@
       "avg_price": 3.418279569892473,
       "margin_true_pct": 23.017352996573408,
       "rev_per_day_sold": 11.774074074074074,
-      "cum_pct": 99.7595746483984,
+      "pct_of_revenue": 0.009433888139984239,
+      "cum_pct": 99.7595746483983,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 274
     },
     {
@@ -9751,7 +10561,9 @@
       "avg_price": 3.052941176470588,
       "margin_true_pct": 47.89298830946431,
       "rev_per_day_sold": 16.389473684210525,
-      "cum_pct": 99.76881564483372,
+      "pct_of_revenue": 0.009240996435329009,
+      "cum_pct": 99.76881564483362,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 499
     },
     {
@@ -9770,7 +10582,9 @@
       "avg_price": 20.64,
       "margin_true_pct": 9.957231378960154,
       "rev_per_day_sold": 15.07845263157895,
-      "cum_pct": 99.77731743871091,
+      "pct_of_revenue": 0.008501793877184551,
+      "cum_pct": 99.77731743871081,
+      "loss_rate_pct": 15.98,
       "days_since_last_sale": 125
     },
     {
@@ -9789,7 +10603,9 @@
       "avg_price": 8.077777777777778,
       "margin_true_pct": 23.135537225312795,
       "rev_per_day_sold": 11.232000000000001,
-      "cum_pct": 99.78565036035202,
+      "pct_of_revenue": 0.008332921641105929,
+      "cum_pct": 99.78565036035192,
+      "loss_rate_pct": 19.8,
       "days_since_last_sale": 119
     },
     {
@@ -9808,7 +10624,9 @@
       "avg_price": 8.806896551724138,
       "margin_true_pct": 18.79616216557077,
       "rev_per_day_sold": 11.104347826086956,
-      "cum_pct": 99.7932295205626,
+      "pct_of_revenue": 0.00757916021060703,
+      "cum_pct": 99.79322952056253,
+      "loss_rate_pct": 10.34,
       "days_since_last_sale": 13
     },
     {
@@ -9827,7 +10645,9 @@
       "avg_price": 5.54,
       "margin_true_pct": 39.35985316687321,
       "rev_per_day_sold": 10.387500000000001,
-      "cum_pct": 99.8006276593273,
+      "pct_of_revenue": 0.007398138764699814,
+      "cum_pct": 99.80062765932723,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 73
     },
     {
@@ -9846,7 +10666,9 @@
       "avg_price": 2.238532110091743,
       "margin_true_pct": 23.769178752207573,
       "rev_per_day_sold": 12.842105263157896,
-      "cum_pct": 99.8078685171636,
+      "pct_of_revenue": 0.007240857836288627,
+      "cum_pct": 99.80786851716353,
+      "loss_rate_pct": 0.12,
       "days_since_last_sale": 336
     },
     {
@@ -9865,7 +10687,9 @@
       "avg_price": 14.536000000000001,
       "margin_true_pct": 30.29620091786753,
       "rev_per_day_sold": 7.382321212121212,
-      "cum_pct": 99.81509799735687,
+      "pct_of_revenue": 0.007229480193278655,
+      "cum_pct": 99.8150979973568,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 427
     },
     {
@@ -9884,7 +10708,9 @@
       "avg_price": 3.583076923076923,
       "margin_true_pct": -5.7896145839955615,
       "rev_per_day_sold": 14.55625,
-      "cum_pct": 99.8220094555129,
+      "pct_of_revenue": 0.0069114581560312345,
+      "cum_pct": 99.82200945551283,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 283
     },
     {
@@ -9903,7 +10729,9 @@
       "avg_price": 2.8666666666666667,
       "margin_true_pct": 39.621016365202415,
       "rev_per_day_sold": 7.25625,
-      "cum_pct": 99.82890014071614,
+      "pct_of_revenue": 0.00689068520322221,
+      "cum_pct": 99.82890014071604,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 485
     },
     {
@@ -9922,7 +10750,9 @@
       "avg_price": 13.9125,
       "margin_true_pct": 38.18692084234306,
       "rev_per_day_sold": 13.51884705882353,
-      "cum_pct": 99.83572020975005,
+      "pct_of_revenue": 0.006820069033930274,
+      "cum_pct": 99.83572020974998,
+      "loss_rate_pct": 15.010000000000002,
       "days_since_last_sale": 511
     },
     {
@@ -9941,7 +10771,9 @@
       "avg_price": 15.333333333333334,
       "margin_true_pct": 27.09068217775721,
       "rev_per_day_sold": 13.166470588235295,
-      "cum_pct": 99.842362509789,
+      "pct_of_revenue": 0.006642300038920014,
+      "cum_pct": 99.8423625097889,
+      "loss_rate_pct": 11.93,
       "days_since_last_sale": 863
     },
     {
@@ -9960,7 +10792,9 @@
       "avg_price": 28.36,
       "margin_true_pct": 39.64817015488219,
       "rev_per_day_sold": 18.740360000000003,
-      "cum_pct": 99.84792383284476,
+      "pct_of_revenue": 0.005561323055773358,
+      "cum_pct": 99.84792383284467,
+      "loss_rate_pct": 8.11,
       "days_since_last_sale": 600
     },
     {
@@ -9979,7 +10813,9 @@
       "avg_price": 7.175,
       "margin_true_pct": 16.668620383437354,
       "rev_per_day_sold": 8.3505,
-      "cum_pct": 99.8533755756069,
+      "pct_of_revenue": 0.005451742762141066,
+      "cum_pct": 99.85337557560682,
+      "loss_rate_pct": 29.03,
       "days_since_last_sale": 425
     },
     {
@@ -9998,7 +10834,9 @@
       "avg_price": 13.558333333333332,
       "margin_true_pct": 25.410881712544768,
       "rev_per_day_sold": 12.01684,
-      "cum_pct": 99.8587246881119,
+      "pct_of_revenue": 0.005349112505005735,
+      "cum_pct": 99.85872468811182,
+      "loss_rate_pct": 25.53,
       "days_since_last_sale": 427
     },
     {
@@ -10017,7 +10855,9 @@
       "avg_price": 19.263636363636365,
       "margin_true_pct": 27.80113641145556,
       "rev_per_day_sold": 17.80668,
-      "cum_pct": 99.86400893558799,
+      "pct_of_revenue": 0.005284247476077212,
+      "cum_pct": 99.8640089355879,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 427
     },
     {
@@ -10036,7 +10876,9 @@
       "avg_price": 19.317073170731707,
       "margin_true_pct": 36.256623299697154,
       "rev_per_day_sold": 8.70354,
-      "cum_pct": 99.86917459917916,
+      "pct_of_revenue": 0.00516566359118455,
+      "cum_pct": 99.86917459917909,
+      "loss_rate_pct": 16.8,
       "days_since_last_sale": 45
     },
     {
@@ -10055,7 +10897,9 @@
       "avg_price": 10.0,
       "margin_true_pct": 38.844911731974015,
       "rev_per_day_sold": 42.0725,
-      "cum_pct": 99.87416871379092,
+      "pct_of_revenue": 0.00499411461175825,
+      "cum_pct": 99.87416871379085,
+      "loss_rate_pct": 10.94,
       "days_since_last_sale": 700
     },
     {
@@ -10074,7 +10918,9 @@
       "avg_price": 47.050000000000004,
       "margin_true_pct": 25.171906257796692,
       "rev_per_day_sold": 11.518985714285716,
-      "cum_pct": 99.87895438072393,
+      "pct_of_revenue": 0.004785666933013748,
+      "cum_pct": 99.87895438072387,
+      "loss_rate_pct": 15.160000000000002,
       "days_since_last_sale": 442
     },
     {
@@ -10093,7 +10939,9 @@
       "avg_price": 3.724390243902439,
       "margin_true_pct": 32.874918140144075,
       "rev_per_day_sold": 21.814285714285713,
-      "cum_pct": 99.883485852001,
+      "pct_of_revenue": 0.004531471277054398,
+      "cum_pct": 99.88348585200092,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 510
     },
     {
@@ -10112,7 +10960,9 @@
       "avg_price": 8.19047619047619,
       "margin_true_pct": 35.28189065944624,
       "rev_per_day_sold": 37.898,
-      "cum_pct": 99.88798444266132,
+      "pct_of_revenue": 0.0044985906603224,
+      "cum_pct": 99.88798444266124,
+      "loss_rate_pct": 13.459999999999999,
       "days_since_last_sale": 718
     },
     {
@@ -10131,7 +10981,9 @@
       "avg_price": 3.7225,
       "margin_true_pct": 53.47724244474198,
       "rev_per_day_sold": 4.512121212121213,
-      "cum_pct": 99.89240314648028,
+      "pct_of_revenue": 0.004418703818948265,
+      "cum_pct": 99.89240314648018,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 363
     },
     {
@@ -10150,7 +11002,9 @@
       "avg_price": 13.0,
       "margin_true_pct": 64.51899617183578,
       "rev_per_day_sold": 24.695666666666668,
-      "cum_pct": 99.8968003057796,
+      "pct_of_revenue": 0.004397159299320619,
+      "cum_pct": 99.8968003057795,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 221
     },
     {
@@ -10169,7 +11023,9 @@
       "avg_price": 17.89275362318841,
       "margin_true_pct": 30.352677618943662,
       "rev_per_day_sold": 4.306606451612904,
-      "cum_pct": 99.90076214707986,
+      "pct_of_revenue": 0.003961841300254697,
+      "cum_pct": 99.90076214707975,
+      "loss_rate_pct": 13.28,
       "days_since_last_sale": 20
     },
     {
@@ -10188,7 +11044,9 @@
       "avg_price": 67.85454545454546,
       "margin_true_pct": -5.738996005550592,
       "rev_per_day_sold": 21.267933333333332,
-      "cum_pct": 99.90454898515539,
+      "pct_of_revenue": 0.003786838075532723,
+      "cum_pct": 99.90454898515527,
+      "loss_rate_pct": 16.89,
       "days_since_last_sale": 48
     },
     {
@@ -10207,7 +11065,9 @@
       "avg_price": 29.79032258064516,
       "margin_true_pct": 25.52242437116104,
       "rev_per_day_sold": 6.884194444444445,
-      "cum_pct": 99.90822625777513,
+      "pct_of_revenue": 0.0036772726197238665,
+      "cum_pct": 99.908226257775,
+      "loss_rate_pct": 15.920000000000002,
       "days_since_last_sale": 83
     },
     {
@@ -10226,7 +11086,9 @@
       "avg_price": 19.227272727272727,
       "margin_true_pct": 28.771976543613594,
       "rev_per_day_sold": 15.25365,
-      "cum_pct": 99.91184755322216,
+      "pct_of_revenue": 0.0036212954470329186,
+      "cum_pct": 99.91184755322203,
+      "loss_rate_pct": 10.94,
       "days_since_last_sale": 747
     },
     {
@@ -10245,7 +11107,9 @@
       "avg_price": 17.255172413793105,
       "margin_true_pct": 25.352459413941833,
       "rev_per_day_sold": 11.958540000000001,
-      "cum_pct": 99.91539632732338,
+      "pct_of_revenue": 0.003548774101211926,
+      "cum_pct": 99.91539632732325,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 161
     },
     {
@@ -10264,7 +11128,9 @@
       "avg_price": 9.212698412698412,
       "margin_true_pct": 19.107124020064504,
       "rev_per_day_sold": 3.5726424242424244,
-      "cum_pct": 99.91889500299754,
+      "pct_of_revenue": 0.0034986756741659324,
+      "cum_pct": 99.91889500299742,
+      "loss_rate_pct": 12.8,
       "days_since_last_sale": 88
     },
     {
@@ -10283,7 +11149,9 @@
       "avg_price": 7.076923076923077,
       "margin_true_pct": 48.803352664630594,
       "rev_per_day_sold": 29.141,
-      "cum_pct": 99.9223541150993,
+      "pct_of_revenue": 0.0034591121017588013,
+      "cum_pct": 99.92235411509918,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 86
     },
     {
@@ -10302,7 +11170,9 @@
       "avg_price": 18.400000000000002,
       "margin_true_pct": 17.436490476415504,
       "rev_per_day_sold": 12.697133333333333,
-      "cum_pct": 99.92574527590484,
+      "pct_of_revenue": 0.003391160805555794,
+      "cum_pct": 99.92574527590473,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 394
     },
     {
@@ -10321,7 +11191,9 @@
       "avg_price": 4.9,
       "margin_true_pct": 77.46697221452344,
       "rev_per_day_sold": 13.475000000000001,
-      "cum_pct": 99.92894431063743,
+      "pct_of_revenue": 0.003199034732589812,
+      "cum_pct": 99.92894431063732,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 719
     },
     {
@@ -10340,7 +11212,9 @@
       "avg_price": 3.96,
       "margin_true_pct": -55.48157507125078,
       "rev_per_day_sold": 9.0,
-      "cum_pct": 99.93188219967757,
+      "pct_of_revenue": 0.0029378890401335,
+      "cum_pct": 99.93188219967746,
+      "loss_rate_pct": 9.34,
       "days_since_last_sale": 230
     },
     {
@@ -10359,7 +11233,9 @@
       "avg_price": 3.588888888888889,
       "margin_true_pct": 33.547798924663915,
       "rev_per_day_sold": 3.8760000000000003,
-      "cum_pct": 99.93475776985927,
+      "pct_of_revenue": 0.002875570181706426,
+      "cum_pct": 99.93475776985916,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 0
     },
     {
@@ -10378,7 +11254,9 @@
       "avg_price": 12.285714285714286,
       "margin_true_pct": 64.0545821950245,
       "rev_per_day_sold": 11.81625,
-      "cum_pct": 99.9375630087579,
+      "pct_of_revenue": 0.002805238898624442,
+      "cum_pct": 99.93756300875779,
+      "loss_rate_pct": 0.32,
       "days_since_last_sale": 363
     },
     {
@@ -10397,7 +11275,9 @@
       "avg_price": 75.8,
       "margin_true_pct": -19.83751231704932,
       "rev_per_day_sold": 30.698999999999998,
-      "cum_pct": 99.94029604680769,
+      "pct_of_revenue": 0.002733038049789646,
+      "cum_pct": 99.94029604680757,
+      "loss_rate_pct": 11.93,
       "days_since_last_sale": 1007
     },
     {
@@ -10416,7 +11296,9 @@
       "avg_price": 6.0736842105263165,
       "margin_true_pct": 14.65533409915599,
       "rev_per_day_sold": 6.577742857142858,
-      "cum_pct": 99.9430288296469,
+      "pct_of_revenue": 0.002732782839226564,
+      "cum_pct": 99.9430288296468,
+      "loss_rate_pct": 11.56,
       "days_since_last_sale": 140
     },
     {
@@ -10435,7 +11317,9 @@
       "avg_price": 5.055555555555555,
       "margin_true_pct": 25.077682613290428,
       "rev_per_day_sold": 9.1,
-      "cum_pct": 99.94572931351208,
+      "pct_of_revenue": 0.0027004838651732174,
+      "cum_pct": 99.94572931351198,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 503
     },
     {
@@ -10454,7 +11338,9 @@
       "avg_price": 3.0,
       "margin_true_pct": 47.6008683284677,
       "rev_per_day_sold": 30.275000000000002,
-      "cum_pct": 99.94842460413905,
+      "pct_of_revenue": 0.002695290626970961,
+      "cum_pct": 99.94842460413895,
+      "loss_rate_pct": 10.94,
       "days_since_last_sale": 845
     },
     {
@@ -10473,7 +11359,9 @@
       "avg_price": 11.262500000000001,
       "margin_true_pct": 34.31659913898374,
       "rev_per_day_sold": 22.525000000000002,
-      "cum_pct": 99.95109837992204,
+      "pct_of_revenue": 0.0026737757829901855,
+      "cum_pct": 99.95109837992194,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 162
     },
     {
@@ -10492,7 +11380,9 @@
       "avg_price": 12.842857142857143,
       "margin_true_pct": 40.67148612795459,
       "rev_per_day_sold": 14.983333333333334,
-      "cum_pct": 99.95376622057566,
+      "pct_of_revenue": 0.0026678406536161784,
+      "cum_pct": 99.95376622057556,
+      "loss_rate_pct": 11.13,
       "days_since_last_sale": 809
     },
     {
@@ -10511,7 +11401,9 @@
       "avg_price": 6.6692307692307695,
       "margin_true_pct": 52.81708732048048,
       "rev_per_day_sold": 21.675,
-      "cum_pct": 99.95633909915931,
+      "pct_of_revenue": 0.002572878583632065,
+      "cum_pct": 99.9563390991592,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 180
     },
     {
@@ -10530,7 +11422,9 @@
       "avg_price": 10.0,
       "margin_true_pct": 34.76234855545201,
       "rev_per_day_sold": 16.944,
-      "cum_pct": 99.95885321996214,
+      "pct_of_revenue": 0.0025141208028293953,
+      "cum_pct": 99.95885321996202,
+      "loss_rate_pct": 3.4300000000000006,
       "days_since_last_sale": 707
     },
     {
@@ -10549,7 +11443,9 @@
       "avg_price": 16.8,
       "margin_true_pct": 26.190476190476197,
       "rev_per_day_sold": 16.8,
-      "cum_pct": 99.96134597429922,
+      "pct_of_revenue": 0.00249275433708297,
+      "cum_pct": 99.9613459742991,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 541
     },
     {
@@ -10568,7 +11464,9 @@
       "avg_price": 77.64999999999999,
       "margin_true_pct": 5.998537080903812,
       "rev_per_day_sold": 27.04813333333333,
-      "cum_pct": 99.9637539868591,
+      "pct_of_revenue": 0.0024080125598808966,
+      "cum_pct": 99.96375398685899,
+      "loss_rate_pct": 10.17,
       "days_since_last_sale": 35
     },
     {
@@ -10587,7 +11485,9 @@
       "avg_price": 7.9799999999999995,
       "margin_true_pct": 41.501097338687345,
       "rev_per_day_sold": 19.95,
-      "cum_pct": 99.96612210347932,
+      "pct_of_revenue": 0.0023681166202288214,
+      "cum_pct": 99.96612210347922,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 223
     },
     {
@@ -10606,7 +11506,9 @@
       "avg_price": 11.342857142857143,
       "margin_true_pct": 8.19899244332494,
       "rev_per_day_sold": 13.233333333333334,
-      "cum_pct": 99.96847834984081,
+      "pct_of_revenue": 0.0023562463614808077,
+      "cum_pct": 99.96847834984071,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 535
     },
     {
@@ -10625,7 +11527,9 @@
       "avg_price": 19.8,
       "margin_true_pct": 26.6540404040404,
       "rev_per_day_sold": 26.400000000000002,
-      "cum_pct": 99.97082866107291,
+      "pct_of_revenue": 0.0023503112321068003,
+      "cum_pct": 99.97082866107282,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 546
     },
     {
@@ -10644,7 +11548,9 @@
       "avg_price": 4.0,
       "margin_true_pct": 26.685720425486195,
       "rev_per_day_sold": 24.81866666666667,
-      "cum_pct": 99.97303819103625,
+      "pct_of_revenue": 0.0022095299633553525,
+      "cum_pct": 99.97303819103617,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 535
     },
     {
@@ -10663,7 +11569,9 @@
       "avg_price": 17.325,
       "margin_true_pct": 10.634920634920636,
       "rev_per_day_sold": 23.099999999999998,
-      "cum_pct": 99.97509471336436,
+      "pct_of_revenue": 0.0020565223280934503,
+      "cum_pct": 99.97509471336426,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 541
     },
     {
@@ -10682,7 +11590,9 @@
       "avg_price": 25.8,
       "margin_true_pct": 49.02154039462115,
       "rev_per_day_sold": 20.5368,
-      "cum_pct": 99.97692304183828,
+      "pct_of_revenue": 0.0018283284739216263,
+      "cum_pct": 99.97692304183818,
+      "loss_rate_pct": 8.75,
       "days_since_last_sale": 72
     },
     {
@@ -10701,7 +11611,9 @@
       "avg_price": 5.9,
       "margin_true_pct": 25.294228829466107,
       "rev_per_day_sold": 9.833333333333334,
-      "cum_pct": 99.97867390500362,
+      "pct_of_revenue": 0.001750863165332086,
+      "cum_pct": 99.9786739050035,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 496
     },
     {
@@ -10720,7 +11632,9 @@
       "avg_price": 6.0,
       "margin_true_pct": 29.83333333333333,
       "rev_per_day_sold": 56.286,
-      "cum_pct": 99.98034422846332,
+      "pct_of_revenue": 0.0016703234597268103,
+      "cum_pct": 99.98034422846322,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 407
     },
     {
@@ -10739,7 +11653,9 @@
       "avg_price": 26.160000000000004,
       "margin_true_pct": 32.480402153296275,
       "rev_per_day_sold": 3.908957142857143,
-      "cum_pct": 99.98196824010856,
+      "pct_of_revenue": 0.001624011645221433,
+      "cum_pct": 99.98196824010844,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 99
     },
     {
@@ -10758,7 +11674,9 @@
       "avg_price": 4.9,
       "margin_true_pct": 32.08545425457365,
       "rev_per_day_sold": 9.8,
-      "cum_pct": 99.98342234680518,
+      "pct_of_revenue": 0.0014541066966317325,
+      "cum_pct": 99.98342234680507,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 632
     },
     {
@@ -10777,7 +11695,9 @@
       "avg_price": 16.266666666666666,
       "margin_true_pct": -766.8032786885246,
       "rev_per_day_sold": 16.266666666666666,
-      "cum_pct": 99.98487051837243,
+      "pct_of_revenue": 0.0014481715672577254,
+      "cum_pct": 99.98487051837233,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 158
     },
     {
@@ -10796,7 +11716,9 @@
       "avg_price": 3.6384615384615384,
       "margin_true_pct": 15.592135409262593,
       "rev_per_day_sold": 5.9125,
-      "cum_pct": 99.98627417646938,
+      "pct_of_revenue": 0.0014036580969526724,
+      "cum_pct": 99.98627417646928,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 504
     },
     {
@@ -10815,7 +11737,9 @@
       "avg_price": 14.833333333333334,
       "margin_true_pct": -395.5056179775281,
       "rev_per_day_sold": 44.5,
-      "cum_pct": 99.98759474275509,
+      "pct_of_revenue": 0.0013205662857165735,
+      "cum_pct": 99.987594742755,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 174
     },
     {
@@ -10834,7 +11758,9 @@
       "avg_price": 4.148148148148148,
       "margin_true_pct": 25.744492273046603,
       "rev_per_day_sold": 10.83,
-      "cum_pct": 99.9888802917775,
+      "pct_of_revenue": 0.0012855490224099317,
+      "cum_pct": 99.9888802917774,
+      "loss_rate_pct": 9.27,
       "days_since_last_sale": 8
     },
     {
@@ -10853,7 +11779,9 @@
       "avg_price": 4.9,
       "margin_true_pct": 40.433673469387756,
       "rev_per_day_sold": 9.8,
-      "cum_pct": 99.99004357713481,
+      "pct_of_revenue": 0.001163285357305386,
+      "cum_pct": 99.99004357713471,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 400
     },
     {
@@ -10872,7 +11800,9 @@
       "avg_price": 17.48,
       "margin_true_pct": 56.848517972751004,
       "rev_per_day_sold": 6.62336,
-      "cum_pct": 99.99102633959708,
+      "pct_of_revenue": 0.0009827624622655868,
+      "cum_pct": 99.99102633959698,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 662
     },
     {
@@ -10891,7 +11821,9 @@
       "avg_price": 16.0,
       "margin_true_pct": 10.277832752884333,
       "rev_per_day_sold": 14.032,
-      "cum_pct": 99.99185915695084,
+      "pct_of_revenue": 0.0008328173537606723,
+      "cum_pct": 99.99185915695075,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 566
     },
     {
@@ -10910,7 +11842,9 @@
       "avg_price": 3.8,
       "margin_true_pct": -23.341605792410856,
       "rev_per_day_sold": 13.712,
-      "cum_pct": 99.99267298189059,
+      "pct_of_revenue": 0.0008138249397638496,
+      "cum_pct": 99.99267298189052,
+      "loss_rate_pct": 4.69,
       "days_since_last_sale": 711
     },
     {
@@ -10929,7 +11863,9 @@
       "avg_price": 5.2,
       "margin_true_pct": -31.434170974886122,
       "rev_per_day_sold": 8.633733333333334,
-      "cum_pct": 99.99344161675532,
+      "pct_of_revenue": 0.0007686348647101597,
+      "cum_pct": 99.99344161675523,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 294
     },
     {
@@ -10948,7 +11884,9 @@
       "avg_price": 12.8,
       "margin_true_pct": 30.705187650010917,
       "rev_per_day_sold": 12.8,
-      "cum_pct": 99.99420131331519,
+      "pct_of_revenue": 0.0007596965598729051,
+      "cum_pct": 99.9942013133151,
+      "loss_rate_pct": 8.34,
       "days_since_last_sale": 426
     },
     {
@@ -10967,7 +11905,9 @@
       "avg_price": 8.166666666666666,
       "margin_true_pct": 38.101001049507026,
       "rev_per_day_sold": 8.166666666666666,
-      "cum_pct": 99.9949283666635,
+      "pct_of_revenue": 0.0007270533483158662,
+      "cum_pct": 99.99492836666342,
+      "loss_rate_pct": 16.19,
       "days_since_last_sale": 478
     },
     {
@@ -10986,7 +11926,9 @@
       "avg_price": 19.8,
       "margin_true_pct": 33.08373566737263,
       "rev_per_day_sold": 22.8294,
-      "cum_pct": 99.99560584387616,
+      "pct_of_revenue": 0.0006774772126547852,
+      "cum_pct": 99.99560584387608,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 443
     },
     {
@@ -11005,7 +11947,9 @@
       "avg_price": 6.233333333333333,
       "margin_true_pct": 56.01239682840526,
       "rev_per_day_sold": 6.233333333333333,
-      "cum_pct": 99.99616077847263,
+      "pct_of_revenue": 0.0005549345964696612,
+      "cum_pct": 99.99616077847254,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 137
     },
     {
@@ -11024,7 +11968,9 @@
       "avg_price": 6.0,
       "margin_true_pct": 36.50793650793651,
       "rev_per_day_sold": 8.658,
-      "cum_pct": 99.99667464197384,
+      "pct_of_revenue": 0.0005138635012015322,
+      "cum_pct": 99.99667464197374,
+      "loss_rate_pct": 10.75,
       "days_since_last_sale": 599
     },
     {
@@ -11043,7 +11989,9 @@
       "avg_price": 2.75,
       "margin_true_pct": 25.589114062118362,
       "rev_per_day_sold": 4.125,
-      "cum_pct": 99.9971642901472,
+      "pct_of_revenue": 0.0004896481733555833,
+      "cum_pct": 99.9971642901471,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 522
     },
     {
@@ -11062,7 +12010,9 @@
       "avg_price": 4.9,
       "margin_true_pct": 30.680272108843546,
       "rev_per_day_sold": 7.3500000000000005,
-      "cum_pct": 99.9976005221562,
+      "pct_of_revenue": 0.00043623200898951973,
+      "cum_pct": 99.99760052215609,
+      "loss_rate_pct": 0.0,
       "days_since_last_sale": 133
     },
     {
@@ -11081,7 +12031,9 @@
       "avg_price": 19.8,
       "margin_true_pct": 33.13949922098315,
       "rev_per_day_sold": 13.5036,
-      "cum_pct": 99.99800125022126,
+      "pct_of_revenue": 0.00040072806507420947,
+      "cum_pct": 99.99800125022117,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 443
     },
     {
@@ -11100,7 +12052,9 @@
       "avg_price": 12.9,
       "margin_true_pct": 56.386080879396175,
       "rev_per_day_sold": 12.9,
-      "cum_pct": 99.99838406606588,
+      "pct_of_revenue": 0.0003828158446234561,
+      "cum_pct": 99.99838406606578,
+      "loss_rate_pct": 11.13,
       "days_since_last_sale": 876
     },
     {
@@ -11119,7 +12073,9 @@
       "avg_price": 12.0,
       "margin_true_pct": 81.15056925280857,
       "rev_per_day_sold": 11.315999999999999,
-      "cum_pct": 99.99871987568588,
+      "pct_of_revenue": 0.0003358096199813201,
+      "cum_pct": 99.99871987568577,
+      "loss_rate_pct": 11.58,
       "days_since_last_sale": 841
     },
     {
@@ -11138,7 +12094,9 @@
       "avg_price": 25.8,
       "margin_true_pct": 14.409429341988236,
       "rev_per_day_sold": 10.706999999999999,
-      "cum_pct": 99.99903761283691,
+      "pct_of_revenue": 0.0003177371510374685,
+      "cum_pct": 99.9990376128368,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 510
     },
     {
@@ -11157,7 +12115,9 @@
       "avg_price": 15.0,
       "margin_true_pct": 26.09197599599698,
       "rev_per_day_sold": 4.512,
-      "cum_pct": 99.99930540587428,
+      "pct_of_revenue": 0.000267793037355199,
+      "cum_pct": 99.99930540587415,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 433
     },
     {
@@ -11176,7 +12136,9 @@
       "avg_price": 19.8,
       "margin_true_pct": 33.08373566737264,
       "rev_per_day_sold": 8.2962,
-      "cum_pct": 99.99955160097583,
+      "pct_of_revenue": 0.0002461951015631874,
+      "cum_pct": 99.99955160097572,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 443
     },
     {
@@ -11195,7 +12157,9 @@
       "avg_price": 10.0,
       "margin_true_pct": 55.94567737661477,
       "rev_per_day_sold": 6.710000000000001,
-      "cum_pct": 99.99975072456634,
+      "pct_of_revenue": 0.00019912359049793727,
+      "cum_pct": 99.99975072456621,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 708
     },
     {
@@ -11214,7 +12178,9 @@
       "avg_price": 4.9,
       "margin_true_pct": 31.10780938908703,
       "rev_per_day_sold": 4.9,
-      "cum_pct": 99.999896135236,
+      "pct_of_revenue": 0.00014541066966317325,
+      "cum_pct": 99.99989613523587,
+      "loss_rate_pct": 11.13,
       "days_since_last_sale": 821
     },
     {
@@ -11233,14 +12199,17 @@
       "avg_price": 3.5,
       "margin_true_pct": 96.84537611003329,
       "rev_per_day_sold": 3.5,
-      "cum_pct": 100.00000000000004,
+      "pct_of_revenue": 0.00010386476404512375,
+      "cum_pct": 99.99999999999991,
+      "loss_rate_pct": 9.43,
       "days_since_last_sale": 307
     }
   ],
   "concentration": {
     "items_for_50pct": 14,
     "items_for_80pct": 42,
-    "items_for_90pct": 64
+    "items_for_90pct": 64,
+    "items_for_99pct": 130
   },
   "dead_skus": 110,
   "thin_skus": 60,

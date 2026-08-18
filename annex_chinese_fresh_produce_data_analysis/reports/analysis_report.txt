@@ -350,6 +350,102 @@ Broccoli                                      Flower/Leaf Vegetables     6.71 0.
 White Jelly Mushroom                                 Edible Mushroom     4.90 1.00          1 2021-03-31 2021-03-31
 Needle Mushroom (Bag)                                Edible Mushroom     3.50 1.00          1 2022-08-27 2022-08-27
 
+==============================================================================
+WHO IS ACTUALLY IN EACH BAND
+==============================================================================
+
+      rank_from  rank_to  items     revenue  pct_revenue  profit_true  rev_per_item
+band                                                                               
+A             1       14     14 1,698,932.9         50.4    448,396.3     121,352.3
+B            15       42     28 1,011,768.1         30.0    330,719.1      36,134.6
+C            43       64     22   326,030.0          9.7    103,276.3      14,819.5
+D            65      130     66   300,263.2          8.9    111,358.4       4,549.4
+E           131      246    116    32,772.4          1.0     10,203.1         282.5
+
+Read the last column. A band-A item earns 430x what a band-E item earns.
+They occupy the same shelf, take the same ordering decision, and carry the
+same risk of spoiling.
+
+BAND A -- the 14 items that make the first half of the money
+
+                                                     category    revenue  pct_of_revenue  cum_pct  margin_true_pct  loss_rate_pct
+item_name                                                                                                                        
+Broccoli                                              Cabbage 269,874.25            8.01     8.01            26.60           9.26
+Net Lotus Root (1)                Aquatic Tuberous Vegetables 211,652.10            6.28    14.29            25.32           5.54
+Xixia Mushroom (1)                            Edible Mushroom 211,198.39            6.27    20.56            23.23          13.82
+Wuhu Green Pepper (1)                                Capsicum 205,113.70            6.09    26.64            25.70           5.70
+Yunnan Shengcai                        Flower/Leaf Vegetables 129,756.96            3.85    30.49            27.45          15.25
+Eggplant (2)                                          Solanum 117,729.42            3.49    33.99            29.82           6.07
+Paopaojiao (Jingpin)                                 Capsicum  95,568.63            2.84    36.82            21.61           7.08
+Luosi Pepper                                         Capsicum  82,009.35            2.43    39.26            26.93          10.18
+Yunnan Lettuces                        Flower/Leaf Vegetables  70,665.11            2.10    41.36            30.58          12.81
+Honghu Lotus Root Powder (Fenou)  Aquatic Tuberous Vegetables  64,339.60            1.91    43.26            20.99          11.81
+Yunnan Lettuce (Bag)                   Flower/Leaf Vegetables  63,994.90            1.90    45.16            33.69           9.43
+Xixia Black Mushroom (1)                      Edible Mushroom  60,116.34            1.78    46.95            27.01          10.80
+Needle Mushroom (Box)                         Edible Mushroom  58,640.90            1.74    48.69            35.35           0.45
+Qinggengsanhua                                        Cabbage  58,273.20            1.73    50.42            24.26          17.06
+
+All 6 categories appear in band A, the most frequent being Capsicum with 3 items.
+So there is no single category to protect: the concentration is at item
+level, which is where ordering and handling decisions get made anyway.
+
+Band A margins run 21.0% to 35.3%, and loss rates 0.5% to 17.1%. The weakest
+margin in the band is Honghu Lotus Root Powder (Fenou) at 21.0%, which on RMB 64,340 of revenue is
+the single most valuable pricing conversation in the business.
+
+BAND B -- the next 28 items, carrying the following 30%
+
+                                         category   revenue  pct_of_revenue  cum_pct  margin_true_pct  loss_rate_pct
+item_name                                                                                                           
+Red Pepper (1)                           Capsicum 57,285.87            1.70    52.12            30.52          11.76
+Shanghaiqing               Flower/Leaf Vegetables 56,891.46            1.69    53.81            30.88          14.43
+Millet Pepper (Bag)                      Capsicum 54,979.40            1.63    55.44            44.45           9.43
+Huangbaicai (2)            Flower/Leaf Vegetables 53,478.17            1.59    57.02            31.45          15.61
+Spinach                    Flower/Leaf Vegetables 52,349.54            1.55    58.58            22.59          18.51
+Zhijiang Qinggengsanhua                   Cabbage 47,414.98            1.41    59.98            33.87           9.43
+Wawacai                    Flower/Leaf Vegetables 45,035.80            1.34    61.32            33.57           2.48
+Millet Pepper                            Capsicum 40,930.51            1.21    62.54            35.32           5.86
+Luosi Pepper (Bag)                       Capsicum 40,719.90            1.21    63.74            37.50           9.43
+Zhuyecai                   Flower/Leaf Vegetables 38,934.74            1.16    64.90            26.50          13.62
+Chinese Cabbage            Flower/Leaf Vegetables 38,758.69            1.15    66.05            24.18          22.27
+Needle Mushroom (1)               Edible Mushroom 37,318.24            1.11    67.16            39.23           3.43
+Yunnan Leaf Lettuce (Bag)  Flower/Leaf Vegetables 35,692.10            1.06    68.22            36.54           9.43
+Sweet Chinese Cabbage      Flower/Leaf Vegetables 35,620.06            1.06    69.27            34.75           9.43
+Caixin                     Flower/Leaf Vegetables 32,783.37            0.97    70.25            29.62          13.70
+Green Line Pepper                        Capsicum 30,873.10            0.92    71.16            34.25           7.80
+Zhijiang Red Bolt          Flower/Leaf Vegetables 30,845.21            0.92    72.08            25.63          11.38
+Hongshujian                Flower/Leaf Vegetables 30,271.25            0.90    72.98            34.37           8.42
+Naibaicai                  Flower/Leaf Vegetables 27,812.85            0.83    73.80            29.66          15.68
+Chinese Cabbage            Flower/Leaf Vegetables 26,916.75            0.80    74.60            31.73           7.59
+Garden Chrysanthemum       Flower/Leaf Vegetables 26,871.04            0.80    75.40            34.32           6.27
+Changxianqie                              Solanum 26,304.47            0.78    76.18            34.43           6.90
+Amaranth                   Flower/Leaf Vegetables 25,511.79            0.76    76.94            21.39          18.52
+Spinach (Bag)              Flower/Leaf Vegetables 25,351.60            0.75    77.69            33.64           9.43
+Apricot Bao Mushroom (1)          Edible Mushroom 24,371.75            0.72    78.41            37.42           5.05
+Green Eggplant (1)                        Solanum 23,344.21            0.69    79.10            33.73           5.01
+Agaricus Bisporus (Box)           Edible Mushroom 22,604.90            0.67    79.77            34.65           0.20
+Cabbage Stem (Bag)         Flower/Leaf Vegetables 22,496.30            0.67    80.44            42.05           9.43
+
+Two rows above share a name -- 'Chinese Cabbage' appears twice,
+as two different item codes with different loss rates. That is a catalogue
+quirk, not a duplicate row: they are separate lines that were never
+reconciled. Ranking on item name rather than item code silently merges
+them and gets the item counts wrong.
+
+Note also that 8 of the 42 items in bands A and B carry the 9.43%
+placeholder loss rate rather than a measured one. Their true margin figures
+above are therefore estimates, and they are among the most valuable lines in
+the business -- which makes them the obvious place to start measuring for real.
+
+BAND C is ranks 43-64 (22 items) for the next 10%; band D is ranks 65-130
+(66 items) for the 9% after that. Band E is the remaining 116 items sharing the
+last 1% -- listed in full in reports/findings.json rather than here, because a
+table of 100+ near-zero rows is not something anyone reads.
+
+The practical split: bands A and B are the business (42 items, 80% of takings)
+and deserve individual attention. Bands D and E are a range-review problem,
+not a merchandising one.
+
 DELISTED IN PRACTICE: 110 items have not sold in the final six months
 of the ledger. Together they were 9.1% of three-year revenue.
 

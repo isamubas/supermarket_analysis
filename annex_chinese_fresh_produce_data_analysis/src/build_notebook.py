@@ -459,15 +459,74 @@ How much of the range is actually doing work?
 """)
 
 code("""
-rev = df.groupby('item_name').revenue.sum().sort_values(ascending=False)
+rev = df.groupby('item_code').revenue.sum().sort_values(ascending=False)
 cum = 100 * rev.cumsum() / rev.sum()
 
-for pct in (50, 80, 90):
-    k = int((cum <= pct).sum()) + 1
+for pct in (50, 80, 90, 99):
+    k = int((cum >= pct).argmax()) + 1
     print(f"{pct}% of revenue from the top {k:>3} items  ({100 * k / len(rev):.1f}% of the range)")
 
 bottom = rev.tail(len(rev) // 2)
 print(f"\\nbottom half of the range: {100 * bottom.sum() / rev.sum():.1f}% of revenue")
+""")
+
+md("""
+The curve shows the shape but not who is in it. Cutting the ranked list into bands
+and naming them is what makes it actionable.
+
+Note the grain: **item_code, not item_name**. Four names are shared by two different
+codes — two distinct items are both called "Broccoli" — so ranking by name silently
+merges them and gets the counts wrong.
+""")
+
+code("""
+r = (df.groupby(['item_code', 'item_name', 'category'])
+       .agg(revenue=('revenue', 'sum'),
+            profit_true=('profit_true', 'sum'),
+            loss_rate=('loss_rate', 'first'))
+       .sort_values('revenue', ascending=False).reset_index())
+r['pct'] = 100 * r.revenue / r.revenue.sum()
+r['cum'] = r.pct.cumsum()
+r['margin_true_pct'] = 100 * r.profit_true / r.revenue
+r['loss_rate_pct'] = 100 * r.loss_rate
+
+bands, start = [], 0
+for pct, letter in [(50, 'A'), (80, 'B'), (90, 'C'), (99, 'D'), (100, 'E')]:
+    stop = int((r.cum >= pct).argmax()) + 1 if pct < 100 else len(r)
+    g = r.iloc[start:stop]
+    bands.append({'band': letter, 'ranks': f"{start+1}-{stop}", 'items': len(g),
+                  'revenue': g.revenue.sum(), 'pct_revenue': g.pct.sum(),
+                  'rev_per_item': g.revenue.mean()})
+    start = stop
+
+pd.DataFrame(bands).set_index('band').round(1)
+""")
+
+code("""
+# Band A -- the items that make the first half of the money.
+a_stop = int((r.cum >= 50).argmax()) + 1
+r.head(a_stop)[['item_name', 'category', 'revenue', 'pct', 'cum',
+                'margin_true_pct', 'loss_rate_pct']].round(2)
+""")
+
+code("""
+# Band B -- the next 30%.
+b_stop = int((r.cum >= 80).argmax()) + 1
+r.iloc[a_stop:b_stop][['item_name', 'category', 'revenue', 'pct', 'cum',
+                       'margin_true_pct', 'loss_rate_pct']].round(2)
+""")
+
+md("""
+A band-A item earns roughly **430x** what a band-E item earns — from the same shelf,
+the same ordering decision and the same spoilage risk.
+
+Two cautions before anyone acts on the band tables:
+
+* **"Chinese Cabbage" appears twice in band B** as two item codes with different loss
+  rates. A catalogue quirk, not a duplicate row.
+* **8 of the 42 items in bands A and B carry the 9.43% placeholder loss rate**, so
+  their true-margin figures are estimates. They are also among the most valuable lines
+  in the business, which makes them the obvious place to start measuring for real.
 """)
 
 code("""

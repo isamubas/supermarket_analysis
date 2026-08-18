@@ -273,7 +273,11 @@ def fig_loss_vs_margin(df):
 
 
 def fig_pareto(df):
-    it = df.groupby("item_name").revenue.sum().sort_values(ascending=False)
+    # Grain must be item_code, not item_name: four names are shared by two
+    # different codes (two distinct items are both called "Broccoli"), which
+    # silently collapsed the curve to 242 points under a title claiming 246.
+    it = (df.groupby("item_code").revenue.sum()
+            .sort_values(ascending=False).reset_index(drop=True))
     cum = 100 * it.cumsum() / it.sum()
     n = len(it)
 
@@ -281,14 +285,16 @@ def fig_pareto(df):
     ax.fill_between(range(1, n + 1), 0, cum, color=COOL, alpha=0.18)
     ax.plot(range(1, n + 1), cum, color=COOL, lw=2)
 
+    marks = {}
     for pct, col in ((50, MUTED), (80, ACCENT), (90, MUTED)):
-        k = int((cum <= pct).sum()) + 1
+        k = int((cum >= pct).argmax()) + 1
+        marks[pct] = k
         ax.plot([k, k], [0, pct], color=col, ls=":", lw=1)
         ax.plot([0, k], [pct, pct], color=col, ls=":", lw=1)
         ax.text(k + 3, pct - 7, f"{pct}% of revenue\nfrom {k} items",
                 fontsize=8.2, color=col)
 
-    _finish(ax, "Half the revenue comes from 14 of 246 items",
+    _finish(ax, f"Half the revenue comes from {marks[50]} of {n} items",
             f"Cumulative share of revenue by item, best first. The bottom half of the "
             f"range contributes about 1%.", "Cumulative % of revenue")
     ax.set_xlabel("Items, ranked by revenue")
