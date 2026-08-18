@@ -43,16 +43,16 @@ It also opens with a plain-English key to the jargon — gross margin, shrinkage
 
 ---
 
-## And a real one → [`annex_chinese_supermarket_data_analysis/`](annex_chinese_supermarket_data_analysis/)
+## And a real one → [`annex_chinese_fresh_produce_data_analysis/`](annex_chinese_fresh_produce_data_analysis/)
 
 Both datasets above are invented. This one is not.
 
-**[`annex_chinese_supermarket_data_analysis/`](annex_chinese_supermarket_data_analysis/)** is a
+**[`annex_chinese_fresh_produce_data_analysis/`](annex_chinese_fresh_produce_data_analysis/)** is a
 real item-level ledger from a vegetable retail business — **878,503 scanned lines, 251 items,
 1,085 trading days**, from July 2020 to June 2023 — with daily wholesale costs and per-item
 spoilage rates attached.
 
-[![Pricing does not respond to spoilage at all](annex_chinese_supermarket_data_analysis/figures/loss_rate_vs_margin.png)](annex_chinese_supermarket_data_analysis/)
+[![Pricing does not respond to spoilage at all](annex_chinese_fresh_produce_data_analysis/figures/loss_rate_vs_margin.png)](annex_chinese_fresh_produce_data_analysis/)
 
 **The business reports a 36.9% gross margin. The real figure is 29.8%** — because
 RMB 239,699 of three-year "profit" was stock that spoiled before anyone could buy it.
@@ -70,12 +70,12 @@ The placeholder values are not noise to be smoothed over — they are a finding,
 visible as a vertical stripe on the chart above, and they bound what the rest of the
 analysis is allowed to claim.
 
-The full method is in a [rendered notebook](annex_chinese_supermarket_data_analysis/notebooks/analysis_walkthrough.ipynb),
+The full method is in a [rendered notebook](annex_chinese_fresh_produce_data_analysis/notebooks/analysis_walkthrough.ipynb),
 including a worked example of the elasticity method *breaking* on fixed-price lines and
 producing positive slopes — kept in deliberately, because a fit that returns the wrong
 sign is more instructive than one that quietly returns a plausible one.
 
-### **[→ Read the findings](annex_chinese_supermarket_data_analysis/)**
+### **[→ Read the findings](annex_chinese_fresh_produce_data_analysis/)**
 
 ---
 
@@ -354,7 +354,7 @@ supermarket_analysis/
 ├── src/
 ├── figures/
 ├── mutundwe_kampala/                        ← simulated Kampala POS dataset + analysis
-├── annex_chinese_supermarket_data_analysis/ ← real vegetable retail ledger + analysis
+├── annex_chinese_fresh_produce_data_analysis/ ← real vegetable retail ledger + analysis
 └── README.md
 ```
 

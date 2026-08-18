@@ -1,4 +1,4 @@
-# Annex Chinese Supermarket — three years of a vegetable counter
+# Annex Chinese Fresh Produce — three years of a vegetable counter
 
 A full sales, margin and waste analysis of an item-level retail ledger:
 **878,503 scanned lines, 251 catalogued items, 1,085 trading days**, from
@@ -8,6 +8,27 @@ Unlike the simulated [`mutundwe_kampala`](../mutundwe_kampala) dataset in this
 repository, **this is a real transaction ledger** — with the gaps, placeholders and
 awkward edges that real data has. Several of the more interesting findings below are
 about those edges rather than about vegetables.
+
+> ### Scope: this is one fresh produce counter
+>
+> It is all vegetables and mushrooms. **No meat, dairy, rice, oil, drinks or
+> packaged goods** anywhere in the 251-item catalogue.
+>
+> | Category | % of revenue | What it is |
+> |---|---|---|
+> | Flower/Leaf Vegetables | 32.0% | leaf greens, herbs |
+> | Capsicum | 22.4% | peppers and chillies |
+> | Edible Mushroom | 18.4% | mushrooms |
+> | Cabbage | 11.2% | cabbage, broccoli |
+> | Aquatic Tuberous Vegetables | 10.4% | lotus root, water chestnut |
+> | Solanum | 5.7% | aubergine |
+>
+> Two findings below are bounded by this:
+>
+> - **"Traffic" means lines scanned at this counter**, not shoppers in the store.
+>   A fall could be fewer customers, or the same customers buying vegetables
+>   elsewhere.
+> - **The 21:00 finding is about staffing this counter**, not about closing a shop.
 
 ---
 

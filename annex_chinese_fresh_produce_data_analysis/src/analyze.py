@@ -118,6 +118,28 @@ def section_overview(df: pd.DataFrame) -> None:
     out("  not a holiday, and section 3 shows the three days before it collapsing to a")
     out("  tenth of normal trade -- the shape of a shutdown, not of weak demand.")
 
+    # ---- what this actually covers ---------------------------------------
+    # Worth stating early: every category here is fresh produce. There is no
+    # meat, dairy, grain, drink or packaged line anywhere in the catalogue, so
+    # this is one department and not a store.
+    out("")
+    out("WHAT IS AND IS NOT IN SCOPE")
+    out("")
+    out("This is a fresh produce counter -- all vegetables and mushrooms. No meat,")
+    out("dairy, rice, oil, drinks or packaged goods anywhere in the catalogue:")
+    out("")
+    catmix = df.groupby("category").revenue.sum().sort_values(ascending=False)
+    for name, v in catmix.items():
+        out(f"    {name:<32} {PCT(100 * v / rev):>7}")
+    out("")
+    out("Two consequences that bound everything below:")
+    out("")
+    out("  * 'Traffic' means lines scanned AT THIS COUNTER, not shoppers in the store.")
+    out("    A fall could be fewer customers, or the same customers buying their")
+    out("    vegetables elsewhere. Nothing here separates those.")
+    out("  * Anything said about opening hours applies to STAFFING THIS COUNTER, not")
+    out("    to closing a shop.")
+
     # Data quality
     out("")
     out("Data quality checks:")
@@ -228,10 +250,10 @@ def section_trend(df: pd.DataFrame) -> None:
     out("squeezed on markup either. What changed is the mix and the ticket: there are")
     out("fewer scanned lines, and each one is heavier and cheaper per kilo.")
     out("")
-    out("Whether that means fewer customers or the same customers consolidating their")
-    out("shopping cannot be settled from this data -- there is no basket or customer")
-    out("ID in it. Both readings are consistent with what is here, and they call for")
-    out("different responses, so it is worth resolving before acting on it.")
+    out("Whether that means fewer customers, or the same customers buying vegetables")
+    out("elsewhere, cannot be settled here -- there is no customer ID, and this covers")
+    out("only the produce counter. Both fit, and they call for different responses, so")
+    out("it is worth resolving before acting on it.")
     out("")
     out("The middle year is the one to be careful with. FY21/22 is the trough on every")
     out("measure -- revenue, kilos and lines all bottom out there before recovering.")
@@ -895,12 +917,12 @@ def section_verdict(df: pd.DataFrame) -> None:
          f"Scanned lines per trading day fell {abs(line_change)*100:.0f}% across the three years, "
          f"yet kilos sold ROSE {vol_change*100:.0f}%. Fewer, larger purchases. Revenue per day "
          f"still ended {rev_change*100:+.0f}% because price per kilo fell {abs(F['fy'][-1]['avg_price']/F['fy'][0]['avg_price']-1)*100:.0f}%. "
-         f"A shop can survive losing customers while each remaining one buys more -- "
+         f"A counter can survive losing transactions while each remaining one grows -- "
          f"right up until the point it cannot.",
-         "Put lines per day on the same chart as revenue and watch it weekly. Revenue "
-         "held flat here while the customer base eroded underneath it, and no "
-         "revenue-only report would have shown that. If the cause is a competitor "
-         "opening nearby, this is the only number that will say so early."),
+         "Put lines per day on the same chart as revenue and watch it weekly -- no "
+         "revenue-only report would have shown this. Read it as produce sales rather "
+         "than shoppers, though: this data sees one counter. Store-wide till counts "
+         "would say which it is, and that is the first thing to go and get."),
 
         ("Spoilage is not priced in, anywhere",
          f"{RMB(spoil)} of book profit over three years never existed -- it was stock "
@@ -945,14 +967,14 @@ def section_verdict(df: pd.DataFrame) -> None:
          "market and a light top-up before 16:00 for the evening rush. The evening "
          "clearance pile is the visible end of a morning over-order."),
 
-        ("The last trading hour does not pay for itself",
-         f"After 21:00 the shop takes {PCT(late_share)} of revenue at {PCT(late_margin)} margin, against "
-         f"about 30% through the rest of the day. It is simultaneously the thinnest "
-         f"and the least profitable hour, and it is the hour with the heaviest "
-         f"discounting.",
-         "Close at 21:00 and move that staffed hour to the 09:00-11:00 peak, which "
-         "carries a quarter of all revenue at full margin. This is a roster change, "
-         "not an investment."),
+        ("The last trading hour does not pay for itself -- at this counter",
+         f"After 21:00 the produce counter takes {PCT(late_share)} of revenue at {PCT(late_margin)} margin, "
+         f"against about 30% through the rest of the day. It is simultaneously the "
+         f"thinnest and the least profitable hour, and the most heavily discounted.",
+         "Move the staffed produce hour from 21:00 to the 09:00-11:00 peak, which "
+         "carries a quarter of all revenue at full margin. A roster change, not a "
+         "closing time -- this data only sees the produce counter, so if the rest of "
+         "the shop trades late, the answer is a pre-packed section after 21:00."),
 
         ("The single biggest sales event of the year is fully predictable",
          f"{n_cny_top} of the ten best days in three years fall in the week before Chinese "
@@ -976,6 +998,11 @@ def section_verdict(df: pd.DataFrame) -> None:
 
     h("12. WHERE THIS ANALYSIS STOPS")
     out("Stated plainly, because the limits matter as much as the findings:")
+    out("")
+    out("  * This is one fresh produce counter -- vegetables and mushrooms only, no")
+    out("    meat, dairy, grain, drinks or packaged goods. Nothing here describes the")
+    out("    rest of the shop, so any conclusion about hours or footfall is about this")
+    out("    counter alone.")
     out("")
     out("  * There is no basket or customer ID. Nothing here counts shoppers, measures")
     out("    basket size, or says what sells with what. 'Traffic' means lines scanned.")

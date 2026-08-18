@@ -38,6 +38,26 @@ Days the shop did not trade:
   not a holiday, and section 3 shows the three days before it collapsing to a
   tenth of normal trade -- the shape of a shutdown, not of weak demand.
 
+WHAT IS AND IS NOT IN SCOPE
+
+This is a fresh produce counter -- all vegetables and mushrooms. No meat,
+dairy, rice, oil, drinks or packaged goods anywhere in the catalogue:
+
+    Flower/Leaf Vegetables             32.0%
+    Capsicum                           22.4%
+    Edible Mushroom                    18.4%
+    Cabbage                            11.2%
+    Aquatic Tuberous Vegetables        10.4%
+    Solanum                             5.7%
+
+Two consequences that bound everything below:
+
+  * 'Traffic' means lines scanned AT THIS COUNTER, not shoppers in the store.
+    A fall could be fewer customers, or the same customers buying their
+    vegetables elsewhere. Nothing here separates those.
+  * Anything said about opening hours applies to STAFFING THIS COUNTER, not
+    to closing a shop.
+
 Data quality checks:
   Missing values, any column           0
   Sold item-days lacking a cost quote  0 of 46,599
@@ -89,10 +109,10 @@ kilo fell faster than volume rose -- and margin percentage actually improved
 squeezed on markup either. What changed is the mix and the ticket: there are
 fewer scanned lines, and each one is heavier and cheaper per kilo.
 
-Whether that means fewer customers or the same customers consolidating their
-shopping cannot be settled from this data -- there is no basket or customer
-ID in it. Both readings are consistent with what is here, and they call for
-different responses, so it is worth resolving before acting on it.
+Whether that means fewer customers, or the same customers buying vegetables
+elsewhere, cannot be settled here -- there is no customer ID, and this covers
+only the produce counter. Both fit, and they call for different responses, so
+it is worth resolving before acting on it.
 
 The middle year is the one to be careful with. FY21/22 is the trough on every
 measure -- revenue, kilos and lines all bottom out there before recovering.
@@ -614,15 +634,15 @@ rank items reliably; they should not be read as a promise about a price change.
    WHAT THE DATA SHOWS
      Scanned lines per trading day fell 17% across the three years, yet kilos
      sold ROSE 19%. Fewer, larger purchases. Revenue per day still ended -9%
-     because price per kilo fell 23%. A shop can survive losing customers
-     while each remaining one buys more -- right up until the point it
-     cannot.
+     because price per kilo fell 23%. A counter can survive losing
+     transactions while each remaining one grows -- right up until the point
+     it cannot.
    WHAT TO DO
-     Put lines per day on the same chart as revenue and watch it weekly.
-     Revenue held flat here while the customer base eroded underneath it, and
-     no revenue-only report would have shown that. If the cause is a
-     competitor opening nearby, this is the only number that will say so
-     early.
+     Put lines per day on the same chart as revenue and watch it weekly -- no
+     revenue-only report would have shown this. Read it as produce sales
+     rather than shoppers, though: this data sees one counter. Store-wide
+     till counts would say which it is, and that is the first thing to go and
+     get.
 
 2. Spoilage is not priced in, anywhere
    ----------------------------------------------------------------------
@@ -680,17 +700,17 @@ rank items reliably; they should not be read as a promise about a price change.
      morning market and a light top-up before 16:00 for the evening rush. The
      evening clearance pile is the visible end of a morning over-order.
 
-6. The last trading hour does not pay for itself
+6. The last trading hour does not pay for itself -- at this counter
    ----------------------------------------------------------------------
    WHAT THE DATA SHOWS
-     After 21:00 the shop takes 2.1% of revenue at 24.9% margin, against
-     about 30% through the rest of the day. It is simultaneously the thinnest
-     and the least profitable hour, and it is the hour with the heaviest
-     discounting.
+     After 21:00 the produce counter takes 2.1% of revenue at 24.9% margin,
+     against about 30% through the rest of the day. It is simultaneously the
+     thinnest and the least profitable hour, and the most heavily discounted.
    WHAT TO DO
-     Close at 21:00 and move that staffed hour to the 09:00-11:00 peak, which
-     carries a quarter of all revenue at full margin. This is a roster
-     change, not an investment.
+     Move the staffed produce hour from 21:00 to the 09:00-11:00 peak, which
+     carries a quarter of all revenue at full margin. A roster change, not a
+     closing time -- this data only sees the produce counter, so if the rest
+     of the shop trades late, the answer is a pre-packed section after 21:00.
 
 7. The single biggest sales event of the year is fully predictable
    ----------------------------------------------------------------------
@@ -707,6 +727,11 @@ rank items reliably; they should not be read as a promise about a price change.
 12. WHERE THIS ANALYSIS STOPS
 ==============================================================================
 Stated plainly, because the limits matter as much as the findings:
+
+  * This is one fresh produce counter -- vegetables and mushrooms only, no
+    meat, dairy, grain, drinks or packaged goods. Nothing here describes the
+    rest of the shop, so any conclusion about hours or footfall is about this
+    counter alone.
 
   * There is no basket or customer ID. Nothing here counts shoppers, measures
     basket size, or says what sells with what. 'Traffic' means lines scanned.

@@ -14,4 +14,4 @@ mutundwe_kampala/data/
 
 # Derived cache: 35 MB, rebuilt in seconds by src/prepare.py from the raw
 # annexes, which ARE committed. The raw data is the source of truth.
-annex_chinese_supermarket_data_analysis/data/analysis_frame.parquet
+annex_chinese_fresh_produce_data_analysis/data/analysis_frame.parquet

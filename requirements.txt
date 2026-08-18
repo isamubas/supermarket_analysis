@@ -4,7 +4,7 @@ scipy>=1.10
 matplotlib>=3.7
 xlrd>=2.0
 
-# annex_chinese_supermarket_data_analysis
+# annex_chinese_fresh_produce_data_analysis
 # pyarrow is optional -- it caches the joined frame to parquet. Without it the
 # analysis still runs, just rebuilding the join each time.
 pyarrow>=14.0

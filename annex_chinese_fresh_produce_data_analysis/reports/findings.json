@@ -12654,8 +12654,8 @@
   "findings": [
     {
       "title": "Footfall is draining away while volume grows",
-      "evidence": "Scanned lines per trading day fell 17% across the three years, yet kilos sold ROSE 19%. Fewer, larger purchases. Revenue per day still ended -9% because price per kilo fell 23%. A shop can survive losing customers while each remaining one buys more -- right up until the point it cannot.",
-      "action": "Put lines per day on the same chart as revenue and watch it weekly. Revenue held flat here while the customer base eroded underneath it, and no revenue-only report would have shown that. If the cause is a competitor opening nearby, this is the only number that will say so early."
+      "evidence": "Scanned lines per trading day fell 17% across the three years, yet kilos sold ROSE 19%. Fewer, larger purchases. Revenue per day still ended -9% because price per kilo fell 23%. A counter can survive losing transactions while each remaining one grows -- right up until the point it cannot.",
+      "action": "Put lines per day on the same chart as revenue and watch it weekly -- no revenue-only report would have shown this. Read it as produce sales rather than shoppers, though: this data sees one counter. Store-wide till counts would say which it is, and that is the first thing to go and get."
     },
     {
       "title": "Spoilage is not priced in, anywhere",
@@ -12678,9 +12678,9 @@
       "action": "Leave the markdown alone and fix what feeds it. Order to the hour profile rather than the day total: a heavy delivery before 09:00 for the morning market and a light top-up before 16:00 for the evening rush. The evening clearance pile is the visible end of a morning over-order."
     },
     {
-      "title": "The last trading hour does not pay for itself",
-      "evidence": "After 21:00 the shop takes 2.1% of revenue at 24.9% margin, against about 30% through the rest of the day. It is simultaneously the thinnest and the least profitable hour, and it is the hour with the heaviest discounting.",
-      "action": "Close at 21:00 and move that staffed hour to the 09:00-11:00 peak, which carries a quarter of all revenue at full margin. This is a roster change, not an investment."
+      "title": "The last trading hour does not pay for itself -- at this counter",
+      "evidence": "After 21:00 the produce counter takes 2.1% of revenue at 24.9% margin, against about 30% through the rest of the day. It is simultaneously the thinnest and the least profitable hour, and the most heavily discounted.",
+      "action": "Move the staffed produce hour from 21:00 to the 09:00-11:00 peak, which carries a quarter of all revenue at full margin. A roster change, not a closing time -- this data only sees the produce counter, so if the rest of the shop trades late, the answer is a pre-packed section after 21:00."
     },
     {
       "title": "The single biggest sales event of the year is fully predictable",

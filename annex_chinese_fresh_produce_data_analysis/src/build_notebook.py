@@ -40,9 +40,9 @@ This notebook is the working method behind `reports/analysis_report.txt` — not
 summary of it. It shows the joins, the judgement calls and the two or three places
 where the obvious approach gives the wrong answer.
 
-**The data.** A wholesale-and-retail vegetable business, 1 July 2020 to 30 June 2023:
-878,503 scanned lines across 251 catalogued items in six categories, with a daily
-wholesale cost series and a per-item loss rate.
+**The data.** A fresh produce counter — vegetables and mushrooms, nothing else —
+from 1 July 2020 to 30 June 2023: 878,503 scanned lines across 251 catalogued items
+in six categories, with a daily wholesale cost series and a per-item loss rate.
 
 **The question.** What sold, what did not, when the money came in, what went wrong,
 and what to do about it.
@@ -251,10 +251,10 @@ This is not a demand problem — volume grew. Revenue fell because price per kil
 fell faster than volume rose, and margin *percentage* actually improved over the
 same period, so the shop is not being squeezed on markup either.
 
-What cannot be settled from this data is whether "fewer lines" means fewer
-customers or the same customers consolidating their trips. There is no basket or
-customer ID anywhere in these four files. Both readings fit the evidence and they
-call for opposite responses, so it is worth resolving before acting on it.
+What cannot be settled here is whether "fewer lines" means fewer customers or the
+same customers buying vegetables elsewhere. There is no customer ID in these files,
+and they cover only the produce counter. Both readings fit, and they call for
+opposite responses, so it is worth resolving before acting on it.
 
 One caution on the comparison: FY21/22 is the trough on every measure, so year one
 against year three skips over a disrupted middle rather than describing a smooth
@@ -606,6 +606,8 @@ md("""
 **Where this stops.** Worth being explicit, because the limits bound every
 recommendation above:
 
+* One produce counter, not a shop — vegetables and mushrooms only, so nothing here
+  describes the rest of the store.
 * No basket or customer ID — nothing here counts shoppers or measures basket size.
 * No stock-on-hand — spoilage is a per-item rate, not an observed daily loss, and
   85 of those rates are placeholders.
